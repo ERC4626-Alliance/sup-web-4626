@@ -111,14 +111,14 @@ const linksResources = {
 export default class Resources extends React.Component {
   render() {
     return (
-      <div className="bg-gradient-to-r from-pink-700 to-pink-900">
+      <div className="bg-pink-50 font-worksans">
         <div className="mx-auto pt-16 pb-2 px-4 sm:px-6 lg:pt-24 lg:px-8">
           <h2 className="text-center text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="-mb-1 pb-4 block bg-gradient-to-r from-pink-50 to-pink-100 bg-clip-text text-transparent">
+            <span className="-mb-1 pb-4 block bg-gradient-to-r from-pink-600 to-pink-700 bg-clip-text text-transparent">
               ERC4626 RESOURCES{" "}
             </span>{" "}
           </h2>{" "}
-          <p className="text-center mt-4 text-lg text-pink-100">
+          <p className="text-center mt-4 text-lg text-pink-600">
             Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.Et
             magna sit morbi lobortis.Blandit aliquam sit nisl euismod mattis in
             .{" "}
@@ -137,7 +137,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}
@@ -156,7 +156,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}
@@ -177,7 +177,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}
@@ -196,7 +196,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}
@@ -217,7 +217,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}
@@ -236,7 +236,7 @@ export default class Resources extends React.Component {
                         <li key={item.name}>
                           <a
                             href={item.href}
-                            className="text-base text-pink-50 hover:text-pink-300"
+                            className="text-base text-pink-600 hover:text-pink-500"
                             TARGET="_BLANK"
                           >
                             {item.name}{" "}

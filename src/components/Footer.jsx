@@ -30,7 +30,7 @@ const footerNavigation = {
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer className="bg-pink-50">
+      <footer className="bg-pink-50 font-worksans">
         <h2 id="footer-heading" className="sr-only">
           Footer{" "}
         </h2>{" "}
