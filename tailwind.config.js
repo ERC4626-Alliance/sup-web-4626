@@ -1,12 +1,11 @@
-/* eslint-disable prettier/prettier */
 module.exports = {
-    content: ["./src/**/*.{js,jsx,ts,tsx}"],
-    theme: {
-        extend: {
-            fontFamily: {
-                worksans: ["Work Sans", "sans"],
-            },
-        },
-    },
-    plugins: [require("@tailwindcss/forms")],
-};
+  content: [
+    './src/pages/**/*.{ts,jsx,tsx}',
+    './styles/**/*.scss',
+    './src/components/**/*.{ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
