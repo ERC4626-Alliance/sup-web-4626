@@ -1,6 +1,6 @@
 import axios from "axios";
-import { NextPage } from "next";
 import { FunctionComponent, useEffect, useState } from "react";
+import ReactPaginate from 'react-paginate';
 
 interface VaultType {
   timestamp: String[],
@@ -20,6 +20,8 @@ const defaultState: VaultType = {
 
 const VaultExplorer: FunctionComponent = () => {
   const [vaults, setVaults] =  useState(defaultState)
+  const [pageCount, setPageCount] = useState(0)
+  const [currentPage, setCurrentPage] = useState(1)
 
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
@@ -34,13 +36,18 @@ const VaultExplorer: FunctionComponent = () => {
     axios
       .get("https://superform-api.herokuapp.com/explore/", config)
       .then((res:any) => {
-        console.log(res.data)
         setVaults(res.data);
+        setPageCount(res.data.timestamp.length / 10)
       })
       .catch((err:any) => {
         console.log(err);
       });
   }, [])
+
+  const handlePageClick = (event: { selected: any; }) => {
+    setCurrentPage(event.selected + 1)
+    console.log(currentPage)
+  }
 
   return (
     vaults === null ? null :
@@ -83,30 +90,40 @@ const VaultExplorer: FunctionComponent = () => {
                 </tr>
                 </thead>
                 <tbody className="bg-white">
-                {vaults.timestamp.map((vault, vaultIdx) => (<tr key={`${vault}-${vaultIdx}`}>
+                {vaults.timestamp
+                .slice((currentPage - 1) * 10, (currentPage * 10) - 1)
+                .map((vault, vaultIdx) => (<tr key={`${vault}-${vaultIdx}`}>
                 <td
                     className={classNames(vaultIdx !== vaults.timestamp.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8")}
                   >
-                    {vaults.name[vaultIdx]}
+                    {vaults.name[vaultIdx + ((currentPage - 1) * 10)]}
                   </td>
                   <td
                     className={classNames(vaultIdx !== vaults.timestamp.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8")}
                   >
-                    {vaults.chain[vaultIdx]}
+                    {vaults.chain[vaultIdx + ((currentPage - 1) * 10)]}
                   </td>
                   <td
                     className={classNames(vaultIdx !== vaults.timestamp.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell")}
                   >
-                    {vaults.protocol[vaultIdx]}
+                    {vaults.protocol[vaultIdx + ((currentPage - 1) * 10)]}
                   </td>
                   <td
                     className={classNames(vaultIdx !== vaults.timestamp.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden lg:table-cell")}
                   >
-                    {vaults.contract_address[vaultIdx]}
+                    {vaults.contract_address[vaultIdx + ((currentPage - 1) * 10)]}
                   </td>
                 </tr>))}
                 </tbody>
               </table>
+              <ReactPaginate
+                breakLabel="..."
+                nextLabel="next >"
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={5}
+                pageCount={pageCount}
+                previousLabel="< previous"
+              />
             </div>
           </div>
         </div>
