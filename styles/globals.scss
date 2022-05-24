@@ -1,0 +1,93 @@
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  @apply m-0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+section {
+  @apply max-w-screen-2xl mx-auto;
+}
+
+.indexHeader {
+  @apply backdrop-filter backdrop-blur-xl shadow-md md:overflow-hidden;
+  @apply bg-pink-200 fixed w-full z-20;
+
+  will-change: background-color;
+  backdrop-filter: blur(24px);
+
+  background-color: rgba(24, 24, 32, 0.01);
+
+  &.transparentBg {
+    @apply bg-transparent backdrop-filter-none shadow-none;
+  }
+
+  .linksContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 500px) and (max-width: 900px) {
+      transform: translate(-25%, -50%);
+    }
+
+    a.linkItem {
+      @apply text-white;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+
+    .linkItem {
+      line-height: 2rem;
+      font-weight: normal;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        @apply text-pink-500;
+      }
+    }
+  }
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .socialIcons {
+    margin: 27px 0 27px auto;
+  }
+
+  .column {
+    display: flex;
+    align-items: center;
+  }
+
+  .mainIndexHeader {
+    height: 100%;
+    width: 100%;
+  }
+
+  .logoHead {
+    font-size: 20px !important;
+    font-weight: 800;
+    margin-bottom: 5px !important;
+  }
+}
