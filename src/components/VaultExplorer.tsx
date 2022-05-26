@@ -52,7 +52,7 @@ function mapAddressWithScan(address: string, chain: string) {
         href = `https://polygonscan.com/address/${address}#code`;
         break;
       case "fantom":
-        href = `https://fantom.network/address/${address}`;
+        href = `https://ftmscan.com/address/${address}`;
         break;
       case "ethereum":
         href = `https://etherscan.io/address/${address}#code`;
