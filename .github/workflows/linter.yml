@@ -6,13 +6,14 @@
 # https://github.com/github/super-linter
 name: Lint Code Base
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+concurrency:
+  group: deploy-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+on: pull_request
 jobs:
   run-lint:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,6 +25,22 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
-          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_BASH: false
+          VALIDATE_CSS: false
+          VALIDATE_ENV: false
+          VALIDARE_EDITORCONFIG: false
+          VALIDARE_JAVASCRIPT_STANDARD: false
+          VALIDATE_TYPESCRIPT_STANDARD: false
+          VALIDARE_JSCPD: false
+          VALIDARE_MARKDOWN: false
+          VALIDARE_NATURAL_LANGUAGE: false
+          VALIDATE_GITHUB_ACTIONS: false
+          VALIDATE_GITLEAKS: true
+          VALIDARE_JAVASCRIPT_ES: true
+          VALIDARE_JSON: true
+          VALIDARE_TSX: true
+          VALIDARE_TYPESCRIPT_ES: true
+          VALIDARE_YAML: true
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
