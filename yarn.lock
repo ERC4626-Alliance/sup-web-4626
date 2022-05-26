@@ -20,6 +20,7 @@ __metadata:
     "@types/aos": ^3.0.4
     "@types/node": 17.0.4
     "@types/react": 17.0.38
+    "@types/react-dom": ^18.0.5
     "@types/react-scroll": ^1.8.3
     aos: next
     autoprefixer: ^10.4.0
@@ -1089,6 +1090,15 @@ __metadata:
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
   checksum: 5b43b8b15415e1f298243165f1d44390403bb2bd42e662bca3b5b5633fdd39c938e91b7fce3a9483699db0f7a715d08cef220c121f723a634972fdf596aec980
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18.0.5":
+  version: 18.0.5
+  resolution: "@types/react-dom@npm:18.0.5"
+  dependencies:
+    "@types/react": "*"
+  checksum: cd48b81950f499b52a3f0c08261f00046f9b7c96699fa249c9664e257e820daf6ecac815cd1028cebc9d105094adc39d047d1efd79214394b8b2d515574c0787
   languageName: node
   linkType: hard
 
