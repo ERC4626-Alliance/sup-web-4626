@@ -4,10 +4,10 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/github/super-linter
-name: Lint Code Base
+name: "Lint Code Base"
 
 concurrency:
-  group: deploy-pr-${{ github.ref }}
+  group: linter-pr-${{ github.ref }}
   cancel-in-progress: true
 
 on: pull_request
