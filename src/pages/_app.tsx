@@ -13,7 +13,7 @@ function Erc4626App({ Component, pageProps }: AppProps) {
   }, []);
 
   useEffect(() => {
-    document.addEventListener("click", (mouseEvent) => {
+    document.addEventListener("click", (mouseEvent: MouseEvent) => {
       const targetElement = mouseEvent.target as HTMLElement | null;
       if (targetElement!.tagName!.toLowerCase() === "a" && targetElement!.getAttribute('href')!.startsWith("/#")){
         mouseEvent.preventDefault();
@@ -24,13 +24,13 @@ function Erc4626App({ Component, pageProps }: AppProps) {
           block: "start",
           inline: "nearest"
         });
+        return false;
       }
+      return true;
     });
   }, []);
 
-  return (
-    <Component {...pageProps} />
-  );
+  return (<Component {...pageProps} />);
 }
 
 export default Erc4626App;
