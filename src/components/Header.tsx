@@ -52,8 +52,9 @@ const Header: FunctionComponent = () => {
       </div>
       <div className="hidden md:block text-right">
         <span className="inline-flex rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
-          <a href="https://vaultscan.superform.xyz" target="_blank" rel="nofollow norefferer"
-                className="inline-flex items-center px-4 py-2 border border-pink-100 text-base font-medium rounded-lg text-pink-600 bg-white hover:bg-pink-200 hover:border-pink-200">Check out the VaultScan by Superform</a>
+          <a
+            href="https://vaultscan.superform.xyz" target="_blank" rel="nofollow "
+            className="inline-flex items-center px-4 py-2 border border-pink-100 text-base font-medium rounded-lg text-pink-600 bg-white hover:bg-pink-200 hover:border-pink-200">Check out the VaultScan by Superform</a>
         </span>
       </div>
     </nav>
@@ -84,9 +85,9 @@ const Header: FunctionComponent = () => {
             >{link.title}</Link>)}
         </nav>
         <a href="https://vaultscan.superform.xyz"
-              target="_blank"
-              rel="nofollow norefferer"
-              className="block w-full px-5 py-3 text-center font-medium text-pink-600 bg-pink-50 hover:bg-pink-100"
+           target="_blank"
+           rel="nofollow noreferrer"
+           className="block w-full px-5 py-3 text-center font-medium text-pink-600 bg-pink-50 hover:bg-pink-100"
         >Check out the VaultScan by Superform</a>
       </div>
     </div>

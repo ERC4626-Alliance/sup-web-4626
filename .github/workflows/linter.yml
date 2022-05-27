@@ -4,15 +4,16 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/github/super-linter
-name: Lint Code Base
+name: "Lint Code Base"
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+concurrency:
+  group: linter-pr-${{ github.ref }}
+  cancel-in-progress: true
+
+on: pull_request
 jobs:
   run-lint:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -24,6 +25,15 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
-          VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: main
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_BASH: false
+          VALIDATE_CSS: false
+          VALIDATE_ENV: false
+          VALIDATE_EDITORCONFIG: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_TYPESCRIPT_STANDARD: false
+          VALIDATE_JSCPD: false
+          VALIDATE_MARKDOWN: false
+          VALIDATE_NATURAL_LANGUAGE: false
+          VALIDATE_GITHUB_ACTIONS: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
