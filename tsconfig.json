@@ -1,33 +1,59 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "baseUrl": "src",
-    "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "baseUrl": "./src",
+    "checkJs": false,
+    "declaration": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "DOM.Iterable",
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@types/aos"
+    ],
+    "isolatedModules": true
   },
   "include": [
+    "src/assets/imgs/*.{svg,png,jpg,gif,ico,webp}",
     "next-env.d.ts",
-    "srs/types/*.d.ts",
-    "next-env.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx"
+    "src/types/*.d.ts",
+    "src/{**/*,*}.{js,ts,tsx,jsx,d.ts}"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".next",
+    "public",
+    ".husky",
+    ".github",
+    ".yarn"
   ]
 }

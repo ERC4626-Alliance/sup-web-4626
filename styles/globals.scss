@@ -1,3 +1,6 @@
+@import "variables.module.scss";
+@import "aos/src/sass/aos";
+
 /*! @import */
 @tailwind base;
 @tailwind components;
@@ -89,5 +92,86 @@ section {
     font-size: 20px !important;
     font-weight: 800;
     margin-bottom: 5px !important;
+  }
+}
+
+.link-cta {
+  @apply hover:underline-offset-2 hover:underline;
+}
+
+.adopter-container {
+  @apply w-1/4 flex justify-center flex p-10 items-center justify-center relative;
+  z-index: 2;
+
+  img {
+    @apply inline-flex self-center justify-self-center object-cover h-auto;
+    @apply max-h-[150px] w-auto min-w-[100px] max-w-[120px] relative z-20;
+
+    display: inline-flex;
+    user-select: none;
+    transition: all $transitionMedium;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &::before,
+  &::after {
+    opacity: 0;
+    transition: $transitionMedium;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    left: calc((100% - 200px) / 2);
+    background-blend-mode: overlay, normal, normal, color-dodge, normal;
+    mix-blend-mode: normal;
+    will-change: opacity;
+  }
+
+  &::before {
+    filter: opacity(0.3) blur(20px);
+
+    top: calc((100% - 200px) / 2);
+    background: $gradientRegularPieceBefore;
+  }
+
+  &::after {
+    filter: opacity(0.3) blur(20px);
+    top: calc((100% - 200px) / 2);
+    background: $gradientRegularPieceAfter;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: 768px) {
+      color: $muted;
+      img {
+        transform: scale(1.35);
+      }
+      &::after,
+      &::before {
+        opacity: 0.45;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    min-width: 40%;
+
+    img:hover {
+      will-change: none;
+      transform: none !important;
+    }
+  }
+
+  &#AdopterOpenzeppelinLogo,
+  &#AdopterAlchemixLogo,
+  &#AdopterBalancerLogo {
+    img {
+      min-width: 190px;
+    }
   }
 }

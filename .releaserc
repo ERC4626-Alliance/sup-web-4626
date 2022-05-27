@@ -1,0 +1,52 @@
+{
+  "branches": [
+    "+([0-9])?(.{+([0-9]),x}).x",
+    "main",
+    {
+      "name": "beta",
+      "prerelease": true
+    },
+  ],
+  "debug": false,
+  "tagFormat": "${version}",
+  "npmPublish": false,
+
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      },
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "APP_GIT_VERSION=${nextRelease.version} yarn run ci:generate",
+        "publishCmd": "zip -r dist.zip public firebase.json .firebaserc"
+      }
+    ],
+    [
+      "@semantic-release/github", "assets": [
+        {
+          "path": "dist.zip",
+          "label": "Dist package"
+        }
+      ]
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [ "dist.zip" ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
