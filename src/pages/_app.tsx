@@ -15,10 +15,11 @@ function Erc4626App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     document.addEventListener("click", (mouseEvent: MouseEvent) => {
       const targetElement = mouseEvent.target as HTMLElement | null;
-      if (targetElement!.tagName!.toLowerCase() === "a" && targetElement!.getAttribute('href')!.startsWith("/#")){
+      const href = targetElement?.getAttribute("href") || "";
+      if (href.startsWith("/#")) {
         mouseEvent.preventDefault();
-        const find = targetElement!.getAttribute('href')!.replace("/#", "");
-        console.log(document.getElementById(find))
+        const find = targetElement!.getAttribute("href")!.replace("/#", "");
+        console.log(document.getElementById(find));
         document.getElementById(find)!.scrollIntoView({
           behavior: "smooth",
           block: "start",
@@ -30,7 +31,9 @@ function Erc4626App({ Component, pageProps }: AppProps) {
     });
   }, []);
 
-  return (<Component {...pageProps} />);
+  return (
+    <Component {...pageProps} />
+  );
 }
 
 export default Erc4626App;

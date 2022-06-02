@@ -1,8 +1,6 @@
-import { FunctionComponent } from "react";
 import { linksResources } from "../lib/data";
-import Link from "next/link";
 
-const Resources2: FunctionComponent = () => {
+const Resources2= () => {
   return (
     <div className="bg-gradient-to-r from-pink-700 to-pink-900">
       <div className="max-w-7xl mx-auto pt-16 pb-16 px-4 sm:px-6 lg:px-8">

@@ -1,7 +1,5 @@
-import { FunctionComponent } from "react";
-
-const Authors: FunctionComponent = () => {
-  return (
+const Authors = () => {
+  return (<>
     <div aria-labelledby="faq-heading" className="bg-gradient-to-b from-pink-50">
       <section className="max-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div>
@@ -17,6 +15,6 @@ const Authors: FunctionComponent = () => {
         </div>
 
       </section>
-    </div>);
+    </div></>);
 }
 export default Authors;

@@ -1,19 +1,18 @@
-import { FunctionComponent } from "react";
-import Title from "components/Atom/Title";
+import AtomTitle from "@/components/Atom/Title";
 
-declare type buildWithProps = { email?: string; href?: string; buildTitle: string; };
+declare type buildWithProps = { email?: string; href?: string; buildAtomTitle: string; };
 
-const BuiltWith: FunctionComponent = () => {
+const BuiltWith= () => {
 
   const buildList = [
     {
-      buildTitle: "Deploy an ERC-4626 vault", href: "https://eips.ethereum.org/EIPS/eip-4626"
+      buildAtomTitle: "Deploy an ERC-4626 vault", href: "https://eips.ethereum.org/EIPS/eip-4626"
     }, {
-      buildTitle: "View examples", href: "https://eips.ethereum.org/EIPS/eip-4626"
+      buildAtomTitle: "View examples", href: "https://eips.ethereum.org/EIPS/eip-4626"
     }, {
-      buildTitle: "Extensions to ERC-4626", href: "https://eips.ethereum.org/EIPS/eip-4626"
+      buildAtomTitle: "Extensions to ERC-4626", href: "https://eips.ethereum.org/EIPS/eip-4626"
     }, {
-      buildTitle: "How to wrap a non-standard vault with ERC-4626", href: "https://eips.ethereum.org/EIPS/eip-4626"
+      buildAtomTitle: "How to wrap a non-standard vault with ERC-4626", href: "https://eips.ethereum.org/EIPS/eip-4626"
     }
   ] as buildWithProps[];
 
@@ -21,10 +20,10 @@ const BuiltWith: FunctionComponent = () => {
     <section className="mx-auto pt-2 pb-24 px-4 sm:px-6 lg:pt-2 lg:px-8">
       <a id="build"/>
       <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-2 lg:max-w-none lg:mx-0 lg:px-0 text-center">
-        <Title>BUILD WITH ERC-4626</Title>
+        <AtomTitle>BUILD WITH ERC-4626</AtomTitle>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-left">
           {buildList.map((build: buildWithProps, index: number) => (<div
-            key={`${build?.email || build.buildTitle}-${index}`}
+            key={`${build?.email || build.buildAtomTitle}-${index}`}
             className="relative rounded-lg border border-pink-100 bg-white px-6 py-5 shadow-sm flex items-center space-x-3 hover:border-pink-500 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-pink-900"
           >
             <div className="flex-1 min-w-0" data-aos="fade-down">
@@ -39,7 +38,7 @@ const BuiltWith: FunctionComponent = () => {
                               aria-hidden="true"
                             />
                 <p className="text-sm font-medium text-slate-700">
-                  {build.buildTitle}
+                  {build.buildAtomTitle}
                 </p>
               </a>
             </div>

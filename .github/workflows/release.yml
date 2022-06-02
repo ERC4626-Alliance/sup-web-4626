@@ -35,8 +35,8 @@ jobs:
 
       - name: Build
         run: |
-          yarn ci:generate
-          zip -r dist.zip public firebase.json .firebaserc
+          yarn generate
+          zip -r dist.zip .next vercel.json
 
       - name: "Semantic release"
         run: yarn semantic-release

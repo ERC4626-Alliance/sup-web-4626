@@ -1,10 +1,21 @@
-@import "variables.module.scss";
+@import "variables.module";
 @import "aos/src/sass/aos";
 
-/*! @import */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {
@@ -101,6 +112,7 @@ section {
 
 .adopter-container {
   @apply w-1/4 flex justify-center flex p-10 items-center justify-center relative;
+
   z-index: 2;
 
   img {

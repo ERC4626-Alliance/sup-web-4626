@@ -1,42 +1,31 @@
 import axios from "axios";
-import { FunctionComponent, useEffect, useState } from "react";
-import Image from "next/image";
-
-// @ts-ignore
-import PolygonIcon from "../assets/icons/polygon.svg";
-// @ts-ignore
-import BnBIcon from "../assets/icons/bnb.svg";
-// @ts-ignore
-import FantomIcon from "../assets/icons/fantom.svg";
-// @ts-ignore
-import EthereumIcon from "../assets/icons/ethereum.svg";
-// @ts-ignore
-import AvalancheIcon from "../assets/icons/avalanche.svg";
+import { useEffect, useState } from "react";
+import ExportedImage from "next-image-export-optimizer";
 import ReactPaginate from "react-paginate";
 
 function mapIcon(chain: string) {
   let icon = "";
   if (chain.toLowerCase().search("bnb") !== -1) {
-    icon = BnBIcon;
+    icon = "images/icons/bnb.svg";
   } else {
     switch (chain.toLowerCase()) {
       case "polygon":
-        icon = PolygonIcon;
+        icon = "images/icons/polygon.svg";
         break;
       case "fantom":
-        icon = FantomIcon;
+        icon = "images/icons/fantom.svg";
         break;
       case "ethereum":
-        icon = EthereumIcon;
+        icon = "images/icons/ethereum.svg";
         break;
       case "avalanche":
-        icon = AvalancheIcon;
+        icon = "images/icons/avalanche.svg";
         break;
     }
   }
   return (
     <>
-      <Image layout="raw" src={icon} alt={chain} className="w-auto h-6 mr-1 inline-flex"/>
+      <ExportedImage layout="raw" width="20" height="20" src={icon} alt={chain} className="w-auto h-6 mr-1 inline-flex"/>
       {chain[0].toUpperCase() + chain.slice(1)}
     </>
   );
@@ -58,7 +47,7 @@ function mapAddressWithScan(address: string, chain: string) {
         href = `https://etherscan.io/address/${address}#code`;
         break;
       case "avalanche":
-        href = `https://avascan.info/address/${address}`;
+        href = `https://avascan.info/blockchain/c/address/${address}/contract`;
         break;
     }
   }
@@ -81,7 +70,7 @@ const defaultState: VaultType = {
   protocol: []
 };
 
-const VaultExplorer: FunctionComponent = () => {
+const VaultExplorer= () => {
   const [vaults, setVaults] = useState(defaultState);
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);

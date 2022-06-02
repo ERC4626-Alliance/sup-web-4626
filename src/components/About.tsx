@@ -1,15 +1,9 @@
-import { FunctionComponent } from "react";
+import AtomTitle from "components/Atom/Title";
+import ExportedImage from "next-image-export-optimizer";
+import Container from "./Container";
 
-// @ts-ignore
-import superCharged from "@/assets/imgs/superCharged.png";
-// @ts-ignore
-import stars4626 from "@/assets/imgs/stars4626.png";
-import Container from "components/Container";
-import Title from "components/Atom/Title";
-import Image from "next/image";
-
-const About: FunctionComponent = () => {
-  return (
+const About = () =>
+  (
     <div className="min-h-48 bg-white relative pt-12">
       <div
         aria-hidden="true"
@@ -22,7 +16,7 @@ const About: FunctionComponent = () => {
                data-aos-delay="200"
                data-aos-duration="1200"
           >
-            <Title>WHAT IS ERC-4626?</Title>
+            <AtomTitle>WHAT IS ERC-4626?</AtomTitle>
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
               <code className="bg-pink-100 px-2 py-1 rounded-lg select-none">ERC-4626</code> is a tokenized vault standard. Vaults are smart contracts that take in token deposits
               and do something
@@ -48,9 +42,11 @@ const About: FunctionComponent = () => {
             data-aos-delay="200"
             data-aos-duration="1200"
           >
-            <Image
-              src={superCharged}
+            <ExportedImage
+              src="images/superCharged.png"
               layout="raw"
+              width="440"
+              height="693"
               className="shadow-lg inline-flex border border-pink-100 rounded-lg w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
               alt="WHAT IS ERC-4626?"/>
           </div>
@@ -68,9 +64,11 @@ const About: FunctionComponent = () => {
             data-aos-duration="1200"
             className="mt-12 relative w-full sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-7 lg:margin -lg:ml-1/12"
           >
-            <Image
-              src={stars4626}
+            <ExportedImage
+              src="images/stars4626.png"
               layout="raw"
+              width="440"
+              height="693"
               className="shadow-lg border border-pink-100 inline-flex rounded-lg h-full w-auto object-cover object-right-top"
               alt="WHAT IS ERC-4626?"/>
           </div>
@@ -80,7 +78,7 @@ const About: FunctionComponent = () => {
             data-aos-duration="1200"
             className="sm:text-center md:max-w-lg md:mx-auto lg:col-span-5 lg:text-left"
           >
-            <Title>WHY ERC-4626?</Title>
+            <AtomTitle>WHY ERC-4626?</AtomTitle>
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
               Tokenized Vaults have a lack of standardization leading to
               diverse implementation details.</p>
@@ -102,5 +100,4 @@ const About: FunctionComponent = () => {
       </div>
     </div>
   );
-};
 export default About;

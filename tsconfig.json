@@ -8,10 +8,10 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "lib": [
+      "DOM",
       "DOM.Iterable",
       "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
+      "ESNext.AsyncIterable"
     ],
     "jsx": "preserve",
     "incremental": true,
@@ -38,7 +38,9 @@
       "@types/node",
       "@types/react",
       "@types/react-dom",
-      "@types/aos"
+      "@types/aos",
+      "react-paginate",
+      "next-image-export-optimizer"
     ],
     "isolatedModules": true
   },

@@ -8,7 +8,7 @@ import Adopters from "components/Adopters";
 import Resources2 from "components/Resources2";
 import TableSection from "components/TableSection";
 import VaultExplorer from "components/VaultExplorer";
-import Faq from "components/FAQ";
+import Faq from "components/Faq";
 import Authors from "components/Authors";
 
 const Home: NextPage = () => {

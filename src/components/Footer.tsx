@@ -37,7 +37,7 @@ export default class Footer extends Component {
           Footer
         </h2>
         <Container>
-          <div className="max-w-7xl mx-auto pt-16 pb-8 px-4 sm:px-6 lg:pt-24 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <div className="grid grid-cols-2 gap-8 xl:col-span-2">
                 <div className="md:grid md:grid-cols-2 md:gap-8"></div>
@@ -45,24 +45,50 @@ export default class Footer extends Component {
             </div>
             <div className="mt-12 border-t border-pink-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
               <div className="flex space-x-6 md:order-2">
-                {footerNavigation.social.map((item: { name: string; href?: string; icon: any; }) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-pink-500 hover:text-pink-600"
-                  >
-                    <span className="sr-only"> {item.name} </span>
-                    <item.icon className="h-6 w-6"/>
-                  </a>
-                ))}
+                {footerNavigation.social.map(
+                  (item: { name: string; href?: string; icon: any }) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="text-pink-700 hover:text-pink-900"
+                    >
+                      <span className="sr-only"> {item.name} </span>
+                      <item.icon className="h-6 w-6"/>
+                    </a>
+                  )
+                )}
               </div>
-              <p className="mt-8 text-base text-pink-500 md:mt-0 md:order-1">
-                &copy; 2022 Superform.All rights reserved.🐙
-              </p>
+              <div className="mt-8 flex flex-row text-base text-pink-500 md:order-1 md:mt-0 justify-between items-center">
+                <span>Website carefully handcrafted with </span>
+                <span className="mx-2">❤️</span>
+                <a
+                  href="https://superform.xyz"
+                  className="font-normal text-pink-700 decoration-from-font underline-offset-4 hover:text-pink-700 hover:underline ml-0 inline-flex"
+                >
+                  by Superform
+                </a>
+                <span className="mx-3 border-pink-400 text-left h-5 border-r"/>
+                <a
+                  href="https://t.me/superformcommunity"
+                  target="_blank"
+                  className="text-pink-700 decoration-from-font underline-offset-2 hover:text-pink-700 hover:underline  inline-flex items-center"
+                >
+                  contact us
+                  <svg
+                    viewBox="-75.52 -43.52 599.04 599.04"
+                    fill="currentColor"
+                    className="overflow-visible font-light w-5 text-pink-500 ml-1"
+                  >
+                    <path
+                      d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </Container>
       </footer>
-    );
-  };
-};
+    )
+      ;
+  }
+}
