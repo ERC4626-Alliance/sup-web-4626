@@ -30,7 +30,7 @@
       "@semantic-release/exec",
       {
         "prepareCmd": "APP_GIT_VERSION=${nextRelease.version} yarn run ci:generate",
-        "publishCmd": "zip -r dist.zip public firebase.json .firebaserc"
+        "publishCmd": "zip -r dist.zip .next firebase.json .firebaserc"
       }
     ],
     [
@@ -41,12 +41,5 @@
         }
       ]
     ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": [ "dist.zip" ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-      }
-    ]
   ]
 }
