@@ -69,6 +69,7 @@ export default class Footer extends Component {
                 </a>
                 <span className="mx-3 border-pink-400 text-left h-5 border-r"/>
                 <a
+                  rel="noopener noreferrer"
                   href="https://t.me/superformcommunity"
                   target="_blank"
                   className="text-pink-700 decoration-from-font underline-offset-2 hover:text-pink-700 hover:underline  inline-flex items-center"

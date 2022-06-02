@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: |
           yarn generate
-          zip -r dist.zip .next vercel.json
+          zip -r dist.zip out vercel.json
 
       - name: "Semantic release"
         run: yarn semantic-release
