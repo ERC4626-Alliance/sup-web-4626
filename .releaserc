@@ -29,8 +29,8 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "APP_GIT_VERSION=${nextRelease.version} yarn run ci:generate",
-        "publishCmd": "zip -r dist.zip .next firebase.json .firebaserc"
+        "prepareCmd": "APP_GIT_VERSION=${nextRelease.version} yarn run generate",
+        "publishCmd": "zip -r dist.zip out vercel.json"
       }
     ],
     [

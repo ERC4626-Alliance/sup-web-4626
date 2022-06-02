@@ -6,14 +6,14 @@
   },
   "maintainers": [
     {
-      "name": "Superform",
-      "url": "https://superform.xyz"
+      "name": "Serge Beresnev",
+      "email": "serge@superform.xyz"
     }
   ],
   "description": "erc-4626 specification website",
   "private": true,
   "repository": "https://github.com/Stargate-Labs/4626-website",
-  "homepage": "https://4626.com",
+  "homepage": "https://erc4626.com",
   "keywords": [
     "erc4626",
     "next.js",
