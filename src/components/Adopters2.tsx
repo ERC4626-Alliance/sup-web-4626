@@ -1,7 +1,7 @@
 import AtomTitle from "./Atom/Title";
 import ExportedImage from "next-image-export-optimizer";
 
-export default () => {
+export default function Adopters2() {
   const adopters = [
     { src: "alchemix.svg", alt: "Alchemix", link: "https://alchemix.fi/" },
     { src: "balancer.svg", alt: "Balancer", link: "https://balancer.fi" },
@@ -21,7 +21,7 @@ export default () => {
             <div className="-mt-4 -ml-8 flex flex-wrap justify-between items-center lg:-ml-4">
               {adopters.map((logo: { src: string; alt: string; link?: string }, index) => (
                 <div className="my-4 mx-5 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0" key={`adopter-${index}`}>
-                  <ExportedImage src={`images/logos/${logo.src}`} layout={"raw"} height="0" width="0" alt={logo.alt} className="h-10 w-auto max-w-10" />
+                  <ExportedImage src={`images/logos/${logo.src}`} layout={"raw"} height="0" width="0" alt={logo.alt} className="h-10 w-auto max-w-10"/>
                 </div>
               ))}
             </div>
