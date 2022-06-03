@@ -1,5 +1,26 @@
-<svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="40" height="40" rx="8" fill="#FEDA03"></rect>
-    <path d="M27.6007 19.8536C28.8607 19.5262 29.9817 18.5838 29.9817 16.6889C29.9817 13.5342 27.3031 12.8 23.8706 12.8H10.2V27.0064H15.9539V22.185H22.7793C23.8309 22.185 24.446 22.6016 24.446 23.6334V27.0064H30.2V23.4548C30.2 21.5203 29.1087 20.3 27.6007 19.8536ZM22.8785 18.3556H15.9539V16.9667H22.8785C23.6325 16.9667 24.0888 17.0659 24.0888 17.6612C24.0888 18.2564 23.6325 18.3556 22.8785 18.3556Z"
-          fill="black"></path>
-</svg>
+<Svg width={40} height={40} fill="none" viewBox="0 0 40 40" {...props}>
+    <Path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20z"
+      fill="url(#rari_svg__paint0_radial)"
+    />
+    <Path
+      d="M26.334 19.878c1.05-.273 1.984-1.058 1.984-2.637 0-2.63-2.232-3.241-5.093-3.241H11.834v11.839h4.795V21.82h5.688c.877 0 1.389.347 1.389 1.207v2.81H28.5v-2.96c0-1.611-.91-2.628-2.166-3zM22.4 18.63h-5.77v-1.158h5.77c.628 0 1.008.083 1.008.579 0 .496-.38.579-1.008.579z"
+      fill="#fff"
+    />
+    <Defs>
+      <RadialGradient
+        id="rari_svg__paint0_radial"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientUnits="userSpaceOnUse"
+        gradientTransform="matrix(13.0113 20.54863 -21.4938 13.60977 9.354 13.357)"
+      >
+        <Stop stopColor="#0C50FF" />
+        <Stop offset={0.557} stopColor="#5B9DFF" />
+        <Stop offset={1} stopColor="#FF74F1" />
+      </RadialGradient>
+    </Defs>
+  </Svg>
