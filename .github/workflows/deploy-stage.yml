@@ -1,0 +1,33 @@
+name: "Semantic release"
+
+concurrency:
+  group: deploy-stage
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    if: ${{ github.event.repository.full_name == github.repository }} && {{ !contains(github.event.head_commit.message, "skip ci") }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          # Whether to configure the token or SSH key with the local git config
+          # Default: true
+          persist-credentials: false # <--- checking this in commit context
+
+      - name: "Enable yarn cache"
+        uses: c-hive/gha-yarn-cache@v2  # using cache
+
+      - name: "Deploying to stage..."
+        uses: amondnet/vercel-action@v20 #deploy
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
+          alias-domains: stage.eip4626.com
