@@ -1,21 +1,21 @@
 import { Component, SVGProps } from "react";
-import Container from "./Container";
+import Container from "components/Container";
 
 const footerNavigation = {
   social: [
     {
-      name: "Twitter",
-      href: "#",
+      name: "EIP",
+      href: "https://eips.ethereum.org/EIPS/eip-4626",
       icon: (props: SVGProps<any>) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+        <svg fill="currentColor" viewBox="0 0 16 16" {...props}>
+          <path fillRule="evenodd"
+                d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
         </svg>
       )
     },
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4626.md",
       icon: (props: SVGProps<any>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -44,21 +44,23 @@ export default class Footer extends Component {
               </div>
             </div>
             <div className="mt-12 border-t border-pink-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
-              <div className="flex space-x-6 md:order-2">
+              <div className="flex space-x-4 md:order-2">
                 {footerNavigation.social.map(
                   (item: { name: string; href?: string; icon: any }) => (
                     <a
+                      target="_blank"
+                      rel="noopener noreferrer"
                       key={item.name}
                       href={item.href}
-                      className="text-pink-700 hover:text-pink-900"
+                      className="text-pink-700 decoration-from-font underline-offset-2 hover:text-pink-700 hover:underline  inline-flex items-center"
                     >
-                      <span className="sr-only"> {item.name} </span>
-                      <item.icon className="h-6 w-6"/>
+                      <item.icon className="h-4 w-4 mr-1"/>
+                      <span className="text-sm">{item.name}</span>
                     </a>
                   )
                 )}
               </div>
-              <div className="mt-8 flex flex-row text-base text-pink-500 md:order-1 md:mt-0 justify-between items-center">
+              <div className="mt-8 flex flex-row text-sm text-pink-500 md:order-1 md:mt-0 justify-between items-center">
                 <span>Website carefully handcrafted with </span>
                 <span className="mx-2">❤️</span>
                 <a
@@ -67,7 +69,7 @@ export default class Footer extends Component {
                 >
                   by Superform
                 </a>
-                <span className="mx-3 border-pink-400 text-left h-5 border-r"/>
+                <span className="mx-1.5 border-pink-400 text-left h-5 border-r"/>
                 <a
                   rel="noopener noreferrer"
                   href="https://t.me/superformcommunity"
