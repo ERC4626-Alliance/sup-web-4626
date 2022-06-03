@@ -12,25 +12,6 @@ function Erc4626App({ Component, pageProps }: AppProps) {
     });
   }, []);
 
-  useEffect(() => {
-    document.addEventListener("click", (mouseEvent: MouseEvent) => {
-      const targetElement = mouseEvent.target as HTMLElement | null;
-      const href = targetElement?.getAttribute("href") || "";
-      if (href.startsWith("/#")) {
-        mouseEvent.preventDefault();
-        const find = targetElement!.getAttribute("href")!.replace("/#", "");
-        console.log(document.getElementById(find));
-        document.getElementById(find)!.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest"
-        });
-        return false;
-      }
-      return true;
-    });
-  }, []);
-
   return (
     <Component {...pageProps} />
   );

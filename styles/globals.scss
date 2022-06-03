@@ -38,12 +38,12 @@ section {
 
 .indexHeader {
   @apply backdrop-filter backdrop-blur-xl shadow-md md:overflow-hidden;
-  @apply bg-pink-200 fixed w-full z-20;
+  @apply bg-pink-200 fixed w-full z-20 py-6;
 
   will-change: background-color;
   backdrop-filter: blur(24px);
 
-  background-color: rgba(24, 24, 32, 0.01);
+  background-color: rgba(255, 255, 255, .8);
 
   &.transparentBg {
     @apply bg-transparent backdrop-filter-none shadow-none;
@@ -111,20 +111,15 @@ section {
 }
 
 .adopter-container {
-  @apply w-1/4 flex justify-center flex p-10 items-center justify-center relative;
+  @apply w-full md:w-1/4 flex md:justify-center flex p-10 items-center justify-center relative;
 
   z-index: 2;
 
   img {
-    @apply inline-flex self-center justify-self-center object-cover h-auto;
-    @apply max-h-[150px] w-auto min-w-[100px] max-w-[120px] relative z-20;
+    @apply inline-flex self-center justify-self-center object-contain object-center h-auto w-full mx-auto;
+    @apply max-h-[100px] md:max-h-[150px] md:w-auto md:min-w-[100px] md:max-w-[120px] relative z-20 select-none;
 
-    display: inline-flex;
-    user-select: none;
     transition: all $transitionMedium;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
   }
 
   &::before,
@@ -171,8 +166,6 @@ section {
   }
 
   @media screen and (max-width: 768px) {
-    min-width: 40%;
-
     img:hover {
       will-change: none;
       transform: none !important;
@@ -183,7 +176,7 @@ section {
   &#AdopterAlchemixLogo,
   &#AdopterBalancerLogo {
     img {
-      min-width: 190px;
+      @apply md:min-w-[190px];
     }
   }
 }

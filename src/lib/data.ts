@@ -65,7 +65,7 @@ export const linksResources = {
       href: "https://github.com/fubuloubu/ERC4626"
     },
     {
-      name: "EIP",
+      name: "EIP-4626",
       href: "https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4626.md"
     },
     {
