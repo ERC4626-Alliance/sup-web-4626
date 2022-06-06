@@ -42,3 +42,5 @@ yarn-error.log*
 *.tsbuildinfo
 /.idea/
 !/.yarn/plugins/
+/public/images/next-image-export-optimizer-hashes.json
+/public/images/nextImageExportOptimizer/

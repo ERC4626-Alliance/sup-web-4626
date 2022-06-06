@@ -4,11 +4,10 @@ import Layout from "components/Layout";
 import About from "components/About";
 import BuiltWith from "components/BuiltWith";
 import Resources from "components/Resources";
-import Adopters from "components/Adopters";
+import Adopters2 from "components/Adopters2";
 import Resources2 from "components/Resources2";
 import TableSection from "components/TableSection";
 import VaultExplorer from "components/VaultExplorer";
-import Faq from "components/Faq";
 import Authors from "components/Authors";
 
 const Home: NextPage = () => {
@@ -21,11 +20,10 @@ const Home: NextPage = () => {
         <About/>
         <BuiltWith/>
         <Resources/>
-        <Adopters/>
+        <Adopters2/>
         <TableSection/>
         <VaultExplorer/>
         <Resources2/>
-        <Faq/>
         <Authors/>
       </Layout>
     </>

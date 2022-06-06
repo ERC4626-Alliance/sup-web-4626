@@ -2,7 +2,7 @@ import AtomTitle from "@/components/Atom/Title";
 
 declare type buildWithProps = { email?: string; href?: string; buildAtomTitle: string; };
 
-const BuiltWith= () => {
+const BuiltWith = () => {
 
   const buildList = [
     {
@@ -16,9 +16,8 @@ const BuiltWith= () => {
     }
   ] as buildWithProps[];
 
-  return (<div className="relative bg-gradient-to-t from-pink-50">
+  return (<div className="relative bg-gradient-to-t from-pink-50" id="build">
     <section className="mx-auto pt-2 pb-24 px-4 sm:px-6 lg:pt-2 lg:px-8">
-      <a id="build"/>
       <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-2 lg:max-w-none lg:mx-0 lg:px-0 text-center">
         <AtomTitle>BUILD WITH ERC-4626</AtomTitle>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 text-left">

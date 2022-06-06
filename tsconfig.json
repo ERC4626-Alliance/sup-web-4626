@@ -40,7 +40,8 @@
       "@types/react-dom",
       "@types/aos",
       "react-paginate",
-      "next-image-export-optimizer"
+      "next-image-export-optimizer",
+      "@headlessui/react",
     ],
     "isolatedModules": true
   },
