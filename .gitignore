@@ -44,3 +44,4 @@ yarn-error.log*
 !/.yarn/plugins/
 /public/images/next-image-export-optimizer-hashes.json
 /public/images/nextImageExportOptimizer/
+/public/images/logos/nextImageExportOptimizer/
