@@ -38,28 +38,37 @@ export const linksResources = {
   tweets: [
     {
       name: "@joey__santoro",
-      href: "https://twitter.com/joey__santoro/status/1481364987129917444?lang=en"
+      href: "https://twitter.com/joey__santoro/status/1481364987129917444?lang=en",
+      tweetId: "1481364987129917444"
     },
     {
       name: "@iearnfinance",
-      href: "https://twitter.com/iearnfinance/status/1511444220850184197?s=20&t=JNfKDhHMNYga_Uc7-yt6-A"
+      href: "https://twitter.com/iearnfinance/status/1511444220850184197?s=20&t=JNfKDhHMNYga_Uc7-yt6-A",
+      tweetId: "1511444220850184197"
     },
     {
       name: "@0xSassun",
-      href: "https://twitter.com/0xSassun/status/1522678605628719104?s=20&t=IOYeIGfvkymD8XAczFxoFw"
+      href: "https://twitter.com/0xSassun/status/1522678605628719104?s=20&t=IOYeIGfvkymD8XAczFxoFw",
+      tweetId: "1522678605628719104"
     }
   ],
   videos: [
     {
       name: "Joey Santoro ERC-4626 deep dive",
-      href: "https://youtu.be/L8dijE5qhTg"
+      href: "https://youtu.be/L8dijE5qhTg",
+      videoId: "L8dijE5qhTg"
     },
     {
       name: "Yearn vault 4626 implementation",
-      href: "https://youtu.be/urC35PMbpJ4"
+      href: "https://youtu.be/urC35PMbpJ4",
+       videoId: "urC35PMbpJ4"
     }
   ],
   repositories: [
+    {
+      name: "ERC4626 extension for the voting",
+      href: "https://github.com/devanonon/ERC4626Votes"
+    },
     {
       name: "ERC-4626 Vyper implementation",
       href: "https://github.com/fubuloubu/ERC4626"

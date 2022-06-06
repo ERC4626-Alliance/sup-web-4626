@@ -16,9 +16,10 @@ const Header = () => {
 
   const navigation = [
     { section: "build", title: "Build", offset: -120 },
+    { section: "resources", title: "Resources", offset: -100 },
     { section: "adopters", title: "Early Adopters", offset: -20 },
     { section: "vaultscan", title: "Explore Vaults", offset: -100 },
-    { section: "news", title: "News", offset: -100 }
+    { section: "authors", title: "Authors", offset: -100 }
   ];
   return (<header className="indexHeader">
     <Container>
@@ -87,7 +88,7 @@ const Header = () => {
             href="https://vaultscan.superform.xyz"
             target="_blank"
             rel="nofollow noreferrer"
-            className="block w-full px-5 py-3 text-center font-medium text-pink-600 bg-pink-50 hover:bg-pink-100"
+            className="block w-full px-5 py-3 text-center font-medium text-pink-600 bg-pink-50 hover:bg-pink-100 hidden"
           >Check out the VaultScan by Superform</a>
         </div>
       </div>
