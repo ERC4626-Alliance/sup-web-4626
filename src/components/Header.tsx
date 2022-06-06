@@ -60,7 +60,7 @@ const Header = () => {
         </nav>
       </nav>
       <div className={`absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right ${isHeaderExpanded ? "" : "hidden"}`}>
-        <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+        <div className="rounded-lg shadow-sm bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
           <div className="px-5 pt-4 flex items-center justify-between">
             <div>
               <h2 className="text-4xl font-black tracking-tight text-gray-900 sm:text-4xl">

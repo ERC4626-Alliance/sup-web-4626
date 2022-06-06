@@ -155,7 +155,7 @@ const VaultExplorer= () => {
                       </td>
                       <td
                         className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium" +
-                          " text-gray-900 sm:pl-6 lg:pl-8 select-none")}>
+                          " text-gray-900 sm:pl-2 lg:pl-2 select-none")}>
                         {mapIcon(vaults.chain[vaultIdx + (currentPage - 1) * 10])}
                       </td>
                       <td
@@ -166,7 +166,7 @@ const VaultExplorer= () => {
                       </td>
                       <td
                         className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap px-3 py-4 text-sm" +
-                          " text-gray-500" +
+                          " text-pink-700" +
                           " hidden lg:table-cell")}
                       >
                         {mapAddressWithScan(vaults.contract_address[vaultIdx + (currentPage - 1) * 10], vaults.chain[vaultIdx + (currentPage - 1) * 10])}
@@ -181,7 +181,7 @@ const VaultExplorer= () => {
                     breakLabel="..."
                     pageClassName=""
                     pageLinkClassName="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 py-4 px-4 inline-flex items-center text-sm font-medium"
-                    activeLinkClassName="border-indigo-500 text-indigo-600 border-t-2 py-4 px-4 inline-flex items-center text-sm font-medium"
+                    activeLinkClassName="border-pink-500 text-pink-600 border-t-2 py-4 px-4 inline-flex items-center text-sm font-medium"
                     onPageChange={handlePageClick}
                     pageRangeDisplayed={5}
                     pageCount={pageCount}

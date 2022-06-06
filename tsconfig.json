@@ -42,7 +42,6 @@
       "react-paginate",
       "next-image-export-optimizer",
       "@headlessui/react",
-      "react-tweet-embed",
       "react-youtube"
     ],
     "isolatedModules": true
