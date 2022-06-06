@@ -1,4 +1,4 @@
-name: "Semantic release"
+name: "Deploy to stage"
 
 concurrency:
   group: deploy-stage
