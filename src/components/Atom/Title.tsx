@@ -4,7 +4,7 @@ const AtomTitle = ({ children, alignText = "left", inverted = false }: PropsWith
   const colorClass = inverted ? "from-pink-50 to-pink-300" : "from-pink-500 to-pink-900";
   return <>
     <h2 className={`text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl inline-flex mb-8 text-${alignText}`} data-aos="fade-up" data-aos-delay="100">
-      <span className={`-mb-1 pb-1 block bg-gradient-to-r ${colorClass} bg-clip-text text-transparent`}>{children}</span>
+      <span className={`-mb-1 pb-1 block bg-gradient-to-r ${colorClass} bg-clip-text text-transparent relative`}>{children}</span>
     </h2>
   </>;
 };
