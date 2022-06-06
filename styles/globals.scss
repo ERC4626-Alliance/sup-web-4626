@@ -37,7 +37,7 @@ section {
 }
 
 .indexHeader {
-  @apply backdrop-filter backdrop-blur-xl shadow-md md:overflow-hidden;
+  @apply backdrop-filter backdrop-blur-xl shadow-sm md:overflow-hidden;
   @apply bg-pink-200 fixed w-full z-20 py-6;
 
   will-change: background-color;

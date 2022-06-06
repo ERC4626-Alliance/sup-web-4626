@@ -4,6 +4,7 @@
     "prettier"
   ],
   "rules": {
-    "@next/next/no-document-import-in-page": "off"
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-img-element": "off"
   }
 }
