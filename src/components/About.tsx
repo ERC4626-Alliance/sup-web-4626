@@ -7,14 +7,14 @@ const About = () =>
     <div className="bg-white relative pt-16">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-4 h-48 bg-gradient-to-b from-pink-50"
+        className="absolute inset-x-0 top-4 h-48 "
       />
       <Container>
         <div className="py-16 mx-auto lg:py-32 lg:grid lg:grid-cols-12 lg:gap-20">
           <div className="lg:col-span-5 lg:text-left"
                data-aos="fade-right"
-               data-aos-delay="200"
-               data-aos-duration="1200"
+               data-aos-delay="100"
+               data-aos-duration="600"
           >
             <AtomTitle>WHAT IS ERC-4626?</AtomTitle>
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
@@ -39,8 +39,8 @@ const About = () =>
           <div
             className="mt-12 relative w-full h-auto lg:col-span-7"
             data-aos="fade-left"
-            data-aos-delay="200"
-            data-aos-duration="1200"
+            data-aos-delay="100"
+            data-aos-duration="600"
           >
             <ExportedImage
               src="images/superCharged.png"
@@ -56,7 +56,7 @@ const About = () =>
 
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-pink-50"
+          className="absolute inset-x-0 top-0 h-48 "
         />
 
         <Container>
@@ -64,8 +64,8 @@ const About = () =>
             <div
               className="lg:row-auto relative w-full sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-7 w-full pb-10 lg:pb-0"
               data-aos="fade-right"
-              data-aos-delay="200"
-              data-aos-duration="1200"
+              data-aos-delay="100"
+              data-aos-duration="600"
             >
               <ExportedImage
                 src="images/stars4626.png"
@@ -77,9 +77,9 @@ const About = () =>
             </div>
             <div
               className="row-span-1 col-span-full lg:row-auto md:mx-auto lg:col-span-5 lg:text-left"
-              data-aos-duration="1200"
+              data-aos-duration="600"
               data-aos="fade-left"
-              data-aos-delay="200"
+              data-aos-delay="100"
             >
               <AtomTitle alignText="center">WHY ERC-4626?</AtomTitle>
               <p className="text-lg text-slate-700 leading-relaxed mb-4">

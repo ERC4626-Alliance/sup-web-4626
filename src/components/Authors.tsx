@@ -9,7 +9,7 @@ const Authors = () => {
     { name: "Alberto Cuesta Cañada", twitter: "alcueca", githubAvatar: "https://avatars.githubusercontent.com/u/38806121?s=120&v=4" },
     { name: "Señor Doggo", twitter: "fubuloubu", githubAvatar: "https://avatars.githubusercontent.com/u/3859395?s=120&v=4" }
   ];
-  return (<div className="py-16 bg-gradient-to-b from-pink-50 text-center" id="authors">
+  return (<div className="py-16 bg-gradient-to-t from-pink-50 text-center" id="authors">
       <Container>
         <AtomTitle>ERC-4626 AUTHORS</AtomTitle>
         <div

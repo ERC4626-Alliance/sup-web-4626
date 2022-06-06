@@ -15,7 +15,7 @@ const Resources = () => {
   };
   return (
     <>
-      <div className="mx-auto py-16 text-center" id="resources">
+      <div className="mx-auto bg-gradient-to-t from-pink-100 py-16 text-center" id="resources">
         <AtomTitle>ERC4626 RESOURCES</AtomTitle>
         <p className="text-center mt-4 text-lg text-pink-600">
           Explore relevant resources
@@ -29,7 +29,7 @@ const Resources = () => {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer noopener group"
-                    className="inline-flex items-center px-2.5 py-0.5 rounded-lg whitespace-nowrap text-sm font-medium bg-pink-50 text-pink-700 hover:underline underline-offset-2 group"
+                    className="inline-flex items-center px-2.5 py-0.5 rounded-lg whitespace-nowrap text-sm font-medium bg-white text-pink-700 hover:underline underline-offset-4 group"
                   >
                     <svg fill="currentColor" viewBox="0 0 24 24" className="-ml-0.5 mr-1.5 h-8 w-8 w-4 h-4 opacity-25 md:group-hover:opacity-100">
                       <path fillRule="evenodd"
@@ -58,7 +58,7 @@ const Resources = () => {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-pink-700 text-center hover:bg-opacity-100 hover:underline underline-offset-2">
+                    className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-pink-700 text-center hover:bg-opacity-100 hover:underline underline-offset-4">
                     Watch on youtube ↗
                   </a>
                 </div>

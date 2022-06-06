@@ -24,7 +24,7 @@ export default function Adopters2() {
               target="_blank"
               rel="nofollow noreferrer"
               href={logo.link}
-              className="flex flex-col items-center py-8 px-2 transition ease-linear transform cursor-pointer hover:from-pink-100 group shadow-sm inline-flex border border-pink-200 bg-gradient-to-tr rounded-lg from-pink-50"
+              className="flex flex-col items-center py-8 px-2 transition ease-linear transform cursor-pointer hover:from-pink-100 group shadow-sm inline-flex border border-pink-200 bg-gradient-to-tl rounded-lg from-pink-50"
               key={`adopter-${index}`}>
               <div className="flex flex-auto shadow-inner border border-pink-200 bg-white rounded-full overflow-clip">
                 <ExportedImage
