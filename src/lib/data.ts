@@ -66,7 +66,7 @@ export const linksResources = {
   ],
   repositories: [
     {
-      name: "ERC4626 extension for the voting",
+      name: "ERC4626 extension for voting",
       href: "https://github.com/devanonon/ERC4626Votes"
     },
     {
