@@ -42,7 +42,8 @@ const BuiltWith = () => {
               // rel="noopener noreferrer"
               key={`${build?.email || build.name}-${index}`}
               className="pt-6"
-            >
+                                                                      >
+           
               <div className="flow-root shadow-sm inline-flex border border-pink-200 rounded-lg bg-white px-6 pb-8 opacity-20">
                 <div className="-mt-6">
                   <div>
