@@ -180,3 +180,9 @@ section {
     }
   }
 }
+
+.singleTweet {
+  .twitter-tweet:last-child {
+    display: none !important;
+  }
+}

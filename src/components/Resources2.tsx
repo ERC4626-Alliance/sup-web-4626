@@ -1,56 +1,19 @@
 import { linksResources } from "../lib/data";
+import TweetEmbed from "react-tweet-embed";
+import Container from "./Container";
+import AtomTitle from "./Atom/Title";
 
-const Resources2= () => {
+const Resources2 = () => {
   return (
-    <div className="bg-gradient-to-r from-pink-700 to-pink-900">
-      <div className="max-w-7xl mx-auto pt-16 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="justify-items-center grid grid-cols-2 gap-8 xl:col-span-4">
-
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div className="mt-12 md:mt-0">
-              <a id="news"/>
-              <h3 className="text-sm font-bold text-pink-500 tracking-wider uppercase">
-                NEWS
-              </h3>
-              <ul className="mt-4 space-y-4">
-                {linksResources.news.map((item: { href: string; name: string; },index) => (
-                  <li key={`news-item-${index}`}>
-                    <a
-                      rel="noopener noreferrer"
-                      href={item.href}
-                      className="text-base text-pink-50 hover:text-pink-300"
-                      target="_blank"
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="md:grid md:grid-cols-2 md:gap-8">
-            <div>
-              <h3 className="text-sm font-bold text-pink-500 tracking-wider uppercase">
-                TWEETS
-              </h3>
-              <ul className="mt-4 space-y-4">
-                {linksResources.tweets!.map((item: { href: string; name: string; }) => (<li key={item.name}>
-                  <a
-                    href={item.href}
-                    className="text-base text-pink-50 hover:text-pink-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {item.name}
-                  </a>
-                </li>))}
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <div className="bg-gradient-to-r from-pink-700 to-pink-900 w-full text-center py-16">
+      <AtomTitle alignText="center" inverted={true}>Tweets about EIP-4626</AtomTitle>
+      <Container>
+        <ul className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-8 mt-8">
+          {linksResources.tweets!.map((item: { href: string; name: string; tweetId: string; }) => (<li key={item.name} className="singleTweet">
+            <TweetEmbed tweetId={item.tweetId}/>
+          </li>))}
+        </ul>
+      </Container>
     </div>
   );
 };
