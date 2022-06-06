@@ -1,6 +1,6 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
-import { CloudUploadIcon, CollectionIcon, PuzzleIcon, TemplateIcon } from "@heroicons/react/outline";
+import { ClockIcon, CloudUploadIcon, CollectionIcon, PuzzleIcon, TemplateIcon } from "@heroicons/react/outline";
 
 declare type buildWithProps = { email?: string; href?: string; name: string; description: string; icon: any };
 
@@ -28,16 +28,22 @@ const BuiltWith = () => {
   return (<div className="relative py-16" id="build">
     <Container>
       <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-2 lg:max-w-none lg:mx-0 lg:px-0 text-center">
-        <AtomTitle>BUILD WITH ERC-4626</AtomTitle>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 text-left">
-          {buildList.map((build: buildWithProps, index: number) => (<a
-              href={build.href}
-              target="_blank"
-              rel="noopener noreferrer"
+        <AtomTitle>
+          BUILD WITH ERC-4626
+        </AtomTitle>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 text-left relative">
+          <div className="z-30 top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 absolute whitespace-nowrap inline-flex items-center px-5 py-3 rounded-full text-lg font-medium bg-pink-100 text-pink-800 shadow-sm">
+            <ClockIcon className="h-6 w-6 mr-2 animate-pulse" aria-hidden="true"/>
+            Coming soon
+          </div>
+          {buildList.map((build: buildWithProps, index: number) => (<div
+              // href={build.href}
+              // target="_blank"
+              // rel="noopener noreferrer"
               key={`${build?.email || build.name}-${index}`}
               className="pt-6"
             >
-              <div className="flow-root shadow-sm inline-flex border border-pink-200 rounded-lg bg-white px-6 pb-8">
+              <div className="flow-root shadow-sm inline-flex border border-pink-200 rounded-lg bg-white px-6 pb-8 opacity-20">
                 <div className="-mt-6">
                   <div>
                       <span className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-pink-500 to-pink-900 p-3 shadow-lg">
@@ -48,7 +54,7 @@ const BuiltWith = () => {
                   <p className="mt-3 text-base text-gray-600">{build.description}</p>
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
         <div className="pt-16 flex flex-auto space-x-4 justify-center">
