@@ -16,6 +16,8 @@ const Home: NextPage = () => {
       <Layout>
         <Head>
           <title>ERC-4626 — a tokenized vault standard</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+          <meta name="description" content="The ERC-4626 tokenized vault standard standardizes the vaulting process. It ensures that coins are protected from unauthorized access and can be easily minted or wrapped. ERC-4626 could resolve the mishmash of the types of design associated with tokens that print money in DeFi."/>
         </Head>
         <About/>
         <BuiltWith/>
