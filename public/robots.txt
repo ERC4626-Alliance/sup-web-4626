@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+//robots.txt
+
+# Allow all crawlers
 User-agent: *
-Disallow:
+Allow: /
