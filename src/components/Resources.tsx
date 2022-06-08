@@ -1,6 +1,6 @@
-import { linksResources } from "../lib/data";
-import AtomTitle from "components/Atom/Title";
-import Container from "components/Container";
+import { linksResources } from "../config/data";
+import AtomTitle from "@/components/Atom/Title";
+import Container from "@/components/Container";
 import YouTube, { YouTubeProps } from "react-youtube";
 
 const Resources = () => {

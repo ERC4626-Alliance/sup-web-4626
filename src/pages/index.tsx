@@ -1,30 +1,49 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import Layout from "components/Layout";
-import About from "components/About";
-import BuiltWith from "components/BuiltWith";
-import Resources from "components/Resources";
-import Adopters2 from "components/Adopters2";
-import Resources2 from "components/Resources2";
-import TableSection from "components/TableSection";
-import VaultExplorer from "components/VaultExplorer";
-import Authors from "components/Authors";
+import Layout from "@/components/Layout";
+import About from "@/components/About";
+import BuiltWith from "@/components/BuiltWith";
+import Resources from "@/components/Resources";
+import Adopters2 from "@/components/Adopters2";
+import Resources2 from "@/components/Resources2";
+import TableSection from "@/components/TableSection";
+import VaultExplorer from "@/components/VaultExplorer";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
+import Authors from "@/components/Authors";
+import Container from "@/components/Container";
+import { DefaultSeo } from "next-seo";
 
-const Home: NextPage = () => {
+import SEO from "@/helpers/seo.config";
+import { GetStaticProps } from "next";
+import { useRouter } from "next/router";
+
+// export default function Home({
+//   allPostsData
+// }: {
+//   allPostsData: {
+//     date: string
+//     title: string
+//     id: string
+//   }[]
+// }) {
+export default function Home() {
+  const { locale, locales, defaultLocale } = useRouter();
   return (
     <>
+      <DefaultSeo {...SEO} />
       <Layout>
         <Head>
-          <title>ERC-4626 — a tokenized vault standard</title>
+          <title>{SEO.openGraph?.title}</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-          <meta name="description" content="The ERC-4626 tokenized vault standard standardizes the vaulting process. It ensures that coins are protected from unauthorized access and can be easily minted or wrapped. ERC-4626 could resolve the mishmash of the types of design associated with tokens that print money in DeFi."/>
         </Head>
+        <LocaleSwitcher/>
         <About/>
         <BuiltWith/>
         <Resources/>
         <Adopters2/>
-        <TableSection/>
-        <VaultExplorer/>
+        <Container className="bg-white py-16 mt-16">
+          <TableSection/>
+          <VaultExplorer/>
+        </Container>
         <Resources2/>
         <Authors/>
       </Layout>
@@ -32,20 +51,14 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
-
-export const getStaticProps = async () => {
-  // const allPosts = getAllPosts([
-  //   "title",
-  //   "date",
-  //   "slug",
-  //   "author",
-  //   "coverImage",
-  //   "excerpt"
-  // ]);
-
+export const getStaticProps: GetStaticProps = async () => {
+  // const allWebsiteData = [];
+  // return {
+  //   props: {
+  //     allPostsData
+  //   }
+  // };
   return {
     props: {}
-    // props: { allPosts }
   };
 };

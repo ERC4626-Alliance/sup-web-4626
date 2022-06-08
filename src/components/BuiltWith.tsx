@@ -32,7 +32,7 @@ const BuiltWith = () => {
           BUILD WITH ERC-4626
         </AtomTitle>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 text-left relative">
-          <div className="z-30 top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 absolute whitespace-nowrap inline-flex items-center px-5 py-3 rounded-full text-lg font-medium bg-pink-100 text-pink-800 shadow-sm">
+          <div className="z-30 top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 absolute whitespace-nowrap inline-flex items-center px-5 py-3 rounded-full text-lg font-medium bg-pink-100 text-pink-800 shadow-md">
             <ClockIcon className="h-6 w-6 mr-2 animate-pulse" aria-hidden="true"/>
             Coming soon
           </div>
@@ -43,7 +43,7 @@ const BuiltWith = () => {
               key={`${build?.email || build.name}-${index}`}
               className="pt-6"
                                                                       >
-           
+
               <div className="flow-root shadow-sm inline-flex border border-pink-200 rounded-lg bg-white px-6 pb-8 opacity-20">
                 <div className="-mt-6">
                   <div>

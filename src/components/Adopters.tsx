@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer";
 import AtomTitle from "@/components/Atom/Title";
-import Container from "components/Container";
+import Container from "@/components/Container";
 
 const Adopters = () => {
   const adopters = [

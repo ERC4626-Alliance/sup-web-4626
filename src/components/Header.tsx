@@ -1,4 +1,4 @@
-import Container from "components/Container";
+import Container from "@/components/Container";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { useState } from "react";
 
@@ -17,8 +17,8 @@ const Header = () => {
   const navigation = [
     { section: "build", title: "Build", offset: -120 },
     { section: "resources", title: "Resources", offset: -100 },
-    { section: "adopters", title: "Early Adopters", offset: -20 },
-    { section: "vaultscan", title: "Explore Vaults", offset: -100 },
+    { section: "adopters", title: "Early Adopters", offset: -70 },
+    { section: "vaultscan", title: "Explore Vaults", offset: -200 },
     { section: "authors", title: "Authors", offset: -100 }
   ];
   return (<header className="indexHeader">

@@ -1,5 +1,5 @@
 import { Component, SVGProps } from "react";
-import Container from "components/Container";
+import Container from "@/components/Container";
 
 const footerNavigation = {
   social: [

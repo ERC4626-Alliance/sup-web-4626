@@ -31,7 +31,6 @@ const Meta = () => {
         content={`A statically generated blog example using Next.js and 4626.com website.`}
       />
       <title>4626.com</title>
-      {/*<meta property="og:image" lib={HOME_OG_IMAGE_URL}/>*/}
     </Head>
   );
 };
