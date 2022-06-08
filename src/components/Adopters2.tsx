@@ -2,7 +2,7 @@ import { GlobeAltIcon, NewspaperIcon, PlayIcon } from "@heroicons/react/outline"
 import Container from "components/Container";
 
 import ExportedImage from "next-image-export-optimizer";
-import AtomTitle from "./Atom/Title";
+import AtomTitle from "@/components/Atom/Title";
 
 export default function Adopters2() {
   const adopters = [

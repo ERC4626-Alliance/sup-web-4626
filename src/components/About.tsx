@@ -1,6 +1,6 @@
 import AtomTitle from "components/Atom/Title";
 import ExportedImage from "next-image-export-optimizer";
-import Container from "./Container";
+import Container from "@/components/Container";
 
 const About = () => (<div className="bg-white relative pt-16">
     <div

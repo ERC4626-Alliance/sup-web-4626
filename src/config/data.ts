@@ -39,6 +39,11 @@ export const linksResources = {
   ],
   repositories: [
     {
+      name: "Superform experimental 4626 extensions",
+      href: "https://github.com/superform-xyz/experimental-4626",
+      highlight: true
+    },
+    {
       name: "ERC4626 extension for voting",
       href: "https://github.com/devanonon/ERC4626Votes"
     },

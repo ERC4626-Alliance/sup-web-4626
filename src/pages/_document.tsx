@@ -1,6 +1,5 @@
 import { CssBaseline } from "@nextui-org/react";
 import Document, { DocumentContext, Head, Html, Main, NextScript } from "next/document";
-import Script from "next/script";
 import { Children } from "react";
 
 class CustomDocument extends Document {
@@ -14,7 +13,6 @@ class CustomDocument extends Document {
   render() {
     return (<Html lang="en">
       <Head>
-        <Script async={true} src="://platform.twitter.com/widgets.js" />
         {CssBaseline.flush()}
       </Head>
       <body>

@@ -1,35 +1,19 @@
 export default {
   openGraph: {
-    title: "Open Graph Title",
-    description: "Open Graph Description",
+    title: process.env.SEO_TITLE || "ERC-4626 — a tokenized vault standard",
+    description: process.env.SEO_DESCRIPTION || "The ERC-4626 tokenized vault standard standardizes the vaulting process. It ensures that coins are protected from unauthorized" + " access and can be easily minted or wrapped. ERC-4626 could resolve the mishmash of the types of design associated with tokens that print money in DeFi.",
     type: "website",
-    locale: "en_IE",
+    locale: "en_US",
     images: [
       {
-        url: "https://www.example.ie/og-image-01.jpg",
-        width: 800,
-        height: 600,
-        alt: "Og Image Alt",
-        type: "image/jpeg"
-      },
-      {
-        url: "https://www.example.ie/og-image-02.jpg",
-        width: 900,
-        height: 800,
-        alt: "Og Image Alt Second",
-        type: "image/jpeg"
-      },
-      { url: "https://www.example.ie/og-image-03.jpg" },
-      { url: "https://www.example.ie/og-image-04.jpg" }
+        url: "/preview.png", width: 800, height: 600, alt: process.env.SEO_TITLE || "ERC-4626 — a tokenized vault standard", type: "image/jpeg"
+      }
     ],
-    site_name: "SiteName"
-  },
-  twitter: {
-    handle: "@handle",
-    site: "@site",
-    cardType: "summary_large_image"
+    site_name: "ERC-4626"
+  }, twitter: {
+    handle: "@superform", site: "@site", cardType: "summary_large_image"
   }
-}
+};
 
 /**
  * openGraph={{
