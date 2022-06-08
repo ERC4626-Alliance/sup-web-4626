@@ -1,14 +1,4 @@
 export const linksResources = {
-  reading: [
-    {
-      name: "EIP-4626: Tokenized Vault Standard",
-      href: "https://eips.ethereum.org/EIPS/eip-4626"
-    },
-    {
-      name: "EIP-4626: Discussion",
-      href: "https://ethereum-magicians.org/t/eip-4626-yield-bearing-vault-standard/7900"
-    }
-  ],
   news: [
     {
       name: "ERC-4626: DeFi's Newest Money Lego",
@@ -35,23 +25,6 @@ export const linksResources = {
       href: "https://twitter.com/yagi_fi/status/1525886873733943296?s=21&t=puUU8QhnTtgFvMTPuDTirw"
     }
   ],
-  tweets: [
-    {
-      name: "@joey__santoro",
-      href: "https://twitter.com/joey__santoro/status/1481364987129917444?lang=en",
-      tweetId: "1481364987129917444"
-    },
-    {
-      name: "@iearnfinance",
-      href: "https://twitter.com/iearnfinance/status/1511444220850184197?s=20&t=JNfKDhHMNYga_Uc7-yt6-A",
-      tweetId: "1511444220850184197"
-    },
-    {
-      name: "@0xSassun",
-      href: "https://twitter.com/0xSassun/status/1522678605628719104?s=20&t=IOYeIGfvkymD8XAczFxoFw",
-      tweetId: "1522678605628719104"
-    }
-  ],
   videos: [
     {
       name: "Joey Santoro ERC-4626 deep dive",
@@ -65,6 +38,11 @@ export const linksResources = {
     }
   ],
   repositories: [
+    {
+      name: "Superform experimental 4626 extensions",
+      href: "https://github.com/superform-xyz/experimental-4626",
+      highlight: true
+    },
     {
       name: "ERC4626 extension for voting",
       href: "https://github.com/devanonon/ERC4626Votes"

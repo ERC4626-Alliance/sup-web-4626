@@ -1,49 +1,57 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Layout from "components/Layout";
-import About from "components/About";
-import BuiltWith from "components/BuiltWith";
-import Resources from "components/Resources";
-import Adopters2 from "components/Adopters2";
-import Resources2 from "components/Resources2";
-import TableSection from "components/TableSection";
-import VaultExplorer from "components/VaultExplorer";
-import Authors from "components/Authors";
+import About from "@/components/About";
+import Adopters2 from "@/components/Adopters2";
+import Authors from "@/components/Authors";
+import BuiltWith from "@/components/BuiltWith";
+import Container from "@/components/Container";
+import Layout from "@/components/Layout";
+import Resources from "@/components/Resources";
+import TableSection from "@/components/TableSection";
+import Tweets from "@/components/Tweets";
+import VaultExplorer from "@/components/VaultExplorer";
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Layout>
-        <Head>
-          <title>ERC-4626 — a tokenized vault standard</title>
-        </Head>
-        <About/>
-        <BuiltWith/>
-        <Resources/>
-        <Adopters2/>
-        <TableSection/>
-        <VaultExplorer/>
-        <Resources2/>
-        <Authors/>
-      </Layout>
-    </>
-  );
+import SEO from "@/helpers/seo.config";
+import { GetStaticProps } from "next";
+import { DefaultSeo } from "next-seo";
+import Head from "next/head";
+
+// export default function Home({
+//   allPostsData
+// }: {
+//   allPostsData: {
+//     date: string
+//     title: string
+//     id: string
+//   }[]
+// }) {
+export default function Home() {
+  return (<>
+    <DefaultSeo {...SEO} />
+    <Head>
+      <title>{SEO.openGraph?.title}</title>
+    </Head>
+    <Layout>
+      <About />
+      <BuiltWith />
+      <Resources />
+      <Adopters2 />
+      <Container className="bg-white py-16 mt-16">
+        <TableSection />
+        <VaultExplorer />
+      </Container>
+      <Tweets />
+      <Authors />
+    </Layout>
+  </>);
 };
 
-export default Home;
-
-export const getStaticProps = async () => {
-  // const allPosts = getAllPosts([
-  //   "title",
-  //   "date",
-  //   "slug",
-  //   "author",
-  //   "coverImage",
-  //   "excerpt"
-  // ]);
-
+export const getStaticProps: GetStaticProps = async () => {
+  // const allWebsiteData = [];
+  // return {
+  //   props: {
+  //     allPostsData
+  //   }
+  // };
   return {
     props: {}
-    // props: { allPosts }
   };
 };

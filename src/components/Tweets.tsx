@@ -1,8 +1,15 @@
-import Container from "./Container";
-import AtomTitle from "./Atom/Title";
+import AtomTitle from "@/components/Atom/Title";
+import Container from "@/components/Container";
+import { useEffect } from "react";
 
-const Resources2 = () => {
-  return (
+const Tweets = () => {
+  useEffect(() => {
+    const s = document.createElement("script");
+    s.setAttribute("src", "https://platform.twitter.com/widgets.js");
+    s.setAttribute("async", "true");
+    document.head.appendChild(s);
+  }, []);
+  return (<>
     <div className="bg-gradient-to-r from-pink-700 to-pink-900 w-full text-center py-16">
       <AtomTitle alignText="center" inverted={true}>Tweets about EIP-4626</AtomTitle>
       <Container>
@@ -29,6 +36,6 @@ const Resources2 = () => {
         </ul>
       </Container>
     </div>
-  );
+  </>);
 };
-export default Resources2;
+export default Tweets;

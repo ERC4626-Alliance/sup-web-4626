@@ -1,23 +1,50 @@
-import Footer from "components/Footer";
-import Meta from "components/Meta";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Head from "next/head";
 import { ReactNode } from "react";
-import Header from "components/Header";
 
 type Props = {
   children: ReactNode
 }
 
 const Layout = ({ children }: Props) => {
-  return (
-    <>
-      <Meta/>
-      <Header/>
-      <div className="min-h-screen bg-white max-w-[100vw] overflow-x-hidden md:overflow-auto md:max-w-none">
-        <main>{children}</main>
-      </div>
-      <Footer/>
-    </>
-  );
+  return (<>
+    <Head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+      <meta
+        name="description"
+        content="Web site created using create-react-app"
+      />
+      {/**
+       * manifest.json provides metadata used when your web app is installed on a
+       * user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+       **/}
+      {/*<link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>*/}
+      {/**
+       * Notice the use of %PUBLIC_URL% in the tags above.
+       * It will be replaced with the URL of the `public` folder during the build.
+       * Only files inside the `public` folder can be referenced from the HTML.
+       *
+       * Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+       * work correctly both with client-side routing and a non-root public URL.
+       * Learn how to configure a non-root public URL by running `npm run build`.
+       **/}
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <meta name="msapplication-TileColor" content="#000000" />
+      <meta
+        name="description"
+        content={`A statically generated blog example using Next.js and 4626.com website.`}
+      />
+    </Head>
+    <Header />
+    <main className="min-h-screen bg-white max-w-[100vw] overflow-x-hidden md:overflow-auto md:max-w-none">
+      {children}
+    </main>
+    <Footer />
+  </>);
 };
 
 export default Layout;
