@@ -13,7 +13,10 @@ export default function Adopters2() {
       { src: "mstable.svg", alt: "mStable", link: "https://mstable.org", about: "", app: "" },
       { src: "openzeppelin.svg", alt: "OpenZeppelin", link: "https://openzeppelin.com", about: "", app: "" }
     ], [
-      { src: "rari.png", alt: "Rari", link: "https://rari.capital/", about: "", app: "" }
+      { src: "rari.png", alt: "Rari", link: "https://rari.capital/", about: "", app: "" },
+      { src: "midas.png", alt: "Midas Capital", link: "https://www.midascapital.xyz/", about: "", app: "" },
+      { src: "maximizer.png", alt: "maximizer", link: "https://www.maxi.xyz/", about: "", app: "" },
+
     ]
   ];
 
