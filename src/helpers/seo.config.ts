@@ -6,12 +6,12 @@ export default {
     locale: "en_US",
     images: [
       {
-        url: "/preview.png", width: 800, height: 600, alt: process.env.SEO_TITLE || "ERC-4626 — a tokenized vault standard", type: "image/jpeg"
+        url: "/preview.jpg", width: 1200, height: 628, alt: process.env.SEO_TITLE || "ERC-4626 — a tokenized vault standard", type: "image/jpeg"
       }
     ],
     site_name: "ERC-4626"
   }, twitter: {
-    handle: "@superform", site: "@site", cardType: "summary_large_image"
+    handle: "@superform", site: "@superform", cardType: "summary_large_image"
   }
 };
 

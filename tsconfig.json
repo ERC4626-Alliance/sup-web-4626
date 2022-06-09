@@ -48,15 +48,11 @@
       "@headlessui/react",
       "@nextui-org/react",
       "react-paginate",
+      "react-icons",
       "react-youtube",
       "next-image-export-optimizer"
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    "src/types/*.d.ts",
-    "src/{**/*,*}.{js,ts,tsx,jsx,d.ts}"
-  ],
   "exclude": [
     "node_modules",
     "**/*.spec.tsx",
@@ -69,5 +65,10 @@
     ".husky",
     ".github",
     ".yarn"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "src/types/*.d.ts",
+    "src/{**/*,*}.{js,ts,tsx,jsx,d.ts}"
   ]
 }
