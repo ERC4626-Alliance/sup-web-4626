@@ -8,14 +8,21 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      ref:
+        type: string
+        default: "HEAD@{0}"
+        description: "The Git ref to deploy. Defaults to HEAD@{0}."
 jobs:
-  release:
+  deploy_stage:
     if: ${{ github.event.repository.full_name == github.repository }} && {{ !contains(github.event.head_commit.message, "skip ci") }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          ref: ${{ github.event.ref }} || ${{ github.event.inputs.ref }}
           # Whether to configure the token or SSH key with the local git config
           # Default: true
           persist-credentials: false # <--- checking this in commit context
@@ -23,11 +30,25 @@ jobs:
       - name: "Enable yarn cache"
         uses: c-hive/gha-yarn-cache@v2  # using cache
 
-      - name: "Deploying to stage..."
-        uses: amondnet/vercel-action@v20 #deploy
+      - name: "Setup node@16"
+        uses: actions/setup-node@v2
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
-          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}  #Required
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }} #Required
-          alias-domains: stage.eip4626.com
+          node-version: 16
+
+      - name: "Install dependencies"
+        run: |
+          yarn set version 3.2.1
+          yarn install
+
+      - name: "Deploy stage"
+        run: |
+          prodRun=""
+          if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
+            prodRun="--dev"
+          fi
+          
+          npx vercel --token ${VERCEL_TOKEN} $prodRun -c alias
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}

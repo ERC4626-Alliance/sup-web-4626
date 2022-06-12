@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-#      - name: "Enable yarn cache"
-#        uses: c-hive/gha-yarn-cache@v2  # using cache
+      - name: "Enable yarn cache"
+        uses: c-hive/gha-yarn-cache@v2  # using cache
 
       - name: "Setup node@16"
         uses: actions/setup-node@v2
