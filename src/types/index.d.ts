@@ -1,5 +1,7 @@
 import sup from "./sup.d.ts";
 
+export default sup;
+
 declare module "*.jpg" {
   export default "" as string;
 }

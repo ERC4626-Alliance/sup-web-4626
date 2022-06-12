@@ -8,12 +8,14 @@ import { useEffect } from "react";
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     AOS.init({
-      easing: "ease-in-sine", once: true, offset: 200
+      disable : "mobile",
+      easing: "ease-in-sine",
+      once: true, offset: -200
     });
   }, []);
 
   return (<NextUIProvider>
-    <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
+    <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} defer={true} async={true} />
     <Component {...pageProps} />
   </NextUIProvider>);
 };

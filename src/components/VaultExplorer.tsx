@@ -1,6 +1,5 @@
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import axios from "axios";
-import moment from "moment";
 import { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 

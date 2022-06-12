@@ -1,6 +1,6 @@
-import AtomTitle from "@/components/Atom/Title";
-import Container from "components/Container";
-import ExportedImage from "next-image-export-optimizer";
+import AtomTitle from "@/components/Atom/Title"
+import Container from "components/Container"
+import ExportedImage from "next-image-export-optimizer"
 
 export default function Adopters2() {
   const adopters = [
@@ -15,16 +15,16 @@ export default function Adopters2() {
     ], [
       { src: "rari.png", alt: "Rari", link: "https://rari.capital/", about: "", app: "" },
       { src: "midas.png", alt: "Midas Capital", link: "https://www.midascapital.xyz/", about: "", app: "" },
-      { src: "maximizer.png", alt: "maximizer", link: "https://www.maxi.xyz/", about: "", app: "" },
+      { src: "maximizer.png", alt: "maximizer", link: "https://www.maxi.xyz/", about: "", app: "" }
 
     ]
-  ];
+  ]
 
   return (<div className="bg-gradient-to-b from-pink-50 pt-16 w-full relative" id="adopters">
     <Container className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div className="grid items-center grid-cols-1 xl:grid-cols-2">
         <div className="px-8 text-left xl:text-left xl:pr-16 md:max-w-2xl md:mx-auto xl:max-w-none">
-          <AtomTitle alignText="left">ERC-4626 <br/> EARLY ADOPTERS</AtomTitle>
+          <AtomTitle alignText="left">ERC-4626 <br /> EARLY ADOPTERS</AtomTitle>
           <p className="text-lg text-pink-600">Test an actual standard implementation</p>
         </div>
 
@@ -51,7 +51,7 @@ export default function Adopters2() {
                     width="128"
                     alt={item.alt}
                     className="w-auto h-8" />
-                  <h4 className="mt-3 text-base font-semibold bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-transparent capitalize">{item.alt}</h4>
+                  <h3 className="mt-3 text-base font-semibold bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-transparent capitalize">{item.alt}</h3>
                 </a>))}
               </div>))}
           </div>
@@ -60,5 +60,5 @@ export default function Adopters2() {
     </Container>
 
     {/*<div className="absolute inset-0 bg-gradient-to-b xl:bg-gradient-to-b from-pink-50 pt-16 to-transparent"></div>*/}
-  </div>);
+  </div>)
 }

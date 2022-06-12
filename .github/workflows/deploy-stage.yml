@@ -12,6 +12,7 @@ on:
     inputs:
       ref:
         type: string
+        required: false
         default: "HEAD@{0}"
         description: "The Git ref to deploy. Defaults to HEAD@{0}."
 jobs:

@@ -56,7 +56,7 @@ const Resources = () => {
                 className="object-center object-contain w-full max-w-full"
               />
             </div>
-            <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
+            <div className="flex items-end opacity-0 p-4 group-hover:opacity-100">
               <a
                 href={href}
                 target="_blank"

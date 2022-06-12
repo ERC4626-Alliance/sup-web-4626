@@ -22,11 +22,19 @@ html {
 
 body {
   @apply m-0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    max-width: 100vw;
+    overflow: hidden;
+  }
 }
 
 code {
@@ -183,11 +191,6 @@ section {
   }
 }
 
-.singleTweet {
-  .twitter-tweet:last-child {
-    display: none !important;
-  }
-}
 @import "variables.module";
 @import "aos/src/sass/aos";
 
@@ -230,8 +233,3 @@ section {
   @apply hover:underline-offset-2 hover:underline;
 }
 
-.singleTweet {
-  .twitter-tweet:last-child {
-    display: none !important;
-  }
-}
