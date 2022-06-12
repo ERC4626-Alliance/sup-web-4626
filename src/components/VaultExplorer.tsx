@@ -1,7 +1,10 @@
+import AtomTitle from "@/components/Atom/Title";
+import Container from "@/components/Container";
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import axios from "axios";
-import moment from "moment";
 import { useEffect, useState } from "react";
+import { BsSafe2Fill } from "react-icons/bs";
+import { FaFileContract } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
 
 interface VaultType {
@@ -22,11 +25,6 @@ const VaultExplorer = () => {
   const [vaults, setVaults] = useState(defaultState);
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-
-  function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(" ");
-  }
-
   useEffect(() => {
     let config = {
       headers: {
@@ -36,109 +34,115 @@ const VaultExplorer = () => {
     axios
     .get("https://api.superform.xyz/explore/", config)
     .then((res: any) => {
-      console.log(res.data);
       setVaults(res.data);
-      setPageCount(res.data.timestamp.length / 10);
+      setPageCount(Math.ceil(res.data.timestamp.length / 10));
     })
-    .catch((err: any) => {
-      console.log(err);
+    .catch((_err: any) => {
+//      console.log(_err);
     });
   }, []);
 
   const handlePageClick = (event: { selected: any; }) => {
     setCurrentPage(event.selected + 1);
-    console.log(currentPage);
   };
 
-  return (vaults === null ? null : <section className="px-4 sm:px-6 lg:px-8 pb-16" id="vaultscan">
-    <div className="mt-8 flex flex-col">
-      <div className="-my-1 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-          <div className="overflow-hidden shadow md:rounded-lg">
-            <table
-              className="min-w-full divide-y divide-gray-300 border-separate"
-              style={{ borderSpacing: 0 }}
-            >
-              <thead className="bg-gray-50 overflow-hidden">
-              <tr>
-                <th
-                  scope="col"
-                  className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Name
-                </th>
-                <th
-                  scope="col"
-                  className="pl-4 pr-3 sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Chain
-                </th>
-                <th
-                  scope="col"
-                  className="pl-4 pr-3 sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Protocol
-                </th>
-                <th
-                  scope="col"
-                  className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Type
-                </th>
-                <th
-                  scope="col"
-                  className="md:pl-6 sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Contract Address
-                </th>
-                <th
-                  scope="col"
-                  className="md:pl-6 sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 px-3 py-3.5 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter table-cell"
-                >
-                  Added at
-                </th>
-              </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200 bg-white">
-              {vaults.timestamp
-              .slice((currentPage - 1) * 10, (currentPage * 10) - 1)
-              .map((vault, vaultIdx, pagedVault) => (<tr key={`${vault}-${vaultIdx}`}>
-                <td
-                  className={classNames(
-                    vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "",
-                    "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium" + " text-gray-900 sm:pl-6 lg:pl-8")}
-                >
-                  {vaults.name[vaultIdx + (currentPage - 1) * 10]}
-                </td>
-                <td
-                  className={classNames(
-                    vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "",
-                    "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium min-w-[120px] text-gray-900 sm:pl-2 lg:pl-2 select-none")}>
-                  {mapIcon(vaults.chain[vaultIdx + (currentPage - 1) * 10])}
-                </td>
-                <td
-                  className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap px-3 py-4 text-sm text-gray-500 min-w-[50px]")}
-                >
-                  {vaults.protocol[vaultIdx + (currentPage - 1) * 10]}
-                </td>
-                <td
-                  className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap px-3 py-4 text-sm text-gray-500")}
-                >
-                  {vaults.is_vault[vaultIdx + (currentPage - 1) * 10] ? "Vault" : "Non-Vault"}
-                </td>
-                <td
-                  className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-6")}
-                >
-                  {mapAddressWithScan(vaults.contract_address[vaultIdx + (currentPage - 1) * 10], vaults.chain[vaultIdx + (currentPage - 1) * 10])}
-                </td>
-                <td
-                  className={classNames(vaultIdx !== pagedVault.length - 1 ? "border-b border-gray-200" : "", "whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500 sm:pl-6")}
-                >
-                  {vaults.timestamp[vaultIdx + (currentPage - 1) * 10].toLocaleString()}
-                </td>
-              </tr>))}
-              </tbody>
-            </table>
+  return (vaults === null ? null : <div className="pt-8 pb-16 bg-gradient-to-b from-pink-50" id="vaultscan">
+    <Container className="mt-8 flex flex-col">
+      <AtomTitle alignText="center" subtitle="More features and vault metadata coming soon">ERC-4626 VAULTS</AtomTitle>
+      <div className="mt-8 flex flex-col">
+        <div className="-my-1 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+            <div className="relative overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+              <table className="min-w-full table-fixed divide-y divide-gray-200"
+                     style={{ borderSpacing: 0 }}
+              >
+                <thead className="bg-gray-50">
+                <tr>
+                  <th
+                    scope="col"
+                    className="min-w-[12rem] pl-6 pr-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    Name
+                  </th>
+                  <th
+                    scope="col"
+                    className="pl-4 pr-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    Chain
+                  </th>
+                  <th
+                    scope="col"
+                    className="pl-4 pr-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    Protocol
+                  </th>
+                  <th
+                    scope="col"
+                    className="pl-4 pr-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    Type
+                  </th>
+                  <th
+                    scope="col"
+                    className="pl-4 pr-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                  >
+                    Added at
+                  </th>
+                  <th
+                    scope="col"
+                    className="pr-8 pl-3 py-3.5 text-left text-sm font-semibold text-gray-900 text-right"
+                  >
+                    Contract Address
+                  </th>
+                </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white">
+                {vaults.timestamp
+                .slice((currentPage - 1) * 10, (currentPage * 10) - 1)
+                .map((vault, vaultIdx) => (<tr key={`${vault}-${vaultIdx}`} className="bg-white">
+                  <td
+                    className="whitespace-nowrap font-extrabold tracking-tight py-2 pl-6 pr-3"
+                  >
+                    <span className=" -mb-1 pb-1 bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-transparent relative inline-flex"
+                    >{vaults.name[vaultIdx + (currentPage - 1) * 10]}</span>
+                  </td>
+                  <td
+                    className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-2 lg:pl-2 select-none"
+                  >
+                    {mapIcon(vaults.chain[vaultIdx + (currentPage - 1) * 10])}
+                  </td>
+                  <td
+                    className="whitespace-nowrap pl-5 pr-3 py-4 text-sm text-gray-900 min-w-[50px]"
+                  >
+                    {vaults.protocol[vaultIdx + (currentPage - 1) * 10]}
+                  </td>
+                  <td
+                    className="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                  >
+                    {vaults.is_vault[vaultIdx + (currentPage - 1) * 10] ?
+                     (<div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-pink-100 text-pink-600 border border-pink-400/25">
+                       <BsSafe2Fill className="-ml-1 mr-1 h-3 w-3 text-pink-400" />
+                       Vault
+                     </div>) :
+                     (<div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-yellow-100 border border-yellow-400/25 text-yellow-700">
+                       <FaFileContract className="-ml-1 mr-1 h-3 w-3 text-yellow-400" />
+                       Protocol
+                     </div>)}
+                  </td>
+                  <td
+                    className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500"
+                  >
+                    {vaults.timestamp[vaultIdx + (currentPage - 1) * 10].toLocaleString()}
+                  </td>
+                  <td
+                    className="whitespace-nowrap py-2 pr-8 pl-3 text-sm text-gray-500 text-right"
+                  >
+                    {mapAddressWithScan(vaults.contract_address[vaultIdx + (currentPage - 1) * 10], vaults.chain[vaultIdx + (currentPage - 1) * 10])}
+                  </td>
+                </tr>))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -169,7 +173,7 @@ const VaultExplorer = () => {
           </svg>}
         />
       </nav>
-    </div>
-  </section>);
+    </Container>
+  </div>);
 };
 export default VaultExplorer;

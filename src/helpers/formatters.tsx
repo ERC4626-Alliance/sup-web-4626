@@ -1,4 +1,4 @@
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/image";
 
 export function mapIcon(chain: string) {
   let icon = "";
@@ -21,7 +21,7 @@ export function mapIcon(chain: string) {
     }
   }
   return (<div className="flex flex-auto p-0 m-0 items-center justify-start">
-      <ExportedImage layout="raw" width="20" height="20" src={icon} alt={chain} className="h-6 mr-1" />
+      <Image layout="raw" unoptimized={true} width="20" height="20" src={icon} alt={chain} className="h-6 mr-1 object-scale-down" />
       {chain[0].toUpperCase() + chain.slice(1)}
     </div>);
 }

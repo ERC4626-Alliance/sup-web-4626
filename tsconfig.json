@@ -49,8 +49,7 @@
       "@nextui-org/react",
       "react-paginate",
       "react-icons",
-      "react-youtube",
-      "next-image-export-optimizer"
+      "react-youtube"
     ]
   },
   "exclude": [
@@ -68,7 +67,7 @@
   ],
   "include": [
     "next-env.d.ts",
-    "src/types/*.d.ts",
+    "next.config.js",
     "src/{**/*,*}.{js,ts,tsx,jsx,d.ts}"
   ]
 }

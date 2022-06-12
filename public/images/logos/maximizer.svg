@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+    <defs>
+        <style>
+            .cls-1 {
+            font-size: 625px;
+            fill: #000;
+            text-anchor: middle;
+            font-family: Avenir;
+            font-weight: 800;
+            }
+        </style>
+    </defs>
+    <text id="_._" class="cls-1" x="481.065" y="722.375">
+        <tspan x="481.065">.\\</tspan>
+    </text>
+</svg>

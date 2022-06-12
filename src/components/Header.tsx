@@ -18,6 +18,7 @@ const Header = () => {
     { section: "build", title: "Build", offset: -120 },
     { section: "resources", title: "Resources", offset: -100 },
     { section: "adopters", title: "Early Adopters", offset: -70 },
+    { section: "news", title: "News", offset: -70 },
     { section: "vaultscan", title: "Explore Vaults", offset: -200 },
     { section: "authors", title: "Authors", offset: -100 }
   ];

@@ -21,22 +21,9 @@ module.exports = (phase) => {
 
   const env = {
 
-    storePicturesInWEBP: () => isProd,
-    generateAndUseBlurImages: () => isProd,
+    storePicturesInWEBP: true,
+    generateAndUseBlurImages: true,
     IS_PROD: () => !isDev
-    //RESTURL_SPEAKERS: (() => {
-    //  if (isDev) return "http://localhost:4000/speakers"
-    //  if (isProd) {
-    //    return "https://www.siliconvalley-codecamp.com/rest/speakers/ps"
-    //  }
-    //  if (isStaging) return "http://localhost:11639"
-    //  return "RESTURL_SPEAKERS:not (isDev,isProd && !isStaging,isProd && isStaging)"
-    //})(), RESTURL_SESSIONS: (() => {
-    //  if (isDev) return "http://localhost:4000/sessions"
-    //  if (isProd) return "https://www.siliconvalley-codecamp.com/rest/sessions"
-    //  if (isStaging) return "http://localhost:11639"
-    //  return "RESTURL_SESSIONS:not (isDev,isProd && !isStaging,isProd && isStaging)"
-    //})()
   };
 
   const compiler = {
@@ -63,28 +50,9 @@ module.exports = (phase) => {
       }
     },
     images: {
+      formats: ['image/webp'],
       loader: "custom",
       layoutRaw: true,
-      imageSizes: [
-        16,
-        32,
-        48,
-        64,
-        96,
-        128,
-        256,
-        384
-      ],
-      deviceSizes: [
-        640,
-        750,
-        828,
-        1080,
-        1200,
-        1920,
-        2048,
-        3840
-      ],
       nextImageExportOptimizer: {
         imageFolderPath: "public/images",
         exportFolderPath: "out",
