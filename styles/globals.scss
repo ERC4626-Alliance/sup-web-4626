@@ -1,6 +1,8 @@
 @import "variables.module";
 @import "aos/src/sass/aos";
 
+@import "lite-youtube-embed/src/lite-yt-embed.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -179,6 +181,53 @@ section {
       @apply md:min-w-[190px];
     }
   }
+}
+
+.singleTweet {
+  .twitter-tweet:last-child {
+    display: none !important;
+  }
+}
+@import "variables.module";
+@import "aos/src/sass/aos";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  @apply m-0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+section {
+  @apply max-w-screen-2xl mx-auto;
+}
+
+.link-cta {
+  @apply hover:underline-offset-2 hover:underline;
 }
 
 .singleTweet {

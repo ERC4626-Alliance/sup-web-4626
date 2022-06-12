@@ -49,7 +49,6 @@
       "@nextui-org/react",
       "react-paginate",
       "react-icons",
-      "react-youtube",
       "next-image-export-optimizer"
     ]
   },

@@ -81,9 +81,7 @@ module.exports = (phase) => {
         828,
         1080,
         1200,
-        1920,
-        2048,
-        3840
+        1920
       ],
       nextImageExportOptimizer: {
         imageFolderPath: "public/images",
