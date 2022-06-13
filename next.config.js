@@ -21,22 +21,10 @@ module.exports = (phase) => {
   }
 
   const env = {
-    storePicturesInWEBP: () => isProd,
-    generateAndUseBlurImages: () => isProd,
-    IS_PROD: () => !isDev,
-    //RESTURL_SPEAKERS: (() => {
-    //  if (isDev) return "http://localhost:4000/speakers"
-    //  if (isProd) {
-    //    return "https://www.siliconvalley-codecamp.com/rest/speakers/ps"
-    //  }
-    //  if (isStaging) return "http://localhost:11639"
-    //  return "RESTURL_SPEAKERS:not (isDev,isProd && !isStaging,isProd && isStaging)"
-    //})(), RESTURL_SESSIONS: (() => {
-    //  if (isDev) return "http://localhost:4000/sessions"
-    //  if (isProd) return "https://www.siliconvalley-codecamp.com/rest/sessions"
-    //  if (isStaging) return "http://localhost:11639"
-    //  return "RESTURL_SESSIONS:not (isDev,isProd && !isStaging,isProd && isStaging)"
-    //})()
+
+    storePicturesInWEBP: true,
+    generateAndUseBlurImages: true,
+    IS_PROD: () => !isDev
   };
 
   // next.config.js object

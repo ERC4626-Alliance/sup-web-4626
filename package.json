@@ -38,7 +38,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next-image-export-optimizer && next dev",
-    "build": "next build",
+    "build": "next build && next-image-export-optimizer",
     "generate": "next build && next export && next-image-export-optimizer",
     "start": "next start",
     "lint": "next lint",

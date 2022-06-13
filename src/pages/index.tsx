@@ -1,28 +1,18 @@
 import About from "@/components/About";
-import Adopters2 from "@/components/Adopters2";
+import Adopters from "@/components/Adopters";
 import Authors from "@/components/Authors";
 import BuiltWith from "@/components/BuiltWith";
-import Container from "@/components/Container";
+import Layout from "@/components/Layout";
 import Resources from "@/components/Resources";
-import TableSection from "@/components/TableSection";
 import Tweets from "@/components/Tweets";
+import News from "@/components/News";
 import VaultExplorer from "@/components/VaultExplorer";
 
 import SEO from "@/helpers/seo.config";
 import { GetStaticProps } from "next";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
-import Layout from "@/components/Layout";
 
-// export default function Home({
-//   allPostsData
-// }: {
-//   allPostsData: {
-//     date: string
-//     title: string
-//     id: string
-//   }[]
-// }) {
 export default function Home() {
   return (
     <>
@@ -34,11 +24,9 @@ export default function Home() {
         <About />
         <BuiltWith />
         <Resources />
-        <Adopters2 />
-        <Container className="mt-16 bg-white py-16">
-          <TableSection />
-          <VaultExplorer />
-        </Container>
+        <Adopters />
+        <News />
+        <VaultExplorer />
         <Tweets />
         <Authors />
       </Layout>

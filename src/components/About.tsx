@@ -59,12 +59,13 @@ const About = () => (
       </div>
     </Container>
     <div className="relative overflow-hidden py-16 lg:py-32">
-      <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 " />
-
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-48 "/>
       <Container>
-        <div className="lg:grid lg:grid-cols-12 lg:gap-20">
+        <div className="lg:grid lg:grid-cols-12 lg:gap-20 flex flex-col-reverse">
           <div
-            className="relative mx-auto w-full w-full pb-10 lg:col-span-7 lg:row-auto lg:mx-0 lg:mt-0 lg:max-w-none lg:pb-0"
+            className=" relative mx-auto w-full w-full pb-10 lg:col-span-7 lg:row-auto lg:mx-0 lg:mt-0 lg:max-w-none lg:pb-0"
             data-aos="fade-right"
           >
             <ExportedImage

@@ -1,7 +1,8 @@
 export default {
   openGraph: {
     title: process.env.SEO_TITLE || "ERC-4626 — a tokenized vault standard",
-    description: process.env.SEO_DESCRIPTION || "The ERC-4626 tokenized vault standard standardizes the vaulting process. It ensures that coins are protected from unauthorized" + " access and can be easily minted or wrapped. ERC-4626 could resolve the mishmash of the types of design associated with tokens that print money in DeFi.",
+    description: process.env.SEO_DESCRIPTION || "ERC-4626 is a tokenized vault standard. Vaults are smart contracts that take in token deposits and do something with those" +
+      " tokens to provide token rewards to the depositor",
     type: "website",
     locale: "en_US",
     images: [
@@ -14,17 +15,3 @@ export default {
     handle: "@superform", site: "@superform", cardType: "summary_large_image"
   }
 };
-
-/**
- * openGraph={{
- *
- *
- *
- *
- *         }}
- *         twitter={{
- *           handle: "@handle",
- *           site: "@site",
- *           cardType: "summary_large_image"
- *         }}
- */
