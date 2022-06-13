@@ -26,8 +26,8 @@
     "noImplicitAny": true,
     "noUnusedParameters": true,
     "paths": {
-      "~/*": [
-        "./*"
+      "~~/*": [
+        "../public/*"
       ],
       "@/*": [
         "./*"
@@ -48,9 +48,7 @@
       "@headlessui/react",
       "@nextui-org/react",
       "react-paginate",
-      "react-icons",
-      "react-youtube",
-      "next-image-export-optimizer"
+      "react-icons"
     ]
   },
   "exclude": [

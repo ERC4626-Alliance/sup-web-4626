@@ -1,15 +1,16 @@
 const {
-        PHASE_DEVELOPMENT_SERVER,
-        PHASE_PRODUCTION_BUILD
-      } = require("next/constants");
+  PHASE_DEVELOPMENT_SERVER,
+  PHASE_PRODUCTION_BUILD,
+} = require("next/constants");
 
 /** @type {import("next").NextConfig} */
 module.exports = (phase) => {
-
   // when `next build` or `npm run build` is used
-  const isProd = phase === PHASE_PRODUCTION_BUILD && process.env.STAGING !== "1";
+  const isProd =
+    phase === PHASE_PRODUCTION_BUILD && process.env.STAGING !== "1";
   // when `next build` or `npm run build` is used
-  const isStaging = phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === "1";
+  const isStaging =
+    phase === PHASE_PRODUCTION_BUILD && process.env.STAGING === "1";
 
   // when started in development mode `next dev` or `npm run dev` regardless of the value of STAGING environmental variable
   // or if flags `isProd / isStaging` turned false
@@ -20,10 +21,9 @@ module.exports = (phase) => {
   }
 
   const env = {
-
     storePicturesInWEBP: () => isProd,
     generateAndUseBlurImages: () => isProd,
-    IS_PROD: () => !isDev
+    IS_PROD: () => !isDev,
     //RESTURL_SPEAKERS: (() => {
     //  if (isDev) return "http://localhost:4000/speakers"
     //  if (isProd) {
@@ -39,57 +39,38 @@ module.exports = (phase) => {
     //})()
   };
 
-  const compiler = {
-    reactRemoveProperties: isProd,
-    removeConsole: isProd
-  };
-
   // next.config.js object
   return {
     compiler: {
-      ...compiler
+      reactRemoveProperties: true,
+      removeConsole: true,
     },
     trailingSlash: true,
     productionBrowserSourceMaps: true,
     swcMinify: isProd,
     env: {
-      ...env
+      ...env,
     },
     reactStrictMode: true,
     poweredByHeader: false,
     experimental: {
       images: {
-        layoutRaw: true
-      }
+        layoutRaw: true,
+      },
     },
     images: {
+      storePicturesInWEBP: true,
+      generateAndUseBlurImages: true,
+      minimumCacheTTL: 60,
+      formats: ["image/webp"],
       loader: "custom",
       layoutRaw: true,
-      imageSizes: [
-        16,
-        32,
-        48,
-        64,
-        96,
-        128,
-        256,
-        384
-      ],
-      deviceSizes: [
-        640,
-        750,
-        828,
-        1080,
-        1200,
-        1920,
-        2048,
-        3840
-      ],
+      deviceSizes: [320, 828, 1200, 1920],
       nextImageExportOptimizer: {
         imageFolderPath: "public/images",
         exportFolderPath: "out",
-        quality: 75
-      }
-    }
+        quality: 80,
+      },
+    },
   };
 };
