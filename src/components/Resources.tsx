@@ -1,16 +1,17 @@
-import AtomTitle from "@/components/Atom/Title";
-import Container from "@/components/Container";
-import YouTube, { YouTubeProps } from "react-youtube";
-import { linksResources } from "../config/data";
+import AtomTitle from "@/components/Atom/Title"
+import Container from "@/components/Container"
+import { useEffect } from "react"
+import { linksResources } from "../config/data"
 
 const Resources = () => {
-  const opts: YouTubeProps["opts"] = {
-    width: "100%", playerVars: {
-      enablejsapi: 1, // https://developers.google.com/youtube/player_parameters
-      autoplay: 0
-
-    }
-  };
+  useEffect(() => {
+    const s = document.createElement("script")
+    s.setAttribute("src", "https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js")
+    s.setAttribute("async", "true")
+    s.setAttribute("defer", "true")
+    s.setAttribute("type", "module")
+    document.head.appendChild(s)
+  }, [])
   return (<>
     <div className="bg-gradient-to-t from-pink-100 pt-8 pb-16 text-center" id="resources">
       <Container>
@@ -42,14 +43,18 @@ const Resources = () => {
     <div className="bg-gradient-to-r from-pink-700 to-pink-900 py-16 w-full text-center">
       <AtomTitle inverted={true} alignText="center">Learn by watching</AtomTitle>
       <Container>
-        <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-2">
-          {linksResources.videos.map((item: { name: string; href: string; videoId: string; }, index) => (<div key={`video-${index}`} className="relative group">
-            <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
-              <YouTube videoId={item.videoId} opts={opts} iframeClassName="object-center object-contain w-full" />
+        <div className="mt-6 grid grid-cols-1 gap-x-16 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-2">
+          {linksResources.videos.map(({ href, videoId }: { name: string; href: string; videoId: string; }, index) => (<div key={`video-${index}`} className="relative group">
+            <div className="aspect-w-4 h-auto rounded-lg overflow-hidden bg-gray-100">
+              {/* @ts-ignore */}
+              <lite-youtube
+                videoid={videoId}
+                params="controls=0&start=0&modestbranding=2&rel=0&enablejsapi=1"
+                className="object-center object-contain w-full max-w-full" />
             </div>
-            <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" aria-hidden="true">
+            <div className="flex items-end opacity-0 p-4 group-hover:opacity-100" >
               <a
-                href={item.href}
+                href={href}
                 target="_blank"
                 rel="noreferrer noopener"
                 className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-pink-700 text-center hover:bg-opacity-100 hover:underline underline-offset-4">
@@ -60,6 +65,6 @@ const Resources = () => {
         </div>
       </Container>
     </div>
-  </>);
-};
-export default Resources;
+  </>)
+}
+export default Resources

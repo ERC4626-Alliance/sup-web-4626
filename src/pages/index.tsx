@@ -3,6 +3,7 @@ import Adopters2 from "@/components/Adopters2";
 import Authors from "@/components/Authors";
 import BuiltWith from "@/components/BuiltWith";
 import Layout from "@/components/Layout";
+import Container from "@/components/Container";
 import Resources from "@/components/Resources";
 import Tweets from "@/components/Tweets";
 import News from "@/components/News";
@@ -33,8 +34,8 @@ export default function Home() {
       <BuiltWith />
       <Resources />
       <Adopters2 />
-      <News />
-      <VaultExplorer />
+      <News/>
+      <VaultExplorer/>
       <Tweets />
       <Authors />
     </Layout>
@@ -49,6 +50,6 @@ export const getStaticProps: GetStaticProps = async () => {
   //   }
   // };
   return {
-    props: {}
+    props: {},
   };
 };

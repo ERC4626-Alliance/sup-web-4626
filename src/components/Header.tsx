@@ -22,7 +22,7 @@ const Header = () => {
     { section: "vaultscan", title: "Explore Vaults", offset: -200 },
     { section: "authors", title: "Authors", offset: -100 }
   ];
-  return (<header className="indexHeader">
+  return (<header className="indexHeader w-screen md:full">
     <Container>
       <nav className="relative flex items-center justify-between">
         <div className="flex items-center justify-between w-full md:w-auto">

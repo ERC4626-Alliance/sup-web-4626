@@ -1,76 +1,219 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "components/Container";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
 
 export default function Adopters2() {
   const adopters = [
     [
-      { src: "alchemix.svg", alt: "Alchemix", link: "https://alchemix.fi/", about: "", app: "" },
-      { src: "balancer.svg", alt: "Balancer", link: "https://balancer.fi", about: "", app: "" },
-      { src: "maple.svg", alt: "Maple", link: "https://maple.finance", about: "", app: "" }
+      {
+        src: "alchemix.svg",
+        alt: "Alchemix",
+        link: "https://alchemix.fi/",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "balancer.svg",
+        alt: "Balancer",
+        link: "https://balancer.fi",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "maple.svg",
+        alt: "Maple",
+        link: "https://maple.finance",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      }
 
     ], [
 
-      { src: "tribe-dao.svg", alt: "Tribe DAO", link: "https://tribedao.xyz/governance/proposals/FIP-103", about: "", app: "" },
-      { src: "fei.svg", alt: "Fei", link: "https://fei.money", about: "", app: "" },
-      { src: "rari.png", alt: "Rari", link: "https://rari.capital/", about: "", app: "" },
-      { src: "midas.png", alt: "Midas Capital", link: "https://www.midascapital.xyz/", about: "", app: "" },
-      { src: "yieldprotocol.svg", alt: "Yield Protocol", link: "https://yieldprotocol.com", about: "", app: "" },
-      { src: "yield-finance.svg", alt: "Yield Finance", link: "https://yearn.finance", about: "", app: "" }
+      {
+        src: "tribe-dao.svg",
+        alt: "Tribe DAO",
+        link: "https://tribedao.xyz/governance/proposals/FIP-103",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "fei.svg",
+        alt: "Fei",
+        link: "https://fei.money",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "rari.png",
+        alt: "Rari",
+        link: "https://rari.capital/",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "midas.png",
+        alt: "Midas Capital",
+        link: "https://www.midascapital.xyz/",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "yieldprotocol.svg",
+        alt: "Yield Protocol",
+        link: "https://yieldprotocol.com",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "yield-finance.svg",
+        alt: "Yield Finance",
+        link: "https://yearn.finance",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      }
 
     ], [
-      { src: "mstable.svg", alt: "mStable", link: "https://mstable.org", about: "", app: "" },
-      { src: "openzeppelin.svg", alt: "OpenZeppelin", link: "https://openzeppelin.com", about: "", app: "" },
-      { src: "maximizer.svg", alt: "maximizer", link: "https://www.maxi.xyz/", about: "", app: "" }
+      {
+        src: "mstable.svg",
+        alt: "mStable",
+        link: "https://mstable.org",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "openzeppelin.svg",
+        alt: "OpenZeppelin",
+        link: "https://openzeppelin.com",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      },
+      {
+        src: "maximizer.svg",
+        alt: "maximizer",
+        link: "https://www.maxi.xyz/",
+        about: "",
+        app: "",
+        extra: {
+          unoptimized: true
+        }
+      }
     ]
   ];
-
-  return <div className="py-16 bg-gradient-to-t from-pink-50 text-center" id="adopters">
-    <Container className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <>
-        <div className="grid items-center grid-cols-1 xl:grid-cols-2">
-          <div className="px-8 text-left xl:text-left xl:pr-16 md:max-w-2xl md:mx-auto xl:max-w-none">
-            <AtomTitle alignText="left" subtitle="Test an actual standard implementation">ERC-4626 <br /> EARLY ADOPTERS</AtomTitle>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:prod-4626mvp-aaaagqoeclkuphezfjmhhsqbyi@superform-group.slack.com"
-               className="inline-flex items-center justify-center px-5 py-3 hover:transition-all border border-pink-700 text-base font-medium rounded-md text-pink-700 bg-white hover:bg-pink-700 hover:border-transparent hover:text-white hover:shadow-lg">Submit
-              your implementation</a>
+  return (
+    <div
+      className="relative w-full bg-gradient-to-b from-pink-50 pt-16"
+      id="adopters"
+    >
+      <Container className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center xl:grid-cols-2">
+          <div className="px-8 text-left md:mx-auto md:max-w-2xl xl:max-w-none xl:pr-16 xl:text-left">
+            <AtomTitle alignText="left">
+              ERC-4626 <br/> EARLY ADOPTERS
+            </AtomTitle>
+            <p className="text-lg text-pink-600">
+              Test an actual standard implementation
+            </p>
           </div>
 
-          <div className="relative mt-8 sm:mt-12 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mt-0">
+          <div className="relative mt-8 sm:mt-12 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none">
             <div className="absolute inset-16">
-              <div className="w-full h-full mx-auto rotate-180 opacity-30 rounded-3xl blur-lg filter"
-                   style={{ background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)" }} />
+              <div
+                className="mx-auto h-full w-full rotate-180 rounded-3xl opacity-30 blur-lg filter"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+                }}
+              ></div>
             </div>
 
             <div className="relative space-y-5">
-              {adopters.map((itemsList: Array<{ src: string; alt: string; link?: string; app?: string; about?: string; }>, index) => <>
-                <div
-                  key={index}
-                  className={`grid grid-cols-1 gap-5 sm:grid-cols-3 ${index > 0 ? index === 1 ? "xl:translate-x-6" : "xl:translate-x-12" : ""}`}>
-                  {itemsList.map((item, subindex) => <a
-                    href={item.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="flex items-center flex-col justify-center px-6 py-4 mx-auto overflow-hidden bg-white rounded-lg shadow-lg w-44 md:w-full md:hover:md:hover:bg-white/50"
-                    key={`adopter-${index}-${subindex}`}
+              {adopters.map(
+                (
+                  itemsList: Array<{
+                    src: string;
+                    alt: string;
+                    link?: string;
+                    app?: string;
+                    about?: string;
+                    extra?: any;
+                  }>,
+                  index
+                ) => (
+                  <div
+                    key={index}
+                    className={`grid grid-cols-1 gap-5 sm:grid-cols-3 ${
+                      index > 0
+                        ? index === 1
+                          ? "xl:translate-x-6"
+                          : "xl:translate-x-12"
+                        : ""
+                    }`}
                   >
-                    <Image
-                      src={`images/logos/${item.src}`}
-                      layout="raw"
-                      height="128"
-                      width="128"
-                      alt={item.alt}
-                      className="w-auto h-8"
-                      unoptimized={true}
-                    />
-                    <h4 className="mt-3 text-base font-extrabold tracking-tight bg-gradient-to-r from-pink-500 to-pink-800 bg-clip-text text-transparent capitalize">{item.alt}</h4>
-                  </a>)}
-                </div>
-              </>)}
+                    {itemsList.map((item, subindex) => (
+                      <a
+                        href={item.link}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="mx-auto flex w-44 flex-col items-center justify-center overflow-hidden rounded-lg bg-white px-6 py-4 shadow-lg md:w-full md:hover:md:hover:bg-white/50"
+                        key={`adopter-${index}-${subindex}`}
+                      >
+                        <ExportedImage
+                          src={`images/logos/${item.src}`}
+                          layout="raw"
+                          loading="lazy"
+                          height={128}
+                          width={128}
+                          alt={item.alt}
+                          className="h-8 w-auto"
+                          {...item.extra}
+                        />
+                        <h3 className="mt-3 bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-base font-semibold capitalize text-transparent">
+                          {item.alt}
+                        </h3>
+                      </a>
+                    ))}
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
-      </>
-    </Container>
-  </div>;
-};
+      </Container>
+
+      {/*<div className="absolute inset-0 bg-gradient-to-b xl:bg-gradient-to-b from-pink-50 pt-16 to-transparent"></div>*/}
+    </div>
+  );
+}
