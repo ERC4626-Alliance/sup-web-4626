@@ -11,74 +11,29 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:widgets:csp" content="on" />
         <meta name="twitter:dnt" content="on" />
+        {[57, 60, 72, 76, 114, 120, 144, 152, 180].map((size) => (
+          <link
+            key={`icon-apple-${size}`}
+            rel="apple-touch-icon"
+            sizes={`${size}x${size}`}
+            href={`/apple-icon-${size}x${size}.png`}
+          />
+        ))}
+        {[16, 32, 96].map((size) => (
+          <link
+            rel="icon"
+            key={`favicon-${size}`}
+            type="image/png"
+            sizes={`${size}x${size}`}
+            href={`/favicon-${size}x${size}.png`}
+          />
+        ))}
         <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="/apple-icon-57x57.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="60x60"
-          href="/apple-icon-60x60.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="/apple-icon-72x72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/apple-icon-76x76.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="/apple-icon-114x114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/apple-icon-120x120.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="/apple-icon-144x144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/apple-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-icon-180x180.png"
-        />
-        <link
+          key="icon-android"
           rel="icon"
           type="image/png"
           sizes="192x192"
           href="/android-icon-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/favicon-96x96.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
@@ -97,7 +52,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         <meta name="msapplication-TileColor" content="#000000" />
       </Head>
       <Header />
-      <main className="min-h-screen max-w-[100vw] overflow-x-hidden bg-white md:max-w-none md:overflow-auto">
+      <main className="mx-auto min-h-screen max-w-[100vw] overflow-x-hidden bg-white md:max-w-none md:overflow-x-auto">
         {children}
       </main>
       <Footer />
