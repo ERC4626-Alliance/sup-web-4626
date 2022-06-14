@@ -20,10 +20,20 @@ export function mapIcon(chain: string) {
         break;
     }
   }
-  return (<div className="flex flex-auto p-0 m-0 items-center justify-start">
-      <Image layout="raw" unoptimized={true} width="20" height="20" src={icon} alt={chain} className="h-6 mr-1 object-scale-down" />
+  return (
+    <div className="m-0 flex flex-auto items-center justify-start p-0">
+      <Image
+        layout="raw"
+        unoptimized={true}
+        width="20"
+        height="20"
+        src={icon}
+        alt={chain}
+        className="mr-1 h-6 object-scale-down"
+      />
       {chain[0].toUpperCase() + chain.slice(1)}
-    </div>);
+    </div>
+  );
 }
 
 export function mapAddressWithScan(address: string, chain: string) {
@@ -46,5 +56,18 @@ export function mapAddressWithScan(address: string, chain: string) {
         break;
     }
   }
-  return href !== undefined ? (<a href={href} target="_blank" className="link-cta text-sm whitespace-nowrap underline md:no-underline text-pink-700 md:hover:underline underline-offset-4" rel="noopener noreferrer">{address}</a>) : address;
+  return href !== undefined ? (
+    <a
+      href={href}
+      target="_blank"
+      className="group whitespace-nowrap font-medium text-pink-500 decoration-from-font underline-offset-4 md:hover:text-pink-700 md:hover:underline"
+      rel="noopener noreferrer"
+    >
+      <code className="select-none rounded-lg bg-transparent px-2 py-1 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">
+        {address}
+      </code>
+    </a>
+  ) : (
+    address
+  );
 }

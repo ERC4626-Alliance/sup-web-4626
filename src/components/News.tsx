@@ -13,7 +13,7 @@ export default function News() {
         <AtomTitle alignText="center" inverted={true}>
           ERC-4626 News
         </AtomTitle>
-        <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 gap-x-8 sm:text-left md:grid-cols-2 md:gap-y-4">
+        <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 gap-8 sm:text-left md:grid-cols-2 md:gap-y-4">
           {linksResources.news.map((item: any, index: number) => (
             <a
               key={`news-${index}`}
