@@ -9,7 +9,7 @@ const Resources = () => {
     const s = document.createElement("script");
     s.setAttribute(
       "src",
-      "https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"
+      "//cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"
     );
     s.setAttribute("async", "true");
     s.setAttribute("defer", "true");
@@ -27,16 +27,16 @@ const Resources = () => {
             <AtomTitle alignText="center" subtitle="Explore relevant resources">
               ERC4626 RESOURCES
             </AtomTitle>
-            <ul className="flex flex-row flex-wrap justify-center gap-6">
+            <ul className="flex flex-row flex-wrap justify-center gap-2 md:gap-6">
               {linksResources.repositories.map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
                     target="_blank"
                     rel="noreferrer noopener group"
-                    className={`inline-flex items-center whitespace-nowrap rounded-lg border border-pink-600/10 py-3.5 pl-2.5 pr-4 text-sm shadow-sm md:text-base ${
+                    className={`group inline-flex items-center whitespace-nowrap rounded-lg border border-pink-600/10 py-3.5 pl-2.5 pr-4 text-sm shadow-sm md:text-base ${
                       item.highlight ? "font-bold" : "font-medium"
-                    } group bg-white text-pink-700 underline-offset-4 hover:underline`}
+                    } group bg-white text-pink-700 underline-offset-4 md:hover:underline`}
                   >
                     <IoLogoGithub
                       className={`-ml-0.5 mr-1.5 h-4 w-4 md:h-8 md:w-8 ${
@@ -51,7 +51,7 @@ const Resources = () => {
           </>
         </Container>
       </div>
-      <div className="w-full bg-gradient-to-r from-pink-700 to-pink-900 py-16 text-center">
+      <div className="w-full bg-gradient-to-r from-pink-700 to-pink-900 py-8 text-center md:py-16">
         <AtomTitle inverted={true} alignText="center">
           Learn by watching
         </AtomTitle>
@@ -74,7 +74,7 @@ const Resources = () => {
                       className="w-full max-w-full object-contain object-center"
                     />
                   </div>
-                  <div className="flex items-end p-4 opacity-0 group-hover:opacity-100">
+                  <div className="flex items-end p-4 md:opacity-0 md:group-hover:opacity-100">
                     <a
                       href={href}
                       target="_blank"

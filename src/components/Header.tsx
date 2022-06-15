@@ -27,7 +27,10 @@ const Header = () => {
       <Container>
         <nav className="relative flex items-center justify-between">
           <div className="flex w-full items-center justify-between md:w-auto">
-            <div className="h-8 w-auto sm:h-10" onClick={scrollToTop}>
+            <div
+              className="h-8 w-auto sm:h-10 md:hover:cursor-pointer"
+              onClick={scrollToTop}
+            >
               <h2 className="text-4xl font-black tracking-tight text-gray-900 sm:text-4xl">
                 <span className="-mb-1 block bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">
                   ERC-4626
