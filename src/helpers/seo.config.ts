@@ -5,7 +5,7 @@ export default {
       " tokens to provide token rewards to the depositor. Browse through a list of ERC4626 vaults. Learn how to make an ERC4626.",
     type: "website",
     locale: "en_US",
-    name: "ERC-4626 Resources"
+    name: "ERC-4626 Resources",
     images: [
       {
         url: "/preview.jpg", width: 1200, height: 628, alt: process.env.SEO_TITLE || "ERC-4626 — A Tokenized Vault Standard", type: "image/jpeg"
