@@ -69,7 +69,7 @@ const VaultExplorer = () => {
           <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
             <div className="relative overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
               <table
-                className="min-w-full table-fixed divide-y divide-gray-200"
+                className="min-w-full table-fixed divide-y divide-gray-200 overscroll-y-contain"
                 style={{ borderSpacing: 0 }}
               >
                 <thead className="bg-gray-50">
@@ -121,7 +121,7 @@ const VaultExplorer = () => {
                     .map((vault, vaultIdx) => (
                       <tr key={`${vault}-${vaultIdx}`} className="bg-white">
                         <td className="whitespace-nowrap py-2 pl-6 pr-3 font-extrabold tracking-tight">
-                          <span className=" relative -mb-1 inline-flex bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">
+                          <span className="-mb-1 block select-none bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">
                             {
                               vaults.name[
                                 vaultIdx + (currentPage - 1) * perPage
@@ -141,27 +141,27 @@ const VaultExplorer = () => {
                             ]
                           }
                         </td>
-                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                        <td className="whitespace-nowrap px-3 py-4 text-sm">
                           {vaults.is_vault[
                             vaultIdx + (currentPage - 1) * perPage
                           ] ? (
-                            <div className="inline-flex items-center rounded-full border border-pink-400/25 bg-pink-100 px-3 py-1 text-xs font-bold text-pink-600">
-                              <BsSafe2Fill className="-ml-1 mr-1 h-3 w-3 text-pink-400" />
+                            <div className="inline-flex items-center rounded-full border border-pink-400/75 bg-pink-100 px-3 py-1 text-xs font-bold text-pink-600">
+                              <BsSafe2Fill className="-ml-1 mr-1 h-3 w-3 text-pink-600" />
                               Vault
                             </div>
                           ) : (
-                            <div className="inline-flex items-center rounded-full border border-yellow-400/25 bg-yellow-100 px-3 py-1 text-xs font-bold text-yellow-700">
-                              <FaFileContract className="-ml-1 mr-1 h-3 w-3 text-yellow-400" />
+                            <div className="inline-flex items-center rounded-full border border-yellow-400/75 bg-yellow-100 px-3 py-1 text-xs font-bold text-yellow-700">
+                              <FaFileContract className="-ml-1 mr-1 h-3 w-3 text-yellow-600" />
                               Protocol
                             </div>
                           )}
                         </td>
-                        <td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-500">
+                        <td className="whitespace-nowrap py-2 pl-4 pr-3 text-sm text-gray-900">
                           {vaults.timestamp[
                             vaultIdx + (currentPage - 1) * perPage
                           ].toLocaleString()}
                         </td>
-                        <td className="whitespace-nowrap py-2 pr-8 pl-3 text-right text-sm text-gray-500">
+                        <td className="whitespace-nowrap py-2 pr-8 pl-3 text-right text-sm text-gray-900">
                           {mapAddressWithScan(
                             vaults.contract_address[
                               vaultIdx + (currentPage - 1) * perPage
