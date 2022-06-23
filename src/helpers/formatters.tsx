@@ -52,7 +52,7 @@ export function mapAddressWithScan(address: string, chain: string) {
         href = `https://etherscan.io/address/${address}#code`;
         break;
       case "avalanche":
-        href = `https://avascan.info/blockchain/c/address/${address}/contract`;
+        href = `https://snowtrace.io/token/${address}#readContract`;
         break;
     }
   }
