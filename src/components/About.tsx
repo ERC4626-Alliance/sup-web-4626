@@ -42,16 +42,17 @@ const About = () => (
           </p>
         </div>
         <div
-          className="relative mt-12 h-auto w-full md:col-span-7"
+          className="object-scale-down relative mt-12 h-auto w-full md:col-span-7"
           data-aos="fade-left"
         >
           <ExportedImage
-            src="images/superCharged.webp"
+            src="images/superCharged.svg"
             layout="raw"
-            width={796}
-            height={358}
+            width={823}
+            height={370}
+
             loading="lazy"
-            className="inline-flex w-full rounded-lg border border-pink-100 shadow-lg md:h-full md:w-auto md:max-w-none"
+            className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
             alt="WHAT IS ERC-4626?"
           />
         </div>
@@ -62,15 +63,15 @@ const About = () => (
       <Container>
         <div className="flex flex-col-reverse md:grid md:grid-cols-12 md:gap-20 md:py-32">
           <div
-            className="relative mx-auto w-full w-full pb-10 md:col-span-7 md:row-auto md:mx-0 md:mt-0 md:max-w-none md:pb-0"
+            className="relative mx-auto w-full pb-10 md:col-span-7 md:row-auto md:mx-0 md:mt-0 md:max-w-none md:pb-0"
             data-aos="fade-right"
           >
             <ExportedImage
               layout="raw"
-              width={796}
-              height={358}
-              src="images/stars4626.webp"
-              className="inline-flex w-full rounded-lg border border-pink-100 shadow-lg md:h-full md:w-auto md:max-w-none"
+              width={823}
+              height={370}
+              src="images/stars4626.svg"
+              className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
               alt="WHAT IS ERC-4626?"
               loading="lazy"
             />
