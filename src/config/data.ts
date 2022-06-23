@@ -45,13 +45,40 @@ export const linksResources = {
         "Applications built on top of ERC-4626 vaults work with all yield-bearing ERC-4626 vaults, making integration and innovation much easier.",
     },
     {
-      name: "Why ERC-4626 could power DeFi’s innovation wave",
-      href: "https://medium.com/mstable/why-erc-4626-could-power-defis-innovation-wave-588674b0664f",
-      date: "2022-06-20",
+      name: "Introducing Apollo: analyzing the usage of ERC4626 across chains",
+      href: "https://medium.com/chainbound/introducing-apollo-analyzing-the-usage-of-erc4626-across-chains-8668b9b0d83a",
+      date: "2022-06-15",
       thumbnail:
         "https://miro.medium.com/max/1200/1*v-NWGepgXd_nJrbjE3ALxA.png",
       teaser:
         "As we look ahead to the exciting changes v3 Vaults are bringing for both developers and degens, I spoke with the Yearn contributor leading the v3 design team. I was surprised to learn about the…",
+    },
+    {
+      name: "ERC4626: A new standard for DeFi applications",
+      href: "https://chainstack.com/erc4626-a-new-standard-for-defi-applications/",
+      date: "2022-05-27",
+      thumbnail:
+        "https://chainstack.com/wp-content/uploads/2022/05/ERC4626-sm.jpeg",
+      teaser:
+        "ERC4626 is the new standard for tokenized vaults. A building block that extends the ERC20 token and will give a fresh perspective to the DeFi space.",
+    },
+    {
+      name: "DeFi in Ether: Biweekly update on Ethereum DeFi ecosystem vol.54, 24th May — 7th June",
+      href: "https://medium.com/paradigm-research/defi-in-ether-49-6b-in-defi-mstable-save-gets-erc-4626-upgrade-maker-now-connected-to-starknet-44ca18fb9484",
+      date: "2022-06-07",
+      thumbnail:
+        "https://miro.medium.com/max/1200/1*BTVEK72BRkvQTagBgGbSvA.png",
+      teaser:
+        "DeFi in Ether: $49.6B in DeFi, mStable Save gets ERC-4626 upgrade, Maker now connected to StarkNet, Balancer now live on Optimism, STAKE ←→ GNO token merge is complete, The 0xpo Summit 2022 announced, Bancor 3 roll-out update, and much more! | by Paradigm | Paradigm | Jun, 2022 | Medium",
+    },
+    {
+      name: "Why ERC-4626 could power DeFi’s innovation wave",
+      href: "https://medium.com/mstable/why-erc-4626-could-power-defis-innovation-wave-588674b0664f",
+      date: "2022-06-20",
+      thumbnail:
+        "https://miro.medium.com/max/1200/1*8X8CXMcVlaG_qBXOFCmsfw.png",
+      teaser:
+        "Chainbound is a research & development organization focused on public blockchains. This is the first in a series of articles which we believe will shape Chainbound’s mission in the years to come",
     },
   ],
   videos: [
