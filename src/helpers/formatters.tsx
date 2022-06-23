@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaFileContract } from "react-icons/fa";
 
 export function mapIcon(chain: string) {
   let icon = "";
@@ -60,12 +61,13 @@ export function mapAddressWithScan(address: string, chain: string) {
     <a
       href={href}
       target="_blank"
-      className="group whitespace-nowrap font-medium text-pink-500 decoration-from-font underline-offset-4 md:hover:text-pink-700 md:hover:underline"
+      className="group whitespace-nowrap inline-flex items-center font-medium text-pink-500 decoration-from-font underline-offset-4 md:hover:text-pink-700 md:hover:underline underline md:no-underline"
       rel="noopener noreferrer"
     >
-      <code className="select-none rounded-lg bg-transparent px-2 py-1 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">
+      <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">
         {address}
       </code>
+      <FaFileContract className="ml-1.5 h-4 md:opacity-25 md:group-hover:opacity-100"/>
     </a>
   ) : (
     address
