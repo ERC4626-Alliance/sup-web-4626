@@ -13,7 +13,7 @@ export default function News() {
         <AtomTitle alignText="center" inverted={true}>
           ERC-4626 News
         </AtomTitle>
-        <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 gap-8 sm:text-left md:grid-cols-2 md:gap-y-4">
+        <div className="mx-auto mt-8 grid grid-cols-1 gap-8 sm:text-left md:grid-cols-2 lg:grid-cols-3">
           {linksResources.news.map((item: any, index: number) => (
             <a
               key={`news-${index}`}
@@ -22,13 +22,11 @@ export default function News() {
               rel="noopener noreferrer"
               className="group relative block overflow-hidden rounded-xl bg-white p-5 shadow-md transition-opacity delay-75 ease-linear md:hover:opacity-90"
             >
-              <div className="overflow-hidden rounded-lg shadow-md">
-                <img
-                  className="max-h-30 object-scale-down"
-                  src={item.thumbnail}
-                  alt={item.title}
-                />
-              </div>
+              <img
+                className="min-w-full rounded-lg object-contain shadow-md"
+                src={item.thumbnail}
+                alt={item.title}
+              />
               <div className="my-3 inline-flex items-center whitespace-nowrap rounded-full py-0.5 text-sm font-medium text-pink-800 md:bg-pink-100 md:px-3">
                 <BsCalendar2DateFill className="mr-1 h-4 w-4" />
                 {item.date}

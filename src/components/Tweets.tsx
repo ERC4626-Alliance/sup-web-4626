@@ -11,7 +11,10 @@ const Tweets = () => {
       <Container>
         <ul className="md:grid-col-2 mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3">
           <li>
-            <blockquote className="twitter-tweet" data-dnt="true">
+            <blockquote
+              className="twitter-tweet  max-w-[70vw] md:max-w-none"
+              data-dnt="true"
+            >
               <p lang="en" dir="ltr">
                 The ERC-4626 Tokenized Vault Standard is ready for final review
                 😎
@@ -34,7 +37,10 @@ const Tweets = () => {
             </blockquote>
           </li>
           <li>
-            <blockquote className="twitter-tweet" data-dnt="true">
+            <blockquote
+              className="twitter-tweet  max-w-[70vw] md:max-w-none"
+              data-dnt="true"
+            >
               <p lang="en" dir="ltr">
                 You’ve heard of ERC-20s, ERC-721s and ERC-1155s
                 <br />
@@ -55,7 +61,10 @@ const Tweets = () => {
             </blockquote>
           </li>
           <li>
-            <blockquote className="twitter-tweet" data-dnt="true">
+            <blockquote
+              className="twitter-tweet max-w-[70vw] md:max-w-none"
+              data-dnt="true"
+            >
               <p lang="en" dir="ltr">
                 ERC-4626 will be a huge game changer and 99% of
                 <a href="https://twitter.com/hashtag/DeFi?src=hash&amp;ref_src=twsrc%5Etfw">
