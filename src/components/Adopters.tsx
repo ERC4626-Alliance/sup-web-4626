@@ -1,36 +1,33 @@
 import AtomTitle from "@/components/Atom/Title";
-import Container from "components/Container";
+import Container from "@/components/Container";
 import ExportedImage from "next-image-export-optimizer";
+import { SupSingleAdopter } from "@/types/sup";
 
 export default function Adopters() {
   const adopters = [
     [
       {
         src: "alchemix.svg",
-        alt: "Alchemix",
-        link: "https://alchemix.fi/",
-        about: "",
-        app: "",
+        title: "Alchemix",
+        url: {
+          web: "https://alchemix.fi/",
+        },
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "balancer.svg",
-        alt: "Balancer",
-        link: "https://balancer.fi",
-        about: "",
-        app: "",
+        title: "Balancer",
+        url: { web: "https://balancer.fi" },
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "maple.svg",
-        alt: "Maple",
-        link: "https://maple.finance",
-        about: "",
-        app: "",
+        title: "Maple",
+        url: { web: "https://maple.finance" },
         extra: {
           unoptimized: true,
         },
@@ -39,60 +36,72 @@ export default function Adopters() {
     [
       {
         src: "tribe-dao.svg",
-        alt: "Tribe DAO",
-        link: "https://tribedao.xyz/governance/proposals/FIP-103",
-        about: "",
-        app: "",
+        title: "Tribe DAO",
+        url: { web: "https://tribedao.xyz/governance/proposals/FIP-103" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "fei.svg",
-        alt: "Fei",
-        link: "https://fei.money",
-        about: "",
-        app: "",
+        title: "Fei",
+        url: { web: "https://fei.money" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "rari.png",
-        alt: "Rari",
-        link: "https://rari.capital/",
-        about: "",
-        app: "",
+        title: "Rari Capital",
+        url: { web: "https://rari.capital/" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "midas.png",
-        alt: "Midas Capital",
-        link: "https://www.midascapital.xyz/",
-        about: "",
-        app: "",
+        title: "Midas Capital",
+        url: { web: "https://www.midascapital.xyz/" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "yieldprotocol.svg",
-        alt: "Yield Protocol",
-        link: "https://yieldprotocol.com",
-        about: "",
-        app: "",
+        title: "Yield Protocol",
+        url: { web: "https://yieldprotocol.com" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "yield-finance.svg",
-        alt: "Yield Finance",
-        link: "https://yearn.finance",
-        about: "",
-        app: "",
+        title: "Yield Finance",
+        url: { web: "https://yearn.finance" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        url: { web: "https://aura.finance" },
+        src: "aura.png",
+        title: "Aura Finance",
+      },
+      {
+        url: { web: "https://thorswap.finance" },
+        src: "thorswap.png",
+        title: "THORSwap",
+      },
+      {
+        url: { web: "https://www.element.fi/" },
+        src: "element-fi.svg",
+        title: "Element Protocol",
         extra: {
           unoptimized: true,
         },
@@ -101,36 +110,33 @@ export default function Adopters() {
     [
       {
         src: "mstable.svg",
-        alt: "mStable",
-        link: "https://mstable.org",
-        about: "",
-        app: "",
+        title: "mStable",
+        url: { web: "https://mstable.org" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "openzeppelin.svg",
-        alt: "OpenZeppelin",
-        link: "https://openzeppelin.com",
-        about: "",
-        app: "",
+        title: "OpenZeppelin",
+        url: { web: "https://openzeppelin.com" },
+
         extra: {
           unoptimized: true,
         },
       },
       {
         src: "maximizer.svg",
-        alt: "maximizer",
-        link: "https://www.maxi.xyz/",
-        about: "",
-        app: "",
+        title: "maximizer",
+        url: { web: "https://www.maxi.xyz/" },
+
         extra: {
           unoptimized: true,
         },
       },
     ],
-  ];
+  ] as Array<SupSingleAdopter[]>;
   return (
     <div
       className="relative w-full bg-gradient-to-b from-pink-50 py-16"
@@ -159,35 +165,25 @@ export default function Adopters() {
             </div>
 
             <div className="relative space-y-5">
-              {adopters.map(
-                (
-                  itemsList: Array<{
-                    src: string;
-                    alt: string;
-                    link?: string;
-                    app?: string;
-                    about?: string;
-                    extra?: any;
-                  }>,
-                  index
-                ) => (
-                  <div
-                    key={index}
-                    className={`grid grid-cols-1 gap-5 sm:grid-cols-3 ${
-                      index > 0
-                        ? index === 1
-                          ? "xl:translate-x-6"
-                          : "xl:translate-x-12"
-                        : ""
-                    }`}
-                  >
-                    {itemsList.map((item, subindex) => (
+              {adopters.map((itemsList: SupSingleAdopter[], index: number) => (
+                <div
+                  key={index}
+                  className={`grid grid-cols-1 gap-5 sm:grid-cols-3 ${
+                    index > 0
+                      ? index === 1
+                        ? "xl:translate-x-6"
+                        : "xl:translate-x-12"
+                      : ""
+                  }`}
+                >
+                  {itemsList.map(
+                    (item: SupSingleAdopter, adopterKey: number) => (
                       <a
-                        href={item.link}
+                        href={item.url.web}
                         rel="noopener noreferrer"
                         target="_blank"
                         className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg md:w-full md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
-                        key={`adopter-${index}-${subindex}`}
+                        key={`adopter-${index}-${adopterKey}`}
                       >
                         <ExportedImage
                           src={`images/logos/${item.src}`}
@@ -195,18 +191,18 @@ export default function Adopters() {
                           loading="lazy"
                           height={128}
                           width={128}
-                          alt={item.alt}
-                          className="h-24 w-auto object-scale-down md:h-8"
+                          alt={item.title}
+                          className="h-24 w-auto object-scale-down md:h-16"
                           {...item.extra}
                         />
                         <h3 className="mt-3 bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
-                          {item.alt}
+                          {item.title}
                         </h3>
                       </a>
-                    ))}
-                  </div>
-                )
-              )}
+                    )
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
