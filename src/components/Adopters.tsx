@@ -80,8 +80,8 @@ export default function Adopters() {
         },
       },
       {
-        src: "yield-finance.svg",
-        title: "Yield Finance",
+        src: "yearn.finance.svg",
+        title: "Yearn Finance",
         url: { web: "https://yearn.finance" },
 
         extra: {
