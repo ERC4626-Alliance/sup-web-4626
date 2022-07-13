@@ -1,5 +1,4 @@
 import "/styles/globals.scss";
-import { NextUIProvider } from "@nextui-org/react";
 import AOS from "aos";
 import { NextGtag } from "next-gtag";
 import type { AppProps } from "next/app";
@@ -8,6 +7,7 @@ import { useEffect } from "react";
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     AOS.init({
+      disableMutationObserver: true,
       disable: "mobile",
       once: true,
       easing: "ease-in-out",
@@ -27,10 +27,8 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      <NextUIProvider>
-        <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
-        <Component {...pageProps} />
-      </NextUIProvider>
+      <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
+      <Component {...pageProps} />
     </>
   );
 };

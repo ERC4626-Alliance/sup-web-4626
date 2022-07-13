@@ -9,7 +9,6 @@ import News from "@/components/News";
 import VaultExplorer from "@/components/VaultExplorer";
 
 import SEO from "@/helpers/seo.config";
-import { GetStaticProps } from "next";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 
@@ -33,15 +32,3 @@ export default function Home() {
     </>
   );
 }
-
-export const getStaticProps: GetStaticProps = async () => {
-  // const allWebsiteData = [];
-  // return {
-  //   props: {
-  //     allPostsData
-  //   }
-  // };
-  return {
-    props: {},
-  };
-};

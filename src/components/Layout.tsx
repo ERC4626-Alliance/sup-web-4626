@@ -52,7 +52,7 @@ const Layout = ({ children }: PropsWithChildren<{}>) => {
         <meta name="msapplication-TileColor" content="#000000" />
       </Head>
       <Header />
-      <main className="mx-auto min-h-screen max-w-[100vw] overflow-x-hidden bg-white md:max-w-none md:overflow-x-auto">
+      <main className="mx-auto min-h-screen max-w-[100vw] bg-white md:max-w-none">
         {children}
       </main>
       <Footer />

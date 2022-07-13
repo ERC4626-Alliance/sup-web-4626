@@ -84,7 +84,7 @@ const Header = () => {
             isHeaderExpanded ? "" : "hidden"
           }`}
         >
-          <div className="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5">
+          <div className="rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
                 <h2 className="text-4xl font-black tracking-tight text-gray-900 sm:text-4xl">

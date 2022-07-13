@@ -4,7 +4,8 @@
     "allowJs": true,
     // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
+    "rootDir": "./",
     "checkJs": false,
     "declaration": true,
     "esModuleInterop": true,
@@ -23,14 +24,17 @@
     "moduleResolution": "Node",
     "noEmit": true,
     // Report errors on unused parameters
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noUnusedParameters": true,
     "paths": {
-      "~~/*": [
-        "../public/*"
-      ],
       "@/*": [
-        "./*"
+        "./src/*"
+      ],
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "~~/*": [
+        "public/*"
       ]
     },
     "resolveJsonModule": true,
@@ -43,10 +47,8 @@
       "@types/aos",
       "@types/node",
       "@types/react",
-      "next-gtag",
       "@types/react-dom",
-      "@headlessui/react",
-      "@nextui-org/react",
+      "next-gtag",
       "react-paginate",
       "react-icons"
     ]

@@ -20,7 +20,6 @@
     "ethereum",
     "web3",
     "defi",
-    "NextUI",
     "typescript",
     "tailwind",
     "tailwindui",
@@ -47,8 +46,6 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.4",
-    "@nextui-org/react": "^1.0.0-beta.8",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.27.2",
     "lite-youtube-embed": "^0.2.0",
