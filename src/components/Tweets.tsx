@@ -1,6 +1,5 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
-import { useEffect } from "react";
 
 const Tweets = () => {
   return (

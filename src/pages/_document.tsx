@@ -1,4 +1,3 @@
-import { CssBaseline } from "@nextui-org/react";
 import Document, {
   DocumentContext,
   Head,
@@ -20,7 +19,7 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>{CssBaseline.flush()}</Head>
+        <Head></Head>
         <body>
           <Main />
           <NextScript />

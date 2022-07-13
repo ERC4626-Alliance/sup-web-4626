@@ -34,11 +34,12 @@ module.exports = (phase) => {
       removeConsole: true,
     },
     trailingSlash: true,
-    productionBrowserSourceMaps: true,
+    productionBrowserSourceMaps: isDev,
     swcMinify: isProd,
     env: {
       ...env,
     },
+    ssr: false,
     reactStrictMode: true,
     poweredByHeader: false,
     experimental: {

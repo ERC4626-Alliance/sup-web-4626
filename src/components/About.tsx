@@ -1,4 +1,4 @@
-import AtomTitle from "components/Atom/Title";
+import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import ExportedImage from "next-image-export-optimizer";
 

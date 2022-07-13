@@ -38,7 +38,7 @@ export function mapIcon(chain: string) {
 }
 
 export function mapAddressWithScan(address: string, chain: string) {
-  let href = undefined;
+  let href = undefined as undefined | string;
   if (chain.toLowerCase().search("bnb") !== -1) {
     href = `https://explorer.binance.org/address/${address}`;
   } else {
@@ -61,13 +61,13 @@ export function mapAddressWithScan(address: string, chain: string) {
     <a
       href={href}
       target="_blank"
-      className="group whitespace-nowrap inline-flex items-center font-medium text-pink-500 decoration-from-font underline-offset-4 md:hover:text-pink-700 md:hover:underline underline md:no-underline"
+      className="group inline-flex items-center whitespace-nowrap font-medium text-pink-500 underline decoration-from-font underline-offset-4 md:no-underline md:hover:text-pink-700 md:hover:underline"
       rel="noopener noreferrer"
     >
       <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">
         {address}
       </code>
-      <FaFileContract className="ml-1.5 h-4 md:opacity-25 md:group-hover:opacity-100"/>
+      <FaFileContract className="ml-1.5 h-4 md:opacity-25 md:group-hover:opacity-100" />
     </a>
   ) : (
     address

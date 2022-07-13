@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@next/next/no-document-import-in-page": "off",
+        "@next/next/no-img-element": "off",
+        // Checks rules of Hooks
+        "react-hooks/rules-of-hooks": "error",
+        // Checks effect dependencies},
+        "react-hooks/exhaustive-deps": "warn",
+        "import/no-anonymous-default-export": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "public/",
+    "node_modules/"
+  ]
+}

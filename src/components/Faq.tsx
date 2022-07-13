@@ -4,7 +4,7 @@ const faqs = [
   {
     id: 1,
     question: "What's the best thing about ERC4626?",
-    answer: "Lorem ipsum dolor sit amet consectetur.",
+    answer: "Lorem ipsum dolor sit amet text example.",
   },
   {
     id: 2,

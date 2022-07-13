@@ -7,10 +7,7 @@ import { IoLogoGithub } from "react-icons/io";
 const Resources = () => {
   useEffect(() => {
     const s = document.createElement("script");
-    s.setAttribute(
-      "src",
-      "//cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.3.1/lite-youtube.js"
-    );
+    s.setAttribute("src", "/lite-youtube.js");
     s.setAttribute("async", "true");
     s.setAttribute("defer", "true");
     s.setAttribute("type", "module");
