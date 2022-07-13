@@ -1,5 +1,6 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
+import { scroller } from "react-scroll";
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -24,7 +25,7 @@ const defaultState: VaultType = {
   contract_address: [],
   protocol: [],
   is_vault: [],
-  vault_id: []
+  vault_id: [],
 };
 
 const VaultExplorer = () => {
@@ -48,8 +49,18 @@ const VaultExplorer = () => {
       });
   }, []);
 
+  /**
+   * Set specific page & scroll to the top of the vaultscan block
+   * @param event
+   */
   const handlePageClick = (event: { selected: any }) => {
     setCurrentPage(event.selected + 1);
+    scroller.scrollTo("vaultscan", {
+      duration: 500,
+      delay: 50,
+      smooth: true,
+      offset: 60,
+    });
   };
   const perPage = 30;
 
@@ -74,7 +85,7 @@ const VaultExplorer = () => {
               >
                 <thead className="-mt-1 overflow-hidden border-b border-gray-400/50 bg-gray-50 md:rounded-t-xl">
                   <tr className="overflow-hidden bg-transparent text-left text-sm font-semibold text-gray-900 backdrop-blur  backdrop-filter md:rounded-t-xl">
-                    <th scope="col" className="p-4">
+                    <th scope="col" className="w-[20%] p-4">
                       Name
                     </th>
                     <th scope="col" className="min-w-[8rem] p-4">
@@ -89,7 +100,7 @@ const VaultExplorer = () => {
                     <th scope="col" className="table-cell p-4">
                       Added at
                     </th>
-                    <th scope="col" className="table-cell p-4">
+                    <th scope="col" className="table-cell text-left p-4 md:pl-[119px]">
                       Contract Address
                     </th>
                   </tr>
@@ -103,9 +114,9 @@ const VaultExplorer = () => {
                     .map((vault, vaultIdx) => (
                       <tr
                         key={`${vault}-${vaultIdx}`}
-                        className="cursor-default select-none whitespace-nowrap  bg-white text-sm tracking-tight text-gray-900"
+                        className="... cursor-default select-none truncate whitespace-nowrap bg-white text-sm tracking-tight text-gray-900"
                       >
-                        <td className="p-4">
+                        <td className="w-[256px] min-w-[256px] max-w-[256px] p-4">
                           <span className="-mb-1 inline-block bg-gradient-to-b from-pink-500 to-pink-900 bg-clip-text pb-1 font-extrabold tracking-tight text-transparent">
                             {
                               vaults.name[
