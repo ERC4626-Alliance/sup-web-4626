@@ -28,10 +28,11 @@ const defaultState: VaultType = {
   vault_id: [],
 };
 
-const VaultExplorer = () => {
+export default function VaultExplorer() {
   const [vaults, setVaults] = useState(defaultState);
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
+
   useEffect(() => {
     let config = {
       headers: {
@@ -84,7 +85,7 @@ const VaultExplorer = () => {
                 style={{ borderSpacing: 0 }}
               >
                 <thead className="-mt-1 overflow-hidden border-b border-gray-400/50 bg-gray-50 md:rounded-t-xl">
-                  <tr className="overflow-hidden bg-transparent text-left text-sm font-semibold text-gray-900 backdrop-blur  backdrop-filter md:rounded-t-xl">
+                  <tr className="overflow-hidden bg-transparent text-left text-sm font-semibold text-gray-900 md:rounded-t-xl">
                     <th scope="col" className="w-[20%] p-4">
                       Name
                     </th>
@@ -100,7 +101,10 @@ const VaultExplorer = () => {
                     <th scope="col" className="table-cell p-4">
                       Added at
                     </th>
-                    <th scope="col" className="table-cell text-left p-4 md:pl-[119px]">
+                    <th
+                      scope="col"
+                      className="table-cell p-4 text-left md:pl-[119px]"
+                    >
                       Contract Address
                     </th>
                   </tr>
@@ -191,5 +195,4 @@ const VaultExplorer = () => {
       </Container>
     </div>
   );
-};
-export default VaultExplorer;
+}

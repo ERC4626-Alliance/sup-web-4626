@@ -33,7 +33,7 @@ body {
 
 .indexHeader {
   @apply backdrop-filter backdrop-blur-xl shadow-sm md:overflow-hidden;
-  @apply bg-pink-200 fixed w-full z-20 py-6;
+  @apply bg-pink-200 fixed w-full z-20 py-6 top-0;
 
   will-change: background-color;
   backdrop-filter: blur(24px);

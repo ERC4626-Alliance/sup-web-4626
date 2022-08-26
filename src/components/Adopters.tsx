@@ -1,7 +1,7 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import ExportedImage from "next-image-export-optimizer";
-import { SupSingleAdopter } from "@/types/sup";
+import { SupSingleAdopter } from "@/types";
 
 export default function Adopters() {
   const adopters = [
