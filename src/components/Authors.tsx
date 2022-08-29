@@ -2,7 +2,7 @@ import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import { IoLogoTwitter } from "react-icons/io";
 
-const Authors = () => {
+export default function Authors() {
   const authorList = [
     {
       name: "Joey Santoro",
@@ -34,50 +34,46 @@ const Authors = () => {
     },
   ];
   return (
-    <>
-      <div
-        className="bg-gradient-to-t from-pink-50 py-16 text-center"
-        id="authors"
-      >
-        <Container>
-          <AtomTitle alignText="center">ERC-4626 AUTHORS</AtomTitle>
-          <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 md:flex-row md:items-center md:justify-center md:space-y-0">
-            <span className="mb-1 md:mb-0">ERC-4626 was authored by:</span>
-            {authorList.map(
-              (
-                author: {
-                  name: string;
-                  twitter: string;
-                  githubAvatar?: string;
-                },
-                index
-              ) => (
-                <a
-                  href={`https://twitter.com/${author.twitter}`}
-                  target="_blank"
-                  rel="nofollow noreferrer"
-                  key={`author-${index}`}
-                  className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline"
-                >
-                  <span className="relative h-10 w-10 overflow-hidden rounded-full  ring-2 ring-transparent md:group-hover:ring-pink-700">
-                    <img
-                      src={author.githubAvatar}
-                      alt={author.name}
-                      className="h-full w-full bg-gray-200"
-                      loading="lazy"
-                    />
-                    <span className="absolute inset-0 rounded-full border border-black border-opacity-10" />
-                  </span>
-                  <h3>{author.name}</h3>
-                  <IoLogoTwitter className="h-4 w-4 md:opacity-25 md:group-hover:opacity-100" />
-                </a>
-              )
-            )}
-          </div>
-        </Container>
-      </div>
-    </>
+    <div
+      className="bg-gradient-to-t from-pink-50 py-16 text-center"
+      id="authors"
+    >
+      <Container>
+        <AtomTitle alignText="center">ERC-4626 AUTHORS</AtomTitle>
+        <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 md:flex-row md:flex-wrap md:items-center lg:justify-center xl:space-y-0">
+          <div className="inline-flex h-full mb-1 md:mt-6 xl:mt-0 md:mb-0">ERC-4626 was authored by:</div>
+          {authorList.map(
+            (
+              author: {
+                name: string;
+                twitter: string;
+                githubAvatar?: string;
+              },
+              index
+            ) => (
+              <a
+                href={`https://twitter.com/${author.twitter}`}
+                target="_blank"
+                rel="nofollow noreferrer"
+                key={`author-${index}`}
+                className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline"
+              >
+                <span className="relative h-10 w-10 overflow-hidden rounded-full  ring-2 ring-transparent md:group-hover:ring-pink-700">
+                  <img
+                    src={author.githubAvatar}
+                    alt={author.name}
+                    className="h-full w-full bg-gray-200"
+                    loading="lazy"
+                  />
+                  <span className="absolute inset-0 rounded-full border border-black border-opacity-10" />
+                </span>
+                <h3>{author.name}</h3>
+                <IoLogoTwitter className="h-4 w-4 md:opacity-25 md:group-hover:opacity-100" />
+              </a>
+            )
+          )}
+        </div>
+      </Container>
+    </div>
   );
-};
-
-export default Authors;
+}
