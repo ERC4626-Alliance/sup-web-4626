@@ -37,46 +37,40 @@ export function formatProtocolName(protocol: string) {
 export function mapIcon(chain: string | number, showText = true) {
   let icon = "";
   let chainName = typeof chain === "string" ? chain.toLowerCase() : "";
-  if (`${chainName}`.toLowerCase().includes("bsc")) {
-    chainName = "BSC";
-    icon = "images/icons/bnb.svg";
-  } else {
-    switch (`${chain}`.toLowerCase()) {
-      default:
-        alert(chain);
-        return <></>;
-      case "56":
-      case "binance":
-      case "bsc":
-        chainName = "BSC";
-        icon = "images/icons/bnb.svg";
-        break;
-      case "137":
-      case "polygon":
-        chainName = "Polygon";
-        icon = "images/icons/polygon.svg";
-        break;
-      case "250":
-      case "fantom":
-        chainName = "Fantom";
-        icon = "images/icons/fantom.svg";
-        break;
-      case "1":
-      case "ethereum":
-        chainName = "Ethereum";
-        icon = "images/icons/eth.svg";
-        break;
-      case "43114":
-      case "avalanche":
-        chainName = "Avalanche";
-        icon = "images/icons/avalanche.svg";
-        break;
-      case "42161":
-      case "arbitrum":
-        chainName = "Arbitrum";
-        icon = "images/icons/arbitrum.svg";
-        break;
-    }
+  switch (`${chain}`.toLowerCase()) {
+    default:
+      return <></>;
+    case "56":
+    case "binance":
+    case "bsc":
+      chainName = "Binance";
+      icon = "images/icons/bnb.svg";
+      break;
+    case "137":
+    case "polygon":
+      chainName = "Polygon";
+      icon = "images/icons/polygon.svg";
+      break;
+    case "250":
+    case "fantom":
+      chainName = "Fantom";
+      icon = "images/icons/fantom.svg";
+      break;
+    case "1":
+    case "ethereum":
+      chainName = "Ethereum";
+      icon = "images/icons/eth.svg";
+      break;
+    case "43114":
+    case "avalanche":
+      chainName = "Avalanche";
+      icon = "images/icons/avalanche.svg";
+      break;
+    case "42161":
+    case "arbitrum":
+      chainName = "Arbitrum";
+      icon = "images/icons/arbitrum.svg";
+      break;
   }
   return (
     <div className="flex items-center justify-start space-x-1">
@@ -99,6 +93,8 @@ export function mapAddressWithScan(address: string, chain: string) {
     case "polygon":
       href = `https://polygonscan.com/address/${address}#readContract`;
       break;
+    case "56":
+    case "binance":
     case "bsc":
       href = `https://bscscan.com/address/${address}#readContract`;
       break;
