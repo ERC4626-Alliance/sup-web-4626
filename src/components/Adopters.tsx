@@ -17,9 +17,33 @@ export default function Adopters() {
         },
       },
       {
+        url: { web: "https://aura.finance" },
+        src: "aura.png",
+        title: "Aura Finance",
+      },
+      {
         src: "balancer.svg",
         title: "Balancer",
         url: { web: "https://balancer.fi" },
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        url: { web: "https://www.element.fi/" },
+        src: "element-fi.svg",
+        title: "Element Protocol",
+        extra: {
+          unoptimized: true,
+        },
+      },
+    ],
+    [
+      {
+        src: "fei.svg",
+        title: "Fei",
+        url: { web: "https://fei.money" },
+
         extra: {
           unoptimized: true,
         },
@@ -32,30 +56,10 @@ export default function Adopters() {
           unoptimized: true,
         },
       },
-    ],
-    [
       {
-        src: "tribe-dao.svg",
-        title: "Tribe DAO",
-        url: { web: "https://tribedao.xyz/governance/proposals/FIP-103" },
-
-        extra: {
-          unoptimized: true,
-        },
-      },
-      {
-        src: "fei.svg",
-        title: "Fei",
-        url: { web: "https://fei.money" },
-
-        extra: {
-          unoptimized: true,
-        },
-      },
-      {
-        src: "rari.png",
-        title: "Rari Capital",
-        url: { web: "https://rari.capital/" },
+        src: "maximizer.svg",
+        title: "maximizer",
+        url: { web: "https://www.maxi.xyz/" },
 
         extra: {
           unoptimized: true,
@@ -70,44 +74,6 @@ export default function Adopters() {
           unoptimized: true,
         },
       },
-      {
-        src: "yieldprotocol.svg",
-        title: "Yield Protocol",
-        url: { web: "https://yieldprotocol.com" },
-
-        extra: {
-          unoptimized: true,
-        },
-      },
-      {
-        src: "yearn.finance.svg",
-        title: "Yearn Finance",
-        url: { web: "https://yearn.finance" },
-
-        extra: {
-          unoptimized: true,
-        },
-      },
-      {
-        url: { web: "https://aura.finance" },
-        src: "aura.png",
-        title: "Aura Finance",
-      },
-      {
-        url: { web: "https://thorswap.finance" },
-        src: "thorswap.png",
-        title: "THORSwap",
-      },
-      {
-        url: { web: "https://www.element.fi/" },
-        src: "element-fi.svg",
-        title: "Element Protocol",
-        extra: {
-          unoptimized: true,
-        },
-      },
-    ],
-    [
       {
         src: "mstable.svg",
         title: "mStable",
@@ -126,10 +92,50 @@ export default function Adopters() {
           unoptimized: true,
         },
       },
+
       {
-        src: "maximizer.svg",
-        title: "maximizer",
-        url: { web: "https://www.maxi.xyz/" },
+        src: "rari.png",
+        title: "Rari Capital",
+        url: { web: "https://rari.capital/" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        src: "timeless.png",
+        title: "Timeless Protocol",
+        url: { web: "https://timelessfi.com/" },
+      },
+    ],
+    [
+      {
+        url: { web: "https://thorswap.finance" },
+        src: "thorswap.png",
+        title: "THORSwap",
+      },
+      {
+        src: "tribe-dao.svg",
+        title: "Tribe DAO",
+        url: { web: "https://tribedao.xyz/governance/proposals/FIP-103" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        src: "yearn.finance.svg",
+        title: "Yearn Finance",
+        url: { web: "https://yearn.finance" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        src: "yieldprotocol.svg",
+        title: "Yield Protocol",
+        url: { web: "https://yieldprotocol.com" },
 
         extra: {
           unoptimized: true,
@@ -168,7 +174,7 @@ export default function Adopters() {
               {adopters.map((itemsList: SupSingleAdopter[], index: number) => (
                 <div
                   key={index}
-                  className={`grid grid-cols-1 gap-5 sm:grid-cols-3 ${
+                  className={`grid grid-cols-1 gap-5 sm:grid-cols-4 ${
                     index > 0
                       ? index === 1
                         ? "xl:translate-x-6"
@@ -195,7 +201,7 @@ export default function Adopters() {
                           className="h-24 w-auto object-scale-down md:h-16"
                           {...item.extra}
                         />
-                        <h3 className="mt-3 bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
+                        <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
                           {item.title}
                         </h3>
                       </a>
@@ -207,8 +213,6 @@ export default function Adopters() {
           </div>
         </div>
       </Container>
-
-      {/*<div className="absolute inset-0 bg-gradient-to-b xl:bg-gradient-to-b from-pink-50 pt-16 to-transparent"></div>*/}
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import { scroller } from "react-scroll";
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import { BsSafe2Fill, BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { FaFileContract } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
@@ -33,7 +33,7 @@ export default function VaultExplorer() {
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
+  useMemo(() => {
     let config = {
       headers: {
         "access-token": "stargate",
@@ -57,13 +57,13 @@ export default function VaultExplorer() {
   const handlePageClick = (event: { selected: any }) => {
     setCurrentPage(event.selected + 1);
     scroller.scrollTo("vaultscan", {
-      duration: 500,
+      duration: 200,
       delay: 50,
       smooth: true,
       offset: 60,
     });
   };
-  const perPage = 30;
+  const perPage = 15;
 
   return vaults === null ? null : (
     <div

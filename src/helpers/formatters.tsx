@@ -37,7 +37,6 @@ export function formatProtocolName(protocol: string) {
 export function mapIcon(chain: string | number, showText = true) {
   let icon = "";
   let chainName = typeof chain === "string" ? chain.toLowerCase() : "";
-  console.log("chainName", chain);
   if (`${chainName}`.toLowerCase().includes("bsc")) {
     chainName = "BSC";
     icon = "images/icons/bnb.svg";
