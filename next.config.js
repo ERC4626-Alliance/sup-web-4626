@@ -21,17 +21,16 @@ module.exports = (phase) => {
   }
 
   const env = {
-
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
-    IS_PROD: () => !isDev
+    IS_PROD: () => !isDev,
   };
 
   // next.config.js object
   return {
     compiler: {
-      reactRemoveProperties: true,
-      removeConsole: true,
+      reactRemoveProperties: !isDev,
+      removeConsole: !isDev,
     },
     trailingSlash: true,
     productionBrowserSourceMaps: isDev,

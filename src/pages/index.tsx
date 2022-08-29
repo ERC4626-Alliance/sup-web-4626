@@ -8,16 +8,18 @@ import Tweets from "@/components/Tweets";
 import News from "@/components/News";
 import VaultExplorer from "@/components/VaultExplorer";
 
-import SEO from "@/helpers/seo.config";
+import config from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
+import { ResponseSupportedChains, SupDicChainData } from "@/types/core.d";
+import axios, { AxiosResponse } from "axios";
 
 export default function Home() {
   return (
     <>
-      <DefaultSeo {...SEO} />
+      <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
       <Head>
-        <title>{SEO.openGraph?.title}</title>
+        <title>{config.openGraph?.title}</title>
       </Head>
       <Layout>
         <About />
