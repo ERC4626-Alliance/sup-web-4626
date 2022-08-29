@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import { scroller } from "react-scroll";
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import { BsSafe2Fill, BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { FaFileContract } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
@@ -28,11 +28,12 @@ const defaultState: VaultType = {
   vault_id: [],
 };
 
-const VaultExplorer = () => {
+export default function VaultExplorer() {
   const [vaults, setVaults] = useState(defaultState);
   const [pageCount, setPageCount] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
-  useEffect(() => {
+
+  useMemo(() => {
     let config = {
       headers: {
         "access-token": "stargate",
@@ -56,13 +57,13 @@ const VaultExplorer = () => {
   const handlePageClick = (event: { selected: any }) => {
     setCurrentPage(event.selected + 1);
     scroller.scrollTo("vaultscan", {
-      duration: 500,
+      duration: 200,
       delay: 50,
       smooth: true,
       offset: 60,
     });
   };
-  const perPage = 30;
+  const perPage = 15;
 
   return vaults === null ? null : (
     <div
@@ -84,7 +85,7 @@ const VaultExplorer = () => {
                 style={{ borderSpacing: 0 }}
               >
                 <thead className="-mt-1 overflow-hidden border-b border-gray-400/50 bg-gray-50 md:rounded-t-xl">
-                  <tr className="overflow-hidden bg-transparent text-left text-sm font-semibold text-gray-900 backdrop-blur  backdrop-filter md:rounded-t-xl">
+                  <tr className="overflow-hidden bg-transparent text-left text-sm font-semibold text-gray-900 md:rounded-t-xl">
                     <th scope="col" className="w-[20%] p-4">
                       Name
                     </th>
@@ -100,7 +101,10 @@ const VaultExplorer = () => {
                     <th scope="col" className="table-cell p-4">
                       Added at
                     </th>
-                    <th scope="col" className="table-cell text-left p-4 md:pl-[119px]">
+                    <th
+                      scope="col"
+                      className="table-cell p-4 text-left md:pl-[119px]"
+                    >
                       Contract Address
                     </th>
                   </tr>
@@ -191,5 +195,4 @@ const VaultExplorer = () => {
       </Container>
     </div>
   );
-};
-export default VaultExplorer;
+}
