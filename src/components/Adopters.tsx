@@ -145,12 +145,12 @@ export default function Adopters() {
   ] as Array<SupSingleAdopter[]>;
   return (
     <div
-      className="relative w-full bg-gradient-to-b from-pink-50 py-16"
+      className="relative w-full bg-gradient-to-b from-pink-50 py-16 overflow-hidden"
       id="adopters"
     >
-      <Container className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center xl:grid-cols-2">
-          <div className="px-8 text-left md:mx-auto md:max-w-2xl xl:max-w-none xl:pr-16 xl:text-left">
+      <Container className="mx-auto max-w-7xl md:w-full px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center xl:grid-cols-3 2xl:grid-cols-2 mx-auto place-content-evenly">
+          <div className="col-span-1 px-8 md:px-0 text-left md:mx-auto md:max-w-2xl xl:max-w-none lg:pr-16 xl:text-left">
             <AtomTitle alignText="left">
               ERC-4626 <br /> EARLY ADOPTERS
             </AtomTitle>
@@ -159,7 +159,7 @@ export default function Adopters() {
             </p>
           </div>
 
-          <div className="relative mt-8 sm:mt-12 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none">
+          <div className="col-span-full lg:col-span-2 2xl:col-span-1 relative mt-8 sm:mt-12 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none">
             <div className="absolute inset-8 md:inset-16">
               <div
                 className="mx-auto h-full w-full rotate-180 rounded-3xl opacity-30 blur-lg filter"
@@ -170,7 +170,7 @@ export default function Adopters() {
               ></div>
             </div>
 
-            <div className="relative space-y-5">
+            <div className="xl:-ml-16 2xl:ml-0 relative space-y-5">
               {adopters.map((itemsList: SupSingleAdopter[], index: number) => (
                 <div
                   key={index}

@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 import { animateScroll as scroll, Link } from "react-scroll";
 import { useState } from "react";
 
-const Header = () => {
+export default function Header() {
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
@@ -63,7 +63,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <nav className="hidden md:ml-10 md:block md:space-x-10">
+          <nav className="hidden md:ml-10 md:block sm:space-x-4 xl:space-x-10">
             {navigation.map((link, index) => (
               <Link
                 to={link.section}
@@ -72,7 +72,7 @@ const Header = () => {
                 smooth={true}
                 offset={link.offset}
                 duration={500}
-                className="cursor-pointer font-medium text-pink-700 decoration-from-font underline-offset-4 hover:text-pink-700 hover:underline"
+                className="cursor-pointer font-medium text-pink-700 decoration-from-font underline-offset-4 hover:text-pink-700 hover:underline whitespace-nowrap"
               >
                 {link.title}
               </Link>
@@ -148,6 +148,4 @@ const Header = () => {
       </Container>
     </header>
   );
-};
-
-export default Header;
+}
