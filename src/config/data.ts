@@ -90,7 +90,7 @@ export const linksResources = {
         "Explore how the new ERC-4626 token standard enables Web3 developers creating DeFi applications to build tokenized vaults with increased composability and security."
     },
     {
-      name: "How the ERC-4626 can revitalize the DeFi",
+      name: "How ERC-4626 can revitalize DeFi",
       href: "https://cryplogger.com/erc-4626-how-a-new-standard-can-revitalize-the-defi-segment/",
       date: "2022-08-10",
       thumbnail:
