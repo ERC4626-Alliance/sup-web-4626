@@ -1,61 +1,115 @@
 import Image from "next/image";
 import { FaFileContract } from "react-icons/fa";
 
-export function mapIcon(chain: string) {
+/**
+ * @package @superform-xyz/sup-dapp-yield
+ *
+ * Inc.correct processing for possibly `false` or `undefined` values
+ * @example ```html
+ *  <span classNames={classNames("regular-class", isOpened && "class-opened")}/>
+ * ```
+ *
+ *
+ * @param {<string | boolean | undefined>[]} classes - array of classes to be added to the component
+ * @return {string} - composed string of classes
+ */
+export function classNames(...classes: Array<string | boolean | undefined>) {
+  return classes
+    .filter((item) => {
+      if (typeof item === "boolean" || item === undefined) {
+        return false;
+      }
+      return !["false", "undefined", ""].includes(item as string);
+    })
+    .join(" ");
+}
+
+/**
+ * @package @superform-xyz/sup-dapp-yield
+ *
+ * @param {string} protocol - Superform's protocol name (e.g. "Superform" or "Superform/Yield")
+ * @return {string} - protocol
+ */
+export function formatProtocolName(protocol: string) {
+  return protocol.replace(/^Superform\//gu, "");
+}
+
+export function mapIcon(chain: string | number, showText = true) {
   let icon = "";
-  if (chain.toLowerCase().search("bnb") !== -1) {
-    icon = "images/icons/bnb.svg";
-  } else {
-    switch (chain.toLowerCase()) {
-      case "polygon":
-        icon = "images/icons/polygon.svg";
-        break;
-      case "fantom":
-        icon = "images/icons/fantom.svg";
-        break;
-      case "ethereum":
-        icon = "images/icons/ethereum.svg";
-        break;
-      case "avalanche":
-        icon = "images/icons/avalanche.svg";
-        break;
-    }
+  let chainName = typeof chain === "string" ? chain.toLowerCase() : "";
+  switch (`${chain}`.toLowerCase()) {
+    default:
+      return <></>;
+    case "56":
+    case "binance":
+    case "bsc":
+      chainName = "Binance";
+      icon = "images/icons/bnb.svg";
+      break;
+    case "137":
+    case "polygon":
+      chainName = "Polygon";
+      icon = "images/icons/polygon.svg";
+      break;
+    case "250":
+    case "fantom":
+      chainName = "Fantom";
+      icon = "images/icons/fantom.svg";
+      break;
+    case "1":
+    case "ethereum":
+      chainName = "Ethereum";
+      icon = "images/icons/eth.svg";
+      break;
+    case "43114":
+    case "avalanche":
+      chainName = "Avalanche";
+      icon = "images/icons/avalanche.svg";
+      break;
+    case "42161":
+    case "arbitrum":
+      chainName = "Arbitrum";
+      icon = "images/icons/arbitrum.svg";
+      break;
   }
   return (
-    <div className="m-0 flex flex-auto items-center justify-start p-0">
+    <div className="flex items-center justify-start space-x-1">
       <Image
-        layout="raw"
         unoptimized={true}
         width="20"
         height="20"
         src={icon}
-        alt={chain}
-        className="mr-1 h-6 object-scale-down"
+        alt={chainName}
+        className="mr-1 h-[16px] w-auto object-scale-down"
       />
-      {chain[0].toUpperCase() + chain.slice(1)}
+      <span className={classNames(!showText && "hidden")}>{chainName}</span>
     </div>
   );
 }
 
 export function mapAddressWithScan(address: string, chain: string) {
   let href = undefined as undefined | string;
-  if (chain.toLowerCase().search("bnb") !== -1) {
-    href = `https://explorer.binance.org/address/${address}`;
-  } else {
-    switch (chain.toLowerCase()) {
-      case "polygon":
-        href = `https://polygonscan.com/address/${address}#code`;
-        break;
-      case "fantom":
-        href = `https://ftmscan.com/address/${address}`;
-        break;
-      case "ethereum":
-        href = `https://etherscan.io/address/${address}#code`;
-        break;
-      case "avalanche":
-        href = `https://snowtrace.io/token/${address}#readContract`;
-        break;
-    }
+  switch (chain.toLowerCase()) {
+    case "polygon":
+      href = `https://polygonscan.com/address/${address}#readContract`;
+      break;
+    case "56":
+    case "binance":
+    case "bsc":
+      href = `https://bscscan.com/address/${address}#readContract`;
+      break;
+    case "fantom":
+      href = `https://ftmscan.com/address/${address}#readContract`;
+      break;
+    case "ethereum":
+      href = `https://etherscan.io/address/${address}#readContract`;
+      break;
+    case "arbitrum":
+      href = `https://arbiscan.io/address/${address}#readContract`;
+      break;
+    case "avalanche":
+      href = `https://snowtrace.io/address/${address}#readContract`;
+      break;
   }
   return href !== undefined ? (
     <a
