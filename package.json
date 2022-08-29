@@ -78,7 +78,7 @@
     "@types/react-dom": "latest",
     "@types/react-scroll": "^1.8.3",
     "autoprefixer": "latest",
-    "cssnano": "^5.1.12",
+    "cssnano": "5.1.13",
     "eslint": "^8.16.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "^8.5.0",
