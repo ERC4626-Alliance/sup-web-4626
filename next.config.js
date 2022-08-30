@@ -23,28 +23,28 @@ module.exports = (phase) => {
   const env = {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
-    IS_PROD: () => !isDev,
+    IS_PROD: () => !isDev
   };
 
   // next.config.js object
   return {
     compiler: {
       reactRemoveProperties: !isDev,
-      removeConsole: !isDev,
+      removeConsole: !isDev
     },
     trailingSlash: true,
     productionBrowserSourceMaps: isDev,
     swcMinify: isProd,
     env: {
-      ...env,
+      ...env
     },
     ssr: false,
     reactStrictMode: true,
     poweredByHeader: false,
     experimental: {
       images: {
-        layoutRaw: true,
-      },
+        layoutRaw: true
+      }
     },
     images: {
       storePicturesInWEBP: true,
@@ -57,8 +57,8 @@ module.exports = (phase) => {
       nextImageExportOptimizer: {
         imageFolderPath: "public/images",
         exportFolderPath: "out",
-        quality: 80,
-      },
-    },
+        quality: 80
+      }
+    }
   };
 };

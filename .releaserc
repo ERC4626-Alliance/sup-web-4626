@@ -2,29 +2,58 @@
   "branches": [
     "+([0-9])?(.{+([0-9]),x}).x",
     "main",
+    "next",
     {
       "name": "beta",
       "prerelease": true
-    },
+    }
   ],
   "debug": false,
   "tagFormat": "${version}",
-  "npmPublish": false,
-
   "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/npm",
+      "@semantic-release/commit-analyzer",
       {
-        "npmPublish": false
+        "preset": "conventionalcommits",
+        "parserOpts": {
+          "preset": "conventionalchangelog",
+          "issuePrefixes": [
+            "SUP-"
+          ],
+          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
+        }
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "parserOpts": {
+          "preset": "conventionalchangelog",
+          "issuePrefixes": [
+            "SUP-"
+          ],
+          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
+        },
+        "writerOpts": {
+          "commitsSort": [
+            "subject",
+            "scope"
+          ]
+        }
       }
     ],
     [
       "@semantic-release/changelog",
       {
         "changelogFile": "CHANGELOG.md"
-      },
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
     ],
     [
       "@semantic-release/exec",
@@ -34,12 +63,23 @@
       }
     ],
     [
-      "@semantic-release/github", "assets": [
-        {
-          "path": "dist.zip",
-          "label": "Dist package"
-        }
-      ]
+      "@semantic-release/git",
+      {
+        "assets": [
+          "docs/CHANGELOG.md"
+        ]
+      }
     ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "dist.zip",
+            "label": "Dist package"
+          }
+        ]
+      }
+    ]
   ]
 }
