@@ -36,9 +36,9 @@ export default {
   },
   openGraph: {
     title:
-      process.env.NEXT_SEO_TITLE || "ERC-4626 - A Tokenized Vault Standard",
+      `${process.env.NEXT_SEO_TITLE}` || "ERC-4626 - A Tokenized Vault Standard",
     description:
-      process.env.NEXT_SEO_ABOUT ||
+      `${process.env.NEXT_SEO_ABOUT}` ||
       "What is ERC-4626? ERC-4626 is a tokenized vault standard. Vaults are smart contracts that take in token deposits and do something with those" +
         " tokens to provide token rewards to the depositor. Browse through a list of ERC4626 vaults. Learn how to make an ERC4626.",
     type: "website",
