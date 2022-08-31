@@ -24,7 +24,16 @@ module.exports = (phase) => {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
     IS_PROD: () => !isDev,
-    ...process.env
+    NEXT_SEO_JLD_ANSWER: process.env.NEXT_SEO_JLD_ANSWER,
+    NEXT_SEO_JLD_QUESTION: process.env.NEXT_SEO_JLD_QUESTION,
+    NEXT_SEO_PREVIEW: process.env.NEXT_SEO_PREVIEW,
+    NEXT_SEO_TWITTER: process.env.NEXT_SEO_TWITTER,
+    NEXT_SEO_ABOUT: process.env.NEXT_SEO_ABOUT,
+    NEXT_SEO_TITLE: process.env.NEXT_SEO_TITLE,
+    NEXT_SEO_CANONICAL: process.env.NEXT_SEO_CANONICAL,
+    NEXT_IMG_PATH: process.env.NEXT_IMG_PATH,
+    NEXT_TELEMETRY_DISABLED: 1,
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
   };
 
   // next.config.js object
