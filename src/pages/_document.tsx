@@ -44,17 +44,18 @@ class CustomDocument extends Document {
   }
 
   render() {
-    return (
-      <Html lang="en">
-        <Head>
-          <script type="application/ld+json">{structuredData}</script>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
+    return <Html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: structuredData }}
+        />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
   }
 }
 
