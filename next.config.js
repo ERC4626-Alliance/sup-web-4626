@@ -43,7 +43,8 @@ module.exports = (phase) => {
     poweredByHeader: false,
     experimental: {
       images: {
-        layoutRaw: true
+        layoutRaw: true,
+        unoptimized: true,
       }
     },
     images: {

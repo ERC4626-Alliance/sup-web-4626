@@ -54,7 +54,9 @@
       "next-seo",
       "next-gtag",
       "react-paginate",
-      "react-icons"
+      "react-icons",
+      "schema-dts",
+      "react-schemaorg"
     ],
     "useDefineForClassFields": true
   },
