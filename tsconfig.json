@@ -5,7 +5,6 @@
     // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
-    "rootDir": "./",
     "checkJs": false,
     "declaration": true,
     "esModuleInterop": true,
@@ -23,39 +22,56 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "noEmit": true,
-    // Report errors on unused parameters
-    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ],
       "@/components/*": [
-        "./src/components/*"
+        "src/components/*"
       ],
       "~~/*": [
         "public/*"
       ]
     },
     "resolveJsonModule": true,
+    "rootDir": "./",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
+    "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "ESNext",
+    "typeRoots": [
+      "../../node_modules/@types",
+      "./src/types/*"
+    ],
     "types": [
-      "@types/aos",
-      "@types/node",
-      "@types/react",
-      "@types/react-dom",
+      "node",
+      "next-seo",
       "next-gtag",
       "react-paginate",
-      "react-icons"
-    ]
+      "react-icons",
+      "schema-dts",
+      "react-schemaorg"
+    ],
+    "useDefineForClassFields": true
   },
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "./tsconfig.extend.json"
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "next.config.js",
+    "src/{**/*,*}.{js,ts,tsx}"
+  ],
   "exclude": [
     "node_modules",
-    "**/*.spec.tsx",
     "e2e",
     "dist",
     "coverage",
@@ -65,10 +81,5 @@
     ".husky",
     ".github",
     ".yarn"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "next.config.js",
-    "src/{**/*,*}.{js,ts,tsx,jsx,d.ts}"
   ]
 }

@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from "axios";
 import { SWRConfiguration } from "swr";
 
-const apiUrl = "https://api.superform.xyz/";
+export const apiUrl = "https://api.superform.xyz/";
 
 export default {
   dapp: {
@@ -35,9 +35,10 @@ export default {
     } as SWRConfiguration,
   },
   openGraph: {
-    title: process.env.SEO_TITLE || "ERC-4626 - A Tokenized Vault Standard",
+    title:
+      `${process.env.NEXT_SEO_TITLE}` || "ERC-4626 - A Tokenized Vault Standard",
     description:
-      process.env.SEO_DESCRIPTION ||
+      `${process.env.NEXT_SEO_ABOUT}` ||
       "What is ERC-4626? ERC-4626 is a tokenized vault standard. Vaults are smart contracts that take in token deposits and do something with those" +
         " tokens to provide token rewards to the depositor. Browse through a list of ERC4626 vaults. Learn how to make an ERC4626.",
     type: "website",
@@ -45,17 +46,18 @@ export default {
     name: "ERC-4626 Resources",
     images: [
       {
-        url: "/preview.jpg",
+        url: process.env.NEXT_SEO_PREVIEW || "https://erc4626.info/preview.jpg",
         width: 1200,
         height: 628,
-        alt: process.env.SEO_TITLE || "ERC-4626 — A Tokenized Vault Standard",
+        alt:
+          process.env.NEXT_SEO_TITLE || "ERC-4626 — A Tokenized Vault Standard",
         type: "image/jpeg",
       },
     ],
     site_name: "ERC-4626",
   },
   twitter: {
-    handle: "@superformxyz",
+    handle: process.env.NEXT_SEO_TWITTER || "@superformxyz",
     site: "@superformxyz",
     cardType: "summary_large_image",
   },
