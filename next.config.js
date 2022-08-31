@@ -23,7 +23,8 @@ module.exports = (phase) => {
   const env = {
     storePicturesInWEBP: true,
     generateAndUseBlurImages: true,
-    IS_PROD: () => !isDev
+    IS_PROD: () => !isDev,
+    ...process.env
   };
 
   // next.config.js object
