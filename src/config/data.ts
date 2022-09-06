@@ -127,6 +127,14 @@ export const linksResources = {
       highlight: true
     },
     {
+      name: "Yield Daddy gas-optimized ERC4626",
+      href: "https://github.com/timeless-fi/yield-daddy",
+    },
+    {
+      name: "Revenue Distribution Token Implementation",
+      href: "https://github.com/maple-labs/revenue-distribution-token",
+    },
+    {
       name: "4626 Extension for Voting",
       href: "https://github.com/devanonon/ERC4626Votes"
     },
