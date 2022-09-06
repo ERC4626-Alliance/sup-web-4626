@@ -1,6 +1,7 @@
 {
   "short_name": "erc4626.info",
   "name": "ERC-4626 — a tokenized vault standard",
+  "description": "ERC-4626 is a tokenized vault standard. Vaults are smart contracts that take in token deposits and do something with those tokens to provide token rewards to the\n depositor",
   "icons": [
     {
       "src": "\/android-icon-36x36.png",
