@@ -13,7 +13,7 @@ jobs:
     if: ${{ github.event.repository.full_name == github.repository }} && {{ !contains(github.event.head_commit.message, "skip ci") }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
           # Whether to configure the token or SSH key with the local git config
@@ -24,7 +24,7 @@ jobs:
         uses: c-hive/gha-yarn-cache@v2  # using cache
 
       - name: "Setup node@17"
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 17
 
