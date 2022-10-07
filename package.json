@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "aos": "3.0.0-beta.6",
-    "axios": "0.27.2",
+    "axios": "1.1.2",
     "lite-youtube-embed": "0.2.0",
     "moments": "0.0.2",
     "next": "latest",
