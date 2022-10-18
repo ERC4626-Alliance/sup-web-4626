@@ -37,7 +37,7 @@ __metadata:
     moments: 0.0.2
     next: latest
     next-gtag: 0.1.4
-    next-image-export-optimizer: 0.14.5
+    next-image-export-optimizer: 0.17.1
     next-seo: 5.5.0
     postcss: 8.4.18
     postcss-flexbugs-fixes: 5.0.2
@@ -7053,18 +7053,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-image-export-optimizer@npm:0.14.5":
-  version: 0.14.5
-  resolution: "next-image-export-optimizer@npm:0.14.5"
+"next-image-export-optimizer@npm:0.17.1":
+  version: 0.17.1
+  resolution: "next-image-export-optimizer@npm:0.17.1"
   dependencies:
     cli-progress: ^3.10.0
     sharp: ^0.31.0
     typescript: ^4.7.2
   peerDependencies:
     next: 12.x
+    react: ^17.0.2 || ^18.0.0-0
   bin:
     next-image-export-optimizer: src/optimizeImages.js
-  checksum: 7a93ecdbb519c9d79bd86e63e7907a1faa128833547aa2ffa8b47981a86ed2afc29b56dfa5a8c206f7072ceb47881647511044a893cf44b5e78e63a68fbe5709
+  checksum: cdbfe9c057bb37084f99fa6f8dc935ac1a47dd833b0532367057006a479032bf9199850e5cb65fa80b0e215825e6b481434f7d74b0adef445470d077a0331c72
   languageName: node
   linkType: hard
 
