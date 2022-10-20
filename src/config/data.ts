@@ -27,6 +27,15 @@ export const linksResources = {
         "https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/N7ZMZXKDJJDG7EH767HPGOLK7Q.png"
     },
     {
+      name: "Yearn Vaults v3 shipped w/t ERC-4626",
+      href: "https://medium.com/iearn/yearn-vaults-v3-36ce7c468ca0",
+      date: "2022-05-02",
+      thumbnail:
+        "https://miro.medium.com/max/1200/1*CYZe-atKXG5s8vPWmqorMQ.png",
+      teaser:
+        "Applications built on top of ERC-4626 vaults work with all yield-bearing ERC-4626 vaults, making integration and innovation much easier."
+    },
+    {
       name: "How ERC-4626 Could Fuel the Next Wave of DeFi",
       href: "https://decrypt.co/99695/how-erc-4626-could-fuel-next-wave-of-defi",
       date: "2022-05-11",
@@ -36,13 +45,13 @@ export const linksResources = {
         "Applications built on top of ERC-4626 vaults work with all yield-bearing ERC-4626 vaults, making integration and innovation much easier."
     },
     {
-      name: "Yearn Vaults v3 shipped w/t ERC-4626",
-      href: "https://medium.com/iearn/yearn-vaults-v3-36ce7c468ca0",
-      date: "2022-05-02",
+      name: "A quick primer of ERC-4626A quick primer of ERC-4626",
+      href: "https://medium.com/mstable/a-quick-primer-of-erc-4626-83a9f62a4272",
+      date: "2022-05-20",
       thumbnail:
-        "https://miro.medium.com/max/1200/1*CYZe-atKXG5s8vPWmqorMQ.png",
+        "https://miro.medium.com/max/4800/1*bUfSL7kxcOXoHecwJo-4rg.jpeg",
       teaser:
-        "Applications built on top of ERC-4626 vaults work with all yield-bearing ERC-4626 vaults, making integration and innovation much easier."
+        "With the ERC-4626 Tokenized Vault Standard now finalised, we can now focus on developing integrations in a coordinated manner and scale DeFi in a much faster way."
     },
     {
       name: "ERC4626: A new standard for DeFi applications",
@@ -76,7 +85,7 @@ export const linksResources = {
       href: "https://medium.com/mstable/why-erc-4626-could-power-defis-innovation-wave-588674b0664f",
       date: "2022-06-20",
       thumbnail:
-        "https://miro.medium.com/max/1200/1*8X8CXMcVlaG_qBXOFCmsfw.png",
+        "https://miro.medium.com/max/1200/0*HqJN_h06P9YheVI-.png",
       teaser:
         "Chainbound is a research & development organization focused on public blockchains. This is the first in a series of articles which we believe will shape Chainbound’s mission in the years to come"
     },
@@ -96,16 +105,8 @@ export const linksResources = {
       thumbnail:
         "https://cryplogger.com/wp-content/uploads/2022/08/erc4626_defi-min-1140x570.png",
       teaser:
-        "The DeFi ecosystem in particular can be beneficially affected by the new standard of tokens as it's designed to improve communication dapps and expand opportunities for income-generating farming."
-    },
-    {
-      name: "The New ERC 4626 Standard Explained",
-      href: "https://medium.com/blockonomist/what-is-erc-4626-the-new-vault-standard-explained-40254eb34cdf",
-      date: "2022-08-18",
-      thumbnail:
-        "https://miro.medium.com/max/1200/0*HqJN_h06P9YheVI-.png",
-      teaser:
-        "While there are currently a few consistent token standards, the Decentralized Finance (DeFi) community still faces a severe issue with tokenized vaults. As a result, the most recent standard…"
+        "The DeFi ecosystem in particular can be beneficially affected by the new standard of tokens as it's designed to improve communication dApps and expand opportunities" +
+        " for income-generating farming."
     }
   ],
   videos: [
