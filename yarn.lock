@@ -48,7 +48,7 @@ __metadata:
     react-icons: 4.4.0
     react-paginate: latest
     react-schemaorg: 2.0.0
-    react-scroll: 1.8.7
+    react-scroll: 1.8.8
     react-tweet-embed: 2.0.0
     sass: 1.55.0
     schema-dts: 1.1.0
@@ -8815,16 +8815,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:1.8.7":
-  version: 1.8.7
-  resolution: "react-scroll@npm:1.8.7"
+"react-scroll@npm:1.8.8":
+  version: 1.8.8
+  resolution: "react-scroll@npm:1.8.8"
   dependencies:
     lodash.throttle: ^4.1.1
     prop-types: ^15.7.2
   peerDependencies:
     react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 37714995f120bcc781e4a445c0e9bd4b7f673674c84e851a96493878fe804799e1ff8ce3ead4c8aa1b5eb3bb039e043ff029607196d269a75c39d9257a372e7f
+  checksum: 66c86d25e2d8032c3c00fdd4909a188b00d8ddabf4744f5a86829199ac9f100e042199f336442f403332ac1082687213e6966cb0f500e64e4392217f715c6c1a
   languageName: node
   linkType: hard
 
