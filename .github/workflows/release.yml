@@ -33,6 +33,10 @@ jobs:
           yarn set version 3.2.3
           yarn install
 
+      - name: "Lint"
+        run: |
+          npm run lint
+
       - name: Build
         run: |
           yarn generate
@@ -47,6 +51,7 @@ jobs:
           GA_SEMANTIC_RELEASE: true
           HUSKY: 0
           CI: true
+          GITHUB_HEAD_REF: $GITHUB_HEAD_REF // testing
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
 
