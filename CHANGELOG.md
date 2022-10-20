@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/Stargate-Labs/4626-website/compare/1.11.1...1.11.2) (2022-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency axios to v1.1.3 ([#60](https://github.com/Stargate-Labs/4626-website/issues/60)) ([4ecb211](https://github.com/Stargate-Labs/4626-website/commit/4ecb211d42a0c3b5daded71d1c7ad64b50dfff1b))
+* **deps:** update dependency react-scroll to v1.8.8 ([#63](https://github.com/Stargate-Labs/4626-website/issues/63)) ([cdd7ee0](https://github.com/Stargate-Labs/4626-website/commit/cdd7ee038529b41ebdc7816ce37a89a5aaaf46a5))
+
 ## [1.11.1](https://github.com/Stargate-Labs/4626-website/compare/1.11.0...1.11.1) (2022-10-20)
 
 
