@@ -25,7 +25,7 @@ __metadata:
     "@types/react-scroll": 1.8.4
     aos: 3.0.0-beta.6
     autoprefixer: 10.4.12
-    axios: 0.27.2
+    axios: 1.1.3
     cssnano: 5.1.13
     eslint: 8.24.0
     eslint-config-next: 12.3.1
@@ -39,7 +39,7 @@ __metadata:
     next-gtag: 0.1.4
     next-image-export-optimizer: 0.14.5
     next-seo: 5.5.0
-    postcss: 8.4.17
+    postcss: 8.4.18
     postcss-flexbugs-fixes: 5.0.2
     prettier: 2.7.1
     prettier-plugin-tailwindcss: 0.1.13
@@ -48,7 +48,7 @@ __metadata:
     react-icons: 4.4.0
     react-paginate: latest
     react-schemaorg: 2.0.0
-    react-scroll: 1.8.7
+    react-scroll: 1.8.8
     react-tweet-embed: 2.0.0
     sass: 1.55.0
     schema-dts: 1.1.0
@@ -1825,13 +1825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.27.2":
-  version: 0.27.2
-  resolution: "axios@npm:0.27.2"
+"axios@npm:1.1.3":
+  version: 1.1.3
+  resolution: "axios@npm:1.1.3"
   dependencies:
-    follow-redirects: ^1.14.9
+    follow-redirects: ^1.15.0
     form-data: ^4.0.0
-  checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
+    proxy-from-env: ^1.1.0
+  checksum: cab3b17bf6092c9387f7023d699db093cfa23650b56c4422cd474d124b78b2e3b5a520f932c330664a58ab85b867b1c25a95cace475ef72d236888c852b84e6d
   languageName: node
   linkType: hard
 
@@ -4348,13 +4349,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.9":
-  version: 1.15.1
-  resolution: "follow-redirects@npm:1.15.1"
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.2
+  resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 6aa4e3e3cdfa3b9314801a1cd192ba756a53479d9d8cca65bf4db3a3e8834e62139245cd2f9566147c8dfe2efff1700d3e6aefd103de4004a7b99985e71dd533
+  checksum: faa66059b66358ba65c234c2f2a37fcec029dc22775f35d9ad6abac56003268baf41e55f9ee645957b32c7d9f62baf1f0b906e68267276f54ec4b4c597c2b190
   languageName: node
   linkType: hard
 
@@ -8512,14 +8513,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.17":
-  version: 8.4.17
-  resolution: "postcss@npm:8.4.17"
+"postcss@npm:8.4.18":
+  version: 8.4.18
+  resolution: "postcss@npm:8.4.18"
   dependencies:
     nanoid: ^3.3.4
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: a6d9096dd711e17f7b1d18ff5dcb4fdedf3941d5a3dc8b0e4ea873b8f31972d57f73d6da9a8aed7ff389eb52190ed34f6a94f299a7f5ddc68b08a24a48f77eb9
+  checksum: 9349fd99849b2e3d2e134ff949b7770ecb12375f352723ce2bcc06167eba3850ea7844c1b191a85cd915d6a396b4e8ee9a5267e6cc5d8d003d0cbc7a97555d39
   languageName: node
   linkType: hard
 
@@ -8678,6 +8679,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "pump@npm:^3.0.0":
   version: 3.0.0
   resolution: "pump@npm:3.0.0"
@@ -8807,16 +8815,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:1.8.7":
-  version: 1.8.7
-  resolution: "react-scroll@npm:1.8.7"
+"react-scroll@npm:1.8.8":
+  version: 1.8.8
+  resolution: "react-scroll@npm:1.8.8"
   dependencies:
     lodash.throttle: ^4.1.1
     prop-types: ^15.7.2
   peerDependencies:
     react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 37714995f120bcc781e4a445c0e9bd4b7f673674c84e851a96493878fe804799e1ff8ce3ead4c8aa1b5eb3bb039e043ff029607196d269a75c39d9257a372e7f
+  checksum: 66c86d25e2d8032c3c00fdd4909a188b00d8ddabf4744f5a86829199ac9f100e042199f336442f403332ac1082687213e6966cb0f500e64e4392217f715c6c1a
   languageName: node
   linkType: hard
 

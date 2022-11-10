@@ -63,7 +63,7 @@ const BuiltWith = () => {
               key={`${build?.email || build.name}-${index}`}
               className="pt-6"
             >
-              <div className="flow-root hidden rounded-lg border border-pink-200 bg-white px-6 pb-8 opacity-20 shadow-sm md:inline-flex">
+              <div className="flow-root hidden rounded-lg border border-pink-200 bg-white px-6 pb-8 opacity-20 shadow-sm md:inline-flex w-full">
                 <div className="-mt-6">
                   <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-pink-500 to-pink-900 p-3 shadow-lg">
                     <build.icon
