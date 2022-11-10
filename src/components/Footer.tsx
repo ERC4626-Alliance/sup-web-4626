@@ -59,7 +59,7 @@ export default class Footer extends Component {
                 )
               )}
             </div>
-            <div className="mt-8 mb-5 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
+            <div className="mt-4 md:mb-5 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
               <span>Website carefully handcrafted</span>
               <span className="block w-full md:hidden" />
               <span className="ml-1">with</span>
