@@ -1,3 +1,10 @@
+## [1.12.0](https://github.com/Stargate-Labs/4626-website/compare/1.11.2...1.12.0) (2022-11-10)
+
+
+### Features
+
+* content update ([#69](https://github.com/Stargate-Labs/4626-website/issues/69)) ([03cab5b](https://github.com/Stargate-Labs/4626-website/commit/03cab5b6398a6de8148027d70e12d2bf6527b141)), closes [SUP-912](https://github.com/Stargate-Labs/4626-website/issues/912) [SUP-981](https://github.com/Stargate-Labs/4626-website/issues/981) [SUP-980](https://github.com/Stargate-Labs/4626-website/issues/980)
+
 ## [1.11.2](https://github.com/Stargate-Labs/4626-website/compare/1.11.1...1.11.2) (2022-10-20)
 
 
