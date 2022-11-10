@@ -111,7 +111,17 @@ export const linksResources = {
   ],
   videos: [
     {
+      name: "Building with the ERC-4626 Standard",
+      href: "https://youtu.be/CI6jtEAWHbo",
+      videoId: "CI6jtEAWHbo"
+    },
+    {
       name: "Joey Santoro ERC-4626 deep dive",
+      href: "https://youtu.be/5KVD7EX6HWQ",
+      videoId: "5KVD7EX6HWQ"
+    },
+    {
+      name: "Securing ERC4626 Implementations",
       href: "https://youtu.be/L8dijE5qhTg",
       videoId: "L8dijE5qhTg"
     },
