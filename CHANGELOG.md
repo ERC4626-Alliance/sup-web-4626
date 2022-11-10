@@ -1,3 +1,10 @@
+## [1.12.1](https://github.com/Stargate-Labs/4626-website/compare/1.12.0...1.12.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* block width configured to fill the columns ([#70](https://github.com/Stargate-Labs/4626-website/issues/70)) ([770ba01](https://github.com/Stargate-Labs/4626-website/commit/770ba01b2107cd6ec7ac079f52493fb95399f247))
+
 ## [1.12.0](https://github.com/Stargate-Labs/4626-website/compare/1.11.2...1.12.0) (2022-11-10)
 
 
