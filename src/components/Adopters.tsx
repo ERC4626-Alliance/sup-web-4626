@@ -84,6 +84,11 @@ export default function Adopters() {
         },
       },
       {
+        src: "origin.jpg",
+        title: "Origin Protocol",
+        url: { web: "https://www.originprotocol.com/" },
+      },
+      {
         src: "timeless.png",
         title: "Timeless Protocol",
         url: { web: "https://timelessfi.com/" },
@@ -93,6 +98,8 @@ export default function Adopters() {
         src: "thorswap.png",
         title: "THORSwap",
       },
+    ],
+    [
       {
         src: "tribe-dao.svg",
         title: "Tribe DAO",
@@ -102,8 +109,6 @@ export default function Adopters() {
           unoptimized: true,
         },
       },
-    ],
-    [
       {
         src: "yearn.finance.svg",
         title: "Yearn Finance",
