@@ -89,6 +89,35 @@ export default function Adopters() {
         url: { web: "https://www.originprotocol.com/" },
       },
       {
+        src: "resonate.svg",
+        title: "Resonate Protocol",
+        url: { web: "https://www.resonate.finance/" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        src: "sense.svg",
+        title: "Sense Protocol",
+        url: { web: "https://sense.finance" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+    ],
+    [
+      {
+        src: "sommelier.svg",
+        title: "Sommelier",
+        url: { web: "https://www.sommelier.finance/" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
         src: "timeless.png",
         title: "Timeless Protocol",
         url: { web: "https://timelessfi.com/" },
@@ -98,8 +127,6 @@ export default function Adopters() {
         src: "thorswap.png",
         title: "THORSwap",
       },
-    ],
-    [
       {
         src: "tribe-dao.svg",
         title: "Tribe DAO",
