@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/Stargate-Labs/4626-website/compare/1.14.0...1.14.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency next-seo to v5.14.1 ([#61](https://github.com/Stargate-Labs/4626-website/issues/61)) ([fa40fb9](https://github.com/Stargate-Labs/4626-website/commit/fa40fb9d197e9934fddd123dc678a9be2c13be63))
+
 ## [1.14.0](https://github.com/Stargate-Labs/4626-website/compare/1.13.0...1.14.0) (2022-11-15)
 
 
