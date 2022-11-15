@@ -1,3 +1,10 @@
+## [1.12.2](https://github.com/Stargate-Labs/4626-website/compare/1.12.1...1.12.2) (2022-11-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-icons to v4.6.0 ([#59](https://github.com/Stargate-Labs/4626-website/issues/59)) ([66c0ad6](https://github.com/Stargate-Labs/4626-website/commit/66c0ad66298b23d8e89d8b8800b9ed179a69b190))
+
 ## [1.12.1](https://github.com/Stargate-Labs/4626-website/compare/1.12.0...1.12.1) (2022-11-10)
 
 
