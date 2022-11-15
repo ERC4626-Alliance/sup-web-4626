@@ -2,14 +2,10 @@
   "branches": [
     "+([0-9])?(.{+([0-9]),x}).x",
     "main",
-    "next",
-    {
-      "name": "beta",
-      "prerelease": true
-    }
   ],
   "debug": false,
   "tagFormat": "${version}",
+  "npmPublish": false,
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
@@ -44,30 +40,34 @@
       }
     ],
     [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+
+    [
       "@semantic-release/changelog",
       {
         "changelogFile": "CHANGELOG.md"
       }
     ],
     [
-      "@semantic-release/npm",
+      "@semantic-release/git",
       {
-        "npmPublish": false
+        "assets": [
+          "package.json",
+          "yarn.lock",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
       "@semantic-release/exec",
       {
         "prepareCmd": "APP_GIT_VERSION=${nextRelease.version} yarn run generate",
-        "publishCmd": "zip -r dist.zip out vercel.json"
-      }
-    ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": [
-          "docs/CHANGELOG.md"
-        ]
+        "publishCmd": "zip -r dist.zip CHANGELOG.md out vercel.json"
       }
     ],
     [
