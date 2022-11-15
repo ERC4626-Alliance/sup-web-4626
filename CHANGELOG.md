@@ -1,3 +1,10 @@
+## [1.14.0](https://github.com/Stargate-Labs/4626-website/compare/1.13.0...1.14.0) (2022-11-15)
+
+
+### Features
+
+* new analytics enabled ([#74](https://github.com/Stargate-Labs/4626-website/issues/74)) ([324a71b](https://github.com/Stargate-Labs/4626-website/commit/324a71b530c4944c73b469cc2b164b4978aedee0))
+
 ## [1.13.0](https://github.com/Stargate-Labs/4626-website/compare/1.12.2...1.13.0) (2022-11-15)
 
 
