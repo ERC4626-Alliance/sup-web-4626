@@ -34,7 +34,7 @@
       "url": "https://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "version": "1.12.0",
+  "version": "1.12.2",
   "scripts": {
     "dev": "next-image-export-optimizer && next dev",
     "build": "next build && next-image-export-optimizer",
@@ -56,7 +56,7 @@
     "next-seo": "5.14.1",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "4.4.0",
+    "react-icons": "4.6.0",
     "react-paginate": "latest",
     "react-scroll": "1.8.8",
     "react-tweet-embed": "2.0.0",
