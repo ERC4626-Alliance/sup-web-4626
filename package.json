@@ -34,7 +34,7 @@
       "url": "https://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "version": "1.12.2",
+  "version": "1.14.0",
   "scripts": {
     "dev": "next-image-export-optimizer && next dev",
     "build": "next build && next-image-export-optimizer",
@@ -46,6 +46,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.5",
     "aos": "3.0.0-beta.6",
     "axios": "1.1.3",
     "lite-youtube-embed": "0.2.0",
