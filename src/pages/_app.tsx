@@ -1,4 +1,5 @@
 import "/styles/globals.scss";
+import { Analytics } from "@vercel/analytics/react";
 import AOS from "aos";
 import { NextGtag } from "next-gtag";
 import type { AppProps } from "next/app";
@@ -29,6 +30,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 };
