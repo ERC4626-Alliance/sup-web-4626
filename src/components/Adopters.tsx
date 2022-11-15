@@ -40,15 +40,6 @@ export default function Adopters() {
     ],
     [
       {
-        src: "fei.svg",
-        title: "Fei",
-        url: { web: "https://fei.money" },
-
-        extra: {
-          unoptimized: true,
-        },
-      },
-      {
         src: "maple.svg",
         title: "Maple",
         url: { web: "https://maple.finance" },
@@ -92,11 +83,35 @@ export default function Adopters() {
           unoptimized: true,
         },
       },
-
       {
-        src: "rari.png",
-        title: "Rari Capital",
-        url: { web: "https://rari.capital/" },
+        src: "origin.jpg",
+        title: "Origin Protocol",
+        url: { web: "https://www.originprotocol.com/" },
+      },
+      {
+        src: "resonate.svg",
+        title: "Resonate Protocol",
+        url: { web: "https://www.resonate.finance/" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+      {
+        src: "sense.svg",
+        title: "Sense Protocol",
+        url: { web: "https://sense.finance" },
+
+        extra: {
+          unoptimized: true,
+        },
+      },
+    ],
+    [
+      {
+        src: "sommelier.svg",
+        title: "Sommelier",
+        url: { web: "https://www.sommelier.finance/" },
 
         extra: {
           unoptimized: true,
@@ -107,8 +122,6 @@ export default function Adopters() {
         title: "Timeless Protocol",
         url: { web: "https://timelessfi.com/" },
       },
-    ],
-    [
       {
         url: { web: "https://thorswap.finance" },
         src: "thorswap.png",
@@ -144,69 +157,52 @@ export default function Adopters() {
     ],
   ] as Array<SupSingleAdopter[]>;
   return (
-    <div
-      className="relative w-full bg-gradient-to-b from-pink-50 py-16 overflow-hidden"
-      id="adopters"
-    >
-      <Container className="mx-auto max-w-7xl md:w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center xl:grid-cols-3 2xl:grid-cols-2 mx-auto place-content-evenly">
-          <div className="col-span-1 px-8 md:px-0 text-left md:mx-auto md:max-w-2xl xl:max-w-none lg:pr-16 xl:text-left">
+    <div className="relative w-full overflow-hidden bg-gradient-to-b from-pink-50 py-16" id="adopters">
+      <Container className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
+        <div className="mx-auto grid grid-cols-1 place-content-evenly items-center xl:grid-cols-3 2xl:grid-cols-2">
+          <div className="col-span-1 px-8 text-left md:mx-auto md:max-w-2xl md:px-0 lg:pr-16 xl:max-w-none xl:text-left">
             <AtomTitle alignText="left">
               ERC-4626 <br /> EARLY ADOPTERS
             </AtomTitle>
-            <p className="text-lg text-pink-600">
-              Test an actual standard implementation
-            </p>
+            <p className="text-lg text-pink-600">Test an actual standard implementation</p>
           </div>
 
-          <div className="col-span-full lg:col-span-2 2xl:col-span-1 relative mt-8 sm:mt-12 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none">
+          <div className="relative col-span-full mt-8 sm:mt-12 lg:col-span-2 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none 2xl:col-span-1">
             <div className="absolute inset-8 md:inset-16">
               <div
                 className="mx-auto h-full w-full rotate-180 rounded-3xl opacity-30 blur-lg filter"
                 style={{
-                  background:
-                    "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
+                  background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)",
                 }}
               ></div>
             </div>
 
-            <div className="xl:-ml-16 2xl:ml-0 relative space-y-5">
+            <div className="relative space-y-5 xl:-ml-16 2xl:ml-0">
               {adopters.map((itemsList: SupSingleAdopter[], index: number) => (
-                <div
-                  key={index}
-                  className={`grid grid-cols-1 gap-5 sm:grid-cols-4 ${
-                    index > 0
-                      ? index === 1
-                        ? "xl:translate-x-6"
-                        : "xl:translate-x-12"
-                      : ""
-                  }`}
-                >
-                  {itemsList.map(
-                    (item: SupSingleAdopter, adopterKey: number) => (
-                      <a
-                        href={item.url.web}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg md:w-full md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
-                        key={`adopter-${index}-${adopterKey}`}
-                      >
-                        <ExportedImage
-                          src={`images/logos/${item.src}`}
-                          layout="raw"
-                          loading="lazy"
-                          height={128}
-                          width={128}
-                          alt={item.title}
-                          className="h-24 w-auto object-scale-down md:h-16"
-                          {...item.extra}
-                        />
-                        <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
-                          {item.title}
-                        </h3>
-                      </a>
-                    )
-                  )}
+                <div key={index} className={`grid grid-cols-1 gap-5 sm:grid-cols-4 ${index > 0 ? (index === 1 ? "xl:translate-x-6" : "xl:translate-x-12") : ""}`}>
+                  {itemsList.map((item: SupSingleAdopter, adopterKey: number) => (
+                    <a
+                      href={item.url.web}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg md:w-full md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
+                      key={`adopter-${index}-${adopterKey}`}
+                    >
+                      <ExportedImage
+                        src={`images/logos/${item.src}`}
+                        layout="raw"
+                        loading="lazy"
+                        height={128}
+                        width={128}
+                        alt={item.title}
+                        className="h-24 w-auto object-scale-down md:h-16"
+                        {...item.extra}
+                      />
+                      <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
+                        {item.title}
+                      </h3>
+                    </a>
+                  ))}
                 </div>
               ))}
             </div>

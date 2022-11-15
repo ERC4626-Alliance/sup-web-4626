@@ -3,7 +3,6 @@ import ExportedImage from "next-image-export-optimizer";
 import { Component, PropsWithChildren, SVGProps } from "react";
 import { HiOutlineBookmarkAlt } from "react-icons/hi";
 import { IoMdHeart, IoLogoGithub, IoLogoTwitter } from "react-icons/io";
-import { FaTelegramPlane } from "react-icons/fa";
 
 const footerNavigation = {
   social: [
@@ -59,7 +58,7 @@ export default class Footer extends Component {
                 )
               )}
             </div>
-            <div className="mt-8 mb-5 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
+            <div className="mt-4 md:mb-5 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
               <span>Website carefully handcrafted</span>
               <span className="block w-full md:hidden" />
               <span className="ml-1">with</span>
@@ -71,16 +70,6 @@ export default class Footer extends Component {
                 className="inline-flex font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:no-underline md:hover:text-pink-900 md:hover:underline"
               >
                 by Superform
-              </a>
-              <span className="mx-2 block h-1.5 w-full border-pink-400 text-left md:h-5 md:w-auto md:border-r" />
-              <a
-                rel="noopener noreferrer"
-                href="https://t.me/superformcommunity"
-                target="_blank"
-                className="group inline-flex items-center font-medium text-pink-700 underline decoration-from-font underline-offset-4 md:font-normal md:no-underline md:hover:text-pink-900 md:hover:underline"
-              >
-                contact us
-                <FaTelegramPlane className="ml-1.5 inline-flex h-4 w-4 md:opacity-25 md:group-hover:opacity-100" />
               </a>
               <span className="mx-4 h-3 border-r border-pink-400 text-left md:h-5"></span>
               <a
