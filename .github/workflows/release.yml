@@ -30,7 +30,7 @@ jobs:
 
       - name: "Install dependencies"
         run: |
-          yarn set version 3.2.3
+          yarn set version 3.2.4
           yarn install
 
       - name: "Lint"
