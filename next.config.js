@@ -16,13 +16,21 @@ module.exports = (phase) => {
   // or if flags `isProd / isStaging` turned false
   const isDev = phase === PHASE_DEVELOPMENT_SERVER || (!isProd && !isStaging);
 
-  if (isDev) {
-    console.log(`isDev:${isDev}  isProd:${isProd}   isStaging:${isStaging}`);
-  }
-
   const env = {
-    storePicturesInWEBP: true,
-    generateAndUseBlurImages: true,
+    nextImageExportOptimizer_imageFolderPath: "public/images",
+    nextImageExportOptimizer_exportFolderPath: "out",
+    nextImageExportOptimizer_quality: 90,
+    nextImageExportOptimizer_storePicturesInWEBP: true,
+
+    // If you do not want to use blurry placeholder images, then you can set
+    // nextImageExportOptimizer_generateAndUseBlurImages to false and pass
+    // `placeholder="empty"` to all <ExportedImage> components.
+    //
+    // If nextImageExportOptimizer_generateAndUseBlurImages is false and you
+    // forget to set `placeholder="empty"`, you'll see 404 errors for the missing
+    // placeholder images in the console.
+    nextImageExportOptimizer_generateAndUseBlurImages: true,
+
     IS_PROD: () => !isDev,
     NEXT_SEO_JLD_ANSWER: process.env.NEXT_SEO_JLD_ANSWER,
     NEXT_SEO_JLD_QUESTION: process.env.NEXT_SEO_JLD_QUESTION,
@@ -48,28 +56,13 @@ module.exports = (phase) => {
     env: {
       ...env
     },
-    ssr: false,
     reactStrictMode: true,
     poweredByHeader: false,
-    experimental: {
-      images: {
-        layoutRaw: true,
-        unoptimized: true,
-      }
-    },
     images: {
-      storePicturesInWEBP: true,
-      generateAndUseBlurImages: true,
       minimumCacheTTL: 60,
       formats: ["image/webp"],
       loader: "custom",
-      layoutRaw: true,
       deviceSizes: [320, 828, 1200, 1920],
-      nextImageExportOptimizer: {
-        imageFolderPath: "public/images",
-        exportFolderPath: "out",
-        quality: 80
-      }
     }
   };
 };
