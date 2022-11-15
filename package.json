@@ -34,7 +34,7 @@
       "url": "https://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "version": "1.14.0",
+  "version": "1.14.1",
   "scripts": {
     "dev": "next-image-export-optimizer && next dev",
     "build": "next build && next-image-export-optimizer",
@@ -54,7 +54,7 @@
     "next": "latest",
     "next-gtag": "0.1.4",
     "next-image-export-optimizer": "0.14.5",
-    "next-seo": "5.5.0",
+    "next-seo": "5.14.1",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "4.6.0",
@@ -73,7 +73,7 @@
     "@semantic-release/github": "8.0.6",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/aos": "3.0.4",
-    "@types/gtag.js": "0.0.11",
+    "@types/gtag.js": "0.0.12",
     "@types/node": "17.0.42",
     "@types/react": "18.0.21",
     "@types/react-dom": "latest",
