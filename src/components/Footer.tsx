@@ -52,7 +52,7 @@ export default class Footer extends Component {
                     href={item.href}
                     className="group inline-flex items-center text-sm font-medium text-pink-700 underline decoration-from-font underline-offset-4 md:font-normal md:no-underline md:hover:text-pink-900 md:hover:underline"
                   >
-                    <item.icon className="md:opacity-65 mr-1.5 ml-1.5 inline-flex h-4 h-4 w-4 w-4 object-scale-down md:group-hover:opacity-100" />
+                    <item.icon className="mr-1.5 inline-flex h-4 w-auto md:opacity-25 md:group-hover:opacity-100" />
                     {item.name}
                   </a>
                 )
