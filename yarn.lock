@@ -39,7 +39,7 @@ __metadata:
     next: latest
     next-gtag: 0.1.4
     next-image-export-optimizer: 0.14.5
-    next-seo: 5.5.0
+    next-seo: 5.14.1
     postcss: 8.4.18
     postcss-flexbugs-fixes: 5.0.2
     prettier: 2.7.1
@@ -7092,14 +7092,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-seo@npm:5.5.0":
-  version: 5.5.0
-  resolution: "next-seo@npm:5.5.0"
+"next-seo@npm:5.14.1":
+  version: 5.14.1
+  resolution: "next-seo@npm:5.14.1"
   peerDependencies:
     next: ^8.1.1-canary.54 || >=9.0.0
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 3202c4e84db533ad116d629482e766eb954053d5630275eb75c3e4234cf3ae354e4c2284a7659c0480570670f292b122ee3d11e9b2f23588030d0d5b1f9cb37d
+  checksum: 3cedc7b4af97721c29f938318df54a47ff14b3f695485d6cc35d0010490589ff4c6c60b2e4c71a515f2c539fcb230a1bf72dd3e0d945b818d837a74a27bef35f
   languageName: node
   linkType: hard
 
