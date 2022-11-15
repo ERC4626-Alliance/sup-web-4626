@@ -21,7 +21,7 @@ export default function News() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={classNames("group relative block overflow-hidden rounded-xl bg-white p-5 shadow-md transition-opacity delay-75 ease-linear md:hover:opacity-90", item.wide && "col-span-full")}
+              className={classNames("group relative block overflow-hidden rounded-xl bg-white p-5 shadow-md transition-opacity delay-75 ease-linear md:hover:opacity-90", item.wide && "col-span-full lg:max-w-[700px] mx-auto")}
             >
               <img
                 className="min-w-full rounded-lg object-contain shadow-md"
