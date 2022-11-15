@@ -47,6 +47,7 @@ export default function About() {
             data-aos="fade-left"
           >
             <ExportedImage
+              unoptimized={true}
               src="images/superCharged.svg"
               layout="raw"
               width={823}
@@ -74,6 +75,7 @@ export default function About() {
                 className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
                 alt="WHAT IS ERC-4626?"
                 loading="lazy"
+                unoptimized={true}
               />
             </div>
             <div
