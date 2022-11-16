@@ -1,3 +1,10 @@
+## [1.15.0](https://github.com/Stargate-Labs/4626-website/compare/1.14.1...1.15.0) (2022-11-15)
+
+
+### Features
+
+*  deps update ([7e8217d](https://github.com/Stargate-Labs/4626-website/commit/7e8217d72f495714bbf2b76b37e59e5a49aa74af))
+
 ## [1.14.1](https://github.com/Stargate-Labs/4626-website/compare/1.14.0...1.14.1) (2022-11-15)
 
 
