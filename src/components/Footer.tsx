@@ -15,7 +15,7 @@ const footerNavigation = {
           alt="ethereum.org"
           height="70"
           width="44"
-          layout="raw"
+          layout="responsive"
           {...props}
         />
       ),

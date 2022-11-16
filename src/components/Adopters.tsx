@@ -194,7 +194,6 @@ export default function Adopters() {
                     >
                       <ExportedImage
                         src={`images/logos/${item.src}`}
-                        layout="raw"
                         loading="lazy"
                         height={128}
                         width={128}
