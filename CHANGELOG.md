@@ -1,3 +1,10 @@
+## [1.16.0](https://github.com/Stargate-Labs/4626-website/compare/1.15.0...1.16.0) (2022-11-16)
+
+
+### Features
+
+* origin protocol content update ([#81](https://github.com/Stargate-Labs/4626-website/issues/81)) ([dd591fd](https://github.com/Stargate-Labs/4626-website/commit/dd591fd7b3079a11fde8244dc9ce27c006f99307)), closes [SUP-1036](https://github.com/Stargate-Labs/4626-website/issues/1036)
+
 ## [1.15.0](https://github.com/Stargate-Labs/4626-website/compare/1.14.1...1.15.0) (2022-11-15)
 
 
