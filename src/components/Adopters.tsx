@@ -84,9 +84,13 @@ export default function Adopters() {
         },
       },
       {
-        src: "origin.jpg",
-        title: "Origin Protocol",
-        url: { web: "https://www.originprotocol.com/" },
+        src: "ousd.svg",
+        title: "Origin Dollar",
+        url: { web: "https://ousd.com" },
+
+        extra: {
+          unoptimized: true,
+        },
       },
       {
         src: "resonate.svg",
@@ -190,7 +194,6 @@ export default function Adopters() {
                     >
                       <ExportedImage
                         src={`images/logos/${item.src}`}
-                        layout="raw"
                         loading="lazy"
                         height={128}
                         width={128}

@@ -1,6 +1,6 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
-import ExportedImage from "next-image-export-optimizer";
+import Image from "next/future/image";
 
 export default function About() {
   return (
@@ -46,10 +46,10 @@ export default function About() {
             className="relative mt-12 h-auto w-full object-scale-down md:col-span-7"
             data-aos="fade-left"
           >
-            <ExportedImage
+            <Image
+              priority={false}
               unoptimized={true}
               src="images/superCharged.svg"
-              layout="raw"
               width={823}
               height={370}
               loading="lazy"
@@ -67,8 +67,8 @@ export default function About() {
               className="relative mx-auto w-full pb-10 md:col-span-7 md:row-auto md:mx-0 md:mt-0 md:max-w-none md:pb-0"
               data-aos="fade-right"
             >
-              <ExportedImage
-                layout="raw"
+              <Image
+                priority={false}
                 width={823}
                 height={370}
                 src="images/stars4626.svg"
@@ -92,7 +92,7 @@ export default function About() {
                 intrinsically interest bearing tokens. This makes integration
                 difficult at the aggregator or plugin layer for protocols which
                 need to conform to many standards, and forces each protocol to
-                implement their own adapters which are error prone and waste
+                implement their own adapters which are error-prone and waste
                 development resources.
               </p>
               <p className="mb-4 text-lg leading-relaxed text-slate-700">

@@ -1,24 +1,15 @@
 import Container from "@/components/Container";
-import ExportedImage from "next-image-export-optimizer";
-import { Component, PropsWithChildren, SVGProps } from "react";
+import { Component, SVGProps } from "react";
 import { HiOutlineBookmarkAlt } from "react-icons/hi";
 import { IoMdHeart, IoLogoGithub, IoLogoTwitter } from "react-icons/io";
+import { FaEthereum } from "react-icons/fa";
 
 const footerNavigation = {
   social: [
     {
       name: "Dev Docs",
       href: "https://ethereum.org/en/developers/docs/standards/tokens/erc-4626/",
-      icon: (props: PropsWithChildren) => (
-        <ExportedImage
-          src="images/logos/ethereum-logo.webp"
-          alt="ethereum.org"
-          height="70"
-          width="44"
-          layout="raw"
-          {...props}
-        />
-      ),
+      icon: (props: SVGProps<any>) => <FaEthereum {...props} />,
     },
     {
       name: "EIP",
@@ -43,22 +34,20 @@ export default class Footer extends Component {
         <Container>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="flex flex-row justify-center space-x-4 md:order-2">
-              {footerNavigation.social.map(
-                (item: { name: string; href?: string; icon: any }) => (
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={item.name}
-                    href={item.href}
-                    className="group inline-flex items-center text-sm font-medium text-pink-700 underline decoration-from-font underline-offset-4 md:font-normal md:no-underline md:hover:text-pink-900 md:hover:underline"
-                  >
-                    <item.icon className="mr-1.5 inline-flex h-4 w-auto md:opacity-25 md:group-hover:opacity-100" />
-                    {item.name}
-                  </a>
-                )
-              )}
+              {footerNavigation.social.map((item: { name: string; href?: string; icon: any }) => (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={item.name}
+                  href={item.href}
+                  className="group inline-flex items-center text-sm font-medium text-pink-700 underline decoration-from-font underline-offset-4 md:font-normal md:no-underline md:hover:text-pink-900 md:hover:underline"
+                >
+                  <item.icon className="relative mr-1.5 inline-flex h-4 w-auto md:opacity-25 md:group-hover:opacity-100" />
+                  {item.name}
+                </a>
+              ))}
             </div>
-            <div className="mt-4 md:mb-5 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
+            <div className="mt-4 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:mb-5 md:justify-between md:space-y-0">
               <span>Website carefully handcrafted</span>
               <span className="block w-full md:hidden" />
               <span className="ml-1">with</span>
