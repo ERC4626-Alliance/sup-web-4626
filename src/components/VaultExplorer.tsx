@@ -36,7 +36,7 @@ export default function VaultExplorer() {
   useMemo(() => {
     let config = {
       headers: {
-        "access-token": "stargate",
+        "access-token": "superapi-testing",
       },
     };
     axios

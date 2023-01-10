@@ -71,17 +71,15 @@ export function mapIcon(chain: string | number, showText = true) {
       chainName = "Arbitrum";
       icon = "images/icons/arbitrum.svg";
       break;
+    case "10":
+    case "optimism":
+      chainName = "Optimism";
+      icon = "images/icons/optimism.svg";
+      break;
   }
   return (
     <div className="flex items-center justify-start space-x-1">
-      <Image
-        unoptimized={true}
-        width="20"
-        height="20"
-        src={icon}
-        alt={chainName}
-        className="mr-1 h-[16px] w-auto object-scale-down"
-      />
+      <Image unoptimized={true} width="20" height="20" src={icon} alt={chainName} className="mr-1 h-[16px] w-auto object-scale-down" />
       <span className={classNames(!showText && "hidden")}>{chainName}</span>
     </div>
   );
@@ -110,6 +108,9 @@ export function mapAddressWithScan(address: string, chain: string) {
     case "avalanche":
       href = `https://snowtrace.io/address/${address}#readContract`;
       break;
+    case "optimism":
+      href = `https://optimistic.etherscan.io/address/${address}#readContract`;
+      break;
   }
   return href !== undefined ? (
     <a
@@ -118,9 +119,7 @@ export function mapAddressWithScan(address: string, chain: string) {
       className="group inline-flex items-center whitespace-nowrap font-medium text-pink-500 underline decoration-from-font underline-offset-4 md:no-underline md:hover:text-pink-700 md:hover:underline"
       rel="noopener noreferrer"
     >
-      <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">
-        {address}
-      </code>
+      <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">{address}</code>
       <FaFileContract className="ml-1.5 h-4 md:opacity-25 md:group-hover:opacity-100" />
     </a>
   ) : (
