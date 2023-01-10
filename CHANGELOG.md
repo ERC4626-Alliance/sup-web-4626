@@ -1,3 +1,10 @@
+## [1.16.1](https://github.com/Stargate-Labs/4626-website/compare/1.16.0...1.16.1) (2023-01-10)
+
+
+### Bug Fixes
+
+* **api:** access token changed ([#91](https://github.com/Stargate-Labs/4626-website/issues/91)) ([083535f](https://github.com/Stargate-Labs/4626-website/commit/083535fb32ea6f72c4961219afa991ada0c1ffcf)), closes [SUP-1720](https://github.com/Stargate-Labs/4626-website/issues/1720)
+
 ## [1.16.0](https://github.com/Stargate-Labs/4626-website/compare/1.15.0...1.16.0) (2022-11-16)
 
 
