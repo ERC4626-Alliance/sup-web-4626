@@ -166,9 +166,28 @@ export default function Adopters() {
         <div className="mx-auto grid grid-cols-1 place-content-evenly items-center xl:grid-cols-3 2xl:grid-cols-2">
           <div className="col-span-1 px-8 text-left md:mx-auto md:max-w-2xl md:px-0 lg:pr-16 xl:max-w-none xl:text-left">
             <AtomTitle alignText="left">
-              ERC-4626 <br /> EARLY ADOPTERS
+              ERC-4626 <br /> Supporters
             </AtomTitle>
-            <p className="text-lg text-pink-600">Test an actual standard implementation</p>
+            <li className="text-lg text-pink-600">Find all ERC 4626 Vaults deployed in our vault database.</li>
+            <li className="text-lg text-pink-600">If you want to submit your own vault please provide details on it here, and we will get it added as soon as possible.</li>
+            <div className="mt-4 flex flex-auto flex-col items-stretch justify-center space-y-4 md:mt-8 md:flex-row md:space-y-0 md:space-x-4">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://eips.ethereum.org/EIPS/eip-4626"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-lg"
+              >
+                Explore the Vaults
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ethereum-magicians.org/t/eip-4626-yield-bearing-vault-standard/7900"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-lg"
+              >
+                Submit a Vault
+              </a>
+            </div>
           </div>
 
           <div className="relative col-span-full mt-8 sm:mt-12 lg:col-span-2 lg:mx-auto lg:max-w-4xl xl:mt-0 xl:max-w-none 2xl:col-span-1">

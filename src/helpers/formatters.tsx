@@ -14,14 +14,12 @@ import { FaFileContract } from "react-icons/fa";
  * @return {string} - composed string of classes
  */
 export function classNames(...classes: Array<string | boolean | undefined>) {
-  return classes
-    .filter((item) => {
-      if (typeof item === "boolean" || item === undefined) {
-        return false;
-      }
-      return !["false", "undefined", ""].includes(item as string);
-    })
-    .join(" ");
+  return classes.filter(item => {
+    if (typeof item === "boolean" || item === undefined) {
+      return false;
+    }
+    return !["false", "undefined", ""].includes(item as string);
+  }).join(" ");
 }
 
 /**

@@ -1,18 +1,15 @@
 import About from "@/components/About";
 import Adopters from "@/components/Adopters";
 import Authors from "@/components/Authors";
-import BuiltWith from "@/components/BuiltWith";
 import Layout from "@/components/Layout";
-import Resources from "@/components/Resources";
 import Tweets from "@/components/Tweets";
-import News from "@/components/News";
-import VaultExplorer from "@/components/VaultExplorer";
 
 import config from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
+import HomeResources from "../components/HomeResources";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
@@ -21,11 +18,8 @@ export default function Home() {
       </Head>
       <Layout>
         <About />
-        <BuiltWith />
-        <Resources />
         <Adopters />
-        <News />
-        <VaultExplorer />
+        <HomeResources />
         <Tweets />
         <Authors />
       </Layout>
