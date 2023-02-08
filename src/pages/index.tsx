@@ -1,13 +1,13 @@
 import About from "@/components/About";
 import Adopters from "@/components/Adopters";
 import Authors from "@/components/Authors";
+import Alliance from "@/components/Alliance";
 import Layout from "@/components/Layout";
 import Tweets from "@/components/Tweets";
 
 import config from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
-import HomeResources from "../components/HomeResources";
 
 export default function HomePage() {
   return (
@@ -18,9 +18,9 @@ export default function HomePage() {
       </Head>
       <Layout>
         <About />
+        <Alliance />
         <Adopters />
-        <HomeResources />
-        <Tweets />
+        <Tweets/>
         <Authors />
       </Layout>
     </>
