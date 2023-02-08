@@ -16,7 +16,7 @@ const Resources = () => {
   return (
     <>
       <div
-        className="bg-gradient-to-t from-pink-100 pt-8 pb-16 text-center"
+        className="mt-24 bg-gradient-to-t from-pink-100 pt-8 pb-16 text-center"
         id="resources"
       >
         <Container>
