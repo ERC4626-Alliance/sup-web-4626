@@ -35,7 +35,7 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
         <meta name="msapplication-TileColor" content="#000000" />
       </Head>
       <Header />
-      <main className="mx-auto min-h-screen max-w-[100vw] bg-white md:max-w-none">{children}</main>
+      <main className="mx-auto mt-16 min-h-screen max-w-[100vw] bg-white md:max-w-none">{children}</main>
       <Footer />
     </>
   );

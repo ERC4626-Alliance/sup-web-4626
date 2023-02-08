@@ -3,7 +3,7 @@ import Container from "@/components/Container";
 import Image from "next/future/image";
 
 export default function About() {
-  return <div className="relative overflow-hidden bg-white pt-16">
+  return <div className="relative overflow-hidden bg-white">
     <div aria-hidden="true" className="absolute inset-x-0 top-4 h-48 " />
     <Container>
       <div className="mx-auto py-16 md:grid lg:grid-cols-12 lg:gap-20 lg:py-32">

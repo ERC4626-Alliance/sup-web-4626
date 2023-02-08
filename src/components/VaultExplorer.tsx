@@ -67,7 +67,7 @@ export default function VaultExplorer() {
 
   return vaults === null ? null : (
     <div
-      className="overflow-x-hidden bg-gradient-to-b from-pink-50 py-16 md:overflow-x-auto"
+      className="mt-16 overflow-x-hidden bg-gradient-to-b from-pink-50 py-16 md:overflow-x-auto"
       id="vaultscan"
     >
       <Container>
