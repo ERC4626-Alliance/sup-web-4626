@@ -1,0 +1,196 @@
+[
+  [
+    {
+      "src": "alchemix.svg",
+      "title": "Alchemix",
+      "url": {
+        "web": "https://alchemix.fi/"
+      },      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "url": {
+        "web": "https://aura.finance"
+      },
+      "src": "aura.png",
+      "title": "Aura Finance"
+    },
+    {
+      "src": "aztec.svg",
+      "title": "Aztec",
+      "url": {
+        "web": "https://aztecaztec.network"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "balancer.svg",
+      "title": "Balancer",
+      "url": {
+        "web": "https://balancer.fi"
+      },      "extra": {
+        "unoptimized": true
+      }
+    }
+  ],
+  [
+    {
+      "url": {
+        "web": "https://www.element.fi/"
+      },
+      "src": "element-fi.svg",
+      "title": "Element Protocol",
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "maple.svg",
+      "title": "Maple",
+      "url": {
+        "web": "https://maple.finance"
+      },      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "maximizer.svg",
+      "title": "maximizer",
+      "url": {
+        "web": "https://www.maxi.xyz/"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "midas.png",
+      "title": "Midas Capital",
+      "url": {
+        "web": "https://www.midascapital.xyz/"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "mstable.svg",
+      "title": "mStable",
+      "url": {
+        "web": "https://mstable.org"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "openzeppelin.svg",
+      "title": "OpenZeppelin",
+      "url": {
+        "web": "https://openzeppelin.com"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "ousd.svg",
+      "title": "Origin Dollar",
+      "url": {
+        "web": "https://ousd.com"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "resonate.svg",
+      "title": "Resonate Protocol",
+      "url": {
+        "web": "https://www.resonate.finance/"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    }
+  ],
+  [
+    {
+      "src": "sense.svg",
+      "title": "Sense Protocol",
+      "url": {
+        "web": "https://sense.finance"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "sommelier.svg",
+      "title": "Sommelier",
+      "url": {
+        "web": "https://www.sommelier.finance/"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "superform.svg",
+      "title": "Superform",
+      "url": {
+        "web": "https://superform.xyz"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "timeless.png",
+      "title": "Timeless Protocol",
+      "url": {
+        "web": "https://timelessfi.com/"
+      }
+    },
+    {
+      "url": {
+        "web": "https://thorswap.finance"
+      },
+      "src": "thorswap.png",
+      "title": "THORSwap"
+    },
+    {
+      "src": "tribe-dao.svg",
+      "title": "Tribe DAO",
+      "url": {
+        "web": "https://tribedao.xyz/governance/proposals/FIP-103"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "yearn.finance.svg",
+      "title": "Yearn Finance",
+      "url": {
+        "web": "https://yearn.finance"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    },
+    {
+      "src": "yieldprotocol.svg",
+      "title": "Yield Protocol",
+      "url": {
+        "web": "https://yieldprotocol.com"
+      },
+      "extra": {
+        "unoptimized": true
+      }
+    }
+  ]
+]

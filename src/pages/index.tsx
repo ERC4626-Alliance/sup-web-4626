@@ -1,28 +1,26 @@
-import About from "@/components/About";
-import Adopters from "@/components/Adopters";
-import Authors from "@/components/Authors";
-import Alliance from "@/components/Alliance";
+import About from "@/components/Block/About";
+import Supporters from "@/components/Block/Supporters";
+import Alliance from "@/components/Block/Alliance";
 import Layout from "@/components/Layout";
-import Tweets from "@/components/Tweets";
+import BlockResources from "@/components/Block/Resources";
+import BlockBounties from "@/components/Block/Bounties";
 
 import config from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 
 export default function HomePage() {
-  return (
-    <>
-      <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
-      <Head>
-        <title>{config.openGraph?.title}</title>
-      </Head>
-      <Layout>
-        <About />
-        <Alliance />
-        <Adopters />
-        <Tweets/>
-        <Authors />
-      </Layout>
-    </>
-  );
+  return <>
+    <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
+    <Head>
+      <title>{config.openGraph?.title}</title>
+    </Head>
+    <Layout>
+      <About />
+      <Alliance />
+      <Supporters />
+      <BlockResources />
+      <BlockBounties />
+    </Layout>
+  </>;
 }

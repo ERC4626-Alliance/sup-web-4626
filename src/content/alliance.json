@@ -1,0 +1,34 @@
+[
+  {
+    "content": "Superform is the universal yield marketplace that allows protocols to list vaults allowing users one-click access from any asset on an EVM chain.",
+    "name": "Superform",
+    "funding": "$4,000 USDC",
+    "website": "https://superform.xyz",
+    "twitter": "superformxyz",
+    "logo": "superform.png"
+  },
+  {
+    "content": "mStable is an autonomous and non-custodial infrastructure for yield products.",
+    "name": "mStable",
+    "funding": "$4,000 mUSD",
+    "website": "https://mstable.org",
+    "twitter": "mstable_",
+    "logo": "mstable.svg"
+  },
+  {
+    "content": "Balancer is a decentralized protocol that provides DeFi liquidity infrastructure.",
+    "name": "Balancer",
+    "funding": "557.62082 BAL",
+    "website": "https://balancer.fi",
+    "twitter": "Balancer",
+    "logo": "balancer.png"
+  },
+  {
+    "content": "Aztec is a privacy-first zk-rollup on Ethereum bringing confidentiality and cost savings to the Ethereum ecosystem.",
+    "name": "Aztec",
+    "funding": "$3,500 USDC",
+    "website": "https://aztec.network",
+    "twitter": "aztecnetwork",
+    "logo": "aztec.png"
+  }
+]
