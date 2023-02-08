@@ -6,7 +6,7 @@ export default function BlockBounties() {
   return (
     <div className="bg-gradient-to-t from-pink-50 py-16 text-center" id="authors">
       <Container>
-        <AtomTitle alignText="center">ERC-4626 Bounties</AtomTitle>
+        <AtomTitle alignText="center">Bounties</AtomTitle>
         <div className="mx-auto mt-8 max-w-3xl">
           <p className="text-xl leading-relaxed text-slate-700">Check out our live bounties</p>
         </div>

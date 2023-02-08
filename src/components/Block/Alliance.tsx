@@ -18,7 +18,7 @@ export default function BlockAlliance() {
     <section id="testimonials" aria-label="What our customers are saying" className="to-white-100 bg-gradient-to-t from-pink-500 py-16 text-center">
       <Container>
         <div className="text-slate-700 mx-auto max-w-5xl md:text-center">
-          <AtomTitle alignText="center">ERC-4626 Alliance</AtomTitle>
+          <AtomTitle alignText="center">4626 Alliance</AtomTitle>
           <p className="mt-4 text-xl leading-relaxed">
             <strong>The 4626 Alliance</strong> is a group of leading protocols and applications that share the mission of supporting the development and deployment of
             <code className="mx-[2px]  select-none rounded-lg bg-pink-100 px-2 py-1">ERC-4626</code> vaults.
