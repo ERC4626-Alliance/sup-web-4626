@@ -24,7 +24,7 @@
     "logo": "mstable.svg"
   },
   {
-    "content": "Superform is the universal yield marketplace that allows protocols to list vaults allowing users one-click access from any asset on an EVM chain.",
+    "content": "Superform is the universal yield marketplace. It allows protocols to list vaults and users to deposit instantly with any asset on any chain.",
     "name": "Superform",
     "funding": "$4,000 USDC",
     "website": "https://superform.xyz",
