@@ -47,11 +47,6 @@ export default function BlockAlliance() {
                           <IoLogoTwitter className="h-[20px] w-auto md:opacity-25 md:group-hover:opacity-100" />
                         </a>
                       </div>
-                      <div className="flex items-center">
-                        <div className="mt-1 font-mono text-sm uppercase leading-[24px] text-slate-500">
-                          <strong>Funding:</strong> {testimonial.funding}
-                        </div>
-                      </div>
                     </div>
                     <div className="overflow-hidden rounded-full bg-slate-50">
                       <img className="h-14 w-14 object-cover" src={`/images/logos/${testimonial.logo}`} alt={testimonial.name} width={70} height={70} />
