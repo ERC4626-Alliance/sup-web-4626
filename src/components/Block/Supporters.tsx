@@ -20,9 +20,6 @@ export default function Supporters() {
             <div className="mt-4 flex flex-auto flex-col items-stretch space-y-4 md:mt-8 md:flex-row md:space-y-0 md:space-x-4">
               <Link prefetch href="/vaults">
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://eips.ethereum.org/EIPS/eip-4626"
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
                 >
                   Explore the Vaults
@@ -30,9 +27,6 @@ export default function Supporters() {
               </Link>
               <Link href="/vaults" prefetch>
                 <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://ethereum-magicians.org/t/eip-4626-yield-bearing-vault-standard/7900"
                   className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
                 >
                   Submit a Vault
