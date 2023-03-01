@@ -4,6 +4,7 @@ import React from "react";
 import { IoLogoTwitter } from "react-icons/io";
 import alliance from "@json/alliance.json";
 import Link from "next/link";
+import { classNames } from "@/helpers/formatters";
 
 function QuoteIcon(props: any) {
   return (
@@ -13,11 +14,15 @@ function QuoteIcon(props: any) {
   );
 }
 
-export default function BlockAlliance() {
+export default function BlockAlliance({ fullScreen = false }: { fullScreen?: boolean }) {
   return (
-    <section id="testimonials" aria-label="What our customers are saying" className="to-white-100 bg-gradient-to-t from-pink-500 py-16 text-center">
+    <section
+      id="testimonials"
+      aria-label="What our customers are saying"
+      className={classNames("to-white-100 bg-gradient-to-t from-pink-500 py-16 text-center", fullScreen && "min-h-screen")}
+    >
       <Container>
-        <div className="text-slate-700 mx-auto max-w-5xl md:text-center">
+        <div className="mx-auto max-w-5xl text-slate-700 md:text-center">
           <AtomTitle alignText="center">4626 Alliance</AtomTitle>
           <p className="mt-4 text-xl leading-relaxed">
             <strong>The 4626 Alliance</strong> is a group of leading protocols and applications that share the mission of supporting the development and deployment of
@@ -33,7 +38,7 @@ export default function BlockAlliance() {
                 <figure>
                   <QuoteIcon className="absolute top-6 left-6 fill-pink-100/40 group-hover:fill-white/70" />
                   <blockquote className="relative">
-                    <p className="text-right text-slate-700 text-lg">{testimonial.content}</p>
+                    <p className="text-right text-lg text-slate-700">{testimonial.content}</p>
                   </blockquote>
                   <figcaption className="relative mt-6 flex items-center justify-between border-t-[0.5px] border-pink-200 pt-6 text-left">
                     <div>
@@ -42,11 +47,17 @@ export default function BlockAlliance() {
                         <a
                           href={`https://twitter.com/${testimonial.twitter}`}
                           target="_blank"
-                          className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline" rel="noreferrer"
+                          className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline"
+                          rel="noreferrer"
                         >
                           <IoLogoTwitter className="h-[20px] w-auto md:opacity-25 md:group-hover:opacity-100" />
                         </a>
                       </div>
+                      {fullScreen && <div className="flex items-center">
+                        <div className="mt-1 font-mono text-sm uppercase leading-[24px] text-slate-500 whitespace-nowrap">
+                          <strong>Funding:</strong> {testimonial.funding}
+                        </div>
+                      </div>}
                     </div>
                     <div className="overflow-hidden rounded-full bg-slate-50">
                       <img className="h-14 w-14 object-cover" src={`/images/logos/${testimonial.logo}`} alt={testimonial.name} width={70} height={70} />
@@ -58,11 +69,22 @@ export default function BlockAlliance() {
           ))}
         </ul>
         <div className="mt-4 flex justify-center md:mt-8">
-          <Link href="/about-us" prefetch>
-            <a className="inline-flex items-center justify-center whitespace-nowrap rounded-md shadow-sm bg-white px-8 py-5 text-xl font-medium text-pink-700 hover:transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md">
-              Learn more about the 4626 Alliance
+          {fullScreen ? (
+            <a
+              target="_blank"
+              href="https://forms.gle/DsCsttsxBUYQTB9r6"
+              rel="nofollow noreferrer"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md bg-white px-8 py-5 text-xl font-medium text-pink-700 shadow-sm hover:transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
+            >
+              Join the Alliance
             </a>
-          </Link>
+          ) : (
+            <Link href="/about-us">
+              <a className="inline-flex items-center justify-center whitespace-nowrap rounded-md bg-white px-8 py-5 text-xl font-medium text-pink-700 shadow-sm hover:transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md">
+                Learn more about the 4626 Alliance
+              </a>
+            </Link>
+          )}
         </div>
       </Container>
     </section>

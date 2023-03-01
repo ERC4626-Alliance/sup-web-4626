@@ -5,33 +5,31 @@ import { SupSingleAdopter } from "@/types";
 import supporters from "@json/supporters.json";
 import Link from "next/link";
 
-export default function Supporters() {
+export default function Ecosystem() {
   const adopters = supporters as Array<SupSingleAdopter[]>;
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-b from-pink-50 py-16" id="supporters">
+    <div className="relative w-full overflow-hidden bg-gradient-to-b from-pink-50 py-16" id="ecosystem">
       <Container className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
         <div className="mx-auto grid grid-cols-1 place-content-evenly items-center xl:grid-cols-3 2xl:grid-cols-2">
           <div className="col-span-1 px-8 text-left md:mx-auto md:max-w-2xl md:px-0 lg:pr-16 xl:max-w-none xl:text-left">
-            <AtomTitle alignText="left">ERC-4626 Supporters</AtomTitle>
-            <ul className="text-lg text-slate-700 list-inside leading-relaxed list-disc">
+            <AtomTitle alignText="left">ERC-4626 Ecosystem</AtomTitle>
+            <ul className="list-inside list-disc text-lg leading-relaxed text-slate-700">
               <li>Find all ERC 4626 Vaults deployed in our vault database.</li>
               <li>If you want to submit your own vault please provide details on it here, and we will get it added as soon as possible.</li>
             </ul>
             <div className="mt-4 flex flex-auto flex-col items-stretch space-y-4 md:mt-8 md:flex-row md:space-y-0 md:space-x-4">
-              <Link prefetch href="/vaults">
-                <a
-                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
-                >
+              <Link href="/vaults">
+                <a className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md">
                   Explore the Vaults
                 </a>
               </Link>
-              <Link href="/vaults" prefetch>
-                <a
-                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
-                >
-                  Submit a Vault
-                </a>
-              </Link>
+              <a
+                href="https://forms.gle/gpCw7faY81Gp2AET9"
+                target="_blank"
+                className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md" rel="noreferrer"
+              >
+                Submit a Vault
+              </a>
             </div>
           </div>
 

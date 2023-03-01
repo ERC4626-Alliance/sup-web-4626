@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import VaultExplorer from "@/components/VaultExplorer";
+import Alliance from "@/components/Block/Alliance";
 
 import config from "@/helpers/config";
 import {DefaultSeo} from "next-seo";
@@ -12,7 +12,7 @@ export default function VaultsPage() {
       <title>{config.openGraph?.title}</title>
     </Head>
     <Layout>
-      <VaultExplorer/>
+      <Alliance fullScreen={true}/>
     </Layout>
   </>;
 }

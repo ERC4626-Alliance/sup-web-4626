@@ -9,10 +9,10 @@ import { isActive } from "../helpers/utils";
 const navigation = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about-us" },
-  { section: "supporters", title: "Supporters", href: "/#supporters", isScroll: true, offset: -120 },
+  { section: "ecosystem", title: "Ecosystem", href: "/#ecosystem", isScroll: true, offset: -120 },
   { title: "Vaults", href: "/vaults" },
   { title: "Resources", href: "/resources" },
-  { title: "Bounties", href: "/bounties" },
+  { title: "Bounties", section: "bounties", href: "/#bounties", isScroll: true, offset: -120},
 ];
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
                 </h2>
               </div>
             ) : (
-              <Link href="/" prefetch>
+              <Link href="/">
                 <a className="h-8 w-auto sm:h-10 md:hover:cursor-pointer" onClick={scrollToTop}>
                   <h2 className="text-4xl font-black tracking-tight text-gray-900 sm:text-4xl">
                     <span className="-mb-1 block bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">4626 Alliance</span>

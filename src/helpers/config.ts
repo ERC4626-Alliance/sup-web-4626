@@ -1,4 +1,3 @@
-import { AxiosRequestConfig } from "axios";
 import { SWRConfiguration } from "swr";
 
 export const apiUrl = "https://api.superform.xyz/";
@@ -6,15 +5,6 @@ export const apiUrl = "https://api.superform.xyz/";
 export default {
   dapp: {
     apiUrl,
-    axiosConfig: {
-      baseURL: apiUrl,
-      headers: {
-        "content-type": "application/json",
-        "cache-control": "public, s-maxage=1200, stale-while-revalidate=600",
-        "response-content-type": "application/json",
-      },
-      redirect: "manual",
-    } as AxiosRequestConfig,
     swrConfig: {
       dedupingInterval: 60 * 1000,
       refreshWhenHidden: true,

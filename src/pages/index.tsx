@@ -1,5 +1,5 @@
 import About from "@/components/Block/About";
-import Supporters from "@/components/Block/Supporters";
+import Ecosystem from "@/components/Block/Ecosystem";
 import Alliance from "@/components/Block/Alliance";
 import Layout from "@/components/Layout";
 import BlockResources from "@/components/Block/Resources";
@@ -18,7 +18,7 @@ export default function HomePage() {
     <Layout>
       <About />
       <Alliance />
-      <Supporters />
+      <Ecosystem />
       <BlockResources />
       <BlockBounties />
     </Layout>

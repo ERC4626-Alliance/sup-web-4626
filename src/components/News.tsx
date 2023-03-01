@@ -7,11 +7,11 @@ import { classNames } from "../helpers/formatters";
 export default function News() {
   return (
     <div
-      className="w-full bg-gradient-to-r from-pink-700 to-pink-900 py-16"
+      className="w-full bg-gradient-to-t from-pink-100 py-16"
       id="news"
     >
       <Container>
-        <AtomTitle alignText="center" inverted={true}>
+        <AtomTitle alignText="center">
           ERC-4626 News
         </AtomTitle>
         <div className="mx-auto mt-8 grid grid-cols-1 gap-8 sm:text-left md:grid-cols-2 lg:grid-cols-3">
