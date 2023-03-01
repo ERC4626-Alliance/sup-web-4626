@@ -85,8 +85,19 @@ export default function VaultExplorer() {
                       </td>
                       <td className="p-4">{mapIcon(vault.chain)}</td>
                       <td className="p-4 font-semibold">{vault.protocol}</td>
-                      <td className="font-base max-w-[30vw] cursor-default whitespace-normal p-4 text-xs uppercase italic tracking-tight md:max-w-[300px]">{vault.description}</td>
-                      <td className="p-4">{vault.creator}</td>
+                      <td className="font-base max-w-[30vw] cursor-default whitespace-normal p-4 text-xs uppercase italic tracking-tight md:max-w-[300px]">
+                        {vault.description}<a
+                        className="inline-flex px-1 font-medium text-pink-700 hover:transition-all md:hover:underline"
+                        target="_blank"
+                        href={vault.link}
+                        rel="noreferrer nofollow"
+                      >
+                        learn more</a>
+
+                      </td>
+                      <td className="p-4">
+                        {vault.creator}
+                      </td>
                       <td className="p-4 text-right text-pink-900 md:text-sm md:text-gray-900">{mapAddressWithScan(vault.contract_address, vault.chain)}</td>
                     </tr>
                   ))}
