@@ -2,7 +2,7 @@ import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import Image from "next/future/image";
 
-export default function About() {
+export default function Standard() {
   return <div className="relative overflow-hidden bg-white">
     <div aria-hidden="true" className="absolute inset-x-0 top-4 h-48 " />
     <Container>
