@@ -2,11 +2,11 @@ import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import { scroller } from "react-scroll";
 import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
-import axios from "axios";
 import { useMemo, useState } from "react";
 import { BsSafe2Fill, BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { FaFileContract } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
+import vaultData from "@/content/vaults.json";
 
 interface VaultType {
   is_vault: boolean[];
@@ -29,25 +29,15 @@ const defaultState: VaultType = {
 };
 
 export default function VaultExplorer() {
-  const [vaults, setVaults] = useState(defaultState);
-  const [pageCount, setPageCount] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [vaults, setVaults] = useState<VaultType>(defaultState);
+  const [pageCount, setPageCount] = useState<number>(0);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+
+  const perPage = 15;
 
   useMemo(() => {
-    let config = {
-      headers: {
-        "access-token": "superapi-testing",
-      },
-    };
-    axios
-      .get("//api.superform.xyz/explore/", config)
-      .then((res: any) => {
-        setVaults(res.data);
-        setPageCount(Math.ceil(res.data.timestamp.length / perPage));
-      })
-      .catch((_err: any) => {
-        //      console.log(_err);
-      });
+    setVaults(vaultData as VaultType);
+    setPageCount(Math.ceil(vaultData.timestamp.length / perPage));
   }, []);
 
   /**
@@ -63,7 +53,6 @@ export default function VaultExplorer() {
       offset: 60,
     });
   };
-  const perPage = 15;
 
   return vaults === null ? null : (
     <div
