@@ -16,8 +16,8 @@ export default function HomePage() {
       <title>{config.openGraph?.title}</title>
     </Head>
     <Layout>
-      <About />
       <Alliance />
+      <About />
       <Ecosystem />
       <BlockResources />
       <BlockBounties />

@@ -51,7 +51,7 @@ export default function About() {
               priority={false}
               width={823}
               height={370}
-              src="images/stars4626.svg"
+              src="images/superCharged.svg"
               className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
               alt="WHAT IS ERC-4626?"
               loading="lazy"

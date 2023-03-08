@@ -90,17 +90,6 @@ export const linksResources = {
         "The DeFi ecosystem in particular can be beneficially affected by the new standard of tokens as it's designed to improve communication dApps and expand opportunities" +
         " for income-generating farming.",
     },
-    {
-      name: "Introducing Superform: The Universal Yield Marketplace",
-      href: "https://mirror.xyz/superform.eth/CE78ugxDC3vZOlGouGtd8Y2hmz82IIbG7Qg5GR_B5no",
-      date: "2022-11-15",
-      wide: true,
-      thumbnail: "https://mirror-media.imgix.net/publication-images/RM5qjWvjbgnc8CtRRMQ7q.png?height=1200&width=2400&h=1200&w=2400&auto=compress",
-      teaser:
-        "Superform is an omnichain application, meaning it does not have a home or primary chain. Superform is equally accessible and functional on all chains it supports. At" +
-        " launch, Superform will deploy on Ethereum, Polygon, Optimism, Arbitrum, Fantom, Avalanche, and BSC. The Superform closed beta will launch on November 28th and will " +
-        "continue into 1Q23 as we complete audits of the contracts, polish the platform, and add even more functionality.",
-    },
   ],
   videos: [
     {
@@ -166,5 +155,9 @@ export const linksResources = {
       name: "Yearn Starter Kit for V2 Vaults",
       href: "https://github.com/storming0x/ystarter-foundry-kit",
     },
+    {
+      name: "ERC4626 Property Tests by a16z",
+      href: "https://github.com/a16z/erc4626-tests"
+    }
   ],
 };

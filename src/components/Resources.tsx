@@ -25,7 +25,7 @@ const Resources = () => {
               ERC4626 RESOURCES
             </AtomTitle>
             <ul className="flex flex-row flex-wrap justify-center gap-2 md:gap-6">
-              {linksResources.repositories.map((item) => (
+              {linksResources.repositories.sort((a, b) => a.name.localeCompare(b.name)).map((item) => (
                 <li key={item.name}>
                   <a
                     href={item.href}
