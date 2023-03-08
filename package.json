@@ -34,7 +34,7 @@
       "url": "https://www.opensource.org/licenses/mit-license.php"
     }
   ],
-  "version": "1.16.1",
+  "version": "1.16.2",
   "scripts": {
     "dev": "next-image-export-optimizer && next dev",
     "build": "next build && next-image-export-optimizer",
