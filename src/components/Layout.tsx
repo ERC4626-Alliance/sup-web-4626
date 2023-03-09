@@ -30,7 +30,7 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
          **/}
       </Head>
       <Header />
-      <main id="main-container" className="mx-auto mt-16 min-h-screen max-w-[100vw] bg-white md:max-w-none">
+      <main id="main-container" className="mx-auto mt-[106px] min-h-screen max-w-[100vw] bg-white md:max-w-none">
         {children}
       </main>
       <Footer />

@@ -14,7 +14,7 @@ function QuoteIcon(props: any) {
 
 export default function BlockAlliance() {
   return (
-    <section id="alliance" className="bg-gradient-to-r pb-1 from-pink-50 to-pink-300 py-16 text-center">
+    <section id="alliance" className="bg-gradient-to-r pb-1 from-pink-50 to-pink-300 py-16 mt-8 text-center">
       <Container>
         <div className="mx-auto max-w-5xl text-slate-700 md:text-center">
           <AtomTitle alignText="center">4626 Alliance</AtomTitle>
