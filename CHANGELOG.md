@@ -1,3 +1,10 @@
+## [1.16.2](https://github.com/Stargate-Labs/4626-website/compare/1.16.1...1.16.2) (2023-03-02)
+
+
+### Bug Fixes
+
+* vault list fetch fixed ([#96](https://github.com/Stargate-Labs/4626-website/issues/96)) ([10ce1e1](https://github.com/Stargate-Labs/4626-website/commit/10ce1e12159d96acf91ae27a3970509fdebd2b27))
+
 ## [1.16.1](https://github.com/Stargate-Labs/4626-website/compare/1.16.0...1.16.1) (2023-01-10)
 
 
