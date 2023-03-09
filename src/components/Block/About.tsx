@@ -28,7 +28,7 @@ export default function About() {
             is to NFTs.
           </p>
         </div>
-        <div className="relative mt-12 h-auto w-full object-scale-down md:col-span-7" data-aos="fade-left">
+        <div className="relative h-auto w-full object-scale-down md:col-span-7" data-aos="fade-left">
           <Image
             priority={false}
             unoptimized={true}
@@ -36,7 +36,7 @@ export default function About() {
             width={823}
             height={370}
             loading="lazy"
-            className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
+            className="w-full 2xl:h-full 2xl:w-auto"
             alt="WHAT IS ERC-4626?"
           />
         </div>
@@ -51,8 +51,8 @@ export default function About() {
               priority={false}
               width={823}
               height={370}
-              src="images/superCharged.svg"
-              className="w-full rounded-lg border border-pink-100 shadow-lg 2xl:h-full 2xl:w-auto"
+              src="images/superRobust.svg"
+              className="w-full 2xl:h-full 2xl:w-auto"
               alt="WHAT IS ERC-4626?"
               loading="lazy"
               unoptimized={true}

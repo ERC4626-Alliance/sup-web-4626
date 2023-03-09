@@ -28,11 +28,11 @@ const footerNavigation = {
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="bg-pink-50 py-6" aria-labelledby="footer-heading">
+      <footer className="bg-pink-50 pb-6 lg:py-6" aria-labelledby="footer-heading">
         <h2 id="footer-heading" className="sr-only">
           Footer
         </h2>
-        <Container>
+        <Container noPb>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="flex flex-row justify-center space-x-4 md:order-2">
               {footerNavigation.social.map((item: { name: string; href?: string; icon: any }) => (
@@ -48,7 +48,7 @@ export default class Footer extends Component {
                 </a>
               ))}
             </div>
-            <div className="mt-4 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:mb-5 md:justify-between md:space-y-0">
+            <div className="mt-4 flex flex-wrap items-center justify-center space-y-1 whitespace-nowrap text-sm text-pink-700 md:order-1 md:my-0 md:justify-between md:space-y-0">
               <span>Handcrafted</span>
               <span className="block w-full md:hidden" />
               <span className="ml-1">with</span>

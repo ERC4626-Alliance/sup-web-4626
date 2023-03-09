@@ -57,7 +57,7 @@ export default function BlockAlliance() {
             </li>
           ))}
         </ul>
-        <div className="mt-4 flex flex-col items-center md:mt-8">
+        <div className="pb-8 flex flex-col items-center md:mt-8">
           <div className="py-16">
             <AtomTitle alignText="center">Funds Raised</AtomTitle>
             <div className="text-xl leading-relaxed text-slate-700">The alliance contributes capital to advance the development of the ERC-4626 ecosystem</div>
@@ -68,7 +68,7 @@ export default function BlockAlliance() {
             target="_blank"
             href="https://forms.gle/DsCsttsxBUYQTB9r6"
             rel="nofollow noreferrer"
-            className="inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-pink-700 bg-white px-8 py-5 text-xl font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-pink-700 px-8 py-5 text-xl font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
           >
             Join the Alliance
           </a>

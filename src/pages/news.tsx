@@ -1,9 +1,9 @@
 import Layout from "@/components/Layout";
-import VaultExplorer from "@/components/VaultExplorer";
 
 import config from "@/helpers/config";
 import {DefaultSeo} from "next-seo";
 import Head from "next/head";
+import News from "@/components/News";
 
 export default function VaultsPage() {
   return <>
@@ -12,7 +12,7 @@ export default function VaultsPage() {
       <title>{config.openGraph?.title}</title>
     </Head>
     <Layout>
-      <VaultExplorer/>
+      <News/>
     </Layout>
   </>;
 }

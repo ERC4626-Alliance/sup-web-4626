@@ -7,8 +7,8 @@ const Tweets = () => {
       <AtomTitle alignText="center" inverted={true}>
         Tweets about EIP-4626
       </AtomTitle>
-      <Container>
-        <ul className="md:grid-col-2 mt-8 grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <Container noHidden>
+        <ul className="md:grid-col-2 mt-8 grid grid-cols-1 gap-0 lg:grid-cols-3 lg:gap-8">
           <li>
             <blockquote
               className="twitter-tweet  max-w-[70vw] md:max-w-none"

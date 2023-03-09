@@ -78,7 +78,7 @@ const Resources = () => {
                       rel="noreferrer noopener"
                       className="w-full rounded-md bg-white bg-opacity-75 py-2 px-4 text-center text-sm font-medium text-pink-700 underline-offset-4 backdrop-blur backdrop-filter hover:bg-opacity-100 hover:underline"
                     >
-                      Watch on youtube ↗
+                      Watch on YouTube ↗
                     </a>
                   </div>
                 </div>

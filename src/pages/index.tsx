@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export default function HomePage() {
   return <>
-    <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
+    <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />
     <Head>
       <title>{config.openGraph?.title}</title>
     </Head>

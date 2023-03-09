@@ -7,7 +7,7 @@ import { classNames } from "../helpers/formatters";
 export default function News() {
   return (
     <div
-      className="w-full bg-gradient-to-t from-pink-100 py-16"
+      className="w-full bg-gradient-to-t from-pink-50 py-16"
       id="news"
     >
       <Container>
