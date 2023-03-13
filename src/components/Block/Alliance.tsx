@@ -30,7 +30,7 @@ export default function BlockAlliance() {
             <li key={testimonialIndex}>
               <a href={testimonial.website} target="_blank" className="relative flex rounded-lg bg-white dark:bg-zinc-700 p-6 shadow-xl shadow-slate-900/10 lg:hover:bg-white/70 dark:lg:hover:bg-zinc-700/70 transition-colors delay-75 ease-linear" rel="noreferrer">
                 <figure>
-                  <QuoteIcon className="absolute top-6 left-6 fill-pink-100/40 group-hover:fill-white/70" />
+                  <QuoteIcon className="absolute top-6 left-6 fill-pink-100/40 dark:fill-pink-50/5 group-hover:fill-white/70" />
                   <blockquote className="relative">
                     <p className="text-right text-lg text-slate-700 dark:text-zinc-100">{testimonial.content}</p>
                   </blockquote>

@@ -1,9 +1,9 @@
 import AtomTitle from "@/components/Atom/Title";
 import Container from "@/components/Container";
 import PinnedResources from "@/components/Block/PinnedResources";
-import React, { useEffect } from "react";
 import { linksResources } from "@/config/data";
 import { IoLogoGithub } from "react-icons/io";
+import { useEffect } from "react";
 
 const Resources = () => {
   useEffect(() => {
@@ -32,9 +32,9 @@ const Resources = () => {
                       href={item.href}
                       target="_blank"
                       rel="noreferrer noopener group"
-                      className="group inline-flex items-center whitespace-nowrap rounded-lg border border-pink-600/10 py-3.5 pl-2.5 pr-4 text-sm shadow-sm md:text-base group bg-white text-pink-700 underline-offset-4 md:hover:underline"
+                      className="group group inline-flex items-center whitespace-nowrap rounded-lg border border-pink-600/10 bg-white py-3.5 pl-2.5 pr-4 text-sm text-pink-700 underline-offset-4 shadow-sm md:text-base md:hover:underline"
                     >
-                      <IoLogoGithub className="-ml-0.5 mr-1.5 h-4 w-4 md:h-8 md:w-8 opacity-25 md:group-hover:opacity-100" />
+                      <IoLogoGithub className="-ml-0.5 mr-1.5 h-4 w-4 opacity-25 md:h-8 md:w-8 md:group-hover:opacity-100" />
                       {item.name}
                     </a>
                   </li>

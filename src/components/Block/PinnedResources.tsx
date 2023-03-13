@@ -5,7 +5,7 @@ import React from "react";
 const resources = [
   {
     creator: "Superform",
-    title: "SuperVaults: ERC4626 Adapters of different kinds",
+    title: "SuperVaults: ERC4626 Adapters",
     description:
       "Repository contains different types of ERC4626 adapters/wrappers for non-standardized DeFi Vaults. We follow yield-daddy implementation for some AAVE & Compound" +
       " forked protocols, adding reward harvesting, but we also provide a set of original adapters over protocols like Arrakis, Lido, Uniswap or Compound-V3. A goal of this repository is to build a useful reference codebase to follow when implementing ERC4626 compatible adapters and vaults.",
@@ -64,7 +64,7 @@ export default function PinnedResources() {
               <IoLogoGithub className="h-8 w-8" />
               <small>Created by {resource.creator}</small>
             </div>
-            <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-400 to-pink-900 bg-clip-text text-lg font-extrabold capitalize tracking-tight text-transparent dark:from-pink-100">
+            <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-400 to-pink-900 dark:from-pink-50 dark:to-pink-300 bg-clip-text text-lg font-extrabold capitalize tracking-tight text-transparent">
               {resource.title}
             </h3>
             <p className="mt-2 leading-relaxed dark:text-white">{resource.description}</p>

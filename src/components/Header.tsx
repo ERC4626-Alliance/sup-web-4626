@@ -118,7 +118,7 @@ export default function Header() {
           </nav>
         </nav>
         {isHeaderExpanded && <div className={`absolute inset-x-0 top-0 z-10 origin-top-right transform p-1`}>
-          <div className="rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5">
+          <div className="rounded-lg bg-white dark:bg-zinc-900 shadow-sm ring-1 ring-black ring-opacity-5">
             <div className="flex items-center justify-between px-4 pt-1">
                 <div className="h-[80px] w-auto md:hover:cursor-pointer" onClick={scrollToTop}>
                   {logo}
