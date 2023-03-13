@@ -47,6 +47,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@vercel/analytics": "^0.1.5",
     "aos": "3.0.0-beta.6",
     "lite-youtube-embed": "0.2.0",
@@ -54,6 +55,7 @@
     "next-gtag": "0.2.0",
     "next-image-export-optimizer": "0.17.1",
     "next-seo": "5.14.1",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "4.6.0",

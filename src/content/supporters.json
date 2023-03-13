@@ -163,16 +163,6 @@
       "title": "THORSwap"
     },
     {
-      "src": "tribe-dao.svg",
-      "title": "Tribe DAO",
-      "url": {
-        "web": "https://tribedao.xyz/governance/proposals/FIP-103"
-      },
-      "extra": {
-        "unoptimized": true
-      }
-    },
-    {
       "src": "yearn.finance.svg",
       "title": "Yearn Finance",
       "url": {

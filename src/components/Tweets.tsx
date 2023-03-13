@@ -3,8 +3,8 @@ import Container from "@/components/Container";
 
 const Tweets = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-pink-700 to-pink-900 py-16 text-center">
-      <AtomTitle alignText="center" inverted={true}>
+    <div className="uiBlock darkBackground">
+      <AtomTitle inverted ignoreDarkMode alignText="center">
         Tweets about EIP-4626
       </AtomTitle>
       <Container noHidden>

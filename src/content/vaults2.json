@@ -49,7 +49,7 @@
     "protocol": "Sommelier",
     "creator": "Sommelier",
     "chain": "Ethereum",
-    "description": "Sommelier is an automated portfolio strategy manager. This strategy …",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy determining the optimal allocation of stable-coins across these AAVE, Compound & Uniswap V3 for the highest yield. “Risk first” approach - capital preservation is prioritized over capital growth.",
     "link": "https://app.sommelier.finance/strategies/Real-Yield-USD",
     "contract_address": "0x97e6E0a40a3D02F12d1cEC30ebfbAE04e37C119E"
   },

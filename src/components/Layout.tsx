@@ -11,6 +11,7 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="twitter:widgets:csp" content="on" />
         <meta name="twitter:dnt" content="on" />
+        <meta name="twitter:widgets:theme" content="dark" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1.1" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1.1" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=1.1" />
@@ -30,7 +31,7 @@ export default function Layout({ children }: PropsWithChildren<{}>) {
          **/}
       </Head>
       <Header />
-      <main id="main-container" className="mx-auto mt-[106px] min-h-screen max-w-[100vw] bg-white md:max-w-none">
+      <main id="main-container" className="mx-auto mt-[106px] min-h-screen max-w-[100vw] md:max-w-none">
         {children}
       </main>
       <Footer />

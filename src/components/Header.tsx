@@ -6,6 +6,8 @@ import { classNames } from "../helpers/formatters";
 import { useRouter } from "next/router";
 import { isActive } from "../helpers/utils";
 import Image from "next/future/image";
+import ModeToggle from "./ModeToggle";
+import {useTheme} from "next-themes";
 
 const navigation = [
   { title: "Home", href: "/" },
@@ -36,6 +38,18 @@ export default function Header() {
     setHeaderState(!isHeaderExpanded);
   };
 
+  const {theme} = useTheme();
+
+  const logo = <Image
+    priority={false}
+    width={80}
+    height={80}
+    src={theme !== "dark" ? "/images/logo.svg" : "/images/logo-dark.svg"}
+    alt="4626 Alliance"
+    loading="lazy"
+    unoptimized={true}
+  />;
+
   return (
     <header className="indexHeader md:full w-screen">
       <Container noHidden>
@@ -43,35 +57,19 @@ export default function Header() {
           <div className="flex w-full items-center justify-between md:w-auto">
             {isHome ? (
               <div className="h-[80px] -my-[15px] w-auto md:hover:cursor-pointer" onClick={scrollToTop}>
-                <Image
-                  priority={false}
-                  width={80}
-                  height={80}
-                  src="/images/logo.svg"
-                  alt="4626 Alliance"
-                  loading="lazy"
-                  unoptimized={true}
-                />
+                {logo}
               </div>
             ) : (
               <Link href="/">
                 <a className="h-[80px] -my-[15px] w-auto md:hover:cursor-pointer">
-                  <Image
-                    priority={false}
-                    width={80}
-                    height={80}
-                    src="/images/logo.svg"
-                    alt="4626 Alliance"
-                    loading="lazy"
-                    unoptimized={true}
-                  />
+                  {logo}
                 </a>
               </Link>
             )}
             <div className="-mr-2 flex items-center md:hidden">
               <button
                 type="button"
-                className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                className="rounded-md border-2 border-pink-700 px-4 py-2 font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
                 onClick={expandClicked}
                 aria-expanded={isHeaderExpanded}
               >
@@ -82,7 +80,7 @@ export default function Header() {
               </button>
             </div>
           </div>
-          <nav className="flex hidden flex-nowrap sm:space-x-4 md:ml-10 md:block xl:space-x-10">
+          <nav className="hidden flex-nowrap sm:space-x-4 md:ml-10 md:flex xl:space-x-10 items-center">
             {navigation.map((link, index) =>
               link.isScroll && isHome ? (
                 <ScrollLink
@@ -96,7 +94,7 @@ export default function Header() {
                   className={classNames(
                     "cursor-pointer whitespace-nowrap font-medium text-pink-700",
                     link.featured
-                      ? "rounded-md border-2 border-pink-700 px-4 py-2 font-bold font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
+                      ? "featuredLink"
                       : "decoration-from-font underline-offset-4" + " hover:text-pink-700" + " hover:underline"
                   )}
                 >
@@ -106,10 +104,9 @@ export default function Header() {
                 <Link key={link.title} href={link.href} passHref shallow aria-current={isActive(router.pathname, link.href, true) ? "page" : undefined}>
                   <a
                     className={classNames(
-                      "cursor-pointer whitespace-nowrap font-medium text-pink-700 decoration-from-font underline-offset-4",
+                      "cursor-pointer whitespace-nowrap font-medium text-pink-700 dark:text-pink-400 decoration-from-font underline-offset-4",
                       isActive(router.pathname, link.href, true) ? "font-bold underline" : "",
-                      link.featured ? "rounded-md border-2 border-pink-700 px-4 py-2 font-bold font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700" +
-                        " md:hover:text-white md:hover:shadow-md" : "hover:underline"
+                      link.featured ? "featuredLink" : "hover:underline"
                     )}
                   >
                     {link.title}
@@ -117,26 +114,19 @@ export default function Header() {
                 </Link>
               )
             )}
+            <ModeToggle />
           </nav>
         </nav>
-        <div className={`absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition ${isHeaderExpanded ? "" : "hidden"}`}>
+        {isHeaderExpanded && <div className={`absolute inset-x-0 top-0 z-10 origin-top-right transform p-1`}>
           <div className="rounded-lg bg-white shadow-sm ring-1 ring-black ring-opacity-5">
-            <div className="flex items-center justify-between px-5 pt-4">
+            <div className="flex items-center justify-between px-4 pt-1">
                 <div className="h-[80px] w-auto md:hover:cursor-pointer" onClick={scrollToTop}>
-                  <Image
-                    priority={false}
-                    width={80}
-                    height={80}
-                    src="/images/logo.svg"
-                    alt="4626 Alliance"
-                    loading="lazy"
-                    unoptimized={true}
-                  />
+                  {logo}
               </div>
               <div className="-mr-2">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-pink-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pink-500"
+                  className="rounded-md border-2 border-pink-700 px-4 py-2 font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md"
                   onClick={expandClicked}
                   aria-expanded={isHeaderExpanded}
                 >
@@ -154,7 +144,7 @@ export default function Header() {
                     saveHashHistory={true}
                     activeClass="activeLink"
                     key={`nav-mob-${index}`}
-                    className={classNames("cursor-pointer px-3 py-2.5 text-lg font-medium text-pink-700 hover:text-pink-700", )}
+                    className={classNames("featuredLink cursor-pointer px-3 py-2.5 text-lg font-medium text-pink-700 hover:text-pink-700", )}
                     to={link.section}
                     spy={true}
                     smooth={true}
@@ -177,16 +167,8 @@ export default function Header() {
                 )
               )}
             </nav>
-            <a
-              href="https://vaultscan.superform.xyz"
-              target="_blank"
-              rel="nofollow noreferrer"
-              className="block hidden w-full bg-pink-50 px-5 py-3 text-center font-medium text-pink-600 hover:bg-pink-100"
-            >
-              Check out the VaultScan by Superform
-            </a>
           </div>
-        </div>
+        </div>}
       </Container>
     </header>
   );

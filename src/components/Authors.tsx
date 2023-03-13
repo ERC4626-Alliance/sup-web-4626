@@ -35,12 +35,12 @@ export default function Authors() {
   ];
   return (
     <div
-      className="bg-gradient-to-t from-pink-50 py-16 text-center"
+      className="uiBlock lightBackground"
       id="authors"
     >
       <Container>
         <AtomTitle alignText="center">ERC-4626 AUTHORS</AtomTitle>
-        <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 md:flex-row md:flex-wrap md:items-center lg:justify-center xl:space-y-0">
+        <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 dark:text-zinc-100 md:flex-row md:flex-wrap md:items-center lg:justify-center xl:space-y-0">
           <div className="inline-flex h-full mb-1 md:mt-6 xl:mt-0 md:mb-0">ERC-4626 was authored by:</div>
           {authorList.map(
             (
@@ -56,7 +56,7 @@ export default function Authors() {
                 target="_blank"
                 rel="nofollow noreferrer"
                 key={`author-${index}`}
-                className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline"
+                className="group ml-4 inline-flex items-center space-x-1.5 font-semibold text-pink-700 dark:text-pink-400 underline decoration-from-font underline-offset-4 md:space-x-2 md:no-underline md:hover:text-pink-700 md:hover:underline"
               >
                 <span className="relative h-10 w-10 overflow-hidden rounded-full  ring-2 ring-transparent md:group-hover:ring-pink-700">
                   <img

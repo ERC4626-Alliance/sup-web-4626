@@ -3,12 +3,12 @@ import Container from "@/components/Container";
 
 export default function HomeResources() {
   return <div
-    className="bg-gradient-to-t from-pink-50 py-16 text-center"
+    className="bg-gradient-to-t from-pink-100 dark:from-zink-80 py-16 text-center"
     id="authors"
   >
     <Container>
       <AtomTitle alignText="center">ERC-4626 AUTHORS</AtomTitle>
-      <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 md:flex-row md:flex-wrap md:items-center lg:justify-center xl:space-y-0">
+      <div className="mt-8 flex flex-col items-start space-y-6 text-lg text-slate-700 dark:text-zinc-100 md:flex-row md:flex-wrap md:items-center lg:justify-center xl:space-y-0">
         <div className="inline-flex h-full mb-1 md:mt-6 xl:mt-0 md:mb-0">ERC-4626 was authored by:
           <div className="mt-4 flex flex-auto flex-col items-stretch justify-center space-y-4 md:mt-8 md:flex-row md:space-y-0 md:space-x-4"><a target="_blank"
                                                                                                                                                 rel="noopener noreferrer"

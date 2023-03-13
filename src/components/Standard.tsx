@@ -9,19 +9,19 @@ export default function Standard() {
       <div className="mx-auto py-16 md:grid lg:grid-cols-12 lg:gap-20 lg:py-32">
         <div className="md:col-span-5 md:text-left" data-aos="fade-right">
           <AtomTitle>ERC-4626</AtomTitle>
-          <p className="mb-4 text-lg leading-relaxed text-slate-700">
+          <p className="mb-4 text-lg leading-relaxed text-slate-700 dark:text-zinc-100">
             <code className="mr-1  select-none rounded-lg bg-pink-100 px-2 py-1">ERC-4626</code>
             is a tokenized vault standard. Vaults are smart contracts that take in token deposits and do something with those tokens to provide token rewards to the depositor.
           </p>
-          <p className="mb-4 text-lg leading-relaxed text-slate-700">
+          <p className="mb-4 text-lg leading-relaxed text-slate-700 dark:text-zinc-100">
             Standardizing vault implementations makes it easier for applications, plugins, and tools to integrate with vaults.
           </p>
-          <p className="mb-4 text-lg leading-relaxed text-slate-700">
+          <p className="mb-4 text-lg leading-relaxed text-slate-700 dark:text-zinc-100">
             Rather than building many custom adapters for each vault implementation, applications can easily build on top of any vault following the
             <code className="mx-1 select-none whitespace-nowrap rounded-lg bg-pink-100 px-2 py-1">ERC-4626</code>
             standard.
           </p>
-          <p className="text-lg leading-relaxed text-slate-700">
+          <p className="text-lg leading-relaxed text-slate-700 dark:text-zinc-100">
             <code className="mr-1 select-none whitespace-nowrap rounded-lg bg-pink-100 px-2 py-1">ERC-4626</code>
             is to vaults what
             <code className="mx-1 select-none  whitespace-nowrap rounded-lg bg-pink-100 px-2 py-1">ERC-721</code>

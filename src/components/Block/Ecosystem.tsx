@@ -8,25 +8,25 @@ import Link from "next/link";
 export default function Ecosystem() {
   const adopters = supporters as Array<SupSingleAdopter[]>;
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-b from-pink-50 py-16" id="ecosystem">
-      <Container className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8">
+    <div className="relative overflow-hidden uiBlock lightBackground" id="ecosystem">
+      <Container className="mx-auto max-w-7xl px-4 sm:px-6 md:w-full lg:px-8" noHidden>
         <div className="mx-auto grid grid-cols-1 place-content-evenly items-center xl:grid-cols-3 2xl:grid-cols-2">
           <div className="col-span-1 px-8 text-left md:mx-auto md:max-w-2xl md:px-0 lg:pr-16 xl:max-w-none xl:text-left">
             <AtomTitle alignText="left">ERC-4626 Ecosystem</AtomTitle>
-            <ul className="list-inside list-disc text-lg leading-relaxed text-slate-700">
+            <ul className="list-inside list-disc text-lg leading-relaxed text-slate-700 dark:text-zinc-100">
               <li>Find all ERC 4626 Vaults deployed in our vault database.</li>
               <li>If you want to submit your own vault please provide details on it here, and we will get it added as soon as possible.</li>
             </ul>
             <div className="mt-4 flex flex-auto flex-col items-stretch space-y-4 md:mt-8 md:flex-row md:space-y-0 md:space-x-4">
               <Link href="/vaults">
-                <a className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md">
+                <a className="featuredLink flex items-center justify-center">
                   Explore the Vaults
                 </a>
               </Link>
               <a
                 href="https://forms.gle/gpCw7faY81Gp2AET9"
                 target="_blank"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-pink-700 bg-white px-5 py-3 text-base font-medium text-pink-700 shadow-sm hover:transition-all md:hover:border-transparent md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md" rel="noreferrer"
+                className="featuredLink flex items-center justify-center" rel="noreferrer"
               >
                 Submit a Vault
               </a>
@@ -51,7 +51,7 @@ export default function Ecosystem() {
                       href={item.url.web}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg md:w-full md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
+                      className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-zinc-400/70 px-4 py-3 shadow-lg md:w-full transition-colors delay-75 ease-linear md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
                       key={`adopter-${index}-${adopterKey}`}
                     >
                       <ExportedImage
@@ -63,7 +63,7 @@ export default function Ecosystem() {
                         className="h-24 w-auto object-scale-down md:h-16"
                         {...item.extra}
                       />
-                      <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
+                      <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 dark:from-pink-50 dark:to-pink-300 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
                         {item.title}
                       </h3>
                     </a>

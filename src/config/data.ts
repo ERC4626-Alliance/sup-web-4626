@@ -115,11 +115,6 @@ export const linksResources = {
   ],
   repositories: [
     {
-      name: "Superform Experimental 4626 Repo",
-      href: "https://github.com/superform-xyz/experimental-4626",
-      highlight: true,
-    },
-    {
       name: "Yield Daddy gas-optimized ERC4626",
       href: "https://github.com/timeless-fi/yield-daddy",
     },
@@ -150,14 +145,6 @@ export const linksResources = {
     {
       name: "Cairo 4626 Implementation",
       href: "https://github.com/auditless/cairo-erc4626",
-    },
-    {
-      name: "Yearn Starter Kit for V2 Vaults",
-      href: "https://github.com/storming0x/ystarter-foundry-kit",
-    },
-    {
-      name: "ERC4626 Property Tests by a16z",
-      href: "https://github.com/a16z/erc4626-tests"
     }
   ],
 };

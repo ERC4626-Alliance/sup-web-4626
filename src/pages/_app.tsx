@@ -1,11 +1,12 @@
 import "/styles/globals.scss";
-import { Analytics } from "@vercel/analytics/react";
+import {Analytics} from "@vercel/analytics/react";
+import {ThemeProvider} from "next-themes";
 import AOS from "aos";
-import { NextGtag } from "next-gtag";
-import type { AppProps } from "next/app";
-import { useEffect } from "react";
+import {NextGtag} from "next-gtag";
+import type {AppProps} from "next/app";
+import {useEffect} from "react";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({Component, pageProps}: AppProps) => {
   useEffect(() => {
     AOS.init({
       throttleDelay: 200,
@@ -25,9 +26,11 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
-      <Component {...pageProps} />
-      <Analytics />
+      <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""}/>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+      <Analytics/>
     </>
   );
 };

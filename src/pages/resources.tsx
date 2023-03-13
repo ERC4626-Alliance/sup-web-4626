@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 
-import config from "@/helpers/config";
+import getConfig from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 import Resources from "../components/Resources";
@@ -8,6 +8,7 @@ import Tweets from "../components/Tweets";
 import Authors from "../components/Authors";
 
 export default function VaultsPage() {
+  const config = getConfig("ERC-4626 Resources", "Resources to help aid in the development of ERC 4626 vaults.");
   return (
     <>
       <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />
