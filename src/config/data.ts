@@ -115,6 +115,11 @@ export const linksResources = {
   ],
   repositories: [
     {
+      name: "Superform Experimental 4626 Repo",
+      href: "https://github.com/superform-xyz/experimental-4626",
+      highlight: true,
+    },
+    {
       name: "Yield Daddy gas-optimized ERC4626",
       href: "https://github.com/timeless-fi/yield-daddy",
     },

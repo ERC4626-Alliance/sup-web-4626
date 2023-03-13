@@ -5,12 +5,11 @@ import React from "react";
 const resources = [
   {
     creator: "Superform",
-    title: "Experimental ERC4626 Extensions",
+    title: "SuperVaults: ERC4626 Adapters of different kinds",
     description:
-      "MultiVault extends original ERC4626 functions with minimal additions to the original interface. The ERC4626 architectural approach to the standardization of" +
-      " single Vaults is translated onto a MultiVault design by introducing ERC1155 as LP (shares) management token and as a tool for embedding multiple ERC4626 underlying(s)" +
-      " within one MultiVault contract.",
-    href: "https://github.com/superform-xyz/experimental-4626",
+      "Repository contains different types of ERC4626 adapters/wrappers for non-standardized DeFi Vaults. We follow yield-daddy implementation for some AAVE & Compound" +
+      " forked protocols, adding reward harvesting, but we also provide a set of original adapters over protocols like Arrakis, Lido, Uniswap or Compound-V3. A goal of this repository is to build a useful reference codebase to follow when implementing ERC4626 compatible adapters and vaults.",
+    href: "https://github.com/superform-xyz/super-vaults",
   },
   {
     title: "ERC4626 OpenZeppelin Contracts",
