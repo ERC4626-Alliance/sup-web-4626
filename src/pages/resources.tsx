@@ -3,10 +3,11 @@ import Layout from "@/components/Layout";
 import getConfig from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
-import Resources from "../components/Resources";
-import Tweets from "../components/Tweets";
-import Authors from "../components/Authors";
-import Standard from "../components/Block/Standard";
+import BlockDevResources from "@/components/Block/DevResources";
+import BlockTweets from "@/components/Block/Tweets";
+import BlockAuthors from "@/components/Block/Authors";
+import BlockVideos from "@/components/Block/Videos";
+import BlockStandard from "@/components/Block/Standard";
 
 export default function VaultsPage() {
   const config = getConfig("ERC-4626 Resources", "Resources to help aid in the development of ERC 4626 vaults.");
@@ -17,10 +18,11 @@ export default function VaultsPage() {
         <title>{config.openGraph?.title}</title>
       </Head>
       <Layout>
-        <Resources />
-        <Standard />
-        <Tweets />
-        <Authors />
+        <BlockDevResources />
+        <BlockVideos />
+        <BlockStandard />
+        <BlockTweets />
+        <BlockAuthors />
       </Layout>
     </>
   );

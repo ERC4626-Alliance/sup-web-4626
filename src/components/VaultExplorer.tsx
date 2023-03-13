@@ -5,7 +5,7 @@ import { mapAddressWithScan, mapIcon } from "@/helpers/formatters";
 import { useMemo, useState } from "react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import ReactPaginate from "react-paginate";
-import vaultData from "@json/vaults2.json";
+import vaultData from "@json/vaults.json";
 
 interface VaultType {
   chain: string;

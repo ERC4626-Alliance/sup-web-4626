@@ -2,7 +2,7 @@ import About from "@/components/Block/About";
 import Ecosystem from "@/components/Block/Ecosystem";
 import Alliance from "@/components/Block/Alliance";
 import Layout from "@/components/Layout";
-import BlockResources from "@/components/Block/Resources";
+import BlockResourcesTeaser from "@/components/Block/ResourcesTeaser";
 import BlockBounties from "@/components/Block/Bounties";
 
 import getConfig from "@/helpers/config";
@@ -21,7 +21,7 @@ export default function HomePage() {
         <Alliance />
         <About />
         <Ecosystem />
-        <BlockResources />
+        <BlockResourcesTeaser />
         <BlockBounties />
       </Layout>
     </>
