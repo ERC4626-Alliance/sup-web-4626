@@ -65,7 +65,7 @@ const BuiltWith = () => {
             >
               <div className="flow-root hidden rounded-lg border border-pink-200 bg-white px-6 pb-8 opacity-20 shadow-sm md:inline-flex w-full">
                 <div className="-mt-6">
-                  <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-pink-500 to-pink-900 p-3 shadow-lg">
+                  <div className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-pink-1000 to-pink-900 p-3 shadow-lg">
                     <build.icon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"

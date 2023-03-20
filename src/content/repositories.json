@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Superform Experimental 4626 Repo",
+    "href": "https://github.com/superform-xyz/experimental-4626",
+    "highlight": true
+  },
+  {
+    "name": "Yield Daddy gas-optimized ERC4626",
+    "href": "https://github.com/timeless-fi/yield-daddy"
+  },
+  {
+    "name": "Revenue Distribution Token Implementation",
+    "href": "https://github.com/maple-labs/revenue-distribution-token"
+  },
+  {
+    "name": "4626 Extension for Voting",
+    "href": "https://github.com/devanonon/ERC4626Votes"
+  },
+  {
+    "name": "4626 Vyper Implementation",
+    "href": "https://github.com/fubuloubu/ERC4626"
+  },
+  {
+    "name": "Early 4626 YFI Implementation",
+    "href": "https://github.com/shortdoom/vault-fun"
+  },
+  {
+    "name": "FEI 4626 Implementation",
+    "href": "https://github.com/fei-protocol/ERC4626"
+  },
+  {
+    "name": "Rari Solmate 4626",
+    "href": "https://github.com/Rari-Capital/solmate"
+  },
+  {
+    "name": "Cairo 4626 Implementation",
+    "href": "https://github.com/auditless/cairo-erc4626"
+  }
+]

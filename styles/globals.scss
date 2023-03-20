@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  @apply bg-pink-50 dark:bg-pink-900;
 }
 
 
@@ -32,18 +33,19 @@ body {
 
 
 .indexHeader {
-  @apply backdrop-filter backdrop-blur-xl shadow-sm md:overflow-hidden;
-  @apply bg-pink-200 fixed w-full z-20 py-6 top-0;
-
-  will-change: background-color;
-  backdrop-filter: blur(24px);
-
-  background-color: rgba(255, 255, 255, .8);
+  @apply backdrop-filter backdrop-blur-xl shadow-sm lg:overflow-hidden;
+  @apply fixed w-full z-20 py-6 top-0;
+  @apply backdrop-blur-xl bg-white/70 dark:bg-zinc-900/90;
 
   .container {
-    height: 100%;
+    @apply h-full;
   }
+}
 
+.featuredLink {
+  @apply rounded-md border-2 px-4 py-2 font-medium shadow-sm transition-all lg:hover:shadow-md;
+  @apply border-pink-700 text-pink-700 lg:hover:bg-pink-700 lg:hover:text-white;
+  @apply dark:border-pink-500 dark:text-pink-300 dark:lg:hover:bg-pink-500 dark:lg:hover:text-white;
 }
 
 @import "variables.module";
@@ -57,3 +59,33 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.uiBlock {
+  @apply w-full py-16 text-center;
+
+  &.lightBackground {
+    @apply bg-gradient-to-t to-pink-100;
+    @apply dark:bg-zinc-700 dark:from-zinc-700;
+  }
+
+  &.mediumBackground {
+    @apply bg-gradient-to-r;
+    @apply from-pink-100 to-pink-300 dark:from-pink-600 dark:to-pink-900;
+  }
+
+  &.darkBackground {
+    @apply bg-gradient-to-r;
+    @apply from-pink-700 to-pink-900;
+  }
+}
+
+.twitter-tweet, .twitter-tweet-rendered {
+  margin: 0 !important;
+
+  & > * {
+    border-radius: 20px !important;
+    overflow: hidden;
+  }
+}
+
+@import "_home";
