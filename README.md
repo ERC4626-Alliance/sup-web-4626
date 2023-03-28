@@ -1,23 +1,73 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center">Welcome to 4626 Alliance website repo 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.17.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/erc4626" target="_blank">
+    <img alt="Twitter: erc4626" src="https://img.shields.io/twitter/follow/erc4626.svg?style=social" />
+  </a>
+</p>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> The 4626 Alliance is a group of leading protocols and applications that share the mission of supporting the development and deployment of **ERC-4626** vaults. **ERC-4626**
+> drastically simplifies the
+> process of building cool and useful applications by decreasing the complexity of integration while improving UX and security.
 
-## Deploy your own
+## Alliance members
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+ * [Aztec](https://aztec.network/)
+ * [Balancer](https://balancer.finance/)
+ * [mStable](https://mstable.org/)
+ * [Superform](https://superform.xyz/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Funds Raised
+  The alliance contributes capital to advance the development of the ERC-4626 ecosystem.
+  Fund raised by now: **$15,000**
 
-## How to use
+ [Join the alliance](https://forms.gle/DsCsttsxBUYQTB9r6)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### 🏠 [Homepage](https://erc4626.com)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+### ✨ [Demo](https://dev.eip4626.com)
+
+## Install
+
+```sh
+yarn install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Usage
+
+```sh
+yarn dev
+```
+
+## Content structure
+
+Major content is stored in form of the `.json` files located at `/src/content` folder. Using it maintainers can easily update the vault list, bounties, resources, alliance
+members, ecosystem & erc-4626 related news.
+
+**To perform the update, please follow the steps below:**
+1. Create the GitHub PR
+2. Describe the changes and motivation in the PR description
+3. Add the `content` label to the PR
+4. Wait for the review and merge
+
+## Author
+
+👤 **4626 Alliance**
+
+* Website: https://superform.xyz/
+* Twitter: [@erc4626](https://twitter.com/erc4626)
+* Github: [@superform-xyz](https://github.com/superform-xyz)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/superform-xyz/sup-web-4626/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
