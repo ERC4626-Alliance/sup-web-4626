@@ -121,7 +121,7 @@ export default function VaultExplorer() {
         </nav>
         <div className="w-full text-center">
           <a
-            href="https://forms.gle/A1RGtfAwFxnfTD5x8"
+            href="https://forms.gle/xzmLT7hQhMMeKeVY7"
             target="_blank"
             rel="nofollow noreferrer"
             className="mx-auto mt-16 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-pink-700 bg-white bg-pink-700 px-8 py-5 text-xl font-medium text-white shadow-sm hover:transition-all md:hover:bg-white md:hover:text-pink-700 md:hover:shadow-md"
