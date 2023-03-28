@@ -14,14 +14,12 @@ import { FaFileContract } from "react-icons/fa";
  * @return {string} - composed string of classes
  */
 export function classNames(...classes: Array<string | boolean | undefined>) {
-  return classes
-    .filter((item) => {
-      if (typeof item === "boolean" || item === undefined) {
-        return false;
-      }
-      return !["false", "undefined", ""].includes(item as string);
-    })
-    .join(" ");
+  return classes.filter(item => {
+    if (typeof item === "boolean" || item === undefined) {
+      return false;
+    }
+    return !["false", "undefined", ""].includes(item as string);
+  }).join(" ");
 }
 
 /**
@@ -44,37 +42,37 @@ export function mapIcon(chain: string | number, showText = true) {
     case "binance":
     case "bsc":
       chainName = "Binance";
-      icon = "images/icons/bnb.svg";
+      icon = "/images/icons/bnb.svg";
       break;
     case "137":
     case "polygon":
       chainName = "Polygon";
-      icon = "images/icons/polygon.svg";
+      icon = "/images/icons/polygon.svg";
       break;
     case "250":
     case "fantom":
       chainName = "Fantom";
-      icon = "images/icons/fantom.svg";
+      icon = "/images/icons/fantom.svg";
       break;
     case "1":
     case "ethereum":
       chainName = "Ethereum";
-      icon = "images/icons/eth.svg";
+      icon = "/images/icons/eth.svg";
       break;
     case "43114":
     case "avalanche":
       chainName = "Avalanche";
-      icon = "images/icons/avalanche.svg";
+      icon = "/images/icons/avalanche.svg";
       break;
     case "42161":
     case "arbitrum":
       chainName = "Arbitrum";
-      icon = "images/icons/arbitrum.svg";
+      icon = "/images/icons/arbitrum.svg";
       break;
     case "10":
     case "optimism":
       chainName = "Optimism";
-      icon = "images/icons/optimism.svg";
+      icon = "/images/icons/optimism.svg";
       break;
   }
   return (
@@ -119,7 +117,7 @@ export function mapAddressWithScan(address: string, chain: string) {
       className="group inline-flex items-center whitespace-nowrap font-medium text-pink-500 underline decoration-from-font underline-offset-4 md:no-underline md:hover:text-pink-700 md:hover:underline"
       rel="noopener noreferrer"
     >
-      <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">{address}</code>
+      <code className="select-none rounded-lg bg-transparent p-0 font-mono tracking-tighter text-pink-500 md:group-hover:text-pink-700">{address.slice(0, 6)}...{address.slice(-6)}</code>
       <FaFileContract className="ml-1.5 h-4 md:opacity-25 md:group-hover:opacity-100" />
     </a>
   ) : (

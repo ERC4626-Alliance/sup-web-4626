@@ -1,33 +1,28 @@
-import About from "@/components/About";
-import Adopters from "@/components/Adopters";
-import Authors from "@/components/Authors";
-import BuiltWith from "@/components/BuiltWith";
+import About from "@/components/Block/About";
+import Ecosystem from "@/components/Block/Ecosystem";
+import Alliance from "@/components/Block/Alliance";
 import Layout from "@/components/Layout";
-import Resources from "@/components/Resources";
-import Tweets from "@/components/Tweets";
-import News from "@/components/News";
-import VaultExplorer from "@/components/VaultExplorer";
+import BlockResourcesTeaser from "@/components/Block/ResourcesTeaser";
+import BlockBounties from "@/components/Block/Bounties";
 
-import config from "@/helpers/config";
+import getConfig from "@/helpers/config";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 
-export default function Home() {
+export default function HomePage() {
+  const config = getConfig();
   return (
     <>
-      <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />;
+      <DefaultSeo openGraph={config.openGraph} twitter={config.twitter} />
       <Head>
         <title>{config.openGraph?.title}</title>
       </Head>
       <Layout>
+        <Alliance />
         <About />
-        <BuiltWith />
-        <Resources />
-        <Adopters />
-        <News />
-        <VaultExplorer />
-        <Tweets />
-        <Authors />
+        <Ecosystem />
+        <BlockResourcesTeaser />
+        <BlockBounties />
       </Layout>
     </>
   );

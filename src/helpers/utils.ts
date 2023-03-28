@@ -1,0 +1,1 @@
+export const isActive = (pathname: string, href: string, strict: boolean = false) => !strict ? pathname.startsWith(href) : pathname === href;

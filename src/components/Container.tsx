@@ -1,11 +1,7 @@
 import { PropsWithChildren } from "react";
+import { classNames } from "../helpers/formatters";
 
-const Container = (props: PropsWithChildren<{ className?: string }>) => {
-  const className = `${props.className} ` || "";
-  return (
-    <section className={`${className}container mx-auto px-5 pb-2 overflow-hidden`} {...props}>
-      {props.children}
-    </section>
-  );
-};
-export default Container;
+export default function Container(props: PropsWithChildren<{ className?: string; noPb?: boolean; noHidden?: boolean }>) {
+  const { noPb, className: extraClassName, children, noHidden } = props;
+  return <section className={classNames("container mx-auto px-5", !noPb && "pb-2", !noHidden && "overflow-hidden", extraClassName)}>{children}</section>;
+}
