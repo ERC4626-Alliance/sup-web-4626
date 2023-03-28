@@ -24,7 +24,7 @@ export default function Ecosystem() {
                 </a>
               </Link>
               <a
-                href="https://forms.gle/gpCw7faY81Gp2AET9"
+                href="https://forms.gle/xzmLT7hQhMMeKeVY7"
                 target="_blank"
                 className="featuredLink flex items-center justify-center" rel="noreferrer"
               >
