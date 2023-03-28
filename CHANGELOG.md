@@ -1,3 +1,10 @@
+## [1.17.0](https://github.com/Stargate-Labs/4626-website/compare/1.16.2...1.17.0) (2023-03-20)
+
+
+### Features
+
+* homepage changes (in progress) ([#94](https://github.com/Stargate-Labs/4626-website/issues/94)) ([e6a08db](https://github.com/Stargate-Labs/4626-website/commit/e6a08db042fa2bc919d79b37166b8c7891b4b601))
+
 ## [1.16.2](https://github.com/Stargate-Labs/4626-website/compare/1.16.1...1.16.2) (2023-03-02)
 
 
