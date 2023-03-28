@@ -37,7 +37,7 @@ __metadata:
     lite-youtube-embed: 0.2.0
     next: 12.3.3
     next-gtag: 0.2.0
-    next-image-export-optimizer: 0.17.1
+    next-image-export-optimizer: 1.4.1
     next-seo: 5.14.1
     next-themes: ^0.2.1
     postcss: 8.4.19
@@ -5318,19 +5318,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-image-export-optimizer@npm:0.17.1":
-  version: 0.17.1
-  resolution: "next-image-export-optimizer@npm:0.17.1"
+"next-image-export-optimizer@npm:1.4.1":
+  version: 1.4.1
+  resolution: "next-image-export-optimizer@npm:1.4.1"
   dependencies:
     cli-progress: ^3.10.0
     sharp: ^0.31.0
     typescript: ^4.7.2
   peerDependencies:
-    next: 12.x
-    react: ^17.0.2 || ^18.0.0-0
+    next: ^13.1.0
+    react: ^18.0.0-0
   bin:
     next-image-export-optimizer: src/optimizeImages.js
-  checksum: cdbfe9c057bb37084f99fa6f8dc935ac1a47dd833b0532367057006a479032bf9199850e5cb65fa80b0e215825e6b481434f7d74b0adef445470d077a0331c72
+  checksum: 1384852cc1cc44ffdb1baff2a78b75d279ac19ff10e1749e948b4773bda925d875cc4d41ded2c6883c563557760846993a47ba82eb9daadb76e07bc4766236d4
   languageName: node
   linkType: hard
 
