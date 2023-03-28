@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import { GiTrumpetFlag } from "react-icons/gi";
 import { CgSandClock } from "react-icons/cg";
 import bounties from "@/content/bounties.json";
+import {classNames} from "../../helpers/formatters";
 
 export default function BlockBounties() {
   return (
@@ -45,7 +46,7 @@ export default function BlockBounties() {
                   <div className="text-sm text-slate-400 dark:text-zinc-400">Description</div>
                 </div>
                 <div>
-                  <div className="flex items-center space-x-[2px] font-extrabold uppercase text-green-700 dark:text-green-300">
+                  <div className={classNames("flex items-center space-x-[2px] font-extrabold uppercase", bounty.status === "open" ? "text-green-700 dark:text-green-300" : "text-orange-700 dark:text-orange-300")}>
                     {bounty.status === "open" && (
                       <>
                         <GiTrumpetFlag />
