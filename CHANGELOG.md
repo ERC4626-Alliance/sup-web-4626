@@ -1,3 +1,28 @@
+## [1.18.0](https://github.com/Stargate-Labs/4626-website/compare/1.17.0...1.18.0) (2023-03-28)
+
+
+### Features
+
+* added standard block to the resources page ([2cf43e6](https://github.com/Stargate-Labs/4626-website/commit/2cf43e6403c5a5da7cfb12bcb51131ba9d1fba0d))
+* changing the bounties to store it in json ([f5773c6](https://github.com/Stargate-Labs/4626-website/commit/f5773c6e723e4de3a075a439543f32edf93470e1))
+* code refactoring ([e3d2c96](https://github.com/Stargate-Labs/4626-website/commit/e3d2c964cbe51cc883c8f0ffdbee0a720707795e))
+* darkmode, pinned resources, optimized UI ([59366cb](https://github.com/Stargate-Labs/4626-website/commit/59366cba4e5b62ea86d6f5c6945b0d9637d7f5be)), closes [SUP-2068](https://github.com/Stargate-Labs/4626-website/issues/2068) [SUP-2069](https://github.com/Stargate-Labs/4626-website/issues/2069) [SUP-2072](https://github.com/Stargate-Labs/4626-website/issues/2072) [SUP-2071](https://github.com/Stargate-Labs/4626-website/issues/2071)
+* final launch data added ([b33500b](https://github.com/Stargate-Labs/4626-website/commit/b33500be278080b769313e091d5ae35106bdc7f3))
+* homepage changes (in progress) ([7ea32d1](https://github.com/Stargate-Labs/4626-website/commit/7ea32d1eea213ec065c5a502b4ca07ee610962fc))
+* more vercel comments resolved ([a3a1b91](https://github.com/Stargate-Labs/4626-website/commit/a3a1b91d9872f0aea933f6d9d578106738d90373))
+* new homepage, navigation & dummy pages for the rest of the website ([7c37b78](https://github.com/Stargate-Labs/4626-website/commit/7c37b78608c818e6890c4b56d92179ccfae5e33c)), closes [SUP-1931](https://github.com/Stargate-Labs/4626-website/issues/1931)
+* resources page added ([6d73832](https://github.com/Stargate-Labs/4626-website/commit/6d738323d07cdbecca907893157b961ea4854291)), closes [SUP-1934](https://github.com/Stargate-Labs/4626-website/issues/1934)
+* vercel comments resolved ([fe73c8a](https://github.com/Stargate-Labs/4626-website/commit/fe73c8ad44af8d0ed879682d4daf245efd32c4e8))
+
+
+### Bug Fixes
+
+* alliance block changed according the comments from Blake ([b409000](https://github.com/Stargate-Labs/4626-website/commit/b4090001d00701997e460ba88c493e688d39a04c))
+* content changes for the alliance block ([cd42bf4](https://github.com/Stargate-Labs/4626-website/commit/cd42bf4cb3d93e6a94ec5fb1c1bb15f9fee82d5a))
+* details link added ([36d865b](https://github.com/Stargate-Labs/4626-website/commit/36d865b958f6b9faeb9c439bd3d5e484e4150c8d))
+* header margin fixed ([d23642c](https://github.com/Stargate-Labs/4626-website/commit/d23642c6c22038be123a2fe2fc52be21826199a5))
+* total funding info added ([c5679e2](https://github.com/Stargate-Labs/4626-website/commit/c5679e24a830488350b349e6b049553214d71c2a))
+
 ## [1.17.0](https://github.com/Stargate-Labs/4626-website/compare/1.16.2...1.17.0) (2023-03-20)
 
 
