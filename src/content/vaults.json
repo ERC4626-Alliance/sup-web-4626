@@ -1,0 +1,776 @@
+[
+  {
+    "name": "xMPL Maple Staking Vault",
+    "protocol": "Maple Finance",
+    "creator": "Maple Finance",
+    "chain": "Ethereum",
+    "description": "Maple Finance is an uncollateralized lending market on Ethereum. This staking pool is for the native MPL goverance token of Maple Finance. xMPL is an ERC20 token from Maple that accrues MPL bought back from the open market.",
+    "link": "https://app.maple.finance/#/xmpl",
+    "contract_address": "0x4937A209D4cDbD3ecD48857277cfd4dA4D82914c"
+  },
+  {
+    "name": "ETH-BTC Sommelier Trend Strategy",
+    "protocol": "Sommelier",
+    "creator": "Sommelier",
+    "chain": "Ethereum",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy portfolio buys BTC and ETH when prices go up. Fully or partially sells both assets when prices go down.",
+    "link": "https://app.sommelier.finance/strategies/ETH-BTC-Trend",
+    "contract_address": "0x6b7f87279982d919Bbf85182DDeAB179B366D8f2"
+  },
+  {
+    "name": "ETH-BTC Sommelier Momentum Strategy",
+    "protocol": "Sommelier",
+    "creator": "Sommelier",
+    "chain": "Ethereum",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy strategy portfolio has exposure to BTC and ETH with positive price momentum, lower exposure when prices drop.",
+    "link": "https://app.sommelier.finance/strategies/ETH-BTC-Momentum",
+    "contract_address": "0x6E2dAc3b9E9ADc0CbbaE2D0B9Fd81952a8D33872"
+  },
+  {
+    "name": "ETH Sommelier Steady Strategy",
+    "protocol": "Sommelier",
+    "creator": "Sommelier",
+    "chain": "Ethereum",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy captures the upside of ETH price breakouts, manage downside through trailing stops. “Risk first” approach - capital preservation is prioritized over capital growth",
+    "link": "https://app.sommelier.finance/strategies/Steady-ETH",
+    "contract_address": "0x3F07A84eCdf494310D397d24c1C78B041D2fa622"
+  },
+  {
+    "name": "BTC Sommelier Steady Strategy",
+    "protocol": "Sommelier",
+    "creator": "Sommelier",
+    "chain": "Ethereum",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy capture the upside of BTC price breakouts, manage downside through trailing stops. “Risk first” approach - capital preservation is prioritized over capital growth.",
+    "link": "https://app.sommelier.finance/strategies/Steady-BTC",
+    "contract_address": "0x4986fD36b6b16f49b43282Ee2e24C5cF90ed166d"
+  },
+  {
+    "name": "USD Sommelier Real Yield Strategy",
+    "protocol": "Sommelier",
+    "creator": "Sommelier",
+    "chain": "Ethereum",
+    "description": "Sommelier is an automated portfolio strategy manager. This strategy determining the optimal allocation of stable-coins across these AAVE, Compound & Uniswap V3 for the highest yield. “Risk first” approach - capital preservation is prioritized over capital growth.",
+    "link": "https://app.sommelier.finance/strategies/Real-Yield-USD",
+    "contract_address": "0x97e6E0a40a3D02F12d1cEC30ebfbAE04e37C119E"
+  },
+  {
+    "name": "WBTC-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0xF31AC95fe692190b9C67112d8c912bA9973944F2"
+  },
+  {
+    "name": "WETH-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0x676E1B7d5856f4f69e10399685e17c2299370E95"
+  },
+  {
+    "name": "DAI-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0x8F88EaE3e1c01d60bccdc3DB3CBD5362Dd55d707"
+  },
+  {
+    "name": "USDC-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0xba9E3b3b684719F80657af1A19DEbc3C772494a0"
+  },
+  {
+    "name": "USDT-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0xC2A4fBA93d4120d304c94E4fd986e0f9D213eD8A"
+  },
+  {
+    "name": "COMP-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0xaA768b85eC827cCc36D882c1814bcd27ec4A8593"
+  },
+  {
+    "name": "UNI-Compound Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://compound.morpho.xyz/?network=mainnet",
+    "contract_address": "0x496da625C736a2fF122638Dc26dCf1bFdEf1778c"
+  },
+  {
+    "name": "WBTC-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0xd508F85F1511aAeC63434E26aeB6d10bE0188dC7"
+  },
+  {
+    "name": "WETH-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0x490BBbc2485e99989Ba39b34802faFa58e26ABa4"
+  },
+  {
+    "name": "DAI-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0x36F8d0D0573ae92326827C4a82Fe4CE4C244cAb6"
+  },
+  {
+    "name": "USDC-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0xA5269A8e31B93Ff27B887B56720A25F844db0529"
+  },
+  {
+    "name": "USDT-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0xAFe7131a57E44f832cb2dE78ade38CaD644aaC2f"
+  },
+  {
+    "name": "CRV-AaveV2 Morpho Lending Vault",
+    "protocol": "Morpho",
+    "creator": "Morpho",
+    "chain": "Ethereum",
+    "description": "Morpho is a peer to peer lending market built on aave and Compound which optimizes the underlying yield for users. Morpho rewards are currently unavailable on Superform. Deposits only earn the base Morpho lending rewards.",
+    "link": "https://aave.morpho.xyz/?network=mainnet",
+    "contract_address": "0x9dc7094530cB1bcf5442c3b9389ee386738A190c"
+  },
+  {
+    "name": "USDC 3pool Convex mStable Meta Vault",
+    "protocol": "mStable",
+    "creator": "mStable",
+    "chain": "Ethereum",
+    "description": "mStable is a decentralized stablecoin and yield protocol. Meta vaults leverage the 4626 standard to optimize underlying yield pools to generate superior returns.",
+    "link": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault",
+    "contract_address": "0x455fB969dC06c4Aa77e7db3f0686CC05164436d2"
+  },
+  {
+    "name": "3Crv Convex mStable Meta Vault",
+    "protocol": "mStable",
+    "creator": "mStable",
+    "chain": "Ethereum",
+    "description": "mStable is a decentralized stablecoin and yield protocol. Meta vaults leverage the 4626 standard to optimize underlying yield pools to generate superior returns.",
+    "link": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault",
+    "contract_address": "0x9614a4C61E45575b56c7e0251f63DCDe797d93C5"
+  },
+  {
+    "name": "mUSD 3Crv Convex mStable Vault",
+    "protocol": "mStable",
+    "creator": "mStable",
+    "chain": "Ethereum",
+    "description": "mStable is a decentralized stablecoin and yield protocol. Meta vaults leverage the 4626 standard to optimize underlying yield pools to generate superior returns.",
+    "link": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault",
+    "contract_address": "0xB9B47E72819934d7A5d60Bf08cD2C78072383EBb"
+  },
+  {
+    "name": "Frax 3Crv Convex mStable Vault",
+    "protocol": "mStable",
+    "creator": "mStable",
+    "chain": "Ethereum",
+    "description": "mStable is a decentralized stablecoin and yield protocol. Meta vaults leverage the 4626 standard to optimize underlying yield pools to generate superior returns.",
+    "link": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault",
+    "contract_address": "0x98c5910823C2E67d54e4e0C03de44043DbfA7ca8"
+  },
+  {
+    "name": "BUSD 3Crv Convex mStable Vault",
+    "protocol": "mStable",
+    "creator": "mStable",
+    "chain": "Ethereum",
+    "description": "mStable is a decentralized stablecoin and yield protocol. Meta vaults leverage the 4626 standard to optimize underlying yield pools to generate superior returns.",
+    "link": "https://developers.mstable.org/meta-vaults/usdc-3pool-convex-meta-vault",
+    "contract_address": "0x87Ed92648fAE3b3930577c92c8A247b127ED8949"
+  },
+  {
+    "name": "weoSQTH Euler Lending Vault",
+    "protocol": "Euler",
+    "creator": "Euler",
+    "chain": "Ethereum",
+    "description": "Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset.",
+    "link": "https://app.euler.finance/market/0xf1b99e3e573a1a9c5e6b2ce818b617f0e664e86b",
+    "contract_address": "0x20706baA0F89e2dccF48eA549ea5A13B9b30462f"
+  },
+  {
+    "name": "weWETH Euler Lending Vault",
+    "protocol": "Euler",
+    "creator": "Euler",
+    "chain": "Ethereum",
+    "description": "Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset.",
+    "link": "https://app.euler.finance/market/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "contract_address": "0x3c66B18F67CA6C1A71F829E2F6a0c987f97462d0"
+  },
+  {
+    "name": "westETH Euler Lending Vault",
+    "protocol": "Euler",
+    "creator": "Euler",
+    "chain": "Ethereum",
+    "description": "Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset.",
+    "link": "https://app.euler.finance/market/0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+    "contract_address": "0x60897720AA966452e8706e74296B018990aEc527"
+  },
+  {
+    "name": "weDAI Euler Lending Vault",
+    "protocol": "Euler",
+    "creator": "Euler",
+    "chain": "Ethereum",
+    "description": "Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset.",
+    "link": "https://app.euler.finance/market/0x6b175474e89094c44da98b954eedeac495271d0f",
+    "contract_address": "0x4169Df1B7820702f566cc10938DA51F6F597d264"
+  },
+  {
+    "name": "wBTC Euler Lending Vault",
+    "protocol": "Euler",
+    "creator": "Euler",
+    "chain": "Ethereum",
+    "description": "Euler is a non-custodial protocol on Ethereum that allows users to lend and borrow almost any crypto asset.",
+    "link": "https://app.euler.finance/market/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+    "contract_address": "0x2DbFeA3103B35A94c66aABa25B7BC5a6EDb433f2"
+  },
+  {
+    "name": "USDC Idle Senior Trache Clearpool Wintermute Vault",
+    "protocol": "Idle Finance",
+    "creator": "Idle Finance",
+    "chain": "Ethereum",
+    "description": "Idle Finance Traunched Clearpool's Wintermute Undercollateralized Lending vault into senior and junior vaults. This is the Senior vault.",
+    "link": "https://app.idle.finance/#/tranches/senior/clearpool/USDC",
+    "contract_address": "0x0BD58ca59f2C18F88882562bc8188d9f8939CA68"
+  },
+  {
+    "name": "USDC Idle Junior Trache Clearpool Wintermute Vault",
+    "protocol": "Idle Finance",
+    "creator": "Idle Finance",
+    "chain": "Ethereum",
+    "description": "Idle Finance Traunched Clearpool's Wintermute Undercollateralized Lending vault into senior and junior vaults. This is the Junior vault.",
+    "link": "https://app.idle.finance/#/tranches/junior/clearpool/USDC",
+    "contract_address": "0x43b9B5B8fbcb9AD21B54C44f422F3cA33712A3E3"
+  },
+  {
+    "name": "USDC-Notional Phuture Lending Vault",
+    "protocol": "Phuture Finance",
+    "creator": "Phuture Finance",
+    "chain": "Ethereum",
+    "description": "Phuture is a crypto index platform offering DeFi investing opportuntites. The USDC savings vaults invests in Notional for its underlying yield generation.",
+    "link": "https://app.phuture.finance/products/0x6bad6a9bcfda3fd60da6834ace5f93b8cfed9598",
+    "contract_address": "0x6bAD6A9BcFdA3fd60Da6834aCe5F93B8cFed9598"
+  },
+  {
+    "name": "WETH Exactly Lending Vault",
+    "protocol": "Exactly",
+    "creator": "Exactly",
+    "chain": "Ethereum",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "link": "https://app.exact.ly/assets/WETH",
+    "contract_address": "0xc4d4500326981eacd020e20a81b1c479c161c7ef"
+  },
+  {
+    "name": "DAI Exactly Lending Vault",
+    "protocol": "Exactly",
+    "creator": "Exactly",
+    "chain": "Ethereum",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "link": "https://app.exact.ly/assets/DAI",
+    "contract_address": "0x163538e22f4d38c1eb21b79939f3d2ee274198ff"
+  },
+  {
+    "name": "USDC Exactly Lending Vault",
+    "protocol": "Exactly",
+    "creator": "Exactly",
+    "chain": "Ethereum",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "link": "https://app.exact.ly/assets/USDC",
+    "contract_address": "0x660e2fc185a9ffe722af253329ceaad4c9f6f928"
+  },
+  {
+    "name": "wBTC Exactly Lending Vault",
+    "protocol": "Exactly",
+    "creator": "Exactly",
+    "chain": "Ethereum",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "link": "https://app.exact.ly/assets/WBTC",
+    "contract_address": "0x8644c0fded361d1920e068ba4b09996e26729435"
+  },
+  {
+    "name": "wstETH Exactly Lending Vault",
+    "protocol": "Exactly",
+    "creator": "Exactly",
+    "chain": "Ethereum",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "link": "https://app.exact.ly/assets/wstETH",
+    "contract_address": "0x3843c41da1d7909c86fad51c47b9a97cf62a29e1"
+  },
+  {
+    "name": "DAI AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Optimism",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xda10009cbd5d07dd0cecc66161fc93d7c9000da1&marketName=proto_optimism_v3",
+    "contract_address": "0xe4c2a17f38fea3dcb3bb59ceb0ac0267416806e2"
+  },
+  {
+    "name": "USDC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Optimism",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x7f5c764cbc14f9669b88837ca1490cca17c31607&marketName=proto_optimism_v3",
+    "contract_address": "0x105bdc0990947318fa1c873623730f332a6f6203"
+  },
+  {
+    "name": "wETH AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Optimism",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x4200000000000000000000000000000000000006&marketName=proto_optimism_v3",
+    "contract_address": "0xdaf2d8aac9174b1168b9f78075fe64a04bae197b"
+  },
+  {
+    "name": "sUSD AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Optimism",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9&marketName=proto_optimism_v3",
+    "contract_address": "0x04135ca11461693ccad3f9177272fe3ef2dfc3a2"
+  },
+  {
+    "name": "BUSD Venus Lending Vault",
+    "protocol": "Venus",
+    "creator": "Superform",
+    "chain": "Binance",
+    "description": "Venus is a lending and borrowoing market built on Binance Smart Chain. It was orignally created by forking the Compound protocol.",
+    "link": "https://app.venus.io/market/busd",
+    "contract_address": "0x889447dFab0611F714a12306cB66392EC38d2211"
+  },
+  {
+    "name": "USDC Venus Lending Vault",
+    "protocol": "Venus",
+    "creator": "Superform",
+    "chain": "Binance",
+    "description": "Venus is a lending and borrowoing market built on Binance Smart Chain. It was orignally created by forking the Compound protocol.",
+    "link": "https://app.venus.io/market/usdc",
+    "contract_address": "0x32307B89a1c59Ea4EBaB1Fde6bD37b1139D06759"
+  },
+  {
+    "name": "USDC.e Benqi Lending Vault",
+    "protocol": "Benqi",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Benqi is a lending and borrowoing market built on Avalanche. It was orignally created by forking the Compound protocol.",
+    "link": "https://app.benqi.fi/overview/USDC.e",
+    "contract_address": "0x07DA13D53DC02Ec33F5E0829640f8C3040FAf7f8"
+  },
+  {
+    "name": "wAVAX Benqi Lending Vault",
+    "protocol": "Benqi",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Benqi is a lending and borrowoing market built on Avalanche. It was orignally created by forking the Compound protocol.",
+    "link": "https://app.benqi.fi/overview/AVAX",
+    "contract_address": "0x56E30029975755a1911e03A2eeE5FAFd9DF9eC4B"
+  },
+  {
+    "name": "DAI.e AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xd586e7f844cea2f87f50152665bcbc2c279d8d70&marketName=proto_avalanche",
+    "contract_address": "0x2c1aee2ace536bf41d78865e15b100bd61682cb9"
+  },
+  {
+    "name": "USDC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664&marketName=proto_avalanche",
+    "contract_address": "0xcee169c9673362a244726d6ebc57390ad0b5b824"
+  },
+  {
+    "name": "wAVAX AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7&marketName=proto_avalanche_v3",
+    "contract_address": "0xf7b2fdc70912bf156c09fac6685b86d3495ace35"
+  },
+  {
+    "name": "BTC.b AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x152b9d0fdc40c096757f570a51e494bd4b943e50&marketName=proto_avalanche_v3",
+    "contract_address": "0x343D552FF7fDF1E63d29F456a192a6D2d64cE984"
+  },
+  {
+    "name": "sAvax AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x2b2c81e08f1af8835a78bb2a90ae924ace0ea4be&marketName=proto_avalanche_v3",
+    "contract_address": "0xE2E7873227b7F3B4ad61e62EaaD0B1e3fe3c16BD"
+  },
+  {
+    "name": "wETH.e AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x49d5c2bdffac6ce2bfdb6640f4f80f226bc10bab&marketName=proto_avalanche_v3",
+    "contract_address": "0x1a225008efffB6e07D01671127c9E40f6f787c8C"
+  },
+  {
+    "name": "wMATIC AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&marketName=proto_polygon",
+    "contract_address": "0xa1d4501dFF8D209d4A361b727792ea00de7aF0d3"
+  },
+  {
+    "name": "DAI AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x8f3cf7ad23cd3cadbd9735aff958023239c6a063&marketName=proto_polygon",
+    "contract_address": "0x4A7CfE3ccE6E88479206Fefd7b4dcD738971e723"
+  },
+  {
+    "name": "USDC AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x2791bca1f2de4661ed88a30c99a7a9449aa84174&marketName=proto_polygon",
+    "contract_address": "0x277ba089b4CF2AF32589D98aA839Bf8c35A30Da3"
+  },
+  {
+    "name": "USDT AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xc2132d05d31c914a87c6611c10748aeb04b58e8f&marketName=proto_polygon",
+    "contract_address": "0x7Aba4619328f366996AbA98549a5F13657068847"
+  },
+  {
+    "name": "WETH AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x7ceb23fd6bc0add59e62ac25578270cff1b9f619&marketName=proto_polygon",
+    "contract_address": "0xDa77923FbF71E198aF020113D6c825Dae99569Cc"
+  },
+  {
+    "name": "USDC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x2791bca1f2de4661ed88a30c99a7a9449aa84174&marketName=proto_polygon_v3",
+    "contract_address": "0xbb7Fa27f0F6C9667951059cd8173936A93d67124"
+  },
+  {
+    "name": "DAI AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x8f3cf7ad23cd3cadbd9735aff958023239c6a063&marketName=proto_polygon_v3",
+    "contract_address": "0x063039b865deAC3BD4a2c9A965DDAe03DF7D65ED"
+  },
+  {
+    "name": "wMATIC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270&marketName=proto_polygon_v3",
+    "contract_address": "0x80050584efa85864715B32aa4E87B74C3b178E32"
+  },
+  {
+    "name": "wETH AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x7ceb23fd6bc0add59e62ac25578270cff1b9f619&marketName=proto_polygon_v3",
+    "contract_address": "0x0D0188268D0693e2494989dc3DA5e64F0D6BA972"
+  },
+  {
+    "name": "wBTC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6&marketName=proto_polygon_v3",
+    "contract_address": "0xCA1e732F5288AE957aD1F0a8Fb20FCe9282b1930"
+  },
+  {
+    "name": "SUSHI AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a&marketName=proto_polygon_v3",
+    "contract_address": "0xf318762E5ae945F99f9a4a21F17f89eA9286eDc7"
+  },
+  {
+    "name": "USDT AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xc2132d05d31c914a87c6611c10748aeb04b58e8f&marketName=proto_polygon_v3",
+    "contract_address": "0x8c408f5CD76643EF3547Ba44a08e0156F5972160"
+  },
+  {
+    "name": "BAL AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Polygon",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3&marketName=proto_polygon_v3",
+    "contract_address": "0x346a79030671cf252DE8D4d05D43f60812FA8057"
+  },
+  {
+    "name": "USDC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Arbitrum",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xff970a61a04b1ca14834a43f5de4533ebddb5cc8&marketName=proto_arbitrum_v3",
+    "contract_address": "0xDAF2D8AAc9174B1168b9f78075FE64a04bae197B"
+  },
+  {
+    "name": "DAI AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Arbitrum",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xda10009cbd5d07dd0cecc66161fc93d7c9000da1&marketName=proto_arbitrum_v3",
+    "contract_address": "0x105bdc0990947318FA1c873623730F332A6f6203"
+  },
+  {
+    "name": "WETH AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Arbitrum",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x82af49447d8a07e3bd95bd0d56f35241523fbab1&marketName=proto_arbitrum_v3",
+    "contract_address": "0xe4c2a17f38fea3dcb3bb59ceb0ac0267416806e2"
+  },
+  {
+    "name": "USDT AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Arbitrum",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9&marketName=proto_arbitrum_v3",
+    "contract_address": "0x04135Ca11461693cCAD3F9177272fE3eF2DfC3a2"
+  },
+  {
+    "name": "wBTC AaveV3 Lending Vault",
+    "protocol": "Aave-V3",
+    "creator": "Superform",
+    "chain": "Arbitrum",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f&marketName=proto_arbitrum_v3",
+    "contract_address": "0x9B42D478A04CaaF797D1486F1F6D2948AC7778F8"
+  },
+  {
+    "name": "wAVAX AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7&marketName=proto_avalanche",
+    "contract_address": "0x5a216146921E90E65995f2176D0dE05bCCD21d0B"
+  },
+  {
+    "name": "DAI.e AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xd586e7f844cea2f87f50152665bcbc2c279d8d70&marketName=proto_avalanche",
+    "contract_address": "0x28287050efbfAECf1335Df117714531b7E64FDB0"
+  },
+  {
+    "name": "USDT.e AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xc7198437980c041c805a1edcba50c1ce5db95118&marketName=proto_avalanche",
+    "contract_address": "0xc05b9bBc2C7b65E6cf5be247490ab6f4cC95356F"
+  },
+  {
+    "name": "USDC.e AaveV2 Lending Vault",
+    "protocol": "Aave-V2",
+    "creator": "Superform",
+    "chain": "Avalanche",
+    "description": "Aave is a overcollaterlized lending and borrowing market deployed on mulitple chains.",
+    "link": "https://app.aave.com/reserve-overview/?underlyingAsset=0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664&marketName=proto_avalanche",
+    "contract_address": "0x17f1bB4ceC57cd7817115D5bC4052815ABD9990A"
+  },
+  {
+    "name": "USDC Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/DAI-0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0x469DcDD58F6Eda8Cc0e909220Cea57F61088F79a"
+  },
+  {
+    "name": "DAI Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/DAI-0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0xd0b072360aDB8318467CD9686a71e361096273Ed"
+  },
+  {
+    "name": "USDT Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/DAI-0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0xD72CF77eA2069a579442e7aaC8424ca9dec35b9E"
+  },
+  {
+    "name": "MIM Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/DAI-0x8d11ec38a3eb5e956b052f67da8bdc9bef8abf3e0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0x8381b318Df9Da10F5107DB09aD635E53bca307f6"
+  },
+  {
+    "name": "WETH Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/ETH-0x74b23882a30290451a17c44f4f05243b6b58c76d0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0x24b6C25d8561d00d60450286599E16639C5c66dD"
+  },
+  {
+    "name": "WFTM Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/FTM-0x21be370d5312f44cb42ce377bc9b8a0cef1a4c830x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0x4e88e0ED76200290302665F097510ed519a49e1C"
+  },
+  {
+    "name": "CRV Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/CRV-0x1e4f97b9f9f913c46f1632781732927b9019c68b0x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0xfaa5CaF9e6e2bb9A4578c23f737cA1FaA7f95B53"
+  },
+  {
+    "name": "WBTC Geist Reinvest Lending Vault",
+    "protocol": "Geist",
+    "creator": "Superform",
+    "chain": "Fantom",
+    "description": "Geist is a lending and borrowing market built on Fantom.",
+    "link": "https://geist.finance/reserve-overview/WBTC-0x321162cd933e2be498cd2267a90534a804051b110x6c793c628fe2b480c5e6fb7957dda4b9291f9c9b",
+    "contract_address": "0x5E44E74920D3D291107805dE65DE617aa77fEee2"
+  },
+  {
+    "name": "USDC Yearn Strategy",
+    "protocol": "Yearn",
+    "creator": "Revest",
+    "chain": "Optimism",
+    "description": "Yearn is a decentralized yield aggregator and strategy creation protocol.",
+    "link": "https://yearn.finance/#/vault/0x4C8b1958B09B3bde714f68864Bcc3a74Eaf1A23D",
+    "contract_address": "0x0919Ad1E211400fec2770152Ee5add722475Dc24"
+  },
+  {
+    "name": "WETH Yearn Strategy",
+    "protocol": "Yearn",
+    "creator": "Revest",
+    "chain": "Optimism",
+    "description": "Yearn is a decentralized yield aggregator and strategy creation protocol.",
+    "link": "https://yearn.finance/#/vault/0xA628c54C850ff1077b5C954491D19EccE7e321fF",
+    "contract_address": "0x0e45f0ef7446d7879bF5b878f971614529BAbfB5"
+  },
+  {
+    "name": "wBTC Yearn Strategy",
+    "protocol": "Yearn",
+    "creator": "Revest",
+    "chain": "Optimism",
+    "description": "Yearn is a decentralized yield aggregator and strategy creation protocol.",
+    "link": "https://yearn.finance/#/vault/0x0a2f234Ad2e5e9047067904A9D37D0Cd02b80D12",
+    "contract_address": "0x8b5fA2400A892ef959c0f810AAa385Ff5d767aB3"
+  },
+  {
+    "name": "sUSD Yearn Strategy",
+    "protocol": "Yearn",
+    "creator": "Revest",
+    "chain": "Optimism",
+    "description": "Yearn is a decentralized yield aggregator and strategy creation protocol.",
+    "link": "https://yearn.finance/#/vault/0xC328D83883F5F90E1108D4Dd7A18FFcA17Ae74d7",
+    "contract_address": "0xB97183D2e5FA8954dcf7fbf16FC065d343278593"
+  },
+  {
+    "name": "DAI Yearn Strategy",
+    "protocol": "Yearn",
+    "creator": "Revest",
+    "chain": "Optimism",
+    "description": "Yearn is a decentralized yield aggregator and strategy creation protocol.",
+    "link": "https://yearn.finance/#/vault/0xfbef713696465DDab297164c3b6A0122D92A3bAc",
+    "contract_address": "0x064AA994e3D69c9d5531BcA7502E2F35df09EB25"
+  }
+]

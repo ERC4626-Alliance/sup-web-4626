@@ -1,19 +1,17 @@
 import "/styles/globals.scss";
-import { Analytics } from "@vercel/analytics/react";
+import {Analytics} from "@vercel/analytics/react";
+import {ThemeProvider} from "next-themes";
 import AOS from "aos";
-import { NextGtag } from "next-gtag";
-import type { AppProps } from "next/app";
-import { useEffect } from "react";
+import {NextGtag} from "next-gtag";
+import type {AppProps} from "next/app";
+import {useEffect} from "react";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App = ({Component, pageProps}: AppProps) => {
   useEffect(() => {
     AOS.init({
-      disableMutationObserver: true,
-      disable: "mobile",
-      once: true,
+      throttleDelay: 200,
       easing: "ease-in-out",
-      offset: -50, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
+      delay: 50, // values from 0 to 3000, with step 50ms
       duration: 400,
     });
   }, []);
@@ -28,9 +26,11 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
-      <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""} />
-      <Component {...pageProps} />
-      <Analytics />
+      <NextGtag trackingId={process.env.NEXT_PUBLIC_GA_ID || ""}/>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+      <Analytics/>
     </>
   );
 };

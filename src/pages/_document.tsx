@@ -1,10 +1,4 @@
-import Document, {
-  DocumentContext,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from "next/document";
+import Document, { DocumentContext, Head, Html, Main, NextScript } from "next/document";
 import { Question, Answer } from "schema-dts";
 import { jsonLdScriptProps } from "react-schemaorg";
 import { Children } from "react";
@@ -26,9 +20,7 @@ class CustomDocument extends Document {
             {...jsonLdScriptProps<Question>({
               "@context": "https://schema.org",
               "@type": "Question",
-              name: process.env.NEXT_SEO_JLD_QUESTION
-                ? process.env.NEXT_SEO_JLD_QUESTION
-                : "What is ERC-4626?",
+              name: process.env.NEXT_SEO_JLD_QUESTION ? process.env.NEXT_SEO_JLD_QUESTION : "What is ERC-4626?",
               answerCount: 1,
               acceptedAnswer: {
                 "@type": "Answer",
