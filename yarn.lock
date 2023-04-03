@@ -47,7 +47,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-icons: 4.6.0
-    react-paginate: 8.1.4
+    react-paginate: 8.1.5
     react-schemaorg: 2.0.0
     react-scroll: 1.8.8
     sass: 1.56.1
@@ -6895,14 +6895,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-paginate@npm:8.1.4":
-  version: 8.1.4
-  resolution: "react-paginate@npm:8.1.4"
+"react-paginate@npm:8.1.5":
+  version: 8.1.5
+  resolution: "react-paginate@npm:8.1.5"
   dependencies:
     prop-types: ^15
   peerDependencies:
     react: ^16 || ^17 || ^18
-  checksum: 0e733ca70a828b4f5bcb955fa1d175b74f8f22d8c1dd9b733255e1d263b2cb88316df9398ad0723ff02dca162b374ef48bed3993cb65a0f4e11333a1a0ca191e
+  checksum: c808ab046e036605f37c12ef3b06b41fa882a2bc1e27fe29f9db968d7018887aa0573941c23f7e5e41cde9344fb70e6ee686c047d12c9bf89f353a75dbb47a8f
   languageName: node
   linkType: hard
 
