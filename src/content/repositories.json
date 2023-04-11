@@ -35,5 +35,13 @@
   {
     "name": "Cairo 4626 Implementation",
     "href": "https://github.com/auditless/cairo-erc4626"
+  },
+  {
+    "name": "Pre-built security properties for common Ethereum operations",
+    "href": "https://github.com/crytic/properties"
+  },
+  {
+    "name": "ERC4626 Token Tests (JS)",
+    "href": "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/test/token/ERC20/extensions/ERC4626.test.js"
   }
 ]
