@@ -84,7 +84,7 @@
     "eslint-config-next": "13.0.3",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "8.0.2",
+    "husky": "8.0.3",
     "lint-staged": "13.2.0",
     "postcss": "8.4.21",
     "postcss-flexbugs-fixes": "5.0.2",
