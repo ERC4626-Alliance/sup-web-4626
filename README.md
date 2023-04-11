@@ -26,7 +26,7 @@
 
  [Join the alliance](https://forms.gle/DsCsttsxBUYQTB9r6)
 
-### 🏠 [Homepage](https://erc4626.com)
+### 🏠 [Homepage](https://erc4626.info/)
 
 ### ✨ [Demo](https://dev.eip4626.com)
 
