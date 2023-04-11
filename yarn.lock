@@ -46,7 +46,7 @@ __metadata:
     prettier-plugin-tailwindcss: 0.2.6
     react: 18.2.0
     react-dom: 18.2.0
-    react-icons: 4.6.0
+    react-icons: 4.8.0
     react-paginate: 8.1.5
     react-schemaorg: 2.0.0
     react-scroll: 1.8.9
@@ -6939,12 +6939,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:4.6.0":
-  version: 4.6.0
-  resolution: "react-icons@npm:4.6.0"
+"react-icons@npm:4.8.0":
+  version: 4.8.0
+  resolution: "react-icons@npm:4.8.0"
   peerDependencies:
     react: "*"
-  checksum: a08375d4563e381e156d826a8d551dd26c1bf7c424a79139173bf4c8df71e884badd7d4f5fe9faa0d73d18ace265bcc89891b65fd8f808812b1011b612ebbc53
+  checksum: 4dbba7ad989c295b410e19b2a702722dae44368cb04b6515f9471353552f31ac80bd350f121d5bff79f81504b84039ede44d09e9f035f48bb1032e6eace126c4
   languageName: node
   linkType: hard
 
