@@ -5,7 +5,8 @@
       "title": "Alchemix",
       "url": {
         "web": "https://alchemix.fi/"
-      },      "extra": {
+      },
+      "extra": {
         "unoptimized": true
       }
     },
@@ -27,24 +28,43 @@
       }
     },
     {
-      "src": "balancer.svg",
-      "title": "Balancer",
+      "src": "alladin-dao.png",
+      "title": "AladdinDAO",
       "url": {
-        "web": "https://balancer.fi"
-      },      "extra": {
-        "unoptimized": true
+        "web": "https://aladdin.club"
       }
     }
   ],
   [
     {
+      "src": "balancer.svg",
+      "title": "Balancer",
       "url": {
-        "web": "https://www.element.fi/"
+        "web": "https://balancer.fi"
       },
-      "src": "element-fi.svg",
-      "title": "Element Protocol",
       "extra": {
         "unoptimized": true
+      }
+    },
+    {
+      "url": {
+        "web": "https://www.delv.tech/"
+      },
+      "src": "delv.png",
+      "title": "DELV"
+    },
+    {
+      "src": "idle.png",
+      "title": "Idle Finance",
+      "url": {
+        "web": "https://idle.finance"
+      }
+    },
+    {
+      "src": "frax.png",
+      "title": "Frax Finance",
+      "url": {
+        "web": "https://frax.eth"
       }
     },
     {
@@ -52,7 +72,8 @@
       "title": "Maple",
       "url": {
         "web": "https://maple.finance"
-      },      "extra": {
+      },
+      "extra": {
         "unoptimized": true
       }
     },
@@ -85,7 +106,9 @@
       "extra": {
         "unoptimized": true
       }
-    },
+    }
+  ],
+  [
     {
       "src": "openzeppelin.svg",
       "title": "OpenZeppelin",
@@ -115,9 +138,7 @@
       "extra": {
         "unoptimized": true
       }
-    }
-  ],
-  [
+    },
     {
       "src": "sense.svg",
       "title": "Sense Protocol",
@@ -161,16 +182,6 @@
       },
       "src": "thorswap.png",
       "title": "THORSwap"
-    },
-    {
-      "src": "yearn.finance.svg",
-      "title": "Yearn Finance",
-      "url": {
-        "web": "https://yearn.finance"
-      },
-      "extra": {
-        "unoptimized": true
-      }
     },
     {
       "src": "yieldprotocol.svg",

@@ -25,7 +25,7 @@ export default function VaultExplorer() {
   const perPage = 15;
 
   useMemo(() => {
-    setVaults(vaultData);
+    setVaults(vaultData.sort((a, b) => (a.name > b.name ? 1 : -1)));
     setPageCount(Math.ceil(vaultData.length / perPage));
   }, []);
 
@@ -67,7 +67,7 @@ export default function VaultExplorer() {
                     <th scope="col" className="min-w-[5rem] p-4 text-center">
                       Protocol
                     </th>
-                    <th scope="col" className="table-cell min-w-[60vw] lg:min-w-[150px] whitespace-normal p-4">
+                    <th scope="col" className="table-cell min-w-[60vw] whitespace-normal p-4 lg:min-w-[150px]">
                       Description
                     </th>
                     <th scope="col" className="table-cell p-4 text-center">
@@ -82,18 +82,18 @@ export default function VaultExplorer() {
                   {vaults.slice((currentPage - 1) * perPage, currentPage * perPage - 1).map((vault, vaultIdx) => (
                     <tr key={`${vault}-${vaultIdx}`} className="... cursor-default select-none truncate whitespace-nowrap bg-white text-sm tracking-tight dark:bg-zinc-900">
                       <td className="w-[20%] max-w-[256px] p-4 text-left">
-                        <span className="-mb-1 inline-block whitespace-pre-wrap bg-gradient-to-r from-pink-500 to-pink-800 bg-clip-text pb-1 font-extrabold tracking-tight text-transparent dark:from-pink-200 dark:to-pink-400">
+                        <a
+                          className="-mb-1 inline-block whitespace-pre-wrap bg-gradient-to-r from-pink-500 to-pink-800 bg-clip-text pb-1 font-extrabold tracking-tight text-transparent dark:from-pink-200 dark:to-pink-400 lg:hover:from-pink-700 lg:hover:to-pink-900 lg:hover:dark:from-pink-400 lg:hover:dark:to-pink-600 lg:hover:transition-all duration-200"
+                          target="_blank"
+                          href={vault.link}
+                          rel="noreferrer nofollow"
+                        >
                           {vault.name}
-                        </span>
+                        </a>
                       </td>
                       <td className="p-4">{mapIcon(vault.chain)}</td>
                       <td className="p-4 font-semibold">{vault.protocol}</td>
-                      <td className="font-base max-w-[60vw] cursor-default whitespace-normal p-4 text-left text-xs italic tracking-tight md:max-w-[300px]">
-                          {vault.description}&nbsp;
-                          <a className="font-medium text-pink-700 hover:transition-all md:hover:underline" target="_blank" href={vault.link} rel="noreferrer nofollow">
-                            learn more
-                          </a>
-                      </td>
+                      <td className="font-base max-w-[60vw] cursor-default whitespace-normal p-4 text-left text-xs italic tracking-tight md:max-w-[300px]">{vault.description}</td>
                       <td className="p-4">{vault.creator}</td>
                       <td className="p-4 text-right text-pink-900 md:text-sm md:text-gray-900">{mapAddressWithScan(vault.contract_address, vault.chain)}</td>
                     </tr>

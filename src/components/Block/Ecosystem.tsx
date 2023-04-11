@@ -63,7 +63,7 @@ export default function Ecosystem() {
                         className="h-24 w-auto object-scale-down md:h-16"
                         {...item.extra}
                       />
-                      <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 dark:from-pink-50 dark:to-pink-300 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-base md:font-semibold">
+                      <h3 className="mt-3 whitespace-nowrap bg-gradient-to-r from-pink-500 to-pink-900 dark:from-pink-50 dark:to-pink-300 bg-clip-text text-center text-xl font-extrabold capitalize tracking-tight text-transparent md:text-[0.9rem] md:font-semibold">
                         {item.title}
                       </h3>
                     </a>

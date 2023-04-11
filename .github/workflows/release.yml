@@ -20,13 +20,11 @@ jobs:
           # Default: true
           persist-credentials: false # <--- checking this in commit context
 
-      - name: "Enable yarn cache"
-        uses: c-hive/gha-yarn-cache@v2  # using cache
-
-      - name: "Setup node@17"
+      - name: "Setup Node.js"
         uses: actions/setup-node@v3
         with:
-          node-version: 17
+          node-version: "17"
+          cache: "yarn"
 
       - name: "Install dependencies"
         run: |
