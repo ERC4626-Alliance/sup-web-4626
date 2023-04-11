@@ -38,6 +38,10 @@ export function mapIcon(chain: string | number, showText = true) {
   switch (`${chain}`.toLowerCase()) {
     default:
       return <></>;
+    case "starknet":
+      chainName = "Starknet";
+      icon = "/images/icons/starknet.svg";
+      break;
     case "56":
     case "binance":
     case "bsc":
@@ -88,6 +92,9 @@ export function mapAddressWithScan(address: string, chain: string) {
   switch (chain.toLowerCase()) {
     case "polygon":
       href = `https://polygonscan.com/address/${address}#readContract`;
+      break;
+    case "starknet":
+      href = `https://starknet.io/contract/${address}#read-write-contract`;
       break;
     case "56":
     case "binance":
