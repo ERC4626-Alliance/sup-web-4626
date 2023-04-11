@@ -30,5 +30,34 @@
     "website": "https://superform.xyz",
     "twitter": "superformxyz",
     "logo": "superform.png"
+  },
+  {
+    "content": "Sommelier is an automated portfolio management and strategy platform building dynamic, intelligent vaults.",
+    "name": "Sommelier Finance",
+    "funding": "$4,000 mUSD",
+    "website": "https://www.sommelier.finance",
+    "twitter": "sommfinance",
+    "logo": "sommelier.png"
+  },{
+    "content": "Alchemix is a future-yield-backed synthetic asset protocol and community DAO.",
+    "name": "Alchemix",
+    "funding": "$4,000 mUSD",
+    "website": "https://alchemix.fi",
+    "twitter": "AlchemixFi",
+    "logo": "alchemix.png"
+  },{
+    "content": "Frax is a fractional reserve stablecoin and crypto native consumer price index protocol.",
+    "name": "Frax Finance",
+    "funding": "$4,000 mUSD",
+    "website": "https://frax.finance/",
+    "twitter": "fraxfinance",
+    "logo": "frax.png"
+  },{
+    "content": "Joey was one of the creators of the ERC-4626 standard and founded Fei Protocol.",
+    "name": "Joey Santoro",
+    "funding": "$4,000 mUSD",
+    "website": "https://github.com/Joeysantoro",
+    "twitter": "Joey__Santoro",
+    "logo": "joey_santoro.png"
   }
 ]
