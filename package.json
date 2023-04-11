@@ -13,7 +13,7 @@
   "description": "erc-4626 specification website",
   "private": true,
   "repository": "https://github.com/superform-xyz/sup-web-4626",
-  "homepage": "https://erc4626.com",
+  "homepage": "https://erc4626.info",
   "keywords": [
     "erc4626",
     "next.js",
@@ -91,7 +91,7 @@
     "prettier": "2.8.7",
     "prettier-plugin-tailwindcss": "0.2.7",
     "react-schemaorg": "2.0.0",
-    "sass": "1.56.1",
+    "sass": "1.61.0",
     "schema-dts": "1.1.2",
     "semantic-release": "19.0.5",
     "tailwindcss": "3.3.1",
