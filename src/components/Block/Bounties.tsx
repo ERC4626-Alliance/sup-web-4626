@@ -17,7 +17,7 @@ declare type singleFeature = {
 const features: singleFeature[] = [
   {
     id: 0,
-    title: "For Members",
+    title: "For Bounty Hunters",
     description: "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
     classes: "lg:text-base leading-relaxed text-pink-900 dark:text-white",
     features: [
@@ -32,7 +32,7 @@ const features: singleFeature[] = [
   },
   {
     id: 1,
-    title: "For Bounty Hunters",
+    title: "For Members",
     description: "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
     classes: "lg:text-lg leading-relaxed text-pink-900 dark:text-white",
     features: [
