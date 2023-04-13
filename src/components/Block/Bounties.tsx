@@ -21,7 +21,7 @@ const features: singleFeature[] = [
     description: "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
     classes: "lg:text-base leading-relaxed text-pink-900 dark:text-white",
     features: [
-      "Bounty rewards are first come first served. The second implementation received won't be awarded unless the first submission is deemed invalid.",
+      "Bounty rewards are first come, first served. The second implementation received won't be awarded unless the first submission is deemed invalid.",
       'Once a submission is received we will update the bounty status from "Open" to "Pending" and then to "Complete" once it has been paid out.',
       "All submissions are subject to review by the protocol that the bounty targets.Bounties will not be paid until the target protocol approves the implementation for accuracy.",
       "Any changes suggested by the target protocol must be included before the bounty hunter will be awarded the full balance. If the hunter doesn't wish to make changes or" +
@@ -72,22 +72,22 @@ export default function BlockBounties() {
           Bounty Program Overview
         </h4>
         <div className="grid grid-cols-1 items-center gap-y-2 sm:gap-y-6 lg:grid-cols-12 lg:pt-0">
-          <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-2">
-            <ul className="relative z-10 flex w-full gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
+          <div className="-mx-4 flex overflow-x-auto sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-2">
+            <ul className="relative z-10 flex w-full gap-x-4 whitespace-nowrap justify-center sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
               {features.map((feature, featureIndex) => (
                 <li
                   onClick={() => setCurrentFeature(feature)}
                   key={feature.title}
                   className={classNames(
-                    "my-4 cursor-pointer select-none justify-between space-y-8 rounded-lg bg-pink-100 p-8 text-left shadow-lg dark:bg-pink-900 lg:flex-row lg:items-center" +
+                    "my-4 cursor-pointer select-none justify-between space-y-8 bg-pink-100 text-left shadow-lg dark:bg-pink-900 lg:flex-row lg:items-center" +
                     " lg:space-y-0",
-                    "group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6",
-                    currentFeature.id === featureIndex ? "bg-pink-700 text-white dark:bg-pink-500 dark:text-white" : "border-pink-700 text-pink-700",
+                    "group relative rounded-lg p-2 lg:rounded-l-xl lg:rounded-r-none lg:p-6",
+                    currentFeature.id === featureIndex ? "bg-pink-700 text-white dark:bg-pink-400 dark:text-white" : "border-pink-700 text-pink-700",
                     "border-pink-700 text-pink-700 dark:border-pink-500 dark:text-pink-300 lg:hover:bg-pink-700 lg:hover:text-white dark:lg:hover:bg-pink-500 dark:lg:hover:text-white"
                   )}
                 >
                   <h3>
-                    <div className={classNames("font-display text-lg [&:not(:focus-visible)]:focus:outline-none")}>
+                    <div className={classNames("font-display text-[12px] lg:text-lg [&:not(:focus-visible)]:focus:outline-none")}>
                       <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none"/>
                       {feature.title}
                     </div>
