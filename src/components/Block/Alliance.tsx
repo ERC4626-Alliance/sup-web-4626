@@ -39,7 +39,7 @@ export default function BlockAlliance() {
               <li
                 data-url={singleAllie.website}
                 key={singleAllieIndex}
-                className="relative flex select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10 transition-colors delay-75 ease-linear dark:bg-zinc-700 md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50 cursor-pointer"
+                className="relative flex select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10 dark:bg-zinc-700  transition-colors delay-75 ease-linear md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50 cursor-pointer"
                 onClick={useOpen}
               >
                 <figure className="flex flex-col items-stretch">
