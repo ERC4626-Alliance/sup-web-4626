@@ -61,7 +61,7 @@ export default function VaultExplorer() {
                     <th scope="col" className="w-[20%] p-4">
                       Name
                     </th>
-                    <th scope="col" className="min-w-[8rem] p-4 text-center">
+                    <th scope="col" className="min-w-[8rem] p-4 text-left">
                       Chain
                     </th>
                     <th scope="col" className="min-w-[5rem] p-4 text-center">
@@ -124,7 +124,7 @@ export default function VaultExplorer() {
             href="https://forms.gle/xzmLT7hQhMMeKeVY7"
             target="_blank"
             rel="nofollow noreferrer"
-            className="mx-auto mt-16 inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-pink-700 bg-white bg-pink-700 px-8 py-5 text-xl font-medium text-white shadow-sm hover:transition-all md:hover:bg-white md:hover:text-pink-700 md:hover:shadow-md"
+            className="inline-flex items-center justify-center whitespace-nowrap rounded-md border-2 border-pink-700 px-8 py-5 text-xl font-medium text-pink-700 shadow-sm transition-all dark:border-pink-300 dark:text-pink-300 md:hover:bg-pink-700 md:hover:text-white md:hover:shadow-md dark:md:hover:bg-pink-600 mt-16"
           >
             Submit your vault
           </a>
