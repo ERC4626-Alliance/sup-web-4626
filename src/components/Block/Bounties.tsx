@@ -6,7 +6,7 @@ import { CgSandClock } from "react-icons/cg";
 import bounties from "@/content/bounties.json";
 import rawFeatures from "@/content/features.json";
 import { classNames } from "../../helpers/formatters";
-import {MouseEvent, useState} from "react";
+import { MouseEvent, useState } from "react";
 
 declare type singleFeature = {
   id: number;
@@ -93,7 +93,7 @@ export default function BlockBounties() {
               onClick={useOpen}
               data-url={bounty.link}
               key={`bounty-${index}`}
-              className="my-8 flex select-none flex-col justify-between shadow-xl shadow-slate-900/10 space-y-8 rounded-lg p-8 lg:flex-row lg:items-center lg:space-y-0 bg-white dark:bg-zinc-800 transition-colors delay-75 ease-linear md:hover:bg-pink-100 dark:md:hover:bg-zinc-800/40 cursor-pointer"
+              className="my-8 flex cursor-pointer select-none flex-col justify-between space-y-8 rounded-lg bg-white p-8 shadow-xl shadow-slate-900/10 transition-colors delay-75 ease-linear dark:bg-zinc-800 md:hover:bg-pink-100 dark:md:hover:bg-zinc-800/40 lg:flex-row lg:items-center lg:space-y-0"
             >
               <div className="flex flex-col space-y-4 lg:flex-row lg:items-center lg:space-x-10 lg:space-y-0">
                 <div className="flex items-center space-x-4 lg:space-x-8">
@@ -152,7 +152,12 @@ export default function BlockBounties() {
                   <a className="featuredLink inline-flex items-center justify-center whitespace-nowrap" target="_blank" href={bounty.link} rel="noreferrer nofollow">
                     View bounty
                   </a>
-                  <a className="featuredLink inline-flex items-center justify-center whitespace-nowrap" target="_blank" href={bounty.status !== "complete" ? bounty.submit : bounty.finalSubmission} rel="noreferrer nofollow">
+                  <a
+                    className="featuredLink inline-flex items-center justify-center whitespace-nowrap"
+                    target="_blank"
+                    href={bounty.status !== "complete" ? bounty.submit : bounty.finalSubmission}
+                    rel="noreferrer nofollow"
+                  >
                     {bounty.status !== "complete" ? "Submit bounty" : "Final submission"}
                   </a>
                 </div>
