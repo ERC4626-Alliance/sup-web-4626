@@ -1,5 +1,3 @@
-import { SWRConfiguration } from "swr";
-
 export const apiUrl = "https://api.superform.xyz/";
 
 export default function (pageTitle: string = "", pageDescription: string = "") {
@@ -8,25 +6,7 @@ export default function (pageTitle: string = "", pageDescription: string = "") {
     pageDescription || "The 4626 Alliance is a group of leading protocols and applications that share the mission of supporting the development and deployment of ERC-4626 vaults";
   return {
     dapp: {
-      apiUrl,
-      swrConfig: {
-        dedupingInterval: 60 * 1000,
-        refreshWhenHidden: true,
-        refreshWhenOffline: true,
-        revalidateIfStale: true,
-        revalidateOnFocus: true,
-        revalidateOnReconnect: true,
-      } as SWRConfiguration,
-
-      swrConfigCached: {
-        dedupingInterval: 60 * 60 * 1000,
-        refreshInterval: 60 * 60 * 1000,
-        refreshWhenHidden: false,
-        refreshWhenOffline: false,
-        revalidateIfStale: false,
-        revalidateOnFocus: false,
-        revalidateOnReconnect: false,
-      } as SWRConfiguration,
+      apiUrl
     },
     openGraph: {
       title: `${useTitle} | 4626 Alliance`,

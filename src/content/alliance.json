@@ -2,7 +2,6 @@
   {
     "content": "Aztec is a privacy-first zk-rollup on Ethereum bringing confidentiality and cost savings to the Ethereum ecosystem.",
     "name": "Aztec",
-    "funding": "$3,500 USDC",
     "website": "https://aztec.network",
     "twitter": "aztecnetwork",
     "logo": "aztec.png"
@@ -10,7 +9,6 @@
   {
     "content": "Balancer is a decentralized protocol that provides DeFi liquidity infrastructure.",
     "name": "Balancer",
-    "funding": "557.62082 BAL",
     "website": "https://balancer.fi",
     "twitter": "Balancer",
     "logo": "balancer.png"
@@ -18,7 +16,6 @@
   {
     "content": "mStable is an autonomous and non-custodial infrastructure for yield products.",
     "name": "mStable",
-    "funding": "$4,000 mUSD",
     "website": "https://mstable.org",
     "twitter": "mstable_",
     "logo": "mstable.svg"
@@ -26,9 +23,57 @@
   {
     "content": "Superform is the universal yield marketplace. It allows protocols to list vaults and users to deposit instantly with any asset on any chain.",
     "name": "Superform",
-    "funding": "$4,000 USDC",
     "website": "https://superform.xyz",
     "twitter": "superformxyz",
-    "logo": "superform.png"
+    "logo": "superform.svg"
+  },
+  {
+    "content": "Sommelier is an automated portfolio management and strategy platform building dynamic, intelligent vaults.",
+    "name": "Sommelier Finance",
+    "website": "https://www.sommelier.finance",
+    "twitter": "sommfinance",
+    "logo": "sommelier.svg"
+  },
+  {
+    "content": "Alchemix is a future-yield-backed synthetic asset protocol and community DAO.",
+    "name": "Alchemix",
+    "website": "https://alchemix.fi",
+    "twitter": "AlchemixFi",
+    "logo": "alchemix.png"
+  },
+  {
+    "content": "Frax is a fractional reserve stablecoin and crypto native consumer price index protocol.",
+    "name": "Frax Finance",
+    "website": "https://frax.finance/",
+    "twitter": "fraxfinance",
+    "logo": "frax.png"
+  },
+  {
+    "content": "Joey was one of the creators of the ERC-4626 standard and founded Fei Protocol.",
+    "name": "Joey Santoro",
+    "website": "https://github.com/Joeysantoro",
+    "twitter": "Joey__Santoro",
+    "logo": "joey_santoro.png"
+  },
+  {
+    "content": "Yearn is a decentralized suite of products helping to earn yield on digital assets.",
+    "name": "Yearn",
+    "website": "https://yearn.finance",
+    "twitter": "yearnfi",
+    "logo": "yearn.svg"
+  },
+  {
+    "content": "Morpho is an on-chain peer-to-peer layer on top of lending pools.",
+    "name": "Morpho",
+    "website": "https://www.morpho.xyz/",
+    "twitter": "morpholabs",
+    "logo": "morpho.svg"
+  },
+  {
+    "content": "Blockworks is a financial media brand that delivers breaking news and premium insights about digital assets to millions of investors",
+    "name": "BlockWorks",
+    "website": "https://blockworks.co",
+    "twitter": "Blockworks_",
+    "logo": "blockworks.png"
   }
 ]

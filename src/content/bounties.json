@@ -4,7 +4,8 @@
     "organizer": "Gearbox",
     "rewards": "$5,000",
     "description": "To make <a href=\"https://app.gearbox.fi/pools\" className=\"mx-1 inline-flex text-pink-700 underline decoration-from-font underline-offset-4 dark:text-pink-400 md:no-underline md:hover:text-pink-900 md:hover:underline dark:md:hover:text-pink-400\" target=\"_blank\" rel=\"noreferrer nofollow\">existing passive pools on Gearbox</a>compliant with ERC-4626 and create a path forward to easily support additional passive pools in the future",
-    "status": "pending",
+    "status": "complete",
+    "finalSubmission": "https://github.com/Gearbox-protocol/core-v2/pull/43/commits/85274d99f9c3ce3af3f5b75230b7469b0a67aeb6",
     "link": "https://superform.notion.site/Gearbox-4626-Spec-0de0a498b171417e805759c896137bec",
     "submit": "https://forms.gle/A1RGtfAwFxnfTD5x8"
   }

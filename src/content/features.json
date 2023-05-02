@@ -1,0 +1,39 @@
+[
+  {
+    "id": 0,
+    "title": "For Bounty Hunters",
+    "description": "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+    "textSize": "base",
+    "features": [
+      "Bounty rewards are first come, first served. The second implementation received won't be awarded unless the first submission is deemed invalid.",
+      "Once a submission is received we will update the bounty status from \"Open\" to \"Pending\" and then to \"Complete\" once it has been paid out.",
+      "All submissions are subject to review by the protocol that the bounty targets.Bounties will not be paid until the target protocol approves the implementation for accuracy.",
+      "Any changes suggested by the target protocol must be included before the bounty hunter will be awarded the full balance. If the hunter doesn't wish to make changes or can't, the Alliance may award are partial sum at its discretion for the work that has been completed.",
+      "The Alliance has the final say on payouts and if the implementation is valid.",
+      "Please be patient during the review process as coordinating with Alliance members & target protocols can take time."
+    ]
+  },
+  {
+    "id": 1,
+    "title": "For Members",
+    "description": "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+    "textSize": "lg",
+    "features": [
+      "Bounties can be sponsored individually or as a group.",
+      "Group bounties must be agreed on by at least 3 members to use Alliance funds.",
+      "If you sponsor a bounty, you must review the bounty submission for accuracy.",
+      "All valid implementations will be paid out."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "For Protocols",
+    "description": "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+    "textSize": "xl",
+    "features": [
+      "If you'd like your protocol to be the target of a bounty, please reach out to the Alliance.",
+      "For all target protocols we ask you to confirm target contracts in the scope can be made 4626 compliant.",
+      "For all target protocols we ask you to provide availability to review any bounties submitted to your program (pre-filtered by the Alliance so as to not spam)"
+    ]
+  }
+]

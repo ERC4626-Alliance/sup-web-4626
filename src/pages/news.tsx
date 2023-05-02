@@ -25,7 +25,7 @@ export default function NewsPage() {
               ERC-4626 News
             </AtomTitle>
             <div className="mx-auto mt-8 grid grid-cols-1 gap-8 sm:text-left md:grid-cols-2 lg:grid-cols-3">
-              {news.map((item: any, index: number) => (
+              {news.sort((a,b) => a.date > b.date ? -1 : 1).map((item: any, index: number) => (
                 <a
                   key={`news-${index}`}
                   href={item.href}
