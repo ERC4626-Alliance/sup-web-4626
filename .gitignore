@@ -46,3 +46,4 @@ yarn-error.log*
 /public/images/nextImageExportOptimizer/
 /public/images/logos/nextImageExportOptimizer/
 /.env
+/public/nextImageExportOptimizer/*

@@ -51,7 +51,7 @@ export default function Ecosystem() {
                       href={item.url.web}
                       rel="noopener noreferrer"
                       target="_blank"
-                      className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-zinc-400/70 px-4 py-3 shadow-lg md:w-full transition-colors delay-75 ease-linear md:px-6 md:py-4 md:hover:md:hover:bg-white/50"
+                      className="mx-auto flex w-8/12 flex-col items-center justify-center overflow-hidden rounded-lg bg-white dark:bg-zinc-400/70 px-4 py-3 shadow-lg md:w-full transition-colors delay-75 ease-linear md:px-6 md:py-4 md:hover:bg-white/50"
                       key={`adopter-${index}-${adopterKey}`}
                     >
                       <ExportedImage
