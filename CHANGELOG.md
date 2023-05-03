@@ -1,3 +1,22 @@
+## [1.19.0](https://github.com/superform-xyz/sup-web-4626/compare/1.18.0...1.19.0) (2023-05-03)
+
+
+### Features
+
+* alliance members added (non-prod rn) ([#124](https://github.com/superform-xyz/sup-web-4626/issues/124)) ([37ec59c](https://github.com/superform-xyz/sup-web-4626/commit/37ec59c06d795f59f77e0aff701e45d902cb67b2)), closes [SUP-2573](https://github.com/superform-xyz/sup-web-4626/issues/2573) [SUP-2572](https://github.com/superform-xyz/sup-web-4626/issues/2572) [SUP-2580](https://github.com/superform-xyz/sup-web-4626/issues/2580)
+* bounty copy added ([#131](https://github.com/superform-xyz/sup-web-4626/issues/131)) ([cc95823](https://github.com/superform-xyz/sup-web-4626/commit/cc95823be24c6f65eaaf7928835c53b393d548f1))
+* new content for the bounties section (updated) ([#134](https://github.com/superform-xyz/sup-web-4626/issues/134)) ([28fabdc](https://github.com/superform-xyz/sup-web-4626/commit/28fabdcbcfbbb3861b7e4afc17c30483d52d7a2f))
+* new vaults added & starknet network added, vaults sorted by a-z ([#120](https://github.com/superform-xyz/sup-web-4626/issues/120)) ([30dce17](https://github.com/superform-xyz/sup-web-4626/commit/30dce17c0950e9839d147faee937ebbbdd4954d0)), closes [SUP-2462](https://github.com/superform-xyz/sup-web-4626/issues/2462) [SUP-2463](https://github.com/superform-xyz/sup-web-4626/issues/2463)
+* open sourcing the repo (changing the readme.md) ([1b1c3a2](https://github.com/superform-xyz/sup-web-4626/commit/1b1c3a241595c0b8d3d2400befb39f78f422cb85))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/analytics to v0.1.11 ([#108](https://github.com/superform-xyz/sup-web-4626/issues/108)) ([a73af22](https://github.com/superform-xyz/sup-web-4626/commit/a73af22932858743ed6225e477c3029fd205755b))
+* **deps:** update dependency @vercel/analytics to v0.1.11 ([79a0da7](https://github.com/superform-xyz/sup-web-4626/commit/79a0da75f8ea1772005007baf6233d3763d154de))
+* **deps:** update dependency react-paginate to v8.1.5 ([#111](https://github.com/superform-xyz/sup-web-4626/issues/111)) ([f8b0797](https://github.com/superform-xyz/sup-web-4626/commit/f8b0797ca973484645dd0ee44951c34537aefb7a))
+* **deps:** update dependency react-scroll to v1.8.9 ([#105](https://github.com/superform-xyz/sup-web-4626/issues/105)) ([0cd110f](https://github.com/superform-xyz/sup-web-4626/commit/0cd110f87a93493336d0cdd51d20b23eedc9c782))
+
 ## [1.18.0](https://github.com/superform-xyz/sup-web-4626/compare/1.17.0...1.18.0) (2023-03-28)
 
 
