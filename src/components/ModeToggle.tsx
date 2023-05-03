@@ -8,13 +8,13 @@ export default function ModeToggle() {
   const setAndStoreTheme = useCallback((theme: "light" | "dark") => {
     window.localStorage.colorTheme = theme;
     setTheme(theme);
-  }, [theme]);
+  }, [setTheme]);
 
   useEffect(() => {
     if (!window.localStorage.colorTheme) {
       setAndStoreTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     }
-  }, []);
+  }, [setAndStoreTheme]);
 
   const handleToggle = () => {
     setAndStoreTheme(theme === "dark" ? "light" : "dark");
@@ -24,7 +24,7 @@ export default function ModeToggle() {
     <button
       type="button"
       aria-label="Toggle dark mode"
-      className="group rounded-md border-2 border-pink-700 dark:border-pink-500 px-4 py-2 font-bold font-medium text-pink-700 shadow-sm transition-all md:hover:bg-pink-700 dark:md:hover:bg-pink-500 md:hover:text-white md:hover:shadow-md rounded-full dark:bg-transparent px-3 py-2 shadow-lg shadow-zinc-800/5 transition"
+      className="group border-2 border-pink-700 dark:border-pink-500 font-medium text-pink-700 transition-all md:hover:bg-pink-700 dark:md:hover:bg-pink-500 md:hover:text-white md:hover:shadow-md rounded-full dark:bg-transparent px-3 py-2 shadow-lg shadow-zinc-800/5"
       onClick={handleToggle}
     >
       <BiSun
