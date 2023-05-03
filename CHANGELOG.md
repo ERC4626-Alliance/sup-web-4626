@@ -1,3 +1,10 @@
+## [1.19.2](https://github.com/superform-xyz/sup-web-4626/compare/1.19.1...1.19.2) (2023-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/analytics to v1 ([#138](https://github.com/superform-xyz/sup-web-4626/issues/138)) ([d9bbcae](https://github.com/superform-xyz/sup-web-4626/commit/d9bbcaea8cc5f1fa03925b3e15cbf65114933f53))
+
 ## [1.19.1](https://github.com/superform-xyz/sup-web-4626/compare/1.19.0...1.19.1) (2023-05-03)
 
 
