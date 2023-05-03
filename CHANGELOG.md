@@ -1,3 +1,11 @@
+## [1.19.3](https://github.com/superform-xyz/sup-web-4626/compare/1.19.2...1.19.3) (2023-05-03)
+
+
+### Bug Fixes
+
+* spelling changes & alliance yearn logo reverted ([ed61d0a](https://github.com/superform-xyz/sup-web-4626/commit/ed61d0a6a2b97628c5b81e25b3930b1200f07744))
+* yearn logo for the alliance section reverted ([#140](https://github.com/superform-xyz/sup-web-4626/issues/140)) ([fc3c750](https://github.com/superform-xyz/sup-web-4626/commit/fc3c75036643bb030dd64bf6bd2cfb61ca4ff2e7))
+
 ## [1.19.2](https://github.com/superform-xyz/sup-web-4626/compare/1.19.1...1.19.2) (2023-05-03)
 
 
