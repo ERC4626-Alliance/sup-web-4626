@@ -1,3 +1,11 @@
+## [1.19.1](https://github.com/superform-xyz/sup-web-4626/compare/1.19.0...1.19.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* new yearn logo ([bfa0206](https://github.com/superform-xyz/sup-web-4626/commit/bfa0206a3a53ae78c007676d68b8500681779386))
+* new yearn logo ([#139](https://github.com/superform-xyz/sup-web-4626/issues/139)) ([d2bcb2a](https://github.com/superform-xyz/sup-web-4626/commit/d2bcb2a8a377ba7b264a1b7caa929e66da470b4d))
+
 ## [1.19.0](https://github.com/superform-xyz/sup-web-4626/compare/1.18.0...1.19.0) (2023-05-03)
 
 
