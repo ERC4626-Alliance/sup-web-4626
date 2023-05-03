@@ -1,14 +1,3 @@
-export * from "./code.d";
-
-export declare interface SupApiExploreResponse {
-  chain: string[];
-  contract_address: string[];
-  is_vault: boolean[];
-  name: string[];
-  protocol: string[];
-  vault_id: number[];
-  timestamp: string[];
-}
 
 export declare type SupSingleAdopter = {
   src: string;
@@ -32,5 +21,5 @@ export declare type SupSingleVault = {
   is_vault: boolean;
   protocol: string;
   chain: string;
-  created_at: string | moment.Moment;
+  created_at: string;
 }[];

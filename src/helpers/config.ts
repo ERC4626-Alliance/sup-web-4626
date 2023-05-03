@@ -1,13 +1,8 @@
-export const apiUrl = "https://api.superform.xyz/";
-
 export default function (pageTitle: string = "", pageDescription: string = "") {
   const useTitle = pageTitle || "ERC-4626 - A Tokenized Vault Standard";
   const useDescription =
     pageDescription || "The 4626 Alliance is a group of leading protocols and applications that share the mission of supporting the development and deployment of ERC-4626 vaults";
   return {
-    dapp: {
-      apiUrl
-    },
     openGraph: {
       title: `${useTitle} | 4626 Alliance`,
       description: useDescription,
