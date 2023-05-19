@@ -1,3 +1,10 @@
+## [1.20.0](https://github.com/superform-xyz/sup-web-4626/compare/1.19.3...1.20.0) (2023-05-19)
+
+
+### Features
+
+* vaults content updated ([#145](https://github.com/superform-xyz/sup-web-4626/issues/145)) ([0de89c8](https://github.com/superform-xyz/sup-web-4626/commit/0de89c83bbad96cb918227f20a5488990b2cf3ba)), closes [SUP-2635](https://github.com/superform-xyz/sup-web-4626/issues/2635)
+
 ## [1.19.3](https://github.com/superform-xyz/sup-web-4626/compare/1.19.2...1.19.3) (2023-05-03)
 
 
