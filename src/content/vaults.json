@@ -261,22 +261,148 @@
     "contract_address": "0x2DbFeA3103B35A94c66aABa25B7BC5a6EDb433f2"
   },
   {
-    "name": "USDC Idle Senior Trache Clearpool Wintermute Vault",
-    "protocol": "Idle Finance",
-    "creator": "Idle Finance",
+    "name": "Portofino DAI Senior Tranche",
     "chain": "Ethereum",
-    "description": "Idle Finance Traunched Clearpool's Wintermute Under-collateralized Lending vault into senior and junior vaults. This is the Senior vault.",
-    "link": "https://app.idle.finance/#/tranches/senior/clearpool/USDC",
-    "contract_address": "0x0BD58ca59f2C18F88882562bc8188d9f8939CA68"
+    "protocol": "Idle",
+    "description": "Idle’s senior tranched DAI Portofino vault",
+    "creator": "Idle",
+    "contract_address": "0x79c4fe26f3b2809fd29ec8588242036b8136f32d",
+    "link": "https://app.idle.finance/#/dashboard"
   },
   {
-    "name": "USDC Idle Junior Trache Clearpool Wintermute Vault",
-    "protocol": "Idle Finance",
-    "creator": "Idle Finance",
+    "name": "Portofino DAI Junior Tranche",
     "chain": "Ethereum",
-    "description": "Idle Finance Traunched Clearpool's Wintermute Under-collateralized Lending vault into senior and junior vaults. This is the Junior vault.",
-    "link": "https://app.idle.finance/#/tranches/junior/clearpool/USDC",
-    "contract_address": "0x43b9B5B8fbcb9AD21B54C44f422F3cA33712A3E3"
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched DAI Portofino vault",
+    "creator": "Idle",
+    "contract_address": "0xa9f908da2e3ec7475a743e97bb5b06081b688ae4",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Portofino USDC Senior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s senior tranched USDC Portofino vault",
+    "creator": "Idle",
+    "contract_address": "0x291eecab3a2d3f403745968c14edbb227d183636",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Portofino USDC Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched DAI Portofino vault",
+    "creator": "Idle",
+    "contract_address": "0xa35b7a9fe5dc4cd51ba47acdf67b0f41c893329a",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Fasanara USDT Senior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s senior tranched USDT Fasanara vault",
+    "creator": "Idle",
+    "contract_address": "0xcf96f4b91c6d424fb34aa9a33855b5c8ed1fe66d",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Fasanara USDT Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched Fasanara USDT vault",
+    "creator": "Idle",
+    "contract_address": "0x28bc4d9ad73a761049c773038c344f54d906b152",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Lido stETH Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched best yield token stETH on Lido",
+    "creator": "Idle",
+    "contract_address": "0x79F05f75df6c156B2B98aC1FBfb3637fc1e6f048",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "IdleDAI Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched best yield token DAI",
+    "creator": "Idle",
+    "contract_address": "0x0c80F31B840C6564e6c5E18f386FaD96b63514cA",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "IdleUSDC Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched best yield token USDC",
+    "creator": "Idle",
+    "contract_address": "0xc3dA79e0De523eEf7AC1e4ca9aBFE3aAc9973133",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "IdleUSDT Junior Tranche",
+    "chain": "Ethereum",
+    "protocol": "Idle",
+    "description": "Idle’s junior tranched best yield token USDT",
+    "creator": "Idle",
+    "contract_address": "0x544897a3b944fdeb1f94a0ed973ea31a80ae18e1",
+    "link": "https://app.idle.finance/#/dashboard"
+  },
+  {
+    "name": "Frax Staked ETH",
+    "chain": "Ethereum",
+    "protocol": "Frax",
+    "description": "Version of frxETH which accrues staking yield. All profit generated from Frax Ether validators is distributed to sfrxETH holders. By exchanging frxETH for sfrxETH, one becomes eligible for staking yield, which is redeemed upon converting sfrxETH back to frxETH.",
+    "creator": "Frax",
+    "contract_address": "0xac3e018457b222d93114458476f3e3416abbe38f",
+    "link": "https://frax.finance/"
+  },
+  {
+    "name": "Instadapp ETH v2",
+    "chain": "Ethereum",
+    "protocol": "Instadapp",
+    "description": "Multitude of stETH-related strategies to return yield to users",
+    "creator": "Instadapp",
+    "contract_address": "0xa0d3707c569ff8c87fa923d3823ec5d81c98be78",
+    "link": "https://instadapp.io/"
+  },
+  {
+    "name": "Gains Network DAI Vault",
+    "chain": "Arbitrum",
+    "protocol": "Gains",
+    "description": "DAI Vault receiving portion of trading fees on Gains on Arbitrum. These fees are proportionally split among gDAI shares, incentivizing stakers to stay in the vault.",
+    "creator": "Gains",
+    "contract_address": "0xd85e038593d7a098614721eae955ec2022b9b91b",
+    "link": "https://gains.trade/vault"
+  },
+  {
+    "name": "magicGLP Vault",
+    "chain": "Arbitrum",
+    "protocol": "GMX",
+    "description": "magicGLP is Abracadabra’s auto-compounder for GLP tokens, where ETH /AVAX yield produced by GLP farming is automatically auto-compounded back into magicGLP.",
+    "creator": "Magic Internet Money",
+    "contract_address": "0x85667409a723684fe1e57dd1abde8d88c2f54214",
+    "link": "https://app.abracadabra.money/"
+  },
+  {
+    "name": "Gains Network DAI Vault",
+    "chain": "Polygon",
+    "protocol": "Gains",
+    "description": "DAI Vault receiving portion of trading fees on Gains on Polygon. These fees are proportionally split among gDAI shares, incentivizing stakers to stay in the vault.",
+    "creator": "Gains",
+    "contract_address": "0x91993f2101cc758d0deb7279d41e880f7defe827",
+    "link": "https://gains.trade/"
+  },
+  {
+    "name": "Exactly USDC Vault",
+    "chain": "Optimism",
+    "protocol": "Exactly",
+    "description": "Exactly is a decentralized lending protocol that provides fixed and variable interest rate markets.",
+    "creator": "Exactly",
+    "contract_address": "0x81c9a7b55a4df39a9b7b5f781ec0e53539694873",
+    "link": "https://app.exact.ly/"
   },
   {
     "name": "USDC-Notional Phuture Lending Vault",
