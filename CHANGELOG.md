@@ -1,3 +1,10 @@
+## [1.20.1](https://github.com/superform-xyz/sup-web-4626/compare/1.20.0...1.20.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* header fixed for the homepage (hacky way) ([837a75a](https://github.com/superform-xyz/sup-web-4626/commit/837a75a6e39240b6aed2e1580b8bc9f058415d3f))
+
 ## [1.20.0](https://github.com/superform-xyz/sup-web-4626/compare/1.19.3...1.20.0) (2023-05-19)
 
 
