@@ -24,7 +24,11 @@ export default function BlockAlliance() {
     <section id="alliance" className="mt-8 bg-gradient-to-r from-pink-100 to-pink-300 py-16 pb-1 text-center dark:from-pink-600 dark:to-pink-900">
       <Container>
         <div className="mx-auto max-w-5xl text-slate-700 dark:text-zinc-100 md:text-center">
-          <AtomTitle alignText="center">4626 Alliance</AtomTitle>
+          <div className="justify-center text-center mb-8 w-auto space-y-3" data-aos="fade-up" data-aos-delay="100">
+            <h2 className="aos-init aos-animate text-center text-2xl font-extrabold tracking-tight md:max-w-full md:text-3xl" data-aos="slide-up">
+              <span className="relative -mb-1 block bg-gradient-to-r dark:from-pink-100 dark:to-pink-300 from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">4626 Alliance</span>
+            </h2>
+          </div>
           <p className="mu-4 text-xl leading-relaxed">
             <strong>The 4626 Alliance</strong> is a group of leading protocols and applications that share the mission of supporting the development and deployment of
             <code className="mx-[2px]  select-none rounded-lg bg-pink-100 px-2 py-1 dark:bg-pink-900">ERC-4626</code> vaults.
@@ -39,7 +43,7 @@ export default function BlockAlliance() {
               <li
                 data-url={singleAllie.website}
                 key={singleAllieIndex}
-                className="relative flex select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10 dark:bg-zinc-700  transition-colors delay-75 ease-linear md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50 cursor-pointer"
+                className="relative flex cursor-pointer select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10  transition-colors delay-75 ease-linear dark:bg-zinc-700 md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50"
                 onClick={useOpen}
               >
                 <figure className="flex flex-col items-stretch">
