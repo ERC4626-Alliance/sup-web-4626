@@ -1,6 +1,6 @@
+import React, { type MouseEvent } from "react";
+
 import Container from "@/components/Container";
-import AtomTitle from "@/components/Atom/Title";
-import React, { MouseEvent } from "react";
 import { IoLogoTwitter } from "react-icons/io";
 import alliance from "@json/alliance.json";
 
@@ -36,7 +36,7 @@ export default function BlockAlliance() {
             drastically simplifies the process of building cool and useful applications by decreasing the complexity of integration while improving UX and security.
           </p>
         </div>
-        <ul role="list" className="mx-auto my-16 grid grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-4">
+        <ul role="list" className="mx-auto my-16 grid grid-cols-1 gap-6 sm:gap-8 xl:mt-20 xl:max-w-none xl:grid-cols-4">
           {alliance
             .sort((a, b) => (a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1))
             .map((singleAllie, singleAllieIndex) => (
@@ -46,9 +46,9 @@ export default function BlockAlliance() {
                 className="relative flex cursor-pointer select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10  transition-colors delay-75 ease-linear dark:bg-zinc-700 md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50"
                 onClick={useOpen}
               >
-                <figure className="flex flex-col items-stretch">
+                <figure className="flex flex-col items-stretch w-full">
                   <QuoteIcon className="absolute left-6 top-6 fill-pink-100/40 group-hover:fill-white/70 dark:fill-pink-50/5" />
-                  <blockquote className="relative mb-6">
+                  <blockquote className="relative mb-6 min-h-[70px] xl:min-h-0">
                     <p className="text-right text-lg text-slate-700 dark:text-zinc-100">{singleAllie.content}</p>
                   </blockquote>
                   <figcaption className="relative mt-auto flex items-center justify-between border-t-[0.5px] border-pink-200 pt-6 text-left">
@@ -86,10 +86,14 @@ export default function BlockAlliance() {
         </ul>
         <div className="flex flex-col items-center pb-8 md:mt-8">
           <div className="py-16">
-            <AtomTitle alignText="center">Funds Raised</AtomTitle>
+            <div className="justify-center text-center mb-8 w-auto space-y-3" data-aos="fade-up" data-aos-delay="100">
+              <h2 className="aos-init aos-animate text-center text-2xl font-extrabold tracking-tight md:max-w-full md:text-3xl" data-aos="slide-up">
+                <span className="relative -mb-1 block bg-gradient-to-r dark:from-pink-100 dark:to-pink-300 from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">Funds Raised</span>
+              </h2>
+            </div>
             <div className="text-xl leading-relaxed text-slate-700 dark:text-zinc-100">The alliance contributes capital to advance the development of the ERC-4626 ecosystem</div>
             <div className="mt-8 flex items-center justify-center whitespace-nowrap bg-gradient-to-bl from-pink-500 to-pink-900 bg-clip-text text-4xl font-black text-transparent dark:from-pink-100 dark:to-pink-300">
-              $30,000
+              $35,000
             </div>
           </div>
 

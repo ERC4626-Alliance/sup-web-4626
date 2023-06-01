@@ -75,5 +75,19 @@
     "website": "https://blockworks.co",
     "twitter": "Blockworks_",
     "logo": "blockworks.png"
+  },
+  {
+    "content": "Beefy is a multichain Yield aggregator and optimizer",
+    "name": "Beefy Finance",
+    "website": "https://app.beefy.com/",
+    "twitter": "beefyfinance",
+    "logo": "beefy.png"
+  },
+  {
+    "content": "PoolTogether is a lossless prize saving pool protocol",
+    "name": "PoolTogether",
+    "website": "https://pooltogether.com/",
+    "twitter": "PoolTogether_",
+    "logo": "pool_together.jpg"
   }
 ]
