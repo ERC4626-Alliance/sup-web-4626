@@ -12,6 +12,7 @@ import {useTheme} from "next-themes";
 const navigation = [
   { title: "Home", href: "/" },
   { title: "News", href: "/news" },
+  { title: "Security", href: "/security" },
   { title: "Vaults", href: "/vaults" },
   { title: "Resources", href: "/resources" },
   { title: "Bounties", section: "bounties", href: "/#bounties", isScroll: true, offset: -90, featured: true },

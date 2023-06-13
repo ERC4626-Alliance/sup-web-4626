@@ -1,0 +1,38 @@
+[
+  {
+    "creator": "OpenZeppelin",
+    "title": "OpenZeppelin 4626 Overview",
+    "description": "We provide a base implementation of ERC4626 that includes a simple vault. This contract is designed in a way that allows developers to easily re-configure the vault’s behavior, with minimal overrides, while staying compliant. In this guide, we will discuss some security considerations that affect ERC4626. We will also discuss common customizations of the vault.",
+    "href": "https://docs.openzeppelin.com/contracts/4.x/erc4626"
+  },
+  {
+    "title": "OpenZeppelin Contracts v4.9",
+    "creator": "OpenZeppelin",
+    "href": "https://blog.openzeppelin.com/introducing-openzeppelin-contracts-v4.9",
+    "description": "OpenZeppelin Contracts is considered the gold-standard open-source library for secure smart contract development since 2016. As our 75th release and the most heavily tested ever, Contracts v4.9 further empowers Web3 projects to reduce risk and increase productivity through standardized, battle-tested, and community-reviewed code."
+  },
+  {
+    "title": "OpenZeppelin Pods Finance ERC-4626 Audit 1",
+    "creator": "OpenZeppelin",
+    "description": "The Pods Yield Vault is a one-click deposit investment product that features an options strategy to generate principal-protected returns when the ETH market is volatile. We audited the pods-finance/yield-contracts repository at the v2.0.0 (committed on 09/20/2020)",
+    "href": "https://blog.openzeppelin.com/pods-finance-ethereum-volatility-vault-audit-1"
+  },
+  {
+    "title": "OpenZeppelin Pods Finance ERC-4626 Audit 2",
+    "creator": "OpenZeppelin",
+    "description": "It's an update from Audit 1: A number of critical and high severity issues were found during the first audit of Pods Finance’s contracts. As a result, architectural changes were made to the contracts. This necessitated a second audit in order to fully evaluate the new architectural changes and re-evaluate existing code.",
+    "href": "https://blog.openzeppelin.com/pods-finance-ethereum-volatility-vault-audit-2"
+  },
+  {
+    "title": "Zellic Midas Capital ERC-4626 Audit:",
+    "creator": "Zellic",
+    "description": "Midas Team approached researchers at Zellic, to review our contracts, oracles, and the pools created for our future allies. Zellic conducted the audit within the two weeks period, the article is a quick look at the audit findings. Detailed report link is included as well.",
+    "href": "https://medium.com/midas-capital/audit-with-zellic-29b63f1be25a"
+  },
+  {
+    "title": "Exploring ERC-4626: A Security Primer",
+    "creator": "Zellic",
+    "description": "ERC-4626 is a standard for tokenized vaults. Before the introduction of ERC-4626, every vault had its own distinctive specification and implementation details. This made integration difficult, error prone, and wasteful. ERC-4626 attempts to solve this problem by introducing a standard specification to lower integration efforts and create more consistent and robust implementation patterns, just like ERC-20.",
+    "href": "https://www.zellic.io/blog/exploring-erc-4626"
+  }
+]

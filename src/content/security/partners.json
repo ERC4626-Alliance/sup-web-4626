@@ -1,0 +1,16 @@
+[
+  {
+    "content": "Zellic, known for its expertise in ERC-4626 and other smart contract audits, identified serious vulnerabilities in 55% of their 2022 projects. Leveraging competitive hacking skills, they provide trusted and comprehensive security solutions for EVM, Move, Cosmos, and Solana protocols.",
+    "name": "Zellic",
+    "website": "https://www.zellic.io/",
+    "twitter": "zellic_io",
+    "logo": "zellic.png"
+  },
+  {
+    "content": "OpenZeppelin is a robust library for Ethereum-based smart contracts that includes an implementation of ERC-4626. It offers industry-standard implementations coupled with thorough security measures. An indispensable toolkit for developers, OpenZeppelin facilitates the creation of scalable, secure decentralized applications.",
+    "name": "OpenZeppelin",
+    "website": "https://openzeppelin.com",
+    "twitter": "OpenZeppelin",
+    "logo": "open-zeppelin.png"
+  }
+]

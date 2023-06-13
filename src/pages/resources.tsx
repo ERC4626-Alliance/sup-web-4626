@@ -9,7 +9,7 @@ import BlockAuthors from "@/components/Block/Authors";
 import BlockVideos from "@/components/Block/Videos";
 import BlockStandard from "@/components/Block/Standard";
 
-export default function VaultsPage() {
+export default function ResourcesPage() {
   const config = getConfig("ERC-4626 Resources", "Resources to help aid in the development of ERC 4626 vaults.");
   return (
     <>
