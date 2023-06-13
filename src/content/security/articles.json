@@ -28,5 +28,11 @@
     "creator": "Zellic",
     "description": "Midas Team approached researchers at Zellic, to review our contracts, oracles, and the pools created for our future allies. Zellic conducted the audit within the two weeks period, the article is a quick look at the audit findings. Detailed report link is included as well.",
     "href": "https://medium.com/midas-capital/audit-with-zellic-29b63f1be25a"
+  },
+  {
+    "title": "Exploring ERC-4626: A Security Primer",
+    "create": "Zellic",
+    "description": "What ERC-4626 brings, why it matters, and how to use it",
+    "href": "https://www.zellic.io/blog/exploring-erc-4626"
   }
 ]
