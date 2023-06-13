@@ -31,8 +31,8 @@
   },
   {
     "title": "Exploring ERC-4626: A Security Primer",
-    "create": "Zellic",
-    "description": "What ERC-4626 brings, why it matters, and how to use it",
+    "creator": "Zellic",
+    "description": "ERC-4626 is a standard for tokenized vaults. Before the introduction of ERC-4626, every vault had its own distinctive specification and implementation details. This made integration difficult, error prone, and wasteful. ERC-4626 attempts to solve this problem by introducing a standard specification to lower integration efforts and create more consistent and robust implementation patterns, just like ERC-20.",
     "href": "https://www.zellic.io/blog/exploring-erc-4626"
   }
 ]
