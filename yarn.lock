@@ -20,7 +20,7 @@ __metadata:
     "@tailwindcss/typography": 0.5.9
     "@types/aos": 3.0.4
     "@types/gtag.js": 0.0.12
-    "@types/node": 18.16.3
+    "@types/node": 18.16.18
     "@types/react": 18.2.0
     "@types/react-dom": 18.2.1
     "@types/react-scroll": 1.8.7
@@ -1255,10 +1255,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.16.3":
+"@types/node@npm:*":
   version: 18.16.3
   resolution: "@types/node@npm:18.16.3"
   checksum: 816b39d45b05ebdc6f362b630970df3f6d82f71d418a2555353522f4eeeb078fa201de5299f02c09a09faa975e43b2745fe19c263d44069f87ddf37d6c37b717
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:18.16.18":
+  version: 18.16.18
+  resolution: "@types/node@npm:18.16.18"
+  checksum: d32d8a0a04cd3f5ecb361bcb42f3a07623881ac90d680e06bf626defb3c663a94860d11690babe607cfe67265eceeb8a59ba5fe40c0e49f5a1b01e0088640469
   languageName: node
   linkType: hard
 
