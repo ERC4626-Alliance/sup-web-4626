@@ -1,3 +1,10 @@
+## [1.22.0](https://github.com/superform-xyz/sup-web-4626/compare/1.21.0...1.22.0) (2023-07-06)
+
+
+### Features
+
+* new members added ([#147](https://github.com/superform-xyz/sup-web-4626/issues/147)) ([c457041](https://github.com/superform-xyz/sup-web-4626/commit/c45704144c8ce9d51275b7596a006dbbab02646d))
+
 ## [1.21.0](https://github.com/superform-xyz/sup-web-4626/compare/1.20.1...1.21.0) (2023-06-13)
 
 
