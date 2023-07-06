@@ -1,16 +1,11 @@
-import React, { type MouseEvent } from "react";
+import React, { MouseEvent } from "react";
 
 import Container from "@/components/Container";
+import AtomTitle from "@/components/Atom/Title";
+import AtomQuoteIcon from "@/components/Atom/QuoteIcon";
+
 import { IoLogoTwitter } from "react-icons/io";
 import alliance from "@json/alliance.json";
-
-function QuoteIcon(props: any) {
-  return (
-    <svg aria-hidden="true" width={105} height={78} {...props}>
-      <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z" />
-    </svg>
-  );
-}
 
 export default function BlockAlliance() {
   const useOpen = (event: MouseEvent) => {
@@ -24,9 +19,11 @@ export default function BlockAlliance() {
     <section id="alliance" className="mt-8 bg-gradient-to-r from-pink-100 to-pink-300 py-16 pb-1 text-center dark:from-pink-600 dark:to-pink-900">
       <Container>
         <div className="mx-auto max-w-5xl text-slate-700 dark:text-zinc-100 md:text-center">
-          <div className="justify-center text-center mb-8 w-auto space-y-3" data-aos="fade-up" data-aos-delay="100">
+          <div className="mb-8 w-auto justify-center space-y-3 text-center" data-aos="fade-up" data-aos-delay="100">
             <h2 className="aos-init aos-animate text-center text-2xl font-extrabold tracking-tight md:max-w-full md:text-3xl" data-aos="slide-up">
-              <span className="relative -mb-1 block bg-gradient-to-r dark:from-pink-100 dark:to-pink-300 from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">4626 Alliance</span>
+              <span className="relative -mb-1 block bg-gradient-to-r from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent dark:from-pink-100 dark:to-pink-300">
+                4626 Alliance
+              </span>
             </h2>
           </div>
           <p className="mu-4 text-xl leading-relaxed">
@@ -46,9 +43,9 @@ export default function BlockAlliance() {
                 className="relative flex cursor-pointer select-none rounded-lg bg-white p-6 shadow-xl shadow-slate-900/10  transition-colors delay-75 ease-linear dark:bg-zinc-700 md:hover:bg-white/60 dark:md:hover:bg-zinc-700/50"
                 onClick={useOpen}
               >
-                <figure className="flex flex-col items-stretch w-full">
-                  <QuoteIcon className="absolute left-6 top-6 fill-pink-100/40 group-hover:fill-white/70 dark:fill-pink-50/5" />
-                  <blockquote className="relative mb-6 min-h-[70px] xl:min-h-0">
+                <figure className="flex flex-col items-stretch">
+                  <AtomQuoteIcon className="absolute left-6 top-6 fill-pink-100/40 group-hover:fill-white/70 dark:fill-pink-50/5" />
+                  <blockquote className="relative mb-6">
                     <p className="text-right text-lg text-slate-700 dark:text-zinc-100">{singleAllie.content}</p>
                   </blockquote>
                   <figcaption className="relative mt-auto flex items-center justify-between border-t-[0.5px] border-pink-200 pt-6 text-left">

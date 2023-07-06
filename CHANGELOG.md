@@ -1,3 +1,10 @@
+## [1.21.0](https://github.com/superform-xyz/sup-web-4626/compare/1.20.1...1.21.0) (2023-06-13)
+
+
+### Features
+
+* security page added ([#148](https://github.com/superform-xyz/sup-web-4626/issues/148)) ([ef21d72](https://github.com/superform-xyz/sup-web-4626/commit/ef21d7257a6494d341810458311d1fdd36df34a2))
+
 ## [1.20.1](https://github.com/superform-xyz/sup-web-4626/compare/1.20.0...1.20.1) (2023-05-23)
 
 
