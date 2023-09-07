@@ -91,7 +91,7 @@ export default function BlockAlliance() {
             </div>
             <div className="text-xl leading-relaxed text-slate-700 dark:text-zinc-100">The alliance contributes capital to advance the development of the ERC-4626 ecosystem</div>
             <div className="mt-8 flex items-center justify-center whitespace-nowrap bg-gradient-to-bl from-pink-500 to-pink-900 bg-clip-text text-4xl font-black text-transparent dark:from-pink-100 dark:to-pink-300">
-              $35,000
+              $37,000
             </div>
           </div>
 
