@@ -42,7 +42,7 @@ __metadata:
     postcss: 8.4.29
     postcss-flexbugs-fixes: 5.0.2
     prettier: 3.0.3
-    prettier-plugin-tailwindcss: 0.5.1
+    prettier-plugin-tailwindcss: 0.5.4
     react: 18.2.0
     react-dom: 18.2.0
     react-icons: 4.11.0
@@ -7576,9 +7576,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:0.5.1":
-  version: 0.5.1
-  resolution: "prettier-plugin-tailwindcss@npm:0.5.1"
+"prettier-plugin-tailwindcss@npm:0.5.4":
+  version: 0.5.4
+  resolution: "prettier-plugin-tailwindcss@npm:0.5.4"
   peerDependencies:
     "@ianvs/prettier-plugin-sort-imports": "*"
     "@prettier/plugin-pug": "*"
@@ -7625,7 +7625,7 @@ __metadata:
       optional: true
     prettier-plugin-twig-melody:
       optional: true
-  checksum: 154fa3644e6c58b7fcc8c6092f162b9c3e973fd8245c14bb0c396b5d0052f982e8a57e4a5ef71b7308f1cae40b022f7943500fe1e0e33e315f1eb249cbcd7a97
+  checksum: b4380e03a9f7aaf25f5d352fd145618497b5e9281bbd8c1a43e90a9a72daaf0585f8ac8bf5608e41481441caa4eb568c74556164a384de6a5533a196edab52b0
   languageName: node
   linkType: hard
 
