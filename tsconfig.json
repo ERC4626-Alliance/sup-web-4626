@@ -47,19 +47,11 @@
     "strict": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
+    "ignoreDeprecations": "5.0",
     "target": "ESNext",
     "typeRoots": [
       "../../node_modules/@types",
       "./src/types/*"
-    ],
-    "types": [
-      "node",
-      "next-seo",
-      "next-gtag",
-      "react-paginate",
-      "react-icons",
-      "schema-dts",
-      "react-schemaorg"
     ],
     "useDefineForClassFields": true
   },
