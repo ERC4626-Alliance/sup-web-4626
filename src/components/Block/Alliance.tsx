@@ -8,12 +8,9 @@ import alliance from "@json/alliance.json";
 
 export default function BlockAlliance() {
   const useOpen = (event: MouseEvent) => {
+    const currentTarget = event.target as HTMLElement;
     // @ts-ignore
-    const {closest} = event.target;
-    if (!closest("a")) {
-      // @ts-ignore
-      window?.open(closest("li")?.dataset.url, "_blank");
-    }
+    !currentTarget.closest("a") && window.open(currentTarget.closest("li")?.dataset.url, "_blank");
   };
 
   return (
@@ -86,7 +83,9 @@ export default function BlockAlliance() {
           <div className="py-16">
             <div className="justify-center text-center mb-8 w-auto space-y-3" data-aos="fade-up" data-aos-delay="100">
               <h2 className="aos-init aos-animate text-center text-2xl font-extrabold tracking-tight md:max-w-full md:text-3xl" data-aos="slide-up">
-                <span className="relative -mb-1 block bg-gradient-to-r dark:from-pink-100 dark:to-pink-300 from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">Funds Raised</span>
+                <span className="relative -mb-1 block bg-gradient-to-r dark:from-pink-100 dark:to-pink-300 from-pink-500 to-pink-900 bg-clip-text pb-1 text-transparent">
+                  Funds Raised
+                </span>
               </h2>
             </div>
             <div className="text-xl leading-relaxed text-slate-700 dark:text-zinc-100">The alliance contributes capital to advance the development of the ERC-4626 ecosystem</div>
