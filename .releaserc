@@ -1,7 +1,7 @@
 {
   "branches": [
     "+([0-9])?(.{+([0-9]),x}).x",
-    "main",
+    "main"
   ],
   "debug": false,
   "tagFormat": "${version}",
@@ -28,14 +28,17 @@
           "preset": "conventionalchangelog",
           "issuePrefixes": [
             "SUP-"
-          ],
-          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
+          ]
         },
         "writerOpts": {
           "commitsSort": [
             "subject",
             "scope"
-          ]
+          ],
+          "issuePrefixes": [
+            "SUP-"
+          ],
+          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
         }
       }
     ],

@@ -1,3 +1,80 @@
+## [1.22.1](https://github.com/superform-xyz/sup-web-4626/compare/1.22.0...1.22.1) (2023-09-07)
+
+
+### Bug Fixes
+
+* href to a16z tests ([#159](https://github.com/superform-xyz/sup-web-4626/issues/159)) ([b64e18d](https://github.com/superform-xyz/sup-web-4626/commit/b64e18d4af145c3177b8fac70d104782b6dac26c))
+
+## [1.22.0](https://github.com/superform-xyz/sup-web-4626/compare/1.21.0...1.22.0) (2023-07-06)
+
+
+### Features
+
+* new members added ([#147](https://github.com/superform-xyz/sup-web-4626/issues/147)) ([c457041](https://github.com/superform-xyz/sup-web-4626/commit/c45704144c8ce9d51275b7596a006dbbab02646d))
+
+## [1.21.0](https://github.com/superform-xyz/sup-web-4626/compare/1.20.1...1.21.0) (2023-06-13)
+
+
+### Features
+
+* security page added ([#148](https://github.com/superform-xyz/sup-web-4626/issues/148)) ([ef21d72](https://github.com/superform-xyz/sup-web-4626/commit/ef21d7257a6494d341810458311d1fdd36df34a2))
+
+## [1.20.1](https://github.com/superform-xyz/sup-web-4626/compare/1.20.0...1.20.1) (2023-05-23)
+
+
+### Bug Fixes
+
+* header fixed for the homepage (hacky way) ([837a75a](https://github.com/superform-xyz/sup-web-4626/commit/837a75a6e39240b6aed2e1580b8bc9f058415d3f))
+
+## [1.20.0](https://github.com/superform-xyz/sup-web-4626/compare/1.19.3...1.20.0) (2023-05-19)
+
+
+### Features
+
+* vaults content updated ([#145](https://github.com/superform-xyz/sup-web-4626/issues/145)) ([0de89c8](https://github.com/superform-xyz/sup-web-4626/commit/0de89c83bbad96cb918227f20a5488990b2cf3ba)), closes [SUP-2635](https://github.com/superform-xyz/sup-web-4626/issues/2635)
+
+## [1.19.3](https://github.com/superform-xyz/sup-web-4626/compare/1.19.2...1.19.3) (2023-05-03)
+
+
+### Bug Fixes
+
+* spelling changes & alliance yearn logo reverted ([ed61d0a](https://github.com/superform-xyz/sup-web-4626/commit/ed61d0a6a2b97628c5b81e25b3930b1200f07744))
+* yearn logo for the alliance section reverted ([#140](https://github.com/superform-xyz/sup-web-4626/issues/140)) ([fc3c750](https://github.com/superform-xyz/sup-web-4626/commit/fc3c75036643bb030dd64bf6bd2cfb61ca4ff2e7))
+
+## [1.19.2](https://github.com/superform-xyz/sup-web-4626/compare/1.19.1...1.19.2) (2023-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/analytics to v1 ([#138](https://github.com/superform-xyz/sup-web-4626/issues/138)) ([d9bbcae](https://github.com/superform-xyz/sup-web-4626/commit/d9bbcaea8cc5f1fa03925b3e15cbf65114933f53))
+
+## [1.19.1](https://github.com/superform-xyz/sup-web-4626/compare/1.19.0...1.19.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* new yearn logo ([bfa0206](https://github.com/superform-xyz/sup-web-4626/commit/bfa0206a3a53ae78c007676d68b8500681779386))
+* new yearn logo ([#139](https://github.com/superform-xyz/sup-web-4626/issues/139)) ([d2bcb2a](https://github.com/superform-xyz/sup-web-4626/commit/d2bcb2a8a377ba7b264a1b7caa929e66da470b4d))
+
+## [1.19.0](https://github.com/superform-xyz/sup-web-4626/compare/1.18.0...1.19.0) (2023-05-03)
+
+
+### Features
+
+* alliance members added (non-prod rn) ([#124](https://github.com/superform-xyz/sup-web-4626/issues/124)) ([37ec59c](https://github.com/superform-xyz/sup-web-4626/commit/37ec59c06d795f59f77e0aff701e45d902cb67b2)), closes [SUP-2573](https://github.com/superform-xyz/sup-web-4626/issues/2573) [SUP-2572](https://github.com/superform-xyz/sup-web-4626/issues/2572) [SUP-2580](https://github.com/superform-xyz/sup-web-4626/issues/2580)
+* bounty copy added ([#131](https://github.com/superform-xyz/sup-web-4626/issues/131)) ([cc95823](https://github.com/superform-xyz/sup-web-4626/commit/cc95823be24c6f65eaaf7928835c53b393d548f1))
+* new content for the bounties section (updated) ([#134](https://github.com/superform-xyz/sup-web-4626/issues/134)) ([28fabdc](https://github.com/superform-xyz/sup-web-4626/commit/28fabdcbcfbbb3861b7e4afc17c30483d52d7a2f))
+* new vaults added & starknet network added, vaults sorted by a-z ([#120](https://github.com/superform-xyz/sup-web-4626/issues/120)) ([30dce17](https://github.com/superform-xyz/sup-web-4626/commit/30dce17c0950e9839d147faee937ebbbdd4954d0)), closes [SUP-2462](https://github.com/superform-xyz/sup-web-4626/issues/2462) [SUP-2463](https://github.com/superform-xyz/sup-web-4626/issues/2463)
+* open sourcing the repo (changing the readme.md) ([1b1c3a2](https://github.com/superform-xyz/sup-web-4626/commit/1b1c3a241595c0b8d3d2400befb39f78f422cb85))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @vercel/analytics to v0.1.11 ([#108](https://github.com/superform-xyz/sup-web-4626/issues/108)) ([a73af22](https://github.com/superform-xyz/sup-web-4626/commit/a73af22932858743ed6225e477c3029fd205755b))
+* **deps:** update dependency @vercel/analytics to v0.1.11 ([79a0da7](https://github.com/superform-xyz/sup-web-4626/commit/79a0da75f8ea1772005007baf6233d3763d154de))
+* **deps:** update dependency react-paginate to v8.1.5 ([#111](https://github.com/superform-xyz/sup-web-4626/issues/111)) ([f8b0797](https://github.com/superform-xyz/sup-web-4626/commit/f8b0797ca973484645dd0ee44951c34537aefb7a))
+* **deps:** update dependency react-scroll to v1.8.9 ([#105](https://github.com/superform-xyz/sup-web-4626/issues/105)) ([0cd110f](https://github.com/superform-xyz/sup-web-4626/commit/0cd110f87a93493336d0cdd51d20b23eedc9c782))
+
 ## [1.18.0](https://github.com/superform-xyz/sup-web-4626/compare/1.17.0...1.18.0) (2023-03-28)
 
 

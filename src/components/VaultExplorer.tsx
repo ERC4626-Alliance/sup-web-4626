@@ -46,12 +46,12 @@ export default function VaultExplorer() {
   return vaults === null ? null : (
     <div className="uiBlock lightBackground mt-16 overflow-x-hidden md:overflow-x-auto" id="vaultscan">
       <Container>
-        <AtomTitle alignText="center" subtitle="A repository of live ERC 4626 vaults across chains. More features and vault metadata coming soon">
+        <AtomTitle alignText="center" subtitle="A repository of live ERC-4626 vaults across chains. More features and vault metadata coming soon">
           ERC-4626 VAULTS
         </AtomTitle>
         <div className="-my-1 -mx-5 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-            <div className="overflow-hidden overflow-hidden shadow-sm ring-1 ring-gray-500 ring-opacity-25 ring-offset-1 dark:ring-pink-900 md:rounded-lg">
+            <div className="overflow-hidden shadow-sm ring-1 ring-gray-500 ring-opacity-25 ring-offset-1 dark:ring-pink-900 md:rounded-lg">
               <table
                 className="min-w-full divide-y divide-gray-200 overflow-x-hidden overscroll-y-contain bg-transparent dark:divide-pink-900 md:rounded-t-2xl"
                 style={{ borderSpacing: 0 }}
@@ -103,7 +103,8 @@ export default function VaultExplorer() {
             </div>
           </div>
         </div>
-        <nav className="relative mx-auto -mt-2 w-full overflow-x-hidden md:overflow-x-auto">
+        <nav className="relative mx-auto -mt-2 w-full overflow-x-hidden md:overflow-x-auto flex flex-col lg:flex-row items-center">
+          <span className="pt-4 lg:pt-0 font-bold text-xs tracking-tight text-slate-700 dark:text-zinc-100">Total: {vaults.length} vaults</span>
           <ReactPaginate
             previousLinkClassName="border-t-2 border-transparent py-4 pr-1 inline-flex justify-center items-center md:hover:text-pink-500"
             className="mx-auto flex h-auto w-fit max-w-[100vw] items-center justify-center px-0 md:px-4"

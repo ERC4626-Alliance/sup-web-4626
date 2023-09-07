@@ -33,6 +33,6 @@
     "title": "ERC4626 Property Tests",
     "creator": "a16z",
     "description": "Tests for the developers & vault integrators to detect potential standard violations in contract implementations before deployment & check if the given vaults follow the standard before the integration. The properties can also be tested against the live vaults already deployed on the mainnet, via mainnet fork testing.",
-    "href": "https://deploy-preview-3979--openzeppelin-contracts-docs.netlify.app/contracts/4.x/erc4626"
+    "href": "https://github.com/a16z/erc4626-tests"
   }
 ]
