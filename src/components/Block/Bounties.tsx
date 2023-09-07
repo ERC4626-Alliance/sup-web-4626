@@ -22,9 +22,8 @@ export default function BlockBounties() {
 
   const useOpen = (event: MouseEvent) => {
     const currentTarget = event.target as HTMLElement;
-    if (!currentTarget.closest("a")) {
-      window.open(currentTarget.closest("li")?.dataset.url, "_blank");
-    }
+    // @ts-ignore
+    !currentTarget.closest("a") && window.open(currentTarget.closest("li")?.dataset.url, "_blank");
   };
 
   return (
@@ -47,10 +46,12 @@ export default function BlockBounties() {
                   onClick={() => setCurrentFeature(feature)}
                   key={feature.title}
                   className={classNames(
-                    "my-4 cursor-pointer select-none justify-between space-y-8 bg-pink-100 text-left shadow-lg dark:bg-pink-900 lg:flex-row lg:items-center" + " lg:space-y-0",
+                    "my-4 cursor-pointer select-none justify-between space-y-8 text-left shadow-lg lg:flex-row lg:items-center" + " lg:space-y-0",
                     "group relative rounded-lg p-2 lg:rounded-l-lg lg:rounded-r-none lg:p-6",
-                    currentFeature.id === featureIndex ? "bg-pink-700 text-white dark:bg-pink-400 dark:text-white" : "border-pink-700 text-pink-700",
-                    "border-pink-700 text-pink-700 dark:border-pink-500 dark:text-pink-300 lg:hover:bg-pink-700 lg:hover:text-white dark:lg:hover:bg-pink-500 dark:lg:hover:text-white"
+                    currentFeature.id === featureIndex
+                      ? "bg-white text-dark dark:bg-pink-700 dark:text-white"
+                      : "opacity-50 hover:opacity-100 border-pink-700 text-pink-700" + " dark:bg-pink-900" + " bg-pink-100",
+                    "border-pink-700 text-pink-700 dark:border-pink-500 dark:text-pink-300 lg:hover:bg-white dark:lg:hover:bg-pink-700" + " dark:lg:hover:text-white",
                   )}
                 >
                   <h3>
@@ -64,12 +65,12 @@ export default function BlockBounties() {
             </ul>
           </div>
           <div className="h-full lg:col-span-10">
-            <div className="mx-auto flex h-full flex-col items-start justify-start overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg dark:bg-pink-700/50 md:w-full md:px-6 md:py-4">
+            <div className="mx-auto flex h-full flex-col items-start justify-start overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg dark:bg-pink-700 md:w-full md:px-6 md:py-4">
               {currentFeature.features.map((feature, featIndex) => (
                 <div
                   className={classNames(
                     "relative flex items-center pl-8 font-normal",
-                    currentFeature.features.length > 5 ? "lg:mt-2" : currentFeature.features.length < 4 ? "lg:mt-8" : "lg:mt-6"
+                    currentFeature.features.length > 5 ? "lg:mt-2" : currentFeature.features.length < 4 ? "lg:mt-8" : "lg:mt-6",
                   )}
                   key={`feat-index-${featIndex}`}
                 >
@@ -124,7 +125,7 @@ export default function BlockBounties() {
                     className={classNames(
                       "flex items-center space-x-[2px] font-extrabold uppercase",
                       ["open", "complete"].includes(bounty.status) && "text-green-700 dark:text-green-300",
-                      bounty.status === "pending" && "text-orange-700 dark:text-orange-300"
+                      bounty.status === "pending" && "text-orange-700 dark:text-orange-300",
                     )}
                   >
                     {bounty.status === "open" && (

@@ -1,3 +1,10 @@
+## [1.22.1](https://github.com/superform-xyz/sup-web-4626/compare/1.22.0...1.22.1) (2023-09-07)
+
+
+### Bug Fixes
+
+* href to a16z tests ([#159](https://github.com/superform-xyz/sup-web-4626/issues/159)) ([b64e18d](https://github.com/superform-xyz/sup-web-4626/commit/b64e18d4af145c3177b8fac70d104782b6dac26c))
+
 ## [1.22.0](https://github.com/superform-xyz/sup-web-4626/compare/1.21.0...1.22.0) (2023-07-06)
 
 
