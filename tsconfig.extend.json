@@ -1,6 +1,12 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+      "ESNext.AsyncIterable"
+    ],
     "paths": {
       "@/*": [
         "src/*"
