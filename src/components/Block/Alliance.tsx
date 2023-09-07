@@ -1,7 +1,6 @@
 import React, { MouseEvent } from "react";
 
 import Container from "@/components/Container";
-import AtomTitle from "@/components/Atom/Title";
 import AtomQuoteIcon from "@/components/Atom/QuoteIcon";
 
 import { IoLogoTwitter } from "react-icons/io";
@@ -9,9 +8,11 @@ import alliance from "@json/alliance.json";
 
 export default function BlockAlliance() {
   const useOpen = (event: MouseEvent) => {
-    const currentTarget = event.target as HTMLElement;
-    if (!currentTarget.closest("a")) {
-      window.open(currentTarget.closest("li")?.dataset.url, "_blank");
+    // @ts-ignore
+    const {closest} = event.target;
+    if (!closest("a")) {
+      // @ts-ignore
+      window?.open(closest("li")?.dataset.url, "_blank");
     }
   };
 
