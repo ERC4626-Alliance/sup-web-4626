@@ -16,11 +16,13 @@ const App = ({Component, pageProps}: AppProps) => {
     });
   }, []);
   useEffect(() => {
+    // @ts-ignore
     const s = document.createElement("script");
     s.setAttribute("src", "//platform.twitter.com/widgets.js");
     s.setAttribute("async", "true");
     s.setAttribute("defer", "true");
     s.setAttribute("charset", "utf-8");
+    // @ts-ignore
     document.head.appendChild(s);
   });
 
