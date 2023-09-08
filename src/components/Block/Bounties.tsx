@@ -64,7 +64,7 @@ export default function BlockBounties() {
               ))}
             </ul>
           </div>
-          <div className="h-full lg:col-span-10">
+          <div className="h-full lg:col-span-10 z-10">
             <div className="mx-auto flex h-full flex-col items-start justify-start overflow-hidden rounded-lg bg-white px-4 py-3 shadow-lg dark:bg-pink-700 md:w-full md:px-6 md:py-4">
               {currentFeature.features.map((feature, featIndex) => (
                 <div
