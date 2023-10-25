@@ -13,16 +13,9 @@
 > drastically simplifies the
 > process of building cool and useful applications by decreasing the complexity of integration while improving UX and security.
 
-## Alliance members
-
- * [Aztec](https://aztec.network/)
- * [Balancer](https://balancer.finance/)
- * [mStable](https://mstable.org/)
- * [Superform](https://superform.xyz/)
-
 ### Funds Raised
   The alliance contributes capital to advance the development of the ERC-4626 ecosystem.
-  Fund raised by now: **$15,000**
+  Fund raised by now: **$35,000+**
 
  [Join the alliance](https://forms.gle/DsCsttsxBUYQTB9r6)
 
@@ -57,13 +50,12 @@ members, ecosystem & erc-4626 related news.
 
 👤 **4626 Alliance**
 
-* Website: https://superform.xyz/
 * Twitter: [@erc4626](https://twitter.com/erc4626)
-* Github: [@superform-xyz](https://github.com/superform-xyz)
+* Github: [@ERC4626-Alliance](https://github.com/erc4626-alliance)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/superform-xyz/sup-web-4626/issues).
+Contributions, issues, and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/superform-xyz/sup-web-4626/issues).
 
 ## Show your support
 
