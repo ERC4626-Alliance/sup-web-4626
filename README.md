@@ -15,7 +15,7 @@
 
 ### Funds Raised
   The alliance contributes capital to advance the development of the ERC-4626 ecosystem.
-  Fund raised by now: **$35,000+**
+  Fund raised by now: **$37,000+**
 
  [Join the alliance](https://forms.gle/DsCsttsxBUYQTB9r6)
 

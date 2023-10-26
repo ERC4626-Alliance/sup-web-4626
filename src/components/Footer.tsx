@@ -1,8 +1,9 @@
 import Container from "@/components/Container";
 import { SVGProps } from "react";
 import { IoMdHeart, IoLogoTwitter } from "react-icons/io";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaBook, FaGithub, FaPaperPlane, FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
+
 
 const footerNavigation = {
   social: [
@@ -15,6 +16,16 @@ const footerNavigation = {
       name: "Discuss",
       href: "https://t.me/erc4626alliance",
       icon: (props: SVGProps<any>) => <FaTelegramPlane {...props} />,
+    },
+    {
+      name: "Github",
+      href: "https://github.com/ERC4626-Alliance",
+      icon: (props: SVGProps<any>) => <FaGithub {...props} />,
+    },
+    {
+      name: "Read the EIP",
+      href: "https://eips.ethereum.org/EIPS/eip-4626",
+      icon: (props: SVGProps<any>) => <FaBook {...props} />,
     },
     {
       name: "Join the alliance",
