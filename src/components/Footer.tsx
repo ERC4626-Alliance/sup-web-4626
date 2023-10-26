@@ -4,6 +4,7 @@ import { IoMdHeart, IoLogoTwitter } from "react-icons/io";
 import { FaBook, FaGithub, FaPaperPlane, FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 
+
 const footerNavigation = {
   social: [
     {
