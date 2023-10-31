@@ -12,11 +12,7 @@
       {
         "preset": "conventionalcommits",
         "parserOpts": {
-          "preset": "conventionalchangelog",
-          "issuePrefixes": [
-            "SUP-"
-          ],
-          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
+          "preset": "conventionalchangelog"
         }
       }
     ],
@@ -34,11 +30,7 @@
           "commitsSort": [
             "subject",
             "scope"
-          ],
-          "issuePrefixes": [
-            "SUP-"
-          ],
-          "issueUrlFormat": "https://linear.app/superform/issue/{{prefix}}{{id}}"
+          ]
         }
       }
     ],
