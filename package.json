@@ -1,8 +1,8 @@
 {
   "name": "4626.com",
   "author": {
-    "name": "Superform",
-    "url": "https://superform.xyz"
+    "name": "ERC4626-Alliance",
+    "url": "https://github.com/ERC4626-Alliance"
   },
   "maintainers": [
     {
@@ -12,7 +12,7 @@
   ],
   "description": "erc-4626 specification website",
   "private": true,
-  "repository": "https://github.com/superform-xyz/sup-web-4626",
+  "repository": "https://github.com/ERC4626-Alliance/sup-web-4626",
   "homepage": "https://erc4626.info",
   "keywords": [
     "erc4626",

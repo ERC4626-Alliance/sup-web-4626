@@ -55,7 +55,7 @@ members, ecosystem & erc-4626 related news.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/superform-xyz/sup-web-4626/issues).
+Contributions, issues, and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ERC4626-Alliance/sup-web-4626/issues).
 
 ## Show your support
 
