@@ -96,5 +96,12 @@
     "website": "https://pooltogether.com/",
     "twitter": "PoolTogether_",
     "logo": "pool_together.jpg"
+  },
+  {
+    "content": "Cove is an automated ERC-4626 yield optimizer.",
+    "name": "Cove",
+    "website": "https://www.cove.finance/",
+    "twitter": "cove_fi",
+    "logo": "cove.svg"
   }
 ]
