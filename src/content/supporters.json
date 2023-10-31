@@ -301,6 +301,16 @@
       "extra": {
         "unoptimized": true
       }
+    },
+    {
+      "src": "cove.svg",
+      "title": "Cove",
+      "url": {
+        "web": "https://www.cove.finance/"
+      },
+      "extra": {
+        "unoptimized": true
+      }
     }
   ]
 ]
