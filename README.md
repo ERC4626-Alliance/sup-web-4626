@@ -21,7 +21,7 @@
 
 ### 🏠 [Homepage](https://erc4626.info/)
 
-### ✨ [Demo](https://dev.eip4626.com)
+### ✨ [Dev](https://dev.eip4626.com)
 
 ## Install
 
