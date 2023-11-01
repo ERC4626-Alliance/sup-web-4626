@@ -23,7 +23,7 @@ __metadata:
     "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
     "@types/react-scroll": 1.8.7
-    "@vercel/analytics": 1.0.1
+    "@vercel/analytics": 1.1.1
     aos: 3.0.0-beta.6
     autoprefixer: 10.4.15
     cssnano: 6.0.1
@@ -1563,10 +1563,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/analytics@npm:1.0.1":
-  version: 1.0.1
-  resolution: "@vercel/analytics@npm:1.0.1"
-  checksum: 6876e1d0868e85198d43a17ffec7266cdee5a53d5fc797d3f7e0d64e9d76a2ade3cbdcbc0a665e2ee2389f65dfc80591f7d667e9fc981cdbaa848006cbaefe19
+"@vercel/analytics@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@vercel/analytics@npm:1.1.1"
+  dependencies:
+    server-only: ^0.0.1
+  checksum: 25f0259a5730a05b9df3bb40309ff75db53d4136e2db24d8287eccb346de08e55484c885679746d4cfbc8418241c4a357ad07b34751380ffa108aaf844f4203e
   languageName: node
   linkType: hard
 
@@ -8358,6 +8360,13 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: ae47d06de28836adb9d3e25f22a92943477371292d9b665fb023fae278d345d508ca1958232af086d85e0155aee22e313e100971898bbb8d5d89b8b1d4054ca2
+  languageName: node
+  linkType: hard
+
+"server-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "server-only@npm:0.0.1"
+  checksum: c432348956641ea3f460af8dc3765f3a1bdbcf7a1e0205b0756d868e6e6fe8934cdee6bff68401a1dd49ba4a831c75916517a877446d54b334f7de36fa273e53
   languageName: node
   linkType: hard
 
