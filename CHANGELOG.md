@@ -1,3 +1,13 @@
+## [1.24.0](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.23.0...1.24.0) (2023-11-01)
+
+
+### Features
+
+* add cove as a new member ([#176](https://github.com/ERC4626-Alliance/sup-web-4626/issues/176)) ([5b9d6e0](https://github.com/ERC4626-Alliance/sup-web-4626/commit/5b9d6e0ce2fba27de6e8ff5860c719fd9d7f8ff8))
+* semantic-release reconfiguration  ([#177](https://github.com/ERC4626-Alliance/sup-web-4626/issues/177)) ([0a8c4e3](https://github.com/ERC4626-Alliance/sup-web-4626/commit/0a8c4e32ddd05859f1a28816434b7010cf200a37))
+* update footer ([#175](https://github.com/ERC4626-Alliance/sup-web-4626/issues/175)) ([53bbaac](https://github.com/ERC4626-Alliance/sup-web-4626/commit/53bbaac130f1a049cd9956b9319b3f65c8a01413))
+* verify google ownership ([a38831f](https://github.com/ERC4626-Alliance/sup-web-4626/commit/a38831fea11313d7248032b1172ba094a26233cb))
+
 ## [1.23.0](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.22.1...1.23.0) (2023-09-08)
 
 
