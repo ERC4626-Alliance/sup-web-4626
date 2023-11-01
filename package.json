@@ -98,5 +98,5 @@
   "resolutions": {
     "lodash": "4.17.21"
   },
-  "packageManager": "yarn@3.5.1"
+  "packageManager": "yarn@3.6.4"
 }
