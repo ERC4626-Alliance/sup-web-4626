@@ -34,5 +34,11 @@
     "creator": "Zellic",
     "description": "ERC-4626 is a standard for tokenized vaults. Before the introduction of ERC-4626, every vault had its own distinctive specification and implementation details. This made integration difficult, error prone, and wasteful. ERC-4626 attempts to solve this problem by introducing a standard specification to lower integration efforts and create more consistent and robust implementation patterns, just like ERC-20.",
     "href": "https://www.zellic.io/blog/exploring-erc-4626"
+  },
+ {
+    "title": "Is My ERC-4626 Vault Token Up to The Standard",
+    "creator": "Runtime Verification",
+    "description": "Check your ERC-4626 with ERCx, a tool that runs properties check against your vault deployment to ensure conformance with the standard. This is great for vault developers and auditors alike.",
+    "href": "https://runtimeverification.com/blog/is-my-erc-4626-vault-token-up-to-the-standard"
   }
 ]
