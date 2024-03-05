@@ -54,6 +54,69 @@
     "contract_address": "0x97e6E0a40a3D02F12d1cEC30ebfbAE04e37C119E"
   },
   {
+    "name": "WETH - Flagship ETH",
+    "protocol": "Morpho",
+    "creator": "Block Analitica & B.Protocol",
+    "chain": "Ethereum",
+    "description": "The Flagship ETH MetaMorpho vault curated by B.Protocol and Block Analitica is intended to optimize risk-adjusted interest earned from blue-chip LST and stablecoin collateral markets.",
+    "link": "https://app.morpho.org/vault?vault=0x38989BBA00BDF8181F4082995b3DEAe96163aC5D",
+    "contract_address": "0x38989BBA00BDF8181F4082995b3DEAe96163aC5D"
+  },
+  {
+    "name": "USDT - Flagship USDT",
+    "protocol": "Morpho",
+    "creator": "Block Analitica & B.Protocol",
+    "chain": "Ethereum",
+    "description": "The Flagship USDT MetaMorpho vault curated by B.Protocol and Block Analitica is intended to optimize risk-adjusted interest earned from blue-chip collateral markets.",
+    "link": "https://app.morpho.org/vault?vault=0x2C25f6C25770fFEC5959D34B94Bf898865e5D6b1",
+    "contract_address": "0x2C25f6C25770fFEC5959D34B94Bf898865e5D6b1"
+  },
+  {
+    "name": "USDC - Flagship USDC",
+    "protocol": "Morpho",
+    "creator": "Block Analitica & B.Protocol",
+    "chain": "Ethereum",
+    "description": "The Flagship USDC MetaMorpho vault curated by B.Protocol and Block Analitica is intended to optimize risk-adjusted interest earned from blue-chip collateral markets.",
+    "link": "https://app.morpho.org/vault?vault=0x186514400e52270cef3D80e1c6F8d10A75d47344",
+    "contract_address": "0x186514400e52270cef3D80e1c6F8d10A75d47344"
+  },
+  {
+    "name": "USDC - Steakhouse USDC",
+    "protocol": "Morpho",
+    "creator": "Steakhouse",
+    "chain": "Ethereum",
+    "description": "The Steakhouse USDC vault aims to optimize yields by lending USDC against blue chip crypto and real world asset (RWA) collateral markets, depending on market conditions. We call this the “dual engine.”",
+    "link": "https://app.morpho.org/vault?vault=0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB",
+    "contract_address": "0xBEEF01735c132Ada46AA9aA4c54623cAA92A64CB"
+  },
+  {
+    "name": "PYUSD - Steakhouse PYUSD",
+    "protocol": "Morpho",
+    "creator": "Steakhouse",
+    "chain": "Ethereum",
+    "description": "The Steakhouse PYUSD vault aims to optimize yields by lending PYUSD against blue chip crypto and real world asset (RWA) collateral markets, depending on market conditions. We call this the “dual engine.”",
+    "link": "https://app.morpho.org/vault?vault=0xbEEF02e5E13584ab96848af90261f0C8Ee04722a",
+    "contract_address": "0xbEEF02e5E13584ab96848af90261f0C8Ee04722a"
+  },
+  {
+    "name": "USDT - Steakhouse USDT",
+    "protocol": "Morpho",
+    "creator": "Steakhouse",
+    "chain": "Ethereum",
+    "description": "The Steakhouse USDT vault aims to optimize yields by lending USDT against blue chip crypto and real world asset (RWA) collateral markets, depending on market conditions. We call this the “dual engine.”",
+    "link": "https://app.morpho.org/vault?vault=0xbEef047a543E45807105E51A8BBEFCc5950fcfBa",
+    "contract_address": "0xbEef047a543E45807105E51A8BBEFCc5950fcfBa"
+  },
+  {
+    "name": "WETH - Re7 WETH",
+    "protocol": "Morpho",
+    "creator": "Re7",
+    "chain": "Ethereum",
+    "description": "The Re7 WETH MetaMorpho vault curated by Re7 Labs aims to outperform staked ETH yields by lending WETH against a diverse set of Liquid Staking and Liquid Restaking Token collateral markets.",
+    "link": "https://app.morpho.org/vault?vault=0x78Fc2c2eD1A4cDb5402365934aE5648aDAd094d0",
+    "contract_address": "0x78Fc2c2eD1A4cDb5402365934aE5648aDAd094d0"
+  },
+  {
     "name": "WBTC-Compound Morpho Lending Vault",
     "protocol": "Morpho",
     "creator": "Morpho",
