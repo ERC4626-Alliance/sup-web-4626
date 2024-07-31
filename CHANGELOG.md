@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.24.0...1.24.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* dropped unavailable video from the resources page ([#181](https://github.com/ERC4626-Alliance/sup-web-4626/issues/181)) ([1ecee1e](https://github.com/ERC4626-Alliance/sup-web-4626/commit/1ecee1e6ae12936b75ebff0832cc01ed1be35cd9)), closes [SUP-7034](https://github.com/ERC4626-Alliance/sup-web-4626/issues/7034)
+
 ## [1.24.0](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.23.0...1.24.0) (2023-11-01)
 
 
