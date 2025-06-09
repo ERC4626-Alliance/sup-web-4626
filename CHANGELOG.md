@@ -1,3 +1,10 @@
+## [1.25.0](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.24.1...1.25.0) (2024-07-31)
+
+
+### Features
+
+* applies mean finance rebranding to balmy ([#182](https://github.com/ERC4626-Alliance/sup-web-4626/issues/182)) ([257ba73](https://github.com/ERC4626-Alliance/sup-web-4626/commit/257ba7355ab799d783256ea1137126494b598fab))
+
 ## [1.24.1](https://github.com/ERC4626-Alliance/sup-web-4626/compare/1.24.0...1.24.1) (2024-06-03)
 
 
